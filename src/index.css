@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LettertypeMies Font */
+/* filepath: src/index.css */
 @font-face {
-  font-family: 'LettertypeMies';
-  src: url('/fonts/LettertypeMies-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Lettertype';
+  src: url('/fonts/Lettertype-Bold.woff2') format('woff2'),
+       url('/fonts/Lettertype-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }

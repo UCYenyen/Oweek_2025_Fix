@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['Roboto', 'system-ui', 'sans-serif'],
-        'lettertype': ['LettertypeMies', 'sans-serif'],
+        'lettertype': ['Lettertype', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
       },
     },

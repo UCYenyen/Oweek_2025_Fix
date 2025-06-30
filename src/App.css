@@ -4,6 +4,10 @@
   --button-right-gradient: #FFD054;
   --button-left-border: #F2B028;
   --button-right-border: #FFF0B8;
+
+  --countdown-top-gradient: #75ABDC;
+  --countdown-bottom-gradient: #FFF0B8;
+  --countdown-card: #fff0b8;
 }
 
 .button-navbar {
@@ -14,4 +18,26 @@
   background-image: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient)), radial-gradient(circle at top left, #F2B028,#FFF0B8);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+}
+.count-down-card{
+  cursor: pointer;
+  border: 4px solid transparent;
+  
+  background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-blend-mode: screen;
+  opacity: 75%;
+}
+.count-down-text-card{
+    cursor: pointer;
+  border: 4px solid transparent;
+  
+   background-image:
+    linear-gradient(180deg, rgba(255, 240, 184, 0.75), rgba(255, 240, 184, 0.75)), /* card background */
+    linear-gradient(180deg, #75ABDC 0%, #FFF0B8 100%); /* border gradient */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-blend-mode: screen;
+  opacity: 75%;
 }

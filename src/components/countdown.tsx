@@ -40,40 +40,40 @@ export default function Countdown() {
           <div className="relative h-full z-20 grid grid-cols-4 gap-4 items-end mb-96 justify-center">
             {/* Days */}
             <div className="flex flex-col gap-4">
-                <div className="count-down-card bg-blend-screen rounded-xl h-[240px] w-[170px] flex items-center justify-center">
+                <div className="count-down-card bg-blend-screen rounded-xl h-[240px] w-[170px] 3xl:w-[240px] 3xl:h-[310px] flex items-center justify-center">
                   <h1 className="font-lettertype bg-gradient-to-b from-[#3F61AD] to-[#75ABDC] bg-clip-text text-transparent text-9xl">{timeLeft.days.toString().padStart(2, '0')}</h1>
                 </div>
-                <div className="count-down-text-card bg-blend-screen rounded-full text-2xl w-[170px]">
-                  <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center">Days</h1>
+                <div className="count-down-text-card bg-blend-screen rounded-full w-[170px] 3xl:w-[240px]">
+                  <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center text-2xl 3xl:text-3xl">Days</h1>
                 </div>
             </div>
 
             {/* Hours */}
             <div className="flex flex-col gap-4">
-                <div className="count-down-card bg-blend-screen rounded-xl h-[240px] w-[170px] flex items-center justify-center">
+                <div className="count-down-card bg-blend-screen rounded-xl h-[240px] w-[170px] 3xl:w-[240px] 3xl:h-[310px] flex items-center justify-center">
                   <h1 className="font-lettertype bg-gradient-to-b from-[#3F61AD] to-[#75ABDC] bg-clip-text text-transparent text-9xl"> {timeLeft.hours.toString().padStart(2, '0')}</h1>
                 </div>
-                <div className="count-down-text-card bg-blend-screen rounded-full text-2xl w-[170px]">
-                <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center">Hours</h1>
+                <div className="count-down-text-card bg-blend-screen rounded-full w-[170px] 3xl:w-[240px]">
+                <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center text-2xl 3xl:text-3xl">Hours</h1>
                 </div>
             </div>
             {/* Minutes */}
             <div className="flex flex-col gap-4">
-                <div className="count-down-card bg-blend-screen rounded-xl h-[240px] w-[170px] flex items-center justify-center">
+                <div className="count-down-card bg-blend-screen rounded-xl h-[240px] w-[170px] 3xl:w-[240px] 3xl:h-[310px] flex items-center justify-center">
                   <h1 className="font-lettertype bg-gradient-to-b from-[#3F61AD] to-[#75ABDC] bg-clip-text text-transparent text-9xl">{timeLeft.minutes.toString().padStart(2, '0')}</h1>
                 </div>
-                <div className="count-down-text-card bg-blend-screen rounded-full text-2xl w-[170px]">
-                  <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center">Minutes</h1>
+                <div className="count-down-text-card bg-blend-screen rounded-full w-[170px] 3xl:w-[240px]">
+                  <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center text-2xl 3xl:text-3xl">Minutes</h1>
                 </div>
             </div>
 
             {/* Seconds */}
             <div className="flex flex-col gap-4">
-                <div className="count-down-card bg-blend-screen rounded-xl h-[240px] w-[170px] flex items-center justify-center">
+                <div className="count-down-card bg-blend-screen rounded-xl h-[240px] w-[170px] 3xl:w-[240px] 3xl:h-[310px] flex items-center justify-center">
                   <h1 className="font-lettertype bg-gradient-to-b from-[#3F61AD] to-[#75ABDC] bg-clip-text text-transparent text-9xl">{timeLeft.seconds.toString().padStart(2, '0')}</h1>
                 </div>
-                <div className="count-down-text-card bg-blend-screen rounded-full text-2xl w-[170px]">
-                <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center">Seconds</h1>
+                <div className="count-down-text-card bg-blend-screen rounded-full text-2xl w-[170px] 3xl:w-[240px]">
+                <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center text-2xl 3xl:text-3xl">Seconds</h1>
                 </div>
             </div>
           </div>

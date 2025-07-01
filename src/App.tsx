@@ -5,8 +5,8 @@ function App() {
   return (
     <div className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")] overflow-hidden'>
       <div className="relative w-screen h-[95vh] flex items-center justify-center">
-        <img src="/elements/section/pillar-left.svg" className="w-[25%] absolute left-0 -top-1" alt="" loading="lazy"/>
-        <img src="/elements/section/pillar-right.svg" className="w-[25%] absolute right-0 -top-1" alt="" loading="lazy"/>
+        <img src="/elements/section/pillar-left.svg" className="w-[25%] absolute left-0 -top-2" alt="" loading="lazy"/>
+        <img src="/elements/section/pillar-right.svg" className="w-[25%] absolute right-0 -top-2" alt="" loading="lazy"/>
         
         
         <div className="relative w-full h-full flex items-center justify-center">

@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import About from "./pages/About/Page.tsx";
 import Schedule from "./pages/Schedule/Page.tsx";
 import Rules from "./pages/Rules.tsx";
+// a
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

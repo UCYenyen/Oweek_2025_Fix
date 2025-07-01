@@ -6,6 +6,7 @@ import App from "./App.tsx";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import About from "./pages/About/Page.tsx";
+import Schedule from "./pages/Schedule/Page.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
+        <Route path="/schedule" element={<Schedule />} />
       </Routes>
       <Footer />
     </BrowserRouter>

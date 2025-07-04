@@ -49,14 +49,18 @@
         width: 55%;
         top: 10.5rem;
     }
+    .countdown-number{
+        font-size: 6rem;
+    }
     .count-down-card{
-        width: 270px;
-        height: 410px;
+        width: 210px;
+        height: 280px;
         border-width: 0.5rem;
+        border-radius: 2rem;
     }
     .count-down-text-card{
-        width: 270px;
-        font-size: 3rem;
+        width: 210px;
+        font-size: 2rem;
     }
 }
 @media(max-width: 1920px) and (max-height: 1080px) {
@@ -87,6 +91,37 @@
     .count-down-text-card{
         width: 240px;
         font-size: 2rem;
+    }
+}
+@media(max-width: 1366px) and (max-height: 768px) {
+    .yuca {
+        width: 20%;
+        bottom: -3rem;
+    }
+    .yuca-chiken {
+        width: 15%;
+        bottom: 11.5rem;
+    }    
+    .nerd-chiken {
+        bottom: 10.5rem;
+    }
+    .gladiator-chiken{
+        width: 15%;
+        bottom: -3rem;
+    }
+    .building-center {
+        width: 55%;
+        top: 9.5rem;
+    }
+    .count-down-card{
+        width: 170px;
+        height: 240px;
+        border-width: 0.25rem;
+        border-radius: 1.5rem;
+    }
+    .count-down-text-card{
+        width: 170px;
+        font-size: 1.5rem;
     }
 }
 @media(max-width: 1280px) and (max-height: 800px) {

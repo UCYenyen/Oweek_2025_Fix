@@ -6,7 +6,7 @@
     .luminate-logo{
         width: 100%;
     }
-     .button-navbar {
+     .button-navbar, .button-navbar-selected {
         padding: 0.5rem 1.5rem;
         font-size: 2.5rem;
     }
@@ -19,7 +19,7 @@
         width: 20.5rem;
         height: 20.5rem;
     }
-    .button-navbar {
+    .button-navbar, .button-navbar-selected {
         padding: 0.5rem 1.5rem;
         font-size: 2rem;
     }
@@ -32,7 +32,7 @@
         width: 20.5rem;
         height: 20.5rem;
     }
-    .button-navbar {
+    .button-navbar, .button-navbar-selected {
         padding: 0.5rem 1.5rem;
         font-size: 2rem;
     }
@@ -45,7 +45,7 @@
         width: 15.5rem;
         height: 15.5rem;
     }
-    .button-navbar {
+    .button-navbar, .button-navbar-selected {
         padding: 0.5rem 1.5rem;
         font-size: 1.5rem;
     }
@@ -75,7 +75,7 @@
         width: 15.5rem;
         height: 15.5rem;
     }
-    .button-navbar {
+    .button-navbar, .button-navbar-selected {
         padding: 0.5rem 1.5rem;
         font-size: 1.2rem;
     }

@@ -39,7 +39,7 @@ export default function Countdown() {
   return (
     <>
       {/* Countdown */}
-      <div className="countdown relative h-full z-20 grid grid-cols-2 sm:grid-cols-4 gap-4 items-end mb-12 justify-center">
+      <div className="countdown mt-6 relative h-full z-20 grid grid-cols-2 sm:grid-cols-4 gap-4 items-end mb-12 justify-center">
         {/* Days */}
         <div className="countdown-card-container flex flex-col gap-4">
           <div className="count-down-card bg-blend-screen rounded-xl h-[240px] w-[170px] 3xl:w-[240px] 3xl:h-[310px] flex items-center justify-center">

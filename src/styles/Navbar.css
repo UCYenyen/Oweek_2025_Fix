@@ -1,0 +1,82 @@
+@media(max-width: 3840px) and (max-height: 2160px) {
+   .leaves-left, .leaves-right {
+        width: 30.5rem;
+        height: 30.5rem;
+    }
+    .luminate-logo{
+        width: 100%;
+    }
+     .button-navbar {
+        padding: 0.5rem 1.5rem;
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 2560px) and (max-height:1600px){
+    .luminate-logo{
+        width: 100%;
+    }
+    .leaves-left, .leaves-right {
+        width: 20.5rem;
+        height: 20.5rem;
+    }
+    .button-navbar {
+        padding: 0.5rem 1.5rem;
+        font-size: 2rem;
+    }
+}
+@media(max-width: 2560px) and (max-height: 1140px){
+    .luminate-logo{
+        width: 100%;
+    }
+    .leaves-left, .leaves-right {
+        width: 20.5rem;
+        height: 20.5rem;
+    }
+    .button-navbar {
+        padding: 0.5rem 1.5rem;
+        font-size: 2rem;
+    }
+}
+@media(max-width: 1920px) and (max-height: 1080px) {
+    .luminate-logo{
+        width: 100%;
+    }
+    .leaves-left, .leaves-right {
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+    .button-navbar {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 1728px) and (max-height: 1117px) {
+    
+}
+@media(max-width: 1512px) and (max-height: 982px){
+    
+}
+
+@media(max-width: 1366px) and (max-height: 768px) {
+    
+}
+@media(max-width: 1280px) and (max-height: 800px) {
+   
+}
+
+@media(max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+}
+@media(max-width: 1024px) and (max-height: 600px) {
+    .luminate-logo{
+        width: 90%;
+    }
+    .leaves-left, .leaves-right {
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+    .button-navbar {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.2rem;
+    }
+}

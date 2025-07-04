@@ -4,7 +4,7 @@ import Countdown from "./components/countdown";
 function App() {
   return (
     <>
-    <div className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")]'>
+    <div className='all-container relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")]'>
       <img className="wall-left absolute left-0 -top-1 w-[20%]" src="/elements/section/pillar-left.svg" alt="" />
       <img className="wall-right absolute right-0 -top-1 w-[20%]" src="/elements/section/pillar-right.svg" alt="" />
       <div className="flex flex-col justify-center items-center">

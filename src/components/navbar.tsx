@@ -13,8 +13,8 @@ export default function Navbar() {
           </div>
         </nav>
           <div className="relative bg-[url('/elements/navbar/navbar-below.svg')] w-screen bg-cover h-[2.5rem] sm:bg-auto sm:h-[5rem]">
-            <img src="/elements/navbar/leaves-left.svg" loading="lazy" className="absolute z-[6] -top-5 sm:-top-20 left-0 w-[7.5rem] sm:w-fit" alt="" />
-            <img src="/elements/navbar/leaves-right.svg" loading="lazy"className="absolute z-[6] -top-5 sm:-top-20 right-0 w-[7.5rem] sm:w-fit" alt="" />
+            <img src="/elements/navbar/leaves-left.svg" loading="lazy" className="absolute z-[6] -top-5 sm:-top-[7.5rem] left-0 w-[7.5rem] sm:w-fit" alt="" />
+            <img src="/elements/navbar/leaves-right.svg" loading="lazy"className="absolute z-[6] -top-5 sm:-top-[7.5rem] right-0 w-[7.5rem] sm:w-fit" alt="" />
           </div>
         </>
     )

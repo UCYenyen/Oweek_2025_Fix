@@ -13,14 +13,16 @@ import Rules from "./pages/Rules.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/schedule" element={<Schedule />} />
-         <Route path="/rules" element={<Rules />} />
-      </Routes>
-      <Footer />
+      <div className="overflow-hidden">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/rules" element={<Rules />} />
+        </Routes>
+        <Footer />
+      </div>
     </BrowserRouter>
   </StrictMode>
 );

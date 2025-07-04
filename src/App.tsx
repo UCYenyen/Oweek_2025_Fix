@@ -3,27 +3,29 @@ import "./styles/Home.css";
 import Countdown from "./components/countdown";
 function App() {
   return (
-    <div className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")] overflow-hidden'>
-      <div className="relative w-screen h-[95vh] flex items-center justify-center">
-        <img src="/elements/section/pillar-left.svg" className="w-[25%] absolute left-0 -top-2" alt="" loading="lazy"/>
-        <img src="/elements/section/pillar-right.svg" className="w-[25%] absolute right-0 -top-2" alt="" loading="lazy"/>
-        
-        
-        <div className="relative w-full h-full flex flex-col items-center justify-start">
-          <img src="/elements/section/building-center-home-page.svg" className="building-center top-36 w-[45%] xl:w-[50%] absolute z-10" alt="" loading="lazy"/>
-          <img src="/elements/icons/welcoming-logo.svg" className="welcoming-logo relative z-10 w-fit lg:w-[42.5%]" alt="" loading="lazy"/>
-          <img src="/elements/section/sun.svg" className="absolute w-[80%] top-56" alt="" loading="lazy"/>
-          <img src="/elements/section/left-yuca.svg" className="yuca absolute -bottom-[3.5rem] lg:-bottom-[2.25rem] 2xl:-bottom-[3.25rem] w-[20%] left-0 z-10" alt="" loading="lazy"/>
-          <img src="/elements/section/cloud.svg" className="cloud absolute -bottom-[8.5rem] left-0 z-[5]" alt="" loading="lazy"/>
-          <img src="/elements/section/chiken-on-top-of-yuca.svg" className="yuca-chiken absolute bottom-[14.5rem] w-[15%] left-0 z-[4]" alt="" loading="lazy"/>
-          <img src="/elements/section/gladiator-chiken.svg" className="gladiator-chiken absolute -bottom-[7.5rem] right-0 z-[5]" alt="" loading="lazy"/>
-          <img src="/elements/section/plant-right.svg" className="absolute w-[15%] -bottom-4 right-0 z-[4]" alt="" loading="lazy"/>
-          <img src="/elements/section/nerd-chiken.svg" className="nerd-chiken absolute bottom-[11.5rem] lg:bottom-[4.5rem] right-0 z-[3]" alt="" loading="lazy"/>
-          <Countdown/>
-        </div>
+    <>
+    <div className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")]'>
+      <img className="wall-left absolute left-0 -top-1 w-[20%]" src="/elements/section/pillar-left.svg" alt="" />
+      <img className="wall-right absolute right-0 -top-1 w-[20%]" src="/elements/section/pillar-right.svg" alt="" />
+      <div className="flex flex-col justify-center items-center">
+        <img src="/elements/icons/welcoming-logo.svg" className="welcoming-logo z-[5] -mt-[2.5%]" alt="" />
+        <Countdown/>
+      </div>
+      <div className="flex flex-col items-center justify-center overflow-hidden -z-[10]">
+        <img src="/elements/section/building-center-home-page.svg" className="building-center z-[2] w-[60%] absolute -bottom-[40vh]" alt="" />
+        <img src="/elements/section/sun.svg" className="sun absolute w-full z-[0] -bottom-[80%]" alt="" />
+        <img src="/elements/section/left-yuca.svg" className="left-yuca absolute left-0 -bottom-[3.5rem] z-[2]" alt="" />
+        <img src="/elements/section/cloud.svg" className="cloud absolute left-0 -bottom-[10.5rem]" alt="" />
+        <img src="/elements/section/chiken-on-top-of-yuca.svg" className="chiken-yuca absolute left-0 bottom-[15.5rem]" alt="" />
+        <img src="/elements/section/plant-right.svg" className="plant-right absolute right-0 -bottom-[1rem] z-[1]" alt="" />
+        <img src="/elements/section/gladiator-chiken.svg" className="gladiator absolute right-0 -bottom-[7.5rem] z-[2]" alt="" />
+        <img src="/elements/section/nerd-chiken.svg" className="nerd absolute right-0 bottom-[7.5rem] z-[0]" alt="" />
       </div>
     </div>
+    </>
   );
 }
 
 export default App;
+
+

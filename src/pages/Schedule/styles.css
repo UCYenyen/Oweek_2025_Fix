@@ -1,0 +1,46 @@
+:root {
+  background-color: #e7bc68;
+  --button-left-gradient: #FFF0B8;
+  --button-right-gradient: #FFF0B8;
+  --button-left-border: #F2B028;
+  --button-right-border: #FFF0B8;
+
+  --countdown-top-gradient: #75ABDC;
+  --countdown-bottom-gradient: #FFF0B8;
+  --countdown-card: #fff0b8;
+  --main-font: "Lettertype";
+  --main-font-url: "/fonts/Lettertype.ttf";
+}
+
+.schedule-card {
+  cursor: pointer;
+  border: 4px solid transparent;
+  background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-blend-mode: screen;
+  opacity: 75%;
+  width: 462px;
+  height: 259;
+}
+.button-schedule{
+    background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
+    cursor: pointer;
+    border: 4px solid transparent;
+    
+    background-image: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient)), radial-gradient(circle at top left, #F2B028,#FFF0B8);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+.title-font{
+    font-family:var(--main-font);
+    src: var(--main-font-url);
+    font-size: 65px;
+    background: linear-gradient(#3F61AD, #75ABDC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    
+}
+

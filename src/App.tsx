@@ -14,9 +14,9 @@ function App() {
       <div className="flex flex-col items-center justify-center overflow-hidden -z-[10]">
         <img src="/elements/section/building-center-home-page.svg" loading="lazy" className="building-center z-[2] w-[60%] absolute -bottom-[40vh]" alt=""  draggable="false"/>
         <img src="/elements/section/sun.svg" className="sun absolute w-full z-[0] -bottom-[80%]" alt=""  draggable="false"/>
-        <img src="/elements/section/left-yuca.svg" className="left-yuca absolute left-0 -bottom-[3.5rem] z-[2]" alt=""  draggable="false"/>
+        <img src="/elements/section/Yucca.png" className="left-yuca absolute left-0 -bottom-[3.5rem] z-[2]" alt=""  draggable="false"/>
         <img src="/elements/section/cloud.svg" className="cloud absolute left-0 -bottom-[10.5rem]" alt=""  draggable="false"/>
-        <img src="/elements/section/chiken-on-top-of-yuca.svg" className="chiken-yuca absolute left-0 bottom-[15.5rem]" alt=""  draggable="false"/>
+        <img src="/elements/section/ChikenYucaTop.png" className="chiken-yuca absolute left-0 bottom-[15.5rem]" alt=""  draggable="false"/>
         <img src="/elements/section/plant-right.svg" className="plant-right absolute right-0 -bottom-[1rem] z-[1]" alt=""  draggable="false"/>
         <img src="/elements/section/gladiator-chiken.svg" className="gladiator absolute right-0 -bottom-[7.5rem] z-[2]" alt=""  draggable="false"/>
         <img src="/elements/section/nerd-chiken.svg" className="nerd absolute right-0 bottom-[7.5rem] z-[0]" alt="" draggable="false"/>

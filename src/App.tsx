@@ -12,10 +12,10 @@ function App() {
         <Countdown/>
       </div>
       <div className="flex flex-col items-center justify-center overflow-hidden -z-[10]">
-        <img src="/elements/section/building-center-home-page.svg" loading="lazy" className="building-center z-[2] w-[60%] absolute -bottom-[40vh]" alt=""  draggable="false"/>
-        <img src="/elements/section/sun.svg" className="sun absolute w-full z-[0] -bottom-[80%]" alt=""  draggable="false"/>
+        <img src="/elements/section/building-center-home-page.svg" className="building-center z-[2] w-[60%] absolute -bottom-[40vh]" alt=""  draggable="false"/>
+        <img src="/elements/section/sun.svg" loading="lazy" className="sun absolute w-full z-[0] -bottom-[80%]" alt=""  draggable="false"/>
         <img src="/elements/section/Yucca.png" className="left-yuca absolute left-0 -bottom-[3.5rem] z-[2]" alt=""  draggable="false"/>
-        <img src="/elements/section/cloud.svg" className="cloud absolute left-0 -bottom-[10.5rem]" alt=""  draggable="false"/>
+        <img src="/elements/section/cloud.svg" loading="lazy" className="cloud absolute left-0 -bottom-[10.5rem]" alt=""  draggable="false"/>
         <img src="/elements/section/ChikenYucaTop.png" className="chiken-yuca absolute left-0 bottom-[15.5rem]" alt=""  draggable="false"/>
         <img src="/elements/section/plant-right.svg" className="plant-right absolute right-0 -bottom-[1rem] z-[1]" alt=""  draggable="false"/>
         <img src="/elements/section/gladiator.png" className="gladiator absolute right-0 -bottom-[7.5rem] z-[2]" alt=""  draggable="false"/>

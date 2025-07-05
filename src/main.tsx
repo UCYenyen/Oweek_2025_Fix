@@ -1,6 +1,6 @@
 import { StrictMode, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
@@ -66,7 +66,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
         <Suspense fallback={<LoadingSpinner />}>
         <Layout>
           <Routes>
@@ -77,6 +77,6 @@ createRoot(document.getElementById("root")!).render(
           </Routes>
         </Layout>
         </Suspense>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );

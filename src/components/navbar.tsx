@@ -104,39 +104,33 @@ export default function Navbar() {
 
         {/* Hamburger Menu Button */}
         <button
-          className="lg:hidden flex flex-col items-center justify-center w-8 h-8 space-y-1 z-[20]"
+          className="md:hidden button-navbar flex flex-col items-center justify-center rounded-full w-10 h-10 space-y-1 z-[20]"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
           <div
-            className={`w-6 h-0.5 bg-gradient-to-r from-[#F5AC01] to-[#C03A00] transition-all duration-300 ${
-              isMenuOpen ? 'rotate-45 translate-y-2' : ''
+            className={`w-6 h-0.5 transition-all duration-300 ${
+              isMenuOpen ? 'rotate-45 translate-y-1.5 bg-[#FFF0B8]' : 'bg-gradient-to-r from-[#F5AC01] to-[#C03A00]'
             }`}
           />
           <div
-            className={`w-6 h-0.5 bg-gradient-to-r from-[#F5AC01] to-[#C03A00] transition-all duration-300 ${
-              isMenuOpen ? 'opacity-0' : ''
+            className={`w-6 h-0.5 transition-all duration-300 ${
+              isMenuOpen ? 'opacity-0 bg-[#FFF0B8]' : 'bg-gradient-to-r from-[#F5AC01] to-[#C03A00]'
             }`}
           />
           <div
-            className={`w-6 h-0.5 bg-gradient-to-r from-[#F5AC01] to-[#C03A00] transition-all duration-300 ${
-              isMenuOpen ? '-rotate-45 -translate-y-2' : ''
+            className={`w-6 h-0.5 transition-all duration-300 ${
+              isMenuOpen ? '-rotate-45 -translate-y-1.5 bg-[#FFF0B8]' : 'bg-gradient-to-r from-[#F5AC01] to-[#C03A00]'
             }`}
           />
         </button>
 
         {/* Mobile Menu Overlay */}
-        <div
-          className={`fixed inset-0 bg-black bg-opacity-50 z-[15] lg:hidden transition-opacity duration-300 ${
-            isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-          }`}
-          onClick={closeMenu}
-        />
       </nav>
 
       {/* Mobile Menu - Below Navbar */}
       <div
-        className={`relative w-full bg-gradient-to-b from-[#B2D5F1] to-[#75ABDC] z-[16] lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`relative w-full bg-gradient-to-b from-[#F0B130] to-[#F0B130] z-[16] lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >

@@ -92,13 +92,13 @@
 }
 .rules-card{
    cursor: pointer;
-  border: 4px solid transparent;
+  border: 6px solid transparent;
   
    background-image:
-    linear-gradient(180deg, rgba(255, 240, 184, 0.75), rgba(255, 240, 184, 0.75)), /* card background */
+    linear-gradient(180deg, rgba(255, 240, 184, 0.95), rgba(255, 240, 184, 0.95)), /* card background */
     linear-gradient(180deg, #FFF0B8 0%, #75ABDC 100%); /* border gradient */
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-blend-mode: screen;
-  opacity: 75%;
+  opacity: 85%;
 }

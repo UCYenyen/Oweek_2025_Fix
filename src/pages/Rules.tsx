@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import rules from "../data/rules";
+import "../styles/Rules.css";
 
 export default function Rules() {
   const datas = rules;
@@ -21,33 +22,31 @@ export default function Rules() {
   const selectedData = datas.find((data) => data.id === selectedPasal);
 
   return (
-    <div className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")] overflow-hidden'>
-      <div className="relative w-screen min-h-[95vh] flex items-center justify-center">
-        <img src="/elements/section/sun-rules.svg" className="w-full absolute -bottom-1/3" alt="" />
+    <div className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")]'>
+      <div className="relative w-screen flex items-center justify-center">
+        <img src="/elements/section/sun-rules.svg" className="sun w-full absolute -bottom-1/2" alt="" />
         <img
           src="/elements/section/pillar-left.svg"
-          className="w-[25%] absolute left-0 -top-2"
+          className="w-[20%] absolute left-0 -top-2"
           alt=""
-          loading="lazy"
         />
         <img
           src="/elements/section/pillar-right.svg"
-          className="w-[25%] absolute right-0 -top-2"
+          className="w-[20%] absolute right-0 -top-2"
           alt=""
-          loading="lazy"
         />
 
-        <div className="relative w-full min-h-full flex flex-col items-center justify-center">
-          <img src="/elements/section/rules-title.svg" alt="" />
+        <div className="relative w-full min-h-full flex flex-col items-center justify-start pb-10">
+          <img src="/elements/section/rules-title.svg" className="rules-logo mt-[-8%] z-[100]" alt="" />
 
           {/* Custom Dropdown */}
-          <div className="w-[80%] max-w-3xl mt-8 relative" ref={dropdownRef}>
+          <div className="dropdown w-[80%] max-w-3xl mt-8 relative" ref={dropdownRef}>
             <button
-              className="w-full bg-[#A2BFE6] border-4 border-[#F7E7B6] rounded-full px-8 py-2 text-white text-2xl font-serif mb-4 flex justify-between items-center transition-all duration-300"
+              className="w-full h-full bg-[#A2BFE6] border-4 border-[#F7E7B6] rounded-full px-8 py-2 text-white text-2xl font-serif mb-4 flex justify-between items-center transition-all duration-300"
               onClick={() => setOpen((v) => !v)}
               type="button"
             >
-              <span>
+              <span className="font-roboto text text-center w-full">
                 {selectedData?.pasal} ({selectedData?.category})
               </span>
               <svg
@@ -69,7 +68,7 @@ export default function Rules() {
               {datas.map((data) => (
                 <div
                   key={data.id}
-                  className={`px-8 py-2 text-white text-2xl font-serif cursor-pointer hover:bg-[#8ea7d6] transition`}
+                  className={`px-8 py-2 text font-roboto text-white text-2xl cursor-pointer hover:bg-[#8ea7d6] transition`}
                   onClick={() => {
                     setSelectedPasal(data.id);
                     setOpen(false);
@@ -82,14 +81,13 @@ export default function Rules() {
           </div>
 
           {/* Rules Card */}
-          <div className="rules-card bg-blend-screen rounded-xl min-w-[50%] min-h-[30rem] p-4 flex items-start justify-center">
-            <div className="font-roboto text-[#AB6528] text-start text-2xl max-w-3xl max-h-[30rem] overflow-auto w-full">
-              {selectedData?.description.map((desc, idx) => (
-                <div key={`${selectedData.id}-${idx}`} className="mb-4">
-                  {desc.heading ? (
-                    // When heading exists: heading gets decimal numbering, details get lower-alpha
-                    <ol className="list-decimal ml-6">
-                      <li>
+          <div className="rules-card bg-blend-screen rounded-3xl min-w-[60%] min-h-[35rem] p-4 flex items-start justify-center">
+            <div className="font-roboto text-description text-[#AB6528] text-start text-2xl max-w-[60rem] max-h-[30rem] overflow-auto w-full">
+              {selectedData?.description.some((desc) => desc.heading) ? (
+                <ol className="list-decimal ml-6">
+                  {selectedData.description.map((desc, idx) =>
+                    desc.heading ? (
+                      <li key={`${selectedData.id}-heading-${idx}`}>
                         <div
                           className="font-bold mb-2"
                           dangerouslySetInnerHTML={{ __html: desc.heading }}
@@ -99,24 +97,35 @@ export default function Rules() {
                             <li
                               key={i}
                               dangerouslySetInnerHTML={{ __html: detail }}
+                              className="text"
                             />
                           ))}
                         </ol>
                       </li>
-                    </ol>
-                  ) : (
-                    // When no heading: details get decimal numbering
-                    <ol className="list-decimal ml-6">
-                      {desc.details.map((detail, i) => (
+                    ) : (
+                      desc.details.map((detail, i) => (
                         <li
-                          key={i}
+                          key={`${selectedData.id}-detail-${idx}-${i}`}
                           dangerouslySetInnerHTML={{ __html: detail }}
+                          className="text"
                         />
-                      ))}
-                    </ol>
+                      ))
+                    )
                   )}
-                </div>
-              ))}
+                </ol>
+              ) : (
+                selectedData?.description.map((desc, idx) => (
+                  <ol className="list-decimal ml-6" key={`${selectedData.id}-noheading-${idx}`}>
+                    {desc.details.map((detail, i) => (
+                      <li
+                        key={i}
+                        dangerouslySetInnerHTML={{ __html: detail }}
+                        className="text"
+                      />
+                    ))}
+                  </ol>
+                ))
+              )}
             </div>
           </div>
         </div>

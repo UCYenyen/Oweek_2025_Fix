@@ -1,50 +1,92 @@
+import { useState } from "react";
+import { scheduleData } from "../data/scheduleData";
+
 export default function Schedule() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % scheduleData.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + scheduleData.length) % scheduleData.length);
+  };
+
+  const currentSchedule = scheduleData[currentIndex];
+  const hasDressCode = currentSchedule.baju || currentSchedule.baju2;
+
   return (
     <div className="relative w-full flex items-center justify-center flex-col pt-[2vh]">
       <div className="schedule-card relative rounded-3xl p-6 sm:p-8 flex items-center justify-center w-[90%] h-auto">
-        {/* Schedule Content */}
-        <div className="flex flex-col items-center text-center text-[#AB6528] font-roboto space-y-4">
-          <div>
-            <h2 className="text-3xl sm:text-4xl font-bold">PRA-OWEEK</h2>
-            <p className="text-lg sm:text-xl">16 Agustus 2025</p>
-            <p className="text-lg sm:text-xl">Zoom Meeting</p>
-          </div>
-          <div className="text-xl sm:text-2xl font-bold">
-            <p>Kloter 1 (7:15 - 10:00)</p>
-            <p>Kloter 2 (10:45 - 13:00)</p>
-          </div>
-          {/* Bottom Buttons */}
-        </div>
-
         {/* Left Arrow Button */}
-        <button className="button-left p-2 absolute -left-20">
+        <button onClick={handlePrev} className="button-left p-2 absolute -left-4 sm:-left-20">
           <img src="/elements/schedule/buttonleft.svg" alt="Previous" />
         </button>
 
-        
+        {/* Schedule Content */}
+        <div className="flex flex-col items-center text-center text-[#AB6528] font-roboto space-y-2 sm:space-y-4">
+          <div>
+            <h2 className="text-2xl sm:text-4xl font-bold">{currentSchedule.title}</h2>
+            <p className="text-md sm:text-xl">{currentSchedule.date}</p>
+            <p className="text-md sm:text-xl">{currentSchedule.location}</p>
+          </div>
+          <div className="text-lg sm:text-2xl font-bold">
+            {currentSchedule.sessions.map((session, index) => (
+              <p key={index}>{session}</p>
+            ))}
+          </div>
+        </div>
+
         {/* Right Arrow Button */}
-        <button className="button-right p-2 absolute -right-20">
+        <button onClick={handleNext} className="button-right p-2 absolute -right-4 sm:-right-20">
           <img src="/elements/schedule/buttonright.svg" alt="Next" />
         </button>
-        
       </div>
+
+      {/* Bottom Buttons */}
       <div className="flex items-center justify-center gap-4 pt-4">
-            <button className="button-schedule px-6 py-2 text-lg rounded-full">
-              PENUGASAN
-            </button>
-            <button className="p-2 rounded-full">
-              <img
-                src="/elements/schedule/shirt.svg"
-                alt="Ketentuan Pakaian"
-                width={32}
-                height={32}
-                className="h-full w-full"
-              />
-            </button>
-            <button className="button-schedule px-6 py-2 text-lg rounded-full">
-              KETENTUAN
+        <button className="button-schedule px-6 py-2 text-lg rounded-full">
+          PENUGASAN
+        </button>
+        {hasDressCode && (
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="bg-[#A2BFE6] border-4 border-[#3F61AD] rounded-full p-3 flex items-center justify-center"
+          >
+            <img
+              src="/elements/schedule/shirt.svg"
+              alt="Ketentuan Pakaian"
+              className="h-8 w-8"
+            />
+          </button>
+        )}
+        <button className="button-schedule px-6 py-2 text-lg rounded-full">
+          KETENTUAN
+        </button>
+      </div>
+
+      {/* Dress Code Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="schedule-card p-8 rounded-3xl max-w-md w-[90%]">
+            <h3 className="text-3xl font-bold text-center text-[#AB6528] mb-4">Dress Code</h3>
+            <div className="text-[#AB6528] space-y-2">
+              <p>{currentSchedule.baju}</p>
+              <p>{currentSchedule.celana}</p>
+              <p>{currentSchedule.sepatu}</p>
+              {currentSchedule.extra && <p className="font-bold">{currentSchedule.extra}</p>}
+              {currentSchedule.baju2 && <hr className="my-4 border-[#AB6528]" />}
+              {currentSchedule.baju2 && <p>{currentSchedule.baju2}</p>}
+              {currentSchedule.celana2 && <p>{currentSchedule.celana2}</p>}
+              {currentSchedule.sepatu2 && <p>{currentSchedule.sepatu2}</p>}
+            </div>
+            <button onClick={() => setIsModalOpen(false)} className="button-schedule mt-6 w-full py-2 rounded-full">
+              Close
             </button>
           </div>
+        </div>
+      )}
     </div>
   );
 }

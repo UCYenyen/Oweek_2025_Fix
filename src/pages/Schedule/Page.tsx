@@ -45,7 +45,7 @@ export default function Schedule() {
             className="absolute w-[200vh] h-auto -top-[20vh] left-1/2 -translate-x-1/2 z-20"
             alt="schedule-title"
           /> */}
-          <h1 className='title-font'>PRA-OWEEK</h1>
+          <h1 className='title-font absolute top-[20vh]'>PRA-OWEEK</h1>
           <ScheduleDiv />
         </div>
       </div>

@@ -50,29 +50,29 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
 
       {/* Bottom Buttons */}
       <div className="flex items-center justify-center gap-4 pt-4">
-        <button className="button-schedule px-6 py-2 text-lg rounded-full">
+        <button className="button-font button-schedule px-6 py-2 text-lg rounded-full">
           PENUGASAN
         </button>
         {hasDressCode && (
           <button
             onClick={() => setIsModalOpen(true)}
-            className="bg-[#A2BFE6] border-4 border-[#3F61AD] rounded-full p-3 flex items-center justify-center"
+            className=" flex items-center justify-center"
           >
             <img
               src="/elements/schedule/shirt.svg"
               alt="Ketentuan Pakaian"
-              className="h-8 w-8"
+              className="h-24 w-24"
             />
           </button>
         )}
-        <button className="button-schedule px-6 py-2 text-lg rounded-full">
+        <button className="button-font button-schedule px-6 py-2 text-lg rounded-full">
           KETENTUAN
         </button>
       </div>
 
       {/* Dress Code Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-25 flex items-center justify-center z-50">
           <div className="schedule-card p-8 rounded-3xl max-w-md w-[90%]">
             <h3 className="text-3xl font-bold text-center text-[#AB6528] mb-4">Dress Code</h3>
             <div className="text-[#AB6528] space-y-2">

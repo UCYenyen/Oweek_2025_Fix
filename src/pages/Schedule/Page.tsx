@@ -47,6 +47,20 @@ export default function Schedule() {
           className="absolute w-full h-[85%] top-[5vh] z-10"
           alt="schedule-bg"
         />
+        <img
+          src="/elements/schedule/bebekkanan.svg"
+          className="absolute w-[50vh] h-auto bottom-[10vh] right-[5vh] z-10"
+          width={100}
+          height={100}
+          alt="bebekkanan"
+        />
+        <img
+          src="/elements/schedule/bebekkiri.svg"
+          className="absolute w-[50vh] h-auto bottom-[23vh] left-0 z-10"
+          width={100}
+          height={100}
+          alt="bebekkiri"
+        />
         <div className="relative z-20 flex flex-col items-center justify-center w-full h-full">
           <h1 className='title-font absolute top-[10vh]'>{title}</h1>
           <ScheduleDiv currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />

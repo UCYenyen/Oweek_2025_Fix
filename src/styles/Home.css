@@ -601,7 +601,7 @@
     .sun{
         z-index: 0;
         scale: 2;
-        bottom: 0rem;
+        bottom: -4rem;
     }
     .welcoming-logo{
         margin-top: 20%;
@@ -688,7 +688,7 @@
     .sun{
         z-index: 0;
         scale: 2;
-        bottom: 0rem;
+        bottom: -3rem;
     }
     .welcoming-logo{
         margin-top: 20%;

@@ -16,6 +16,10 @@
         scale: 1;
         bottom: -85rem;
     }
+    .stars{
+        scale: 1;
+        bottom: -125rem;
+    }
     .welcoming-logo{
         width: 50%;
     }
@@ -67,6 +71,10 @@
     .sun{
         scale: 0.9;
         bottom: -52.5rem;
+    }
+    .stars{
+        scale: 0.9;
+        bottom: -77.5rem;
     }
     .welcoming-logo{
         width: 45%;
@@ -136,6 +144,10 @@
         scale: 0.9;
         bottom: -55.5rem;
     }
+    .stars{
+        scale: 0.85;
+        bottom: -77.5rem;
+    }
     .chiken-yuca{
         width: 15%;
         bottom: 22.5rem;
@@ -177,6 +189,10 @@
     .sun{
         scale: 0.8;
         bottom: -40.5rem;
+    }
+    .stars{
+        scale: 0.8;
+        bottom: -52.5rem;
     }
     .chiken-yuca{
         width: 15%;

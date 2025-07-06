@@ -126,6 +126,16 @@ export const useHomeAnimations = () => {
           repeat: -1
         });
 
+        gsap.to(sunRef.current, {
+          rotate: 1.5,
+          scale:1.05,
+          transformOrigin: "center center",
+          duration: 4,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1
+        });
+
         gsap.to(leftYucaRef.current, {
           y: -15,
           duration: 2,

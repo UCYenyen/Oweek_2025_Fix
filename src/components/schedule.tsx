@@ -1,16 +1,20 @@
 import { useState } from "react";
 import { scheduleData } from "../data/scheduleData";
 
-export default function Schedule() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+interface ScheduleProps {
+  currentIndex: number;
+  setCurrentIndex: (index: number) => void;
+}
+
+export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % scheduleData.length);
+    setCurrentIndex((currentIndex + 1) % scheduleData.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + scheduleData.length) % scheduleData.length);
+    setCurrentIndex((currentIndex - 1 + scheduleData.length) % scheduleData.length);
   };
 
   const currentSchedule = scheduleData[currentIndex];

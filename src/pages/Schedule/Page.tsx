@@ -1,7 +1,15 @@
 import ScheduleDiv from '../../components/schedule';
+import { useState } from 'react';
+import { scheduleData } from '../../data/scheduleData';
 import "./styles.css";
 
 export default function Schedule() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  
+  // Get the current schedule item to determine the title
+  const currentSchedule = scheduleData[currentIndex];
+  const title = currentSchedule.day === "PRA-OWEEK" ? "PRA-OWEEK" : "OWEEK 2025";
+
   return (
     // Set a relative container with full screen height
     <div className="relative w-screen h-screen bg-[#B2D5F1] bg-cover bg-[url('/elements/real-background.svg')]">
@@ -40,13 +48,8 @@ export default function Schedule() {
           alt="schedule-bg"
         />
         <div className="relative z-20 flex flex-col items-center justify-center w-full h-full">
-          {/* <img
-            src="/elements/schedule/pra.svg"
-            className="absolute w-[200vh] h-auto -top-[20vh] left-1/2 -translate-x-1/2 z-20"
-            alt="schedule-title"
-          /> */}
-          <h1 className='title-font absolute top-[20vh]'>PRA-OWEEK</h1>
-          <ScheduleDiv />
+          <h1 className='title-font absolute top-[10vh]'>{title}</h1>
+          <ScheduleDiv currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
         </div>
       </div>
     </div>

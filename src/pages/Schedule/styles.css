@@ -41,6 +41,42 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    
+}
+
+/* Desktop-specific positioning for consistent title placement */
+@media(min-width: 1024px) {
+  .title-font {
+    font-size: 4rem;
+    top: 20vh !important;
+  }
+}
+
+@media(min-width: 1366px) {
+  .title-font {
+    font-size: 4.5rem;
+    top: 20vh !important;
+  }
+}
+
+@media(min-width: 1920px) {
+  .title-font {
+    font-size: 5rem;
+    top: 20vh !important;
+  }
+}
+
+@media(min-width: 2560px) {
+  .title-font {
+    font-size: 6rem;
+    top: 20vh !important;
+  }
+}
+
+/* Mobile adjustments */
+@media(max-width: 1023px) {
+  .title-font {
+    font-size: 2.5rem;
+    top: 20vh !important;
+  }
 }
 

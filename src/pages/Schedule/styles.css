@@ -36,54 +36,60 @@
 .title-font{
     font-family:var(--main-font);
     src: var(--main-font-url);
-    font-size: 65px;
+    font-size: 80px; /* Change this to your desired size */
     background: linear-gradient(#3F61AD, #75ABDC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
 }
+
 .button-font{
     font-family:var(--main-font);
     src: var(--main-font-url);
     font-size: 30px;
     color: #ffffff;
 }
-
+.text-title{
+  font-size: 30px;
+}
+.text-desc{
+  font-size: 25px;
+}
 /* Desktop-specific positioning for consistent title placement */
 @media(min-width: 1024px) {
   .title-font {
-    font-size: 4rem;
-    top: 20vh !important;
+    font-size: 5rem; /* Change this */
+    top: 15vh !important; /* Change this position */
   }
 }
 
 @media(min-width: 1366px) {
   .title-font {
-    font-size: 4.5rem;
-    top: 20vh !important;
+    font-size: 5.5rem; /* Change this */
+    top: 15vh !important; /* Change this position */
   }
 }
 
 @media(min-width: 1920px) {
   .title-font {
-    font-size: 5rem;
-    top: 20vh !important;
+    font-size: 6rem; /* Change this */
+    top: 15vh !important; /* Change this position */
   }
 }
 
 @media(min-width: 2560px) {
   .title-font {
-    font-size: 6rem;
-    top: 20vh !important;
+    font-size: 7rem; /* Change this */
+    top: 15vh !important; /* Change this position */
   }
 }
 
 /* Mobile adjustments */
 @media(max-width: 1023px) {
   .title-font {
-    font-size: 2.5rem;
-    top: 20vh !important;
+    font-size: 3rem; /* Change this */
+    top: 15vh !important; /* Change this position */
   }
 }
 

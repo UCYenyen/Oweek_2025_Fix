@@ -31,11 +31,11 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
         {/* Schedule Content */}
         <div className="flex flex-col items-center text-center text-[#AB6528] font-roboto space-y-2 sm:space-y-4">
           <div>
-            <h2 className="text-2xl sm:text-4xl font-bold">{currentSchedule.title}</h2>
-            <p className="text-md sm:text-xl">{currentSchedule.date}</p>
-            <p className="text-md sm:text-xl">{currentSchedule.location}</p>
+            <h2 className="text-title sm:text-4xl font-bold">{currentSchedule.title}</h2>
+            <p className="text-desc sm:text-xl">{currentSchedule.date}</p>
+            <p className="text-desc sm:text-xl">{currentSchedule.location}</p>
           </div>
-          <div className="text-lg sm:text-2xl font-bold">
+          <div className="pt-7 text-lg sm:text-2xl font-bold">
             {currentSchedule.sessions.map((session, index) => (
               <p key={index}>{session}</p>
             ))}

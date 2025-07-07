@@ -27,12 +27,12 @@ export default function Rules() {
         <img src="/elements/section/sun-rules.svg" className="sun w-full absolute -bottom-1/2" alt="" />
         <img
           src="/elements/section/pillar-left.svg"
-          className="w-[20%] absolute left-0 -top-2"
+          className="wall-left w-[20%] absolute left-0 -top-2"
           alt=""
         />
         <img
           src="/elements/section/pillar-right.svg"
-          className="w-[20%] absolute right-0 -top-2"
+          className="wall-right w-[20%] absolute right-0 -top-2"
           alt=""
         />
 
@@ -60,28 +60,31 @@ export default function Rules() {
               </svg>
             </button>
             <div
-              className={`absolute left-0 w-full z-10 bg-[#A2BFE6] border-4 border-[#F7E7B6] rounded-2xl mt-2 overflow-hidden shadow-lg transition-all duration-300 origin-top
+              className={`flex flex-col sm:gap-2 absolute left-0 w-full z-10 bg-[#A2BFE6] border-4 border-[#F7E7B6] rounded-2xl mt-2 overflow-hidden shadow-lg transition-all duration-300 origin-top
                 ${open ? "scale-y-100 opacity-100 pointer-events-auto" : "scale-y-75 opacity-0 pointer-events-none"}
               `}
               style={{ transitionProperty: "transform, opacity" }}
             >
-              {datas.map((data) => (
-                <div
-                  key={data.id}
-                  className={`px-8 py-2 text font-roboto text-white text-2xl cursor-pointer hover:bg-[#8ea7d6] transition`}
-                  onClick={() => {
-                    setSelectedPasal(data.id);
-                    setOpen(false);
-                  }}
-                >
-                  {data.pasal} ({data.category})
-                </div>
-              ))}
+              {/* Scrollable container */}
+              <div className="max-h-60 overflow-y-auto scrollbar-thin scrollbar-thumb-[#8ea7d6] scrollbar-track-[#A2BFE6]">
+                {datas.map((data) => (
+                  <div
+                    key={data.id}
+                    className={`p-1 sm:p-2 text-center text font-roboto text-white text-2xl cursor-pointer hover:bg-[#8ea7d6] transition`}
+                    onClick={() => {
+                      setSelectedPasal(data.id);
+                      setOpen(false);
+                    }}
+                  >
+                    {data.pasal} ({data.category})
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Rules Card */}
-          <div className="rules-card bg-blend-screen rounded-3xl min-w-[60%] min-h-[35rem] p-4 flex items-start justify-center">
+          <div className="rules-card bg-blend-screen rounded-3xl w-[80%] min-h-[35rem] p-4 flex items-start justify-center">
             <div className="font-roboto text-description text-[#AB6528] text-start text-2xl max-w-[60rem] max-h-[30rem] overflow-auto w-full">
               {selectedData?.description.some((desc) => desc.heading) ? (
                 <ol className="list-decimal ml-6">
@@ -89,7 +92,7 @@ export default function Rules() {
                     desc.heading ? (
                       <li key={`${selectedData.id}-heading-${idx}`}>
                         <div
-                          className="font-bold mb-2"
+                          className="font-bold"
                           dangerouslySetInnerHTML={{ __html: desc.heading }}
                         />
                         <ol className="list-[lower-alpha] ml-6">

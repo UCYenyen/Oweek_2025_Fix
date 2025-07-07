@@ -27,7 +27,7 @@ export default function Navbar() {
         </a>
         
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex font-roboto font-extrabold items-center gap-4">
+        <div className="hidden md:flex font-roboto font-extrabold items-center gap-4">
           <Link
             to="/"
             className={

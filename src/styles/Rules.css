@@ -482,6 +482,7 @@
     .rules-card{
         max-width: 26.5rem;
         min-height: 30rem;
+        padding:0;
         padding-bottom: 5rem;
         border-width: 0.25rem;
         padding-bottom: 16px;
@@ -505,11 +506,11 @@
     }
     .text{
         line-height: 1.2rem;
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
     .text-description{
         line-height: 1.5rem;
-        font-size: 0.75rem;
+        font-size: 1rem;
         max-width: 60rem;
         min-height: 30rem;
         max-height: 30rem;
@@ -523,6 +524,7 @@
     .rules-card{
         max-width: 20rem;
         min-height: 15rem;
+        padding: 0;
         padding-bottom: 5rem;
         border-width: 0.25rem;
         padding-bottom: 16px;
@@ -565,6 +567,7 @@
         padding: 0;
         max-width: 20rem;
         min-height: 15rem;
+        padding: 0;
         padding-bottom: 5rem;
         border-width: 0.25rem;
         padding-bottom: 16px;
@@ -605,6 +608,7 @@
     .rules-card{
         max-width: 16rem;
         min-height: 30rem;
+        padding: 0;
         padding-bottom: 5rem;
         border-width: 0.25rem;
         padding-bottom: 0;
@@ -646,6 +650,7 @@
     .rules-card{
         max-width: 16rem;
         min-height: 30rem;
+        padding: 0;
         padding-bottom: 5rem;
         border-width: 0.25rem;
         padding-bottom: 0;
@@ -687,6 +692,7 @@
     .rules-card{
         max-width: 16rem;
         min-height: 30rem;
+        padding: 0;
         padding-bottom: 5rem;
         border-width: 0.25rem;
         padding-bottom: 0;

@@ -87,7 +87,7 @@ export default function Rules() {
           <div className="rules-card bg-blend-screen rounded-3xl w-[80%] min-h-[35rem] p-4 flex items-start justify-center">
             <div className="font-roboto text-description text-[#AB6528] text-start text-2xl max-h-[30rem] p-4 overflow-auto w-full">
               {selectedData?.description.some((desc) => desc.heading) ? (
-                <ol className="list-decimal ml-10 ">
+                <ol className="list-decimal ml-4 sm:ml-10 ">
                   {selectedData.description.map((desc, idx) =>
                     desc.heading ? (
                       <li key={`${selectedData.id}-heading-${idx}`}>

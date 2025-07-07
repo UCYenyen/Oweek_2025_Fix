@@ -110,6 +110,68 @@
         bottom: 17.5rem;
     }
 }
+@media(max-width: 2850px) and (max-height: 1800px){
+    .wall-left, .wall-right {
+        width: 20%;
+    }
+    .wall-left {
+        left: 0;
+    }
+    .wall-right {
+        right: 0;
+    }
+    .building-center {
+        width: 55%;
+        top: 10.5rem;
+    }
+    .welcoming-logo{
+        width: 40%;
+    }
+    .countdown-number{
+        font-size: 7rem;
+    }
+    .count-down-card{
+        width: 320px;
+        height: 390px;
+        border-width: 0.5rem;
+        border-radius: 2rem;
+    }
+    .count-down-text-card{
+        width: 320px;
+        font-size: 3rem;
+    }
+    .sun{
+        scale: 0.75;
+        bottom: -55.5rem;
+    }
+    .stars{
+        scale: 0.85;
+        bottom: -77.5rem;
+    }
+    .chiken-yuca{
+        width: 15%;
+        bottom: 20.5rem;
+        left: 1rem;
+    }
+    .left-yuca{
+        width: 22.5%;
+        bottom: -5rem;
+        left: -7rem;
+    }
+    .gladiator{
+        width: 20%;
+        bottom: -9rem;
+        right: 3rem;
+    }
+    .plant-right{
+        width: 12.5%;
+        bottom: -0.5rem;
+    }
+    .nerd{
+        width: 17.5%;
+        bottom: 14.5rem;
+    }
+}
 @media(max-width: 2560px) and (max-height: 1140px){
     .wall-left, .wall-right {
         width: 20%;
@@ -221,7 +283,48 @@
         bottom: 13.5rem;
     }
 }
-
+@media(max-width: 1900px) and (max-height: 1200px) {
+    .building-center {
+        width: 55%;
+        top: 10.5rem;
+    }
+    .count-down-card{
+        width: 230px;
+        height: 290px;
+        border-width: 0.5rem;
+    }
+    .count-down-text-card{
+        width: 230px;
+        font-size: 2rem;
+    }
+    .sun{
+        scale: 0.9;
+        bottom: -36.5rem;
+    }
+    .chiken-yuca{
+        width: 15%;
+        bottom: 17.5rem;
+        left: 2rem;
+    }
+    .left-yuca{
+        width: 25%;
+        bottom: -3.25rem;
+        left: -4rem;
+    }
+    .gladiator{
+        width: 20%;
+        bottom: -6.5rem;
+        right: 3rem;
+    }
+    .plant-right{
+        width: 15%;
+        bottom: -0.5rem;
+    }
+    .nerd{
+        width: 17.5%;
+        bottom: 13.5rem;
+    }
+}
 @media(max-width: 1728px) and (max-height: 1117px) {
     .building-center {
         width: 55%;

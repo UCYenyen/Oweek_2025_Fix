@@ -27,12 +27,12 @@ export default function Rules() {
         <img src="/elements/section/sun-rules.svg" className="sun-rules w-full absolute -bottom-1/2" alt="" />
         <img
           src="/elements/section/pillar-left.svg"
-          className="wall-left w-[20%] absolute left-0 -top-2"
+          className="pillar-left w-[20%] absolute left-0 -top-2"
           alt=""
         />
         <img
           src="/elements/section/pillar-right.svg"
-          className="wall-right w-[20%] absolute right-0 -top-2"
+          className="pillar-right w-[20%] absolute right-0 -top-2"
           alt=""
         />
 

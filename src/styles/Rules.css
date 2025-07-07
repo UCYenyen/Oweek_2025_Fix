@@ -24,7 +24,7 @@
         width: 45%;
         margin-top: 2%;
     }
-    .sun{
+    .sun-rules{
         bottom: -75%;
     }
     .rules-card{
@@ -54,11 +54,14 @@
         width: 40%;
         margin-top: 2%;
     }
-    .sun{
+    .sun-rules{
         bottom: -75%;
     }
 }
 @media(max-width: 1920px) and (max-height: 1080px) {
+    .sun-rules{
+        bottom: -25%;
+    }
     .rules-logo{
         width: 40%;
         margin-top: 2.5%;
@@ -110,7 +113,7 @@
     }
 }
 @media(max-width: 1512px) and (max-height: 982px){
-    .sun{
+    .sun-rules{
         bottom: -30%;
     }
     .rules-logo{
@@ -149,7 +152,7 @@
         height: 4rem;
         max-width: 40rem;
     }
-    .sun{
+    .sun-rules{
         bottom: -20%;
     }
     .text{
@@ -182,7 +185,7 @@
         height: 4rem;
         max-width: 40rem;
     }
-    .sun{
+    .sun-rules{
         bottom: -20%;
     }
     .text{
@@ -204,7 +207,7 @@
         width: 40%;
         margin-top: -4%;
     }
-    .sun{
+    .sun-rules{
         bottom: -15%;
     }
     .rules-card{
@@ -248,7 +251,7 @@
         width: 32.5%;
         right: -9rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 1.5;
         bottom: 0%;
     }
@@ -290,7 +293,7 @@
         min-height: 35rem;
         max-height: 35rem;
     }
-    .sun{
+    .sun-rules{
         bottom: -20%;
     }
     .dropdown{
@@ -330,7 +333,7 @@
         width: 33%;
         right: -10.5rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 1.5;
         bottom: 0%;
     }
@@ -371,7 +374,7 @@
         width: 37.5%;
         right: -10.5rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 1.5;
         bottom: 0%;
     }
@@ -412,7 +415,7 @@
         width: 37.5%;
         right: -10.5rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 1.5;
         bottom: 0%;
     }
@@ -453,7 +456,7 @@
         width: 40%;
         right: -10.5rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 1.5;
         bottom: 0%;
     }
@@ -495,7 +498,7 @@
         width: 50%;
         right: -10.5rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 1.5;
         bottom: 0%;
     }
@@ -537,7 +540,7 @@
         width: 55%;
         right: -9rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 1.5;
         bottom: 0%;
     }
@@ -580,7 +583,7 @@
         width: 54.5%;
         right: -9rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 1.5;
         bottom: 0%;
     }
@@ -621,7 +624,7 @@
         width: 65%;
         right: -10rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 2;
         bottom: 0%;
     }
@@ -663,7 +666,7 @@
         width: 65%;
         right: -10rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 2;
         bottom: 0%;
     }
@@ -705,7 +708,7 @@
         width: 70%;
         right: -10rem;
     }   
-    .sun{
+    .sun-rules{
         scale: 2;
         bottom: 0%;
     }

@@ -24,7 +24,7 @@ export default function Rules() {
   return (
     <div className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")]'>
       <div className="relative w-screen flex items-center justify-center">
-        <img src="/elements/section/sun-rules.svg" className="sun w-full absolute -bottom-1/2" alt="" />
+        <img src="/elements/section/sun-rules.svg" className="sun-rules w-full absolute -bottom-1/2" alt="" />
         <img
           src="/elements/section/pillar-left.svg"
           className="wall-left w-[20%] absolute left-0 -top-2"
@@ -42,13 +42,13 @@ export default function Rules() {
           {/* Custom Dropdown */}
           <div className="dropdown w-[80%] max-w-3xl mt-8 relative" ref={dropdownRef}>
             <button
-              className="w-full h-full bg-[#A2BFE6] border-4 border-[#F7E7B6] rounded-full px-8 py-2 text-white text-2xl font-serif mb-4 flex justify-between items-center transition-all duration-300"
+              className="w-full overflow-hidden h-full bg-[#A2BFE6] border-4 border-[#F7E7B6] rounded-full px-8 text-white text-2xl font-serif flex justify-between items-center transition-all duration-300"
               onClick={() => setOpen((v) => !v)}
               type="button"
             >
-              <span className="font-roboto text text-center w-full">
+              <p className="font-roboto text text-center w-[100rem] overflow-hidden">
                 {selectedData?.pasal} ({selectedData?.category})
-              </span>
+              </p>
               <svg
                 className={`ml-2 w-6 h-6 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
                 fill="none"
@@ -85,9 +85,9 @@ export default function Rules() {
 
           {/* Rules Card */}
           <div className="rules-card bg-blend-screen rounded-3xl w-[80%] min-h-[35rem] p-4 flex items-start justify-center">
-            <div className="font-roboto text-description text-[#AB6528] text-start text-2xl max-w-[60rem] max-h-[30rem] overflow-auto w-full">
+            <div className="font-roboto text-description text-[#AB6528] text-start text-2xl max-h-[30rem] p-4 overflow-auto w-full">
               {selectedData?.description.some((desc) => desc.heading) ? (
-                <ol className="list-decimal ml-6">
+                <ol className="list-decimal ml-4 sm:ml-10 ">
                   {selectedData.description.map((desc, idx) =>
                     desc.heading ? (
                       <li key={`${selectedData.id}-heading-${idx}`}>

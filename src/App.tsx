@@ -4,6 +4,7 @@ import Countdown from "./components/countdown";
 import { useHomeAnimations } from "./hooks/useHomeAnimation";
 
 function App() {
+  // 
   const {
     leftYucaRef,
     chikenYucaRef,

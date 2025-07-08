@@ -8,18 +8,18 @@ export default function About() {
         <div className="relative w-screen h-screen">
           <img
             src="/elements/about/pillar-left.svg"
-            className="w-[10%] h-full absolute left-0 -top-0"
+            className="w-auto h-full absolute -left-[0vh] -top-0"
             alt="pillar-left"
           />
           <img
             src="/elements/about/pillar-right.svg"
-            className="w-[10%] h-full absolute right-0 -top-0"
+            className="w-auto h-full absolute right-[0vh] -top-0"
             alt="pillar-right"
           />
 
           <img
-            src="/elements/about/sun.svg"
-            className="absolute top-[20vh] w-[90%] left-1/2 -translate-x-1/2"
+            src="/elements/about/suntop.svg"
+            className="absolute -bottom-[4vh] w-full h-auto left-1/2 -translate-x-1/2"
             alt="sun"
           />
           <img
@@ -38,7 +38,7 @@ export default function About() {
               <h1 className="font-lettertype text-[17vh] text-center bg-gradient-to-b from-[#3F61AD] to-[#75ABDC] bg-clip-text text-transparent">
                 ABOUT
               </h1>
-              {/* <p className="text-center text-[1.5rem] font-roboto text-[#3F61AD] w-[80%] mt-4">
+              <p className="text-center text-[2vh] text-[#AB6528] font-roboto w-[45%] mt-3 px-4">
                 Orientation Week Universitas Ciputra Surabaya merupakan wadah
                 untuk mempersiapkan dan mendorong mahasiswa menjadi pribadi yang
                 mandiri, pekerja keras, bertanggungjawab, menghargai, disiplin,
@@ -48,7 +48,7 @@ export default function About() {
                 dan Entrepreneurship (IPE) serta 7 Entrepreneurial Competencies
                 yang ditanamkan dengan integrasi dalam kegiatan pembelajaran
                 yang diterima oleh mahasiswa-mahasiswi.
-              </p> */}
+              </p>
             </div>
           </div>
         </div>

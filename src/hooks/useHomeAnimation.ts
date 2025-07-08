@@ -33,65 +33,65 @@ export const useHomeAnimations = () => {
       });
 
       gsap.set(sunRef.current, {
-        opacity: 1,
+        autoAlpha: 1,
         y: 300,
         scale: 0.8
       });
 
       gsap.set(luminateTitleRef.current, {
-        opacity: 1,
+        autoAlpha: 1,
         y: -150,
         scale: 1
       });
 
       gsap.set([leftYucaRef.current, chikenYucaRef.current], {
         x: -300,
-        opacity: 0,
+        autoAlpha: 0,
         scale: 1
       });
       
       gsap.set([gladiatorRef.current, nerdRef.current], {
         x: 300,
-        opacity: 0,
+        autoAlpha: 0,
         scale: 0.8
       });
 
       gsap.set(cloudRef.current, {
-        opacity: 0,
+        autoAlpha: 0,
         scale: 0.5
       });
 
       masterTimeline
         .to(leftYucaRef.current, {
           x: 0,
-          opacity: 1,
+          autoAlpha: 1,
           scale: 1,
           duration: 1.8,
           ease: "power2.out"
         })
         .to(chikenYucaRef.current, {
           x: 0,
-          opacity: 1,
+          autoAlpha: 1,
           scale: 1,
           duration: 1.6,
           ease: "power2.out"
         }, "<")
         .to(gladiatorRef.current, {
           x: 0,
-          opacity: 1,
+          autoAlpha: 1,
           scale: 1,
           duration: 1.8,
           ease: "power2.out"
         }, "<")
         .to(nerdRef.current, {
           x: 0,
-          opacity: 1,
+          autoAlpha: 1,
           scale: 1,
           duration: 1.6,
           ease: "power2.out"
         }, "<")
         .to(cloudRef.current, {
-          opacity: 1,
+          autoAlpha: 1,
           scale: 1,
           duration: 1.5,
           ease: "power2.out"

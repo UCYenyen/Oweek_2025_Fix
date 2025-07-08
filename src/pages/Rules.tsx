@@ -50,7 +50,7 @@ export default function Rules() {
                 {selectedData?.pasal} ({selectedData?.category})
               </p>
               <svg
-                className={`ml-2 w-8 h-8 sm:w-10 sm:h-10 transition-transform duration-300 flex-shrink-0 ${open ? "rotate-180" : ""}`}
+                className={`ml-2 w-6 h-6 sm:w-8 sm:h-8 transition-transform duration-300 flex-shrink-0 ${open ? "rotate-180" : ""}`}
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
@@ -84,8 +84,8 @@ export default function Rules() {
           </div>
 
           {/* Rules Card */}
-          <div className="rules-card bg-blend-screen rounded-3xl w-[80%] min-h-[35rem] p-4 flex items-start justify-center">
-            <div className="font-roboto text-description text-[#AB6528] text-start text-2xl max-h-[30rem] p-4 overflow-auto w-full">
+          <div className="rules-card bg-blend-screen rounded-3xl w-[80%] min-h-[35rem] p-4 flex items-start justify-center overflow-hidden">
+            <div className="font-roboto text-description text-[#AB6528] text-start text-2xl max-h-[30rem] p-4 overflow-auto scrollbar-thin scrollbar-thumb-[#8ea7d6] scrollbar-track-[#A2BFE6] scrollbar-corner-[#A2BFE6] hover:scrollbar-thumb-[#7a9ace] w-full">
               {selectedData?.description.some((desc) => desc.heading) ? (
                 <ol className="list-decimal ml-4 sm:ml-10 ">
                   {selectedData.description.map((desc, idx) =>

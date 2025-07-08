@@ -1,3 +1,28 @@
+/* Add this to your Rules.css file */
+.text-description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-description::-webkit-scrollbar-track {
+  background: #A2BFE6;
+  border-radius: 4px;
+}
+
+.text-description::-webkit-scrollbar-thumb {
+  background: #8ea7d6;
+  border-radius: 4px;
+}
+
+.text-description::-webkit-scrollbar-thumb:hover {
+  background: #7a9ace;
+}
+
+/* For Firefox */
+.text-description {
+  scrollbar-width: thin;
+  scrollbar-color: #8ea7d6 #A2BFE6;
+}
+
 @media(max-width: 3840px) and (max-height: 2160px) {
     .rules-logo{
         width: 50%;
@@ -625,11 +650,11 @@
         padding-bottom: 16px;
     }
     .pillar-left{
-        width: 55%;
+        width: 57.5%;
         left: -9rem;
     }
     .pillar-right{
-        width: 55%;
+        width: 57.5%;
         right: -9rem;
     }   
     .sun-rules{

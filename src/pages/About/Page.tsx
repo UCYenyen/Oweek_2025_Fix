@@ -1,28 +1,65 @@
 import "./styles.css";
 import Mascots from "../../components/mascots";
+import { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
+
+export const useAboutPageAnimation = () => {
+  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+  const pillarLeftRef = useRef<HTMLImageElement>(null);
+  const pillarRightRef = useRef<HTMLImageElement>(null);
+  const sunTopRef = useRef<HTMLImageElement>(null);
+  const starCircleRef = useRef<HTMLImageElement>(null);
+  const aboutContentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      defaults: { ease: "power3.out", duration: 1.2 },
+      onComplete: () => setIsAnimationComplete(true), // Signal completion
+    });
+
+    gsap.set([pillarLeftRef.current, pillarRightRef.current], { opacity: 0, y: -50 });
+    // Change the sun's initial state to be below the screen and invisible
+    gsap.set([sunTopRef.current, starCircleRef.current], { opacity: 0, y: 100 });
+    gsap.set(aboutContentRef.current, { opacity: 0, y: 50 });
+
+    tl.to([pillarLeftRef.current, pillarRightRef.current], { opacity: 1, y: 0, stagger: 0.2 })
+      // Animate the sun to slide up into its final position
+      .to([sunTopRef.current, starCircleRef.current], { opacity: 1, y: 0, stagger: 0.2 }, "-=1")
+      .to(aboutContentRef.current, { opacity: 1, y: 0 }, "-=0.8");
+
+  }, []);
+
+  return { pillarLeftRef, pillarRightRef, sunTopRef, starCircleRef, aboutContentRef, isAnimationComplete };
+};
 
 export default function About() {
+  const { pillarLeftRef, pillarRightRef, sunTopRef, starCircleRef, aboutContentRef } = useAboutPageAnimation();
+
   return (
     <>
       <div className="relative w-screen min-h-screen bg-[#B2D5F1] bg-cover bg-[url('/elements/real-background.svg')]">
         <div className="relative w-screen h-screen">
           <img
+            ref={pillarLeftRef}
             src="/elements/about/pillar-left.svg"
             className="w-auto h-full absolute -left-[0vh] -top-0"
             alt="pillar-left"
           />
           <img
+            ref={pillarRightRef}
             src="/elements/about/pillar-right.svg"
             className="w-auto h-full absolute right-[0vh] -top-0"
             alt="pillar-right"
           />
 
           <img
+            ref={sunTopRef}
             src="/elements/about/suntop.svg"
             className="absolute -bottom-[4vh] w-full h-auto left-1/2 -translate-x-1/2"
             alt="sun"
           />
           <img
+            ref={starCircleRef}
             src="/elements/about/star-circle.svg"
             className="absolute top-[5vh] w-[85%] left-1/2 -translate-x-1/2"
             alt="star-circle"
@@ -34,7 +71,10 @@ export default function About() {
               className="w-[60%] h-auto absolute left-1/2 -translate-x-1/2"
               alt="about-bg"
             />
-            <div className="absolute top-[24vh] left-1/2 -translate-x-1/2 w-full flex flex-col items-center z-20">
+            <div
+              ref={aboutContentRef}
+              className="absolute top-[24vh] left-1/2 -translate-x-1/2 w-full flex flex-col items-center z-20"
+            >
               <h1 className="font-lettertype text-[17vh] text-center bg-gradient-to-b from-[#3F61AD] to-[#75ABDC] bg-clip-text text-transparent">
                 ABOUT
               </h1>

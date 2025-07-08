@@ -50,7 +50,7 @@ export default function Rules() {
                 {selectedData?.pasal} ({selectedData?.category})
               </p>
               <svg
-                className={`ml-2 w-6 h-6 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+                className={`ml-2 w-8 h-8 sm:w-10 sm:h-10 transition-transform duration-300 flex-shrink-0 ${open ? "rotate-180" : ""}`}
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}

@@ -55,7 +55,7 @@ export default function Countdown() {
           </div>
           <div className="count-down-text-card bg-blend-screen rounded-full w-[170px] 3xl:w-[240px]">
             <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center">
-              Days
+              DAYS
             </h1>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function Countdown() {
           </div>
           <div className="count-down-text-card bg-blend-screen rounded-full w-[170px] 3xl:w-[240px]">
             <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center">
-              Hours
+              HOURS
             </h1>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function Countdown() {
           </div>
           <div className="count-down-text-card bg-blend-screen rounded-full w-[170px] 3xl:w-[240px]">
             <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center">
-              Minutes
+              MINUTES
             </h1>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Countdown() {
           </div>
           <div className="count-down-text-card bg-blend-screen rounded-full w-[170px] 3xl:w-[240px]">
             <h1 className="bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent font-bold text-center">
-              Seconds
+              SECONDS
             </h1>
           </div>
         </div>

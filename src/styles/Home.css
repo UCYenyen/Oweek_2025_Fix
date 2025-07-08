@@ -3,18 +3,23 @@
         width: 55%;
         top: 18.5rem;
     }
+    .countdown-number{
+        font-size: 12rem;
+    }
     .count-down-card{
         width: 410px;
-        height: 550px;
+        height: 530px;
         border-width: 0.5rem;
+        border-radius: 5rem;
     }
     .count-down-text-card{
         width: 410px;
         font-size: 4rem;
     }
     .sun{
+        width: 85%;
         scale: 1;
-        bottom: -85rem;
+        bottom: -125rem;
     }
     .stars{
         scale: 1;
@@ -22,9 +27,6 @@
     }
     .welcoming-logo{
         width: 50%;
-    }
-    .countdown-number{
-        font-size: 8rem;
     }
     .cloud{
         width: 25%;
@@ -54,62 +56,6 @@
         bottom: 25.5rem;
     }
 }
-@media(max-width: 2560px) and (max-height:1600px){
-    .building-center {
-        width: 55%;
-        top: 15rem;
-    }
-    .count-down-card{
-        width: 350px;
-        height: 450px;
-        border-width: 0.5rem;
-    }
-    .count-down-text-card{
-        width: 350px;
-        font-size: 3rem;
-    }
-    .sun{
-        scale: 0.9;
-        bottom: -52.5rem;
-    }
-    .stars{
-        scale: 0.9;
-        bottom: -77.5rem;
-    }
-    .welcoming-logo{
-        width: 45%;
-    }
-    .countdown-number{
-        font-size: 7rem;
-    }
-    .chiken-yuca{
-        width: 15%;
-        bottom: 22rem;
-        left:1rem;
-    }
-    .left-yuca{
-        width: 25%;
-        bottom: -4.5rem;
-        left: -7rem;
-    }
-    .cloud{
-        width: 25%;
-        bottom: -20rem;
-    }
-    .gladiator{
-        width: 20%;
-        bottom: -8.5rem;
-        right: 3rem;
-    }
-    .plant-right{
-        width: 15%;
-        bottom: -0.5rem;
-    }
-    .nerd{
-        width: 20%;
-        bottom: 17.5rem;
-    }
-}
 @media(max-width: 2850px) and (max-height: 1800px){
     .wall-left, .wall-right {
         width: 20%;
@@ -121,28 +67,28 @@
         right: 0;
     }
     .building-center {
-        width: 55%;
+        width: 50%;
         top: 10.5rem;
     }
     .welcoming-logo{
         width: 40%;
     }
     .countdown-number{
-        font-size: 7rem;
+        font-size: 10rem;
     }
     .count-down-card{
-        width: 320px;
-        height: 390px;
+        width: 300px;
+        height: 420px;
         border-width: 0.5rem;
-        border-radius: 2rem;
+        border-radius: 4rem;
     }
     .count-down-text-card{
-        width: 320px;
+        width: 300px;
         font-size: 3rem;
     }
     .sun{
-        scale: 0.75;
-        bottom: -55.5rem;
+         width: 80%;
+        bottom: -85.5rem;
     }
     .stars{
         scale: 0.85;
@@ -172,6 +118,62 @@
         bottom: 14.5rem;
     }
 }
+@media(max-width: 2560px) and (max-height:1600px){
+    .building-center {
+        width: 55%;
+        top: 15rem;
+    }
+    .countdown-number{
+        font-size: 10rem;
+    }
+    .count-down-card{
+        width: 300px;
+        height: 420px;
+        border-width: 0.5rem;
+    }
+    .count-down-text-card{
+        width: 300px;
+        font-size: 3rem;
+    }
+    .sun{
+        width: 80%;
+        bottom: -72.5rem;
+    }
+    .stars{
+        scale: 0.9;
+        bottom: -77.5rem;
+    }
+    .welcoming-logo{
+        width: 45%;
+    }
+    .chiken-yuca{
+        width: 15%;
+        bottom: 22rem;
+        left:1rem;
+    }
+    .left-yuca{
+        width: 25%;
+        bottom: -4.5rem;
+        left: -7rem;
+    }
+    .cloud{
+        width: 25%;
+        bottom: -20rem;
+    }
+    .gladiator{
+        width: 20%;
+        bottom: -8.5rem;
+        right: 3rem;
+    }
+    .plant-right{
+        width: 15%;
+        bottom: -0.5rem;
+    }
+    .nerd{
+        width: 20%;
+        bottom: 17.5rem;
+    }
+}
 @media(max-width: 2560px) and (max-height: 1140px){
     .wall-left, .wall-right {
         width: 20%;
@@ -190,21 +192,20 @@
         width: 40%;
     }
     .countdown-number{
-        font-size: 6rem;
+        font-size: 10rem;
     }
     .count-down-card{
         width: 300px;
-        height: 370px;
+        height: 420px;
         border-width: 0.5rem;
-        border-radius: 2rem;
+        border-radius: 4rem;
     }
     .count-down-text-card{
         width: 300px;
         font-size: 2rem;
     }
     .sun{
-        scale: 0.9;
-        bottom: -55.5rem;
+        bottom: -75.5rem;
     }
     .stars{
         scale: 0.85;
@@ -241,8 +242,12 @@
     }
     .count-down-card{
         width: 230px;
-        height: 290px;
+        height: 320px;
         border-width: 0.5rem;
+        border-radius: 3rem;
+    }
+    .countdown-number{
+        font-size: 7rem;
     }
     .count-down-text-card{
         width: 230px;
@@ -250,7 +255,7 @@
     }
     .sun{
         scale: 0.8;
-        bottom: -40.5rem;
+        bottom: -58.5rem;
     }
     .stars{
         scale: 0.8;
@@ -330,18 +335,22 @@
         width: 55%;
         top: 10.5rem;
     }
+    .countdown-number{
+        font-size: 6rem;
+    }
     .count-down-card{
-        width: 230px;
-        height: 290px;
+        width: 210px;
+        height: 300px;
         border-width: 0.5rem;
+        border-radius: 3rem;
     }
     .count-down-text-card{
-        width: 230px;
+        width: 210px;
         font-size: 2rem;
     }
     .sun{
         scale: 0.9;
-        bottom: -36.5rem;
+        bottom: -51.5rem;
     }
     .chiken-yuca{
         width: 15%;
@@ -373,12 +382,16 @@
         top: 10.5rem;
     }
     .sun{
-        bottom: -30.5rem;
+        bottom: -45.5rem;
     }
     .count-down-card{
         width: 180px;
-        height: 250px;
-        border-width: 0.3rem;
+        height: 240px;
+        border-width: 0.4rem;
+        border-radius: 2.5rem;
+    }
+    .countdown-number{
+        font-size: 6rem;
     }
     .count-down-text-card{
        width: 180px;
@@ -413,23 +426,23 @@
         top: 10.5rem;
     }
     .count-down-card{
-        width: 180px;
-        height: 250px;
-        border-width: 0.3rem;
+        width: 160px;
+        height: 230px;
+        border-width: 0.4rem;
+        border-radius: 1.5rem;
+    }
+    .countdown-number{
+        font-size: 6rem;
     }
     .count-down-text-card{
-       width: 180px;
-        font-size: 2rem;
+        width: 160px;
+        font-size: 1.5rem;
     }
     .sun{
-        scale: 0.8;
-        bottom: -30.5rem;
+        bottom: -40.5rem;
     }
     .welcoming-logo{
         width: 50%;
-    }
-    .countdown-number{
-        font-size: 4rem;
     }
     .chiken-yuca{
         width: 15%;
@@ -481,9 +494,9 @@
     }
     .count-down-card{
         width: 165px;
-        height: 240px;
-        border-width: 0.25rem;
-        border-radius: 1.5rem;
+        height: 220px;
+        border-width: 0.4rem;
+        border-radius: 2rem;
     }
     .count-down-text-card{
         width: 165px;
@@ -491,8 +504,7 @@
     }
     .sun
     {
-        scale: 0.9;
-        bottom: -28.5rem;
+        bottom: -41.5rem;
     }
 }
 @media(max-width: 1280px) and (max-height: 800px) {
@@ -501,8 +513,7 @@
         top: 8.5rem;
     }
     .sun{
-        scale: 0.9;
-        bottom: -25rem;
+        bottom: -38.5rem;
     }
     .chiken-yuca{
         width: 15%;
@@ -519,6 +530,19 @@
         bottom: -4rem;
         right: 4rem;
     }
+    .countdown-number{
+        font-size: 5rem;
+    }
+    .count-down-card{
+        width: 155px;
+        height: 220px;
+        border-width: 0.4rem;
+        border-radius: 2rem;
+    }
+    .count-down-text-card{
+        width: 155px;
+        font-size: 1.5rem;
+    }
 }
 
 @media(max-width: 1180px) and (max-height: 820px){
@@ -527,13 +551,14 @@
         top: 10.5rem;
     }
     .count-down-card{
-        width: 150px;
-        height: 220px;
-        border-width: 0.3rem;
+        width: 140px;
+        height: 200px;
+        border-width: 0.4rem;
+        border-radius: 1rem;
     }
     .count-down-text-card{
-       width: 150px;
-        font-size: 2rem;
+        width: 140px;
+        font-size: 1.25rem;
     }
     .sun{
         scale: 0.9;
@@ -543,7 +568,7 @@
         width: 50%;
     }
     .countdown-number{
-        font-size: 4rem;
+        font-size: 5rem;
     }
     .chiken-yuca{
         width: 15%;
@@ -569,27 +594,87 @@
 }
 @media(max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
     .building-center {
-        width: 55%;
-        top: 10.5rem;
+        width: 75%;
+        top: auto;
+        bottom: 0;
+    }
+    .sun{
+        z-index: 0;
+        width: 100%;
+        bottom: -25rem;
+    }
+    .welcoming-logo{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        width: 75%;
+    }
+    .countdown-number{
+        font-size: 3rem;
+    }
+    .chiken-yuca{
+        z-index: 2;
+        width: 25%;
+        bottom: 14.5rem;
+        left: 2.5rem;
+    }
+    .left-yuca{
+        z-index: 3;
+        width: 40%;
+        bottom: -3rem;
+        left: -2.5rem;
+    }
+    .gladiator{
+        width: 35%;
+        bottom: -6rem;
+        z-index: 3;
+    }
+    .plant-right{
+        width: 25%;
+        bottom: -0.5rem;
+        right: 2rem;
+        z-index: 3;
+    }
+    .nerd{
+        width: 30%;
+        bottom: 11.5rem;
+        right: 2rem;
+        z-index: 2;
+    }
+    .cloud{
+        z-index:2;
+        width: 50%;
+        bottom: -15rem;
+        left: -2.5rem;
+    }
+    .wall-left{
+        width: 52.5%;
+        left: -18.5rem;
+        z-index: 1;
+    }
+    .wall-right{
+        width: 52.5%;
+        right: -18.5rem;
+        z-index: 1;
+    }
+    .countdown{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.5rem;
+        padding-bottom: 32.5rem;
+    }
+    .countdown-number{
+        font-size: 6rem;
+    }
+    .count-down-text-card{
+        font-size: 1.5rem;
+        width: 180px;   
+        border-width: 0.2rem;
+        border-radius: .5rem;
     }
     .count-down-card{
         width: 180px;
-        height: 250px;
+        height: 240px;
         border-width: 0.3rem;
-    }
-    .count-down-text-card{
-       width: 180px;
-        font-size: 2rem;
-    }
-    .sun{
-        scale: 0.8;
-        bottom: -30.5rem;
-    }
-    .welcoming-logo{
-        width: 35%;
-    }
-    .countdown-number{
-        font-size: 4rem;
+        border-radius: 1.25rem;
     }
 }
 
@@ -651,7 +736,7 @@
     }
     .count-down-text-card{
          width: 120px;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .sun{
         scale: 0.9;
@@ -661,7 +746,7 @@
         width: 50%;
     }
     .countdown-number{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .chiken-yuca{
         width: 15%;
@@ -683,6 +768,176 @@
     .nerd{
         width: 20%;
         bottom: 6.5rem;
+    }
+}
+@media(max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+    .building-center {
+        width: 75%;
+        top: auto;
+        bottom: 0;
+    }
+    .sun{
+        z-index: 0;
+        width: 95%;
+        bottom: -17rem;
+    }
+    .welcoming-logo{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        width: 75%;
+    }
+    .countdown-number{
+        font-size: 3rem;
+    }
+    .chiken-yuca{
+        z-index: 2;
+        width: 25%;
+        bottom: 11.5rem;
+        left: 2.5rem;
+    }
+    .left-yuca{
+        z-index: 3;
+        width: 40%;
+        bottom: -3rem;
+        left: -2.5rem;
+    }
+    .gladiator{
+        width: 35%;
+        bottom: -5rem;
+        z-index: 3;
+    }
+    .plant-right{
+        width: 25%;
+        bottom: -0.5rem;
+        right: 2rem;
+        z-index: 3;
+    }
+    .nerd{
+        width: 30%;
+        bottom: 9.5rem;
+        right: 2rem;
+        z-index: 2;
+    }
+    .cloud{
+        z-index:2;
+        width: 50%;
+        bottom: -12rem;
+        left: -2.5rem;
+    }
+    .wall-left{
+        width: 55.5%;
+        left: -18.5rem;
+        z-index: 1;
+    }
+    .wall-right{
+        width: 55.5%;
+        right: -18.5rem;
+        z-index: 1;
+    }
+    .countdown{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.5rem;
+        padding-bottom: 22.5rem;
+    }
+    .countdown-number{
+        font-size: 4.5rem;
+    }
+    .count-down-text-card{
+        font-size: 1.25rem;
+        width: 160px;   
+        border-width: 0.2rem;
+        border-radius: .5rem;
+    }
+    .count-down-card{
+        width: 160px;
+        height: 220px;
+        border-width: 0.3rem;
+        border-radius: 1.25rem;
+    }
+}
+@media(max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
+     .building-center {
+        width: 75%;
+        top: auto;
+        bottom: 0;
+    }
+    .sun{
+        z-index: 0;
+        width: 95%;
+        bottom: -17rem;
+    }
+    .welcoming-logo{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        width: 75%;
+    }
+    .countdown-number{
+        font-size: 3rem;
+    }
+    .chiken-yuca{
+        z-index: 2;
+        width: 25%;
+        bottom: 11.5rem;
+        left: 2.5rem;
+    }
+    .left-yuca{
+        z-index: 3;
+        width: 40%;
+        bottom: -3rem;
+        left: -2.5rem;
+    }
+    .gladiator{
+        width: 35%;
+        bottom: -5rem;
+        z-index: 3;
+    }
+    .plant-right{
+        width: 25%;
+        bottom: -0.5rem;
+        right: 2rem;
+        z-index: 3;
+    }
+    .nerd{
+        width: 30%;
+        bottom: 9.5rem;
+        right: 2rem;
+        z-index: 2;
+    }
+    .cloud{
+        z-index:2;
+        width: 50%;
+        bottom: -12rem;
+        left: -2.5rem;
+    }
+    .wall-left{
+        width: 55.5%;
+        left: -18.5rem;
+        z-index: 1;
+    }
+    .wall-right{
+        width: 55.5%;
+        right: -18.5rem;
+        z-index: 1;
+    }
+    .countdown{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.5rem;
+        padding-bottom: 22.5rem;
+    }
+    .countdown-number{
+        font-size: 4.5rem;
+    }
+    .count-down-text-card{
+        font-size: 1.25rem;
+        width: 160px;   
+        border-width: 0.2rem;
+        border-radius: .5rem;
+    }
+    .count-down-card{
+        width: 160px;
+        height: 220px;
+        border-width: 0.3rem;
+        border-radius: 1.25rem;
     }
 }
 @media(max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -771,7 +1026,151 @@
         border-radius: .5rem;
     }
 }
-
+@media(max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
+    .building-center {
+        width: 55%;
+        top: 6.5rem;
+    }
+    .count-down-card{
+        width: 80px;
+        height: 120px;
+        border-width: 0.2rem;
+    }
+    .count-down-text-card{
+        width: 80px;
+        font-size: 1rem;
+        border-width: 0.2rem;
+        border-radius: 0.5rem;
+    }
+    .sun{
+        scale: 0.9;
+        bottom: -22.5rem;
+    }
+    .welcoming-logo{
+        width: 50%;
+    }
+    .countdown-number{
+        font-size: 3rem;
+    }
+    .chiken-yuca{
+        width: 15%;
+        bottom: 6.25rem;
+    }
+    .left-yuca{
+        width: 25%;
+        bottom: -1.25rem;
+        left: -1.5rem;
+    }
+    .gladiator{
+        width: 20%;
+        bottom: -2.25rem;
+    }
+    .plant-right{
+        width: 15%;
+        bottom: -0.5rem;
+    }
+    .nerd{
+        width: 20%;
+        bottom: 4.5rem;
+    }
+    .cloud{
+        width: 30%;
+        bottom: -5rem;
+        left: -2.5rem;
+        z-index: 1;
+    }
+}
+@media(max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
+    .building-center {
+        width: 75%;
+        top: auto;
+        bottom: 0;
+    }
+    .count-down-card{
+        width: 120px;
+        height: 170px;
+        border-width: 0.3rem;
+    }
+    .count-down-text-card{
+        width: 120px;
+        font-size: 1.5rem;
+    }
+    .cloud{
+        z-index:2;
+        bottom: -8rem;
+        left: -2rem;
+    }
+    .sun{
+        z-index: 0;
+        bottom: -12rem;
+    }
+    .welcoming-logo{
+        margin-top: 20%;
+        width: 75%;
+    }
+    .countdown-number{
+        font-size: 3rem;
+    }
+    .chiken-yuca{
+        z-index: 2;
+        width: 25%;
+        left: 1rem;
+        bottom: 9rem;
+    }
+    .left-yuca{
+        z-index: 3;
+        width: 45%;
+        bottom: -1.75rem;
+        left: -2.5rem;
+    }
+    .gladiator{
+        width: 30%;
+        bottom: -2.5rem;
+        z-index: 3;
+    }
+    .plant-right{
+        width: 25%;
+        bottom: -0.5rem;
+        right: 2rem;
+        z-index: 3;
+    }
+    .nerd{
+        width: 30%;
+        bottom: 6rem;
+        right: 2rem;
+        z-index: 2;
+    }
+    .wall-left{
+        width: 62.5%;
+        left: -12.5rem;
+        z-index: 1;
+    }
+    .wall-right{
+        width: 62.5%;
+        right: -12.5rem;
+        z-index: 1;
+    }
+    .countdown{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.5rem;
+        padding-bottom: 17rem;
+    }
+    .countdown-number{
+        font-size: 3.5rem;
+    }
+    .count-down-text-card{
+        font-size: 1rem;
+        width: 110px;   
+        border-width: 0.2rem;
+        border-radius: .5rem;
+    }
+    .count-down-card{
+        width: 110px;
+        height: 150px;
+        border-width: 0.2rem;
+        border-radius: 1rem;
+    }
+}
 @media(max-width: 430px) and (max-height: 932px) and (orientation: portrait) {
     .building-center {
         width: 75%;
@@ -858,8 +1257,95 @@
         border-radius: .5rem;
     }
 }
-
-@media(max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
+@media(max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+    .building-center {
+        width: 77.5%;
+        top: auto;
+        bottom: 0;
+    }
+    .count-down-card{
+        width: 120px;
+        height: 170px;
+        border-width: 0.3rem;
+    }
+    .count-down-text-card{
+         width: 120px;
+        font-size: 1.5rem;
+    }
+    .sun{
+        z-index: 0;
+        scale: 2;
+        bottom: -3rem;
+    }
+    .welcoming-logo{
+        margin-top: 20%;
+        width: 85%;
+    }
+    .countdown-number{
+        font-size: 3rem;
+    }
+    .chiken-yuca{
+        z-index: 2;
+        width: 35%;
+        bottom: 7.5rem;
+        left: -0.1rem;
+    }
+    .left-yuca{
+        z-index: 3;
+        width: 55%;
+        bottom: -1.5rem;
+        left: -2.5rem;
+    }
+    .gladiator{
+        width: 40%;
+        right: 1.5rem;
+        bottom: -2.5rem;
+        z-index: 3;
+    }
+    .plant-right{
+        width: 30%;
+        bottom: -0.5rem;
+        right: 2rem;
+        z-index: 3;
+    }
+    .nerd{
+        width: 40%;
+        bottom: 4.5rem;
+        right: 1rem;
+        z-index: 2;
+    }
+    .wall-left{
+        width: 75%;
+        left: -11.5rem;
+        z-index: 1;
+    }
+    .wall-right{
+        width: 75%;
+        right: -11.5rem;
+        z-index: 1;
+    }
+    .countdown{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.5rem;
+        padding-bottom: 17rem;
+    }
+    .countdown-number{
+        font-size: 2.5rem;
+    }
+    .count-down-text-card{
+        font-size: 0.85rem;
+        width: 65px;   
+        border-width: 0.2rem;
+        border-radius: .5rem;
+    }
+    .count-down-card{
+        width: 65px;
+        height: 105px;
+        border-width: 0.2rem;
+        border-radius: .5rem;
+    }
+}
+@media(max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
     .building-center {
         width: 75%;
         top: auto;
@@ -916,13 +1402,13 @@
         z-index: 2;
     }
     .wall-left{
-        width: 80%;
-        left: -11.5rem;
+        width: 70%;
+        left: -9.5rem;
         z-index: 1;
     }
     .wall-right{
-        width: 80%;
-        right: -11.5rem;
+        width: 70%;
+        right: -9.5rem;
         z-index: 1;
     }
     .countdown{
@@ -941,6 +1427,84 @@
     }
     .count-down-card{
         width: 65px;
+        height: 105px;
+        border-width: 0.2rem;
+        border-radius: .5rem;
+    }
+}
+@media(max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
+    .building-center {
+        width: 75%;
+        top: auto;
+        bottom: 0;
+    }
+    .sun{
+        z-index: 0;
+        width: 100%;
+        bottom: -8rem;
+    }
+    .welcoming-logo{
+        margin-top: 20%;
+        width: 85%;
+    }
+    .countdown-number{
+        font-size: 3rem;
+    }
+    .chiken-yuca{
+        z-index: 2;
+        width: 35%;
+        bottom: 6.5rem;
+        left: -0.1rem;
+    }
+    .left-yuca{
+        z-index: 3;
+        width: 55%;
+        bottom: -1.5rem;
+        left: -2.5rem;
+    }
+    .gladiator{
+        width: 40%;
+        bottom: -2.1rem;
+        z-index: 3;
+    }
+    .plant-right{
+        width: 30%;
+        bottom: -0.5rem;
+        right: 2rem;
+        z-index: 3;
+    }
+    .nerd{
+        width: 40%;
+        bottom: 4rem;
+        right: 1rem;
+        z-index: 2;
+    }
+    .wall-left{
+        width: 80%;
+        left: -11.5rem;
+        z-index: 1;
+    }
+    .wall-right{
+        width: 80%;
+        right: -11.5rem;
+        z-index: 1;
+    }
+    .countdown{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.5rem;
+        padding-bottom: 17rem;
+    }
+    .countdown-number{
+        font-size: 2.5rem;
+    }
+    .count-down-text-card{
+        font-size: 0.75rem;
+        width: 70px;   
+        border-width: 0.2rem;
+        border-radius: .5rem;
+    }
+    .count-down-card{
+        width: 70px;
         height: 105px;
         border-width: 0.2rem;
         border-radius: .5rem;

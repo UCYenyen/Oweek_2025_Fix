@@ -76,7 +76,7 @@
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-blend-mode: screen;
-  opacity: 75%;
+  opacity: 95%;
 }
 .count-down-text-card{
     cursor: pointer;
@@ -88,7 +88,7 @@
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-blend-mode: screen;
-  opacity: 75%;
+  opacity: 95%;
 }
 .rules-card{
    cursor: pointer;

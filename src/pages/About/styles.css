@@ -13,11 +13,17 @@
 }
 
 @media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .about-main-content {
+      top: 0vh;
+    width: auto;
+    height: 37vh;
+    }
+
     .about-container .pillar-left,
     .about-container .pillar-right {
       /* Adjust the width and height for mobile */
       width: auto;
-      height: 40%;
+      height: 100%;
     }
 
   .about-container .about-bg {
@@ -47,9 +53,9 @@
 
   /* You can also add styles for the Mascots component here */
   .mascot-container {
-    position: relative;
-    width: 100vw;
-    height: 50%;
+    width: auto;
+    height: 40vh;
+    top: -0vh;
   }
 
   .mascot-pillar-container {
@@ -78,10 +84,10 @@
 
   .mascot-yucca-section {
     position: absolute;
-    top: 18vh;
+    top: 10vh; /* Move it up a bit */
     left: 50%;
     transform: translateX(-50%);
-    width: 65%;
+    width: 85%; /* Make it wider */
     z-index: 6;
   }
 
@@ -92,14 +98,14 @@
 
   .mascot-yucca-description {
     position: absolute;
-    top: 65%;
+    top: 60%; /* Adjust vertical position */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 1vh;
+    font-size: 1.5vh; /* Increase font size */
     color: #AB6528;
     font-family: 'Roboto', sans-serif;
-    width: 70%;
+    width: 90%; /* Make text container wider */
     padding-left: 1rem;
     padding-right: 1rem;
     z-index: 10;
@@ -107,10 +113,10 @@
 
   .mascot-chickens-section {
     position: absolute;
-    bottom: 0;
+    bottom: 5vh; /* Adjust position from bottom */
     left: 50%;
     transform: translateX(-50%);
-    width: 65%;
+    width: 85%; /* Make it wider */
     height: auto;
     z-index: 6;
   }
@@ -122,14 +128,14 @@
 
   .mascot-chickens-description {
     position: absolute;
-    top: 50%;
+    top: 55%; /* Adjust vertical position */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 0.8vh;
+    font-size: 1.5vh; /* Increase font size */
     color: #AB6528;
     font-family: 'Roboto', sans-serif;
-    width: 70%;
+    width: 90%; /* Make text container wider */
     padding-left: 1rem;
     padding-right: 1rem;
     z-index: 10;
@@ -149,7 +155,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    top: 10vh;
+    top: 0vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;

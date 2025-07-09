@@ -54,7 +54,7 @@
     }
     .rules-card{
         min-height: 40rem;
-        max-width: 60%;
+        max-width: 50%;
         margin-top: 2rem;
     }
     .dropdown{
@@ -99,11 +99,11 @@
         max-width: 80rem;
     }
     .text{
-        line-height: 3rem;
+        line-height: 3.5rem;
         font-size: 2.5rem;
     }
     .text-description{
-        line-height: 3.5rem;
+        line-height: 4rem;
         font-size: 2.5rem;
         max-width: 90rem;
         min-height: 55rem;
@@ -129,7 +129,7 @@
     }
     .rules-card{
         min-height: 35rem;
-        max-width: 70rem;
+        max-width: 60rem;
         margin-top: 2rem;
     }
     .dropdown{
@@ -256,6 +256,43 @@
         width: 25%;
     }
 }
+
+@media(max-width: 1368px) and (max-height: 912px) and (orientation: landscape){
+    .pillar-left{
+        width: 22.5%;
+        left: -2rem;
+    }
+    .pillar-right{
+        width: 22.5%;
+        right: -2rem;
+    }   
+    .rules-logo{
+        width: 40%;
+        margin-top: 2%;
+    }
+    .sun-rules{
+        bottom: -15%;
+    }
+    .rules-card{
+        max-width: 45rem;
+        min-height: 30rem;
+    }
+    .dropdown{
+        width: 80%;
+        height: 4rem;
+        max-width: 40rem;
+    }
+    .text{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .text-description{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        max-width: 60rem;
+        max-height: 30rem;
+    }
+}
 @media(max-width: 1366px) and (max-height: 1024px){
     .rules-logo{
         width: 40%;
@@ -319,7 +356,43 @@
         width: 22.5%;
     }
 }
+@media(max-width: 1280px) and (max-height: 853px) and (orientation: landscape){
+    .rules-logo{
+        width: 40%;
+        margin-top: 2%;
+    }
+    .sun-rules{
+        bottom: -15%;
+    }
+    .rules-card{
+        max-width: 50rem;
+        min-height: 36.5rem;
+    }
+    .dropdown{
+        width: 80%;
+        height: 4rem;
+        max-width: 40rem;
+    }
+    .text{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .text-description{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        max-width: 60rem;
+        max-height: 36.5rem;
+    }
+}
 @media(max-width: 1280px) and (max-height: 800px) {
+    .pillar-left{
+        width: 21%;
+        left: -2rem;
+    }
+    .pillar-right{
+        width: 21%;
+        right: -2rem;
+    }   
     .rules-logo{
         width: 40%;
         margin-top: -4%;
@@ -345,8 +418,41 @@
     }
 }
 
-@media(max-width: 1180px) and (max-height: 820px){
-    
+@media(max-width: 1180px) and (max-height: 820px) and (orientation: landscape){
+    .pillar-left{
+        width: 25.5%;
+        left: -2rem;
+    }
+    .pillar-right{
+        width: 25.5%;
+        right: -2rem;
+    }   
+    .rules-logo{
+        width: 40%;
+        margin-top: 2%;
+    }
+    .sun-rules{
+        bottom: -15%;
+    }
+    .rules-card{
+        max-width: 45rem;
+        min-height: 30rem;
+    }
+    .dropdown{
+        width: 80%;
+        height: 4rem;
+        max-width: 40rem;
+    }
+    .text{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .text-description{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        max-width: 60rem;
+        max-height: 30rem;
+    }
 }
 @media(max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
     .rules-logo{
@@ -378,7 +484,7 @@
         max-width: 35.5rem;
     }
     .text{
-        line-height: 2rem;
+        line-height: 2.5rem;
         font-size: 1.5rem;
     }
     .text-description{
@@ -390,19 +496,16 @@
     }
 }
 
-@media(max-width: 1024px) and (max-height: 768px) {
-   
-}
-@media(max-width: 1024px) and (max-height: 600px) {
-    .rules-logo{
+@media(max-width: 1024px) and (max-height: 768px) and (orientation: landscape){
+   .rules-logo{
         width: 40%;
     }
     .pillar-left{
-        width: 27.5%;
+        width: 28%;
         left: -2rem;
     }
     .pillar-right{
-        width: 27.5%;
+        width: 28%;
         right: -2rem;
     }
     .rules-card{
@@ -426,6 +529,117 @@
         line-height: 2.5rem;
         font-size: 1.5rem;
         max-width: 60rem;
+        min-height: 33rem;
+        max-height: 33rem;
+    }
+}
+@media(max-width: 1024px) and (max-height: 600px) and (orientation: landscape){
+    .rules-logo{
+        width: 40%;
+    }
+    .pillar-left{
+        width: 28%;
+        left: -2rem;
+    }
+    .pillar-right{
+        width: 28%;
+        right: -2rem;
+    }
+    .rules-card{
+        max-width: 35rem;
+        min-height: 35rem;
+        max-height: 35rem;
+    }
+    .sun-rules{
+        bottom: -20%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 4rem;
+        max-width: 30rem;
+    }
+    .text{
+        line-height: 2rem;
+        font-size: 1.25rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 1.25rem;
+        max-width: 60rem;
+        min-height: 33rem;
+        max-height: 33rem;
+    }
+}
+@media(max-width: 932px) and (max-height: 430px) and (orientation: landscape) {
+    .rules-logo{
+        width: 50%;
+    }
+    .pillar-left{
+        width: 30.5%;
+        left: -2rem;
+    }
+    .pillar-right{
+        width: 30.5%;
+        right: -2rem;
+    }
+    .rules-card{
+        max-width: 30rem;
+        min-height: 35em;
+        max-height: 35rem;
+    }
+    .sun-rules{
+        bottom: -20%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 28rem;
+    }
+    .text{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 1rem;
+        max-width: 40rem;
+        min-height: 33rem;
+        max-height: 33rem;
+    }
+}
+@media(max-width: 914px) and (max-height: 412px) and (orientation: landscape) {
+    .rules-logo{
+        width: 50%;
+    }
+    .pillar-left{
+        width: 32.5%;
+        left: -6rem;
+    }
+    .pillar-right{
+        width: 32.5%;
+        right: -6rem;
+    }
+    .rules-card{
+        max-width: 30rem;
+        min-height: 35em;
+        max-height: 35rem;
+    }
+    .sun-rules{
+        bottom: -20%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 28rem;
+    }
+    .text{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 1rem;
+        max-width: 40rem;
         min-height: 33rem;
         max-height: 33rem;
     }
@@ -471,6 +685,77 @@
         max-height: 35rem;
     }
 }
+@media(max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+    .pillar-left{
+        width: 32.5%;
+        left: -6rem;
+    }
+    .pillar-right{
+        width: 32.5%;
+        right: -6rem;
+    }
+    .rules-card{
+        max-width: 30rem;
+        min-height: 35em;
+        max-height: 35rem;
+    }
+    .sun-rules{
+        bottom: -20%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 28rem;
+    }
+    .text{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 1rem;
+        max-width: 40rem;
+        min-height: 33rem;
+        max-height: 33rem;
+    }
+}
+@media(max-width: 882px) and (max-height: 344px) and (orientation: landscape) {
+    .rules-logo{
+        width: 50%;
+    }
+    .pillar-left{
+        width: 32.5%;
+        left: -6rem;
+    }
+    .pillar-right{
+        width: 32.5%;
+        right: -6rem;
+    }
+    .rules-card{
+        max-width: 30rem;
+        min-height: 35em;
+        max-height: 35rem;
+    }
+    .sun-rules{
+        bottom: -20%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 28rem;
+    }
+    .text{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 1rem;
+        max-width: 40rem;
+        min-height: 33rem;
+        max-height: 33rem;
+    }
+}
 @media(max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
     .rules-logo{
         width: 60%;
@@ -512,6 +797,43 @@
         max-height: 35rem;
     }
 }
+@media(max-width: 844px) and (max-height: 390px) and (orientation: landscape) {
+    .rules-logo{
+        width: 50%;
+    }
+    .pillar-left{
+        width: 33%;
+        left: -6rem;
+    }
+    .pillar-right{
+        width: 33%;
+        right: -6rem;
+    }
+    .rules-card{
+        max-width: 30rem;
+        min-height: 35em;
+        max-height: 35rem;
+    }
+    .sun-rules{
+        bottom: -20%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 28rem;
+    }
+    .text{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 1rem;
+        max-width: 40rem;
+        min-height: 33rem;
+        max-height: 33rem;
+    }
+}
 @media(max-width: 820px) and (max-height: 1180px) and (orientation: portrait) {
     .rules-logo{
         width: 65%;
@@ -538,16 +860,16 @@
     }
     .dropdown{
         width: 80%;
-        height: 2.5rem;
+        height: 3rem;
         max-width: 30.5rem;
     }
     .text{
-        line-height: 1.2rem;
-        font-size: 1rem;
+        line-height: 2rem;
+        font-size: 1.5rem;
     }
     .text-description{
-        line-height: 1.5rem;
-        font-size: 1rem;
+        line-height: 2rem;
+        font-size: 1.5rem;
         max-width: 60rem;
         min-height: 35rem;
         max-height: 35rem;
@@ -579,19 +901,135 @@
     }
     .dropdown{
         width: 80%;
-        height: 2.5rem;
+        height: 3rem;
         max-width: 30.5rem;
     }
     .text{
-        line-height: 1.2rem;
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 1.5rem;
+        max-width: 60rem;
+        min-height: 35rem;
+        max-height: 35rem;
+    }
+}
+@media(max-width: 740px) and (max-height: 360px) and (orientation: landscape){
+    .rules-logo{
+        width: 65%;
+        margin-top: 2.5%;
+    }
+    .rules-card{
+        max-width: 30.5rem;
+        min-height: 37.5rem;
+        padding-bottom: 5rem;
+        border-width: 0.25rem;
+        padding-bottom: 16px;
+    }
+    .pillar-left{
+        width: 40%;
+        left: -10.5rem;
+    }
+    .pillar-right{
+        width: 40%;
+        right: -10.5rem;
+    }   
+    .sun-rules{
+        scale: 1.5;
+        bottom: 0%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 3rem;
+        max-width: 30.5rem;
+    }
+    .text{
+        line-height: 2rem;
+        font-size: 1.25rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 1.25rem;
+        max-width: 60rem;
+        min-height: 35rem;
+        max-height: 35rem;
+    }
+}
+@media(max-width: 720px) and (max-height: 540px) and (orientation: landscape){
+    .rules-logo{
+        width: 50%;
+    }
+    .pillar-left{
+        width: 37.5%;
+        left: -6rem;
+    }
+    .pillar-right{
+        width: 37.5%;
+        right: -6rem;
+    }
+    .rules-card{
+        max-width: 25rem;
+        min-height: 35em;
+        max-height: 35rem;
+    }
+    .sun-rules{
+        bottom: -20%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 20rem;
+    }
+    .text{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 1rem;
+        max-width: 40rem;
+        min-height: 33rem;
+        max-height: 33rem;
+    }
+}
+@media(max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
+    .rules-logo{
+        width: 50%;
+    }
+    .pillar-left{
+        width: 40.5%;
+        left: -7.5rem;
+    }
+    .pillar-right{
+        width: 40.5%;
+        right: -7.5rem;
+    }
+    .rules-card{
+        max-width: 25rem;
+        min-height: 34.5em;
+        max-height: 34.5rem;
+    }
+    .sun-rules{
+        width: 100%;
+        bottom: -20%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 20rem;
+    }
+    .text{
+        line-height: 1.5rem;
         font-size: 1rem;
     }
     .text-description{
         line-height: 1.5rem;
         font-size: 1rem;
-        max-width: 60rem;
-        min-height: 35rem;
-        max-height: 35rem;
+        max-width: 40rem;
+        min-height: 33rem;
+        max-height: 33rem;
     }
 }
 @media(max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
@@ -625,7 +1063,7 @@
         max-width: 20.5rem;
     }
     .text{
-        line-height: 1.2rem;
+        line-height: 1.5rem;
         font-size: 1rem;
     }
     .text-description{
@@ -643,6 +1081,50 @@
     }
     .rules-card{
         max-width: 20rem;
+        min-height: 25rem;
+        max-height: 25rem;
+        padding: 0;
+        padding-bottom: 5rem;
+        border-width: 0.25rem;
+        padding-bottom: 16px;
+    }
+    .pillar-left{
+        width: 50.5%;
+        left: -8rem;
+    }
+    .pillar-right{
+        width: 50.5%;
+        right: -8rem;
+    }   
+    .sun-rules{
+        scale: 1.5;
+        bottom: 0%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 17.5rem;
+    }
+    .text{
+        line-height: 1.5rem;
+        font-size: 0.95rem;
+    }
+    .text-description{
+        line-height: 1.5rem;
+        font-size: 0.95rem;
+        max-width: 60rem;
+        min-height: 25rem;
+        max-height: 25rem;
+    }
+}
+@media(max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
+    .rules-logo{
+        width: 60%;
+        margin-top: 2.5%;
+    }
+    .rules-card{
+        padding: 0;
+        max-width: 20rem;
         min-height: 15rem;
         padding: 0;
         padding-bottom: 5rem;
@@ -650,11 +1132,11 @@
         padding-bottom: 16px;
     }
     .pillar-left{
-        width: 57.5%;
+        width: 54.5%;
         left: -9rem;
     }
     .pillar-right{
-        width: 57.5%;
+        width: 54.5%;
         right: -9rem;
     }   
     .sun-rules{
@@ -667,11 +1149,11 @@
         max-width: 17.5rem;
     }
     .text{
-        line-height: 1.2rem;
+        line-height: 1.5rem;
         font-size: 0.95rem;
     }
     .text-description{
-        line-height: 1.45rem;
+        line-height: 1.5rem;
         font-size: 0.95rem;
         max-width: 60rem;
         min-height: 25rem;
@@ -710,11 +1192,11 @@
         max-width: 17.5rem;
     }
     .text{
-        line-height: 1.2rem;
+        line-height: 1.5rem;
         font-size: 0.95rem;
     }
     .text-description{
-        line-height: 1.45rem;
+        line-height: 1.5rem;
         font-size: 0.95rem;
         max-width: 60rem;
         min-height: 25rem;
@@ -751,15 +1233,15 @@
         max-width: 14.5rem;
     }
     .text{
-        line-height: 1.2rem;
+        line-height: 1.5rem;
         font-size: 0.85rem;
     }
     .text-description{
         line-height: 1.5rem;
         font-size: 0.85rem;
         max-width: 60rem;
-        max-height: 25rem;
-        min-height: 25rem;
+        max-height: 30rem;
+        min-height: 30rem;
         padding-bottom: 0;
     }
 }
@@ -793,15 +1275,15 @@
         max-width: 14.5rem;
     }
     .text{
-        line-height: 1.2rem;
-        font-size: 0.75rem;
+        line-height: 1.5rem;
+        font-size: 0.9rem;
     }
     .text-description{
         line-height: 1.5rem;
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         max-width: 60rem;
-        max-height: 25rem;
-        min-height: 25rem;
+        max-height: 30rem;
+        min-height: 30rem;
         padding-bottom: 0;
     }
 }

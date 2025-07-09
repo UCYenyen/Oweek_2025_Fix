@@ -1,6 +1,6 @@
-import { StrictMode, lazy, Suspense } from "react";
+import { StrictMode, lazy, Suspense, useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import "./index.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
@@ -43,31 +43,49 @@ const LoadingSpinner = () => (
         <p className="text-[#263a65] font-roboto text-lg animate-pulse delay-300">
           OWEEK 2025
         </p>
-        
-        {/* Animated dots */}
-        <div className="flex justify-center gap-2 mt-4">
-          <div className="w-2 h-2 bg-[#3F61AD] rounded-full animate-bounce"></div>
-          <div className="w-2 h-2 bg-[#75ABDC] rounded-full animate-bounce delay-100"></div>
-          <div className="w-2 h-2 bg-[#B2D5F1] rounded-full animate-bounce delay-200"></div>
-        </div>
       </div>
     </div>
   </div>
 );
+
+// Route transition handler
+const RouteTransitionHandler = ({ children }: { children: React.ReactNode }) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsLoading(true);
+    
+    // Show loading for at least 500ms for smooth transition
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
+
+  return <>{children}</>;
+};
+
 // Layout component
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="overflow-hidden">
     <Navbar />
-    {children}
+    <RouteTransitionHandler>
+      {children}
+    </RouteTransitionHandler>
     <Footer />
   </div>
 );
 
-
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <HashRouter>
-        <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner />}>
         <Layout>
           <Routes>
             <Route path="/" element={<App />} />
@@ -76,7 +94,7 @@ createRoot(document.getElementById("root")!).render(
             <Route path="/rules" element={<Rules />} />
           </Routes>
         </Layout>
-        </Suspense>
+      </Suspense>
     </HashRouter>
   </StrictMode>
 );

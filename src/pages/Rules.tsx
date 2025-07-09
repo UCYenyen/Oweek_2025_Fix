@@ -198,7 +198,7 @@ export default function Rules() {
   return (
     <div className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")]'>
       <div className="relative w-screen flex items-center justify-center">
-        <img src="/elements/section/sun-rules.svg" className="sun-rules w-full absolute -bottom-1/2" alt="" />
+        <img src="/elements/section/sun-rules.svg" loading="lazy" className="sun-rules w-full absolute -bottom-1/2" alt="" />
         <img
           src="/elements/section/pillar-left.svg"
           className="pillar-left w-[20%] absolute left-0 -top-2"

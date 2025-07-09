@@ -69,8 +69,13 @@ export default function About() {
           <div className="absolute top-[2vh] w-full h-full z-10 left-1/2 -translate-x-1/2">
             <img
               src="/elements/about/about-bg.svg"
-              className="w-[60%] h-auto absolute left-1/2 -translate-x-1/2 about-bg"
+              className="w-[60%] h-auto absolute left-1/2 -translate-x-1/2 about-bg desktop-about-bg"
               alt="about-bg"
+            />
+            <img
+              src="/elements/about/mobileabout.svg"
+              className="w-[90%] h-auto absolute left-1/2 -translate-x-1/2 about-bg mobile-about-bg"
+              alt="mobile-about-bg"
             />
             <div
               ref={aboutContentRef}

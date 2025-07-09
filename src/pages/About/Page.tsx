@@ -2,6 +2,7 @@ import "./styles.css";
 import Mascots from "../../components/mascots";
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import ShinyText from "../../components/ShinyText";
 
 export const useAboutPageAnimation = () => {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
@@ -14,16 +15,16 @@ export const useAboutPageAnimation = () => {
   useEffect(() => {
     const tl = gsap.timeline({
       defaults: { ease: "power3.out", duration: 1.2 },
-      onComplete: () => setIsAnimationComplete(true), // Signal completion
+      onComplete: () => setIsAnimationComplete(true), 
     });
 
     gsap.set([pillarLeftRef.current, pillarRightRef.current], { opacity: 0, y: -50 });
-    // Change the sun's initial state to be below the screen and invisible
+    
     gsap.set([sunTopRef.current, starCircleRef.current], { opacity: 0, y: 100 });
     gsap.set(aboutContentRef.current, { opacity: 0, y: 50 });
 
     tl.to([pillarLeftRef.current, pillarRightRef.current], { opacity: 1, y: 0, stagger: 0.2 })
-      // Animate the sun to slide up into its final position
+      
       .to([sunTopRef.current, starCircleRef.current], { opacity: 1, y: 0, stagger: 0.2 }, "-=1")
       .to(aboutContentRef.current, { opacity: 1, y: 0 }, "-=0.8");
 
@@ -75,9 +76,11 @@ export default function About() {
               ref={aboutContentRef}
               className="absolute top-[24vh] left-1/2 -translate-x-1/2 w-full flex flex-col items-center z-20"
             >
-              <h1 className="font-lettertype text-[17vh] text-center bg-gradient-to-b from-[#3F61AD] to-[#75ABDC] bg-clip-text text-transparent">
-                ABOUT
-              </h1>
+              <ShinyText speed={3}>
+                <h1 className="font-lettertype text-[17vh] text-center bg-gradient-to-b from-[#3F61AD] to-[#75ABDC] bg-clip-text text-transparent">
+                  ABOUT
+                </h1>
+              </ShinyText>
               <p className="text-center text-[2vh] text-[#AB6528] font-roboto w-[45%] mt-3 px-4">
                 Orientation Week Universitas Ciputra Surabaya merupakan wadah
                 untuk mempersiapkan dan mendorong mahasiswa menjadi pribadi yang

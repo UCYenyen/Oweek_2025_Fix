@@ -1,0 +1,35 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    /* Hide the large pillars on mobile to save space */
+    display: none;
+  }
+
+  .about-container .about-bg {
+    /* Make the background scroll larger on mobile */
+    width: 95%;
+  }
+
+  .about-container .about-content {
+    /* Adjust the vertical position of the content */
+    top: 15vh;
+  }
+
+  .about-container .about-title {
+    /* Reduce the title font size significantly for mobile */
+    font-size: 10vh;
+  }
+
+  .about-container .about-description {
+    /* Make the description text wider and slightly larger */
+    width: 80%;
+    font-size: 2.2vh;
+  }
+
+  /* You can also add styles for the Mascots component here */
+  .mascot-container {
+    /* Example: Adjust margin for mobile */
+    margin-top: -10vh;
+  }
+}

@@ -54,7 +54,7 @@
   /* You can also add styles for the Mascots component here */
   .mascot-container {
     width: auto;
-    height: 40vh;
+    height: 50vh;
     top: -0vh;
   }
 
@@ -87,7 +87,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Set a consistent width for both sections */
+    width: 75%; 
     height: auto;
     z-index: 6;
   }
@@ -116,7 +116,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    bottom: -2vh;
+    bottom: -1vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 6;
@@ -126,7 +126,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    top: 0vh;
+    top: 11vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;

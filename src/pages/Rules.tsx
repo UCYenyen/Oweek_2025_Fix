@@ -291,12 +291,12 @@ export default function Rules() {
           </div>
 
           {/* Rules Card */}
-          <div className="rules-card bg-blend-screen rounded-3xl w-[80%] min-h-[35rem] p-4 flex items-start justify-center overflow-hidden">
+          <div className="rules-card bg-blend-screen rounded-3xl w-[80%] min-h-[35rem] max-h-[40rem] p-4 flex items-start justify-center overflow-hidden">
             <div className="relative w-full flex">
               {/* Content */}
               <div 
                 ref={contentRef}
-                className="font-roboto text-description text-[#AB6528] text-start text-2xl max-h-[30rem] p-4 overflow-auto flex-1 pr-6"
+                className="font-roboto text-description text-[#AB6528] text-start text-2xl max-h-[36rem] p-4 overflow-auto flex-1 pr-6"
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
               >
                 <style>{`

@@ -1,42 +1,42 @@
 export default function Mascots() {
   return (
-    <div className="relative w-screen h-full">
-      <div className="relative w-[220%] -left-[40vh] h-auto">
+    <div className="relative w-screen h-full mascot-container">
+      <div className="relative w-[220%] -left-[40vh] h-auto mascot-pillar-container">
         <img
           src="/elements/about/newpillar.svg"
-          className="w-full h-full relative -top-[0vh] z-[5]"
+          className="w-full h-full relative -top-[0vh] z-[5] mascot-pillar"
           alt="pillar-center"
         />
       </div>
 
       <img
         src="/elements/about/sunbot.svg"
-        className="absolute -top-[0vh] w-full h-auto left-1/2 -translate-x-1/2"
+        className="absolute -top-[0vh] w-full h-auto left-1/2 -translate-x-1/2 mascot-sun-bottom"
         alt="sun"
       />
 
-      <div className="absolute top-[18vh] left-1/2 -translate-x-1/2 w-[65%] z-[6]">
+      <div className="absolute top-[18vh] left-1/2 -translate-x-1/2 w-[65%] z-[6] mascot-yucca-section">
         <img
           src="/elements/about/im-yucca.svg"
-          className="w-full h-auto"
+          className="w-full h-auto mascot-yucca-title"
           alt="im-yucca"
         />
 
-        <p className="absolute top-[65%] left-1/2 -translate-x-1/2 text-center text-[2vh] text-[#AB6528] font-roboto w-[70%] px-4 z-[10]">
+        <p className="absolute top-[65%] left-1/2 -translate-x-1/2 text-center text-[2vh] text-[#AB6528] font-roboto w-[70%] px-4 z-[10] mascot-yucca-description">
           Yucca adalah seekor unicorn lucu yang berpendirian teguh. Ia tidak
           mudah menyerah, bahkan mudah beradaptasi ketika menghadapi situasi
           yang sulit.
         </p>
       </div>
 
-      <div className="absolute -bottom-[0vh] left-1/2 -translate-x-1/2 w-[65%] h-auto z-[6]">
+      <div className="absolute -bottom-[0vh] left-1/2 -translate-x-1/2 w-[65%] h-auto z-[6] mascot-chickens-section">
         <img
           src="/elements/about/capcipcup.svg"
-          className="w-full h-auto"
+          className="w-full h-auto mascot-chickens-title"
           alt="capcipcup"
         />
 
-        <p className="absolute top-[50%] left-1/2 -translate-x-1/2 text-center text-[2vh] text-[#AB6528] font-roboto w-[70%] px-4 z-[10]">
+        <p className="absolute top-[50%] left-1/2 -translate-x-1/2 text-center text-[2vh] text-[#AB6528] font-roboto w-[70%] px-4 z-[10] mascot-chickens-description">
           Chap, Chip, dan Chup, adalah tiga anak ayam bersaudara yang tumbuh
           bersama Yucca, Karakter Chap, Chip, dan Chup masing-masing
           melambangkan nilai-nilai Universitas Ciputra, yaitu Integrity,
@@ -47,12 +47,12 @@ export default function Mascots() {
 
       <img
         src="/elements/about/pot-both.svg"
-        className="w-full h-auto absolute -bottom-[2vh] left-1/2 -translate-x-1/2 z-[6]"
+        className="w-full h-auto absolute -bottom-[2vh] left-1/2 -translate-x-1/2 z-[6] mascot-pot"
         alt="pot-both"
       />
       <img
         src="/elements/about/triangle-circle.svg"
-        className="w-full h-auto absolute top-[10vh] left-1/2 -translate-x-1/2 z-[1]"
+        className="w-full h-auto absolute top-[10vh] left-1/2 -translate-x-1/2 z-[1] mascot-background-shape"
         alt="triangle-circle"
       />
     </div>

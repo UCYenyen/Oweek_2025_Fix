@@ -209,20 +209,20 @@
     /* Make the description text wider and slightly larger */
     margin-top: -0.8vh;
     width: 80%;
-    font-size: 1.15vh;
+    font-size: 1.18vh;
   }
 
   /* You can also add styles for the Mascots component here */
   .mascot-container {
     width: auto;
-    height: 50vh;
+    height: 60vh;
     top: -0vh;
   }
 
   .mascot-pillar-container {
     position: relative;
-    width: 280%;
-    left: -41vh;
+    width: 330%;
+    left: -52.5vh;
     height: auto;
   }
 
@@ -236,7 +236,7 @@
 
   .mascot-sun-bottom {
     position: absolute;
-    top: 2vh;
+    top: 4vh;
     width: 100%;
     height: auto;
     left: 51%;
@@ -248,7 +248,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 75%; 
+    width: 90%; 
     height: auto;
     z-index: 6;
   }

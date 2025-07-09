@@ -38,7 +38,7 @@ export default function About() {
 
   return (
     <>
-      <div className="relative w-screen min-h-screen bg-[#B2D5F1] bg-cover bg-[url('/elements/real-background.svg')] about-container">
+      <div className="relative w-screen bg-[#B2D5F1] bg-cover bg-[url('/elements/real-background.svg')] about-container">
         <div className="relative w-screen h-screen about-main-content">
           <img
             ref={pillarLeftRef}
@@ -96,7 +96,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-full h-full ">
+        <div className="w-full">
           <Mascots />
         </div>
       </div>

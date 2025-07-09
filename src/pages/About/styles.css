@@ -60,8 +60,8 @@
 
   .mascot-pillar-container {
     position: relative;
-    width: 220%;
-    left: -40vh;
+    width: 280%;
+    left: -41vh;
     height: auto;
   }
 
@@ -82,63 +82,34 @@
     transform: translateX(-50%);
   }
 
-  .mascot-yucca-section {
+  .mascot-yucca-section,
+  .mascot-chickens-section {
     position: absolute;
-    top: 10vh; /* Move it up a bit */
     left: 50%;
     transform: translateX(-50%);
-    width: 85%; /* Make it wider */
+    width: 80%; /* Set a consistent width for both sections */
+    height: auto;
     z-index: 6;
   }
 
-  .mascot-yucca-title {
-    width: 80%;
-    height: auto;
-  }
-
-  .mascot-yucca-description {
-    position: absolute;
-    top: 60%; /* Adjust vertical position */
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 1.5vh; /* Increase font size */
-    color: #AB6528;
-    font-family: 'Roboto', sans-serif;
-    width: 90%; /* Make text container wider */
-    padding-left: 1rem;
-    padding-right: 1rem;
-    z-index: 10;
+  .mascot-yucca-section {
+    top: 10vh; /* Position from the top */
   }
 
   .mascot-chickens-section {
-    position: absolute;
-    bottom: 5vh; /* Adjust position from bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85%; /* Make it wider */
-    height: auto;
-    z-index: 6;
+    bottom: -1vh; /* Position from the bottom */
   }
 
+  .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%;
+    width: 100%; /* Make title images fill their parent section */
     height: auto;
   }
 
+  .mascot-yucca-description,
   .mascot-chickens-description {
-    position: absolute;
-    top: 55%; /* Adjust vertical position */
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 1.5vh; /* Increase font size */
-    color: #AB6528;
-    font-family: 'Roboto', sans-serif;
-    width: 90%; /* Make text container wider */
-    padding-left: 1rem;
-    padding-right: 1rem;
-    z-index: 10;
+    width: 80%;
+    font-size: 0.75vh; /* Adjusted for better readability */
   }
 
   .mascot-pot {

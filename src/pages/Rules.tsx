@@ -7,6 +7,30 @@ export default function Rules() {
   const [selectedPasal, setSelectedPasal] = useState(datas[0]?.id || "");
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  
+  // Custom scrollbar states for rules card
+  const [scrollTop, setScrollTop] = useState(0);
+  const [scrollHeight, setScrollHeight] = useState(0);
+  const [clientHeight, setClientHeight] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStartY, setDragStartY] = useState(0);
+  const [dragStartScrollTop, setDragStartScrollTop] = useState(0);
+  
+  // Custom scrollbar states for dropdown
+  const [dropdownScrollTop, setDropdownScrollTop] = useState(0);
+  const [dropdownScrollHeight, setDropdownScrollHeight] = useState(0);
+  const [dropdownClientHeight, setDropdownClientHeight] = useState(0);
+  const [dropdownIsDragging, setDropdownIsDragging] = useState(false);
+  const [dropdownDragStartY, setDropdownDragStartY] = useState(0);
+  const [dropdownDragStartScrollTop, setDropdownDragStartScrollTop] = useState(0);
+  
+  const contentRef = useRef<HTMLDivElement>(null);
+  const scrollbarRef = useRef<HTMLDivElement>(null);
+  const thumbRef = useRef<HTMLDivElement>(null);
+  
+  const dropdownContentRef = useRef<HTMLDivElement>(null);
+  const dropdownScrollbarRef = useRef<HTMLDivElement>(null);
+  const dropdownThumbRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -20,6 +44,156 @@ export default function Rules() {
   }, []);
 
   const selectedData = datas.find((data) => data.id === selectedPasal);
+
+  // Update scrollbar dimensions for rules card
+  useEffect(() => {
+    const updateScrollbar = () => {
+      if (contentRef.current) {
+        setScrollHeight(contentRef.current.scrollHeight);
+        setClientHeight(contentRef.current.clientHeight);
+        setScrollTop(contentRef.current.scrollTop);
+      }
+    };
+
+    const content = contentRef.current;
+    if (content) {
+      updateScrollbar();
+      content.addEventListener('scroll', updateScrollbar);
+      window.addEventListener('resize', updateScrollbar);
+      
+      return () => {
+        content.removeEventListener('scroll', updateScrollbar);
+        window.removeEventListener('resize', updateScrollbar);
+      };
+    }
+  }, [selectedData]);
+
+  // Update scrollbar dimensions for dropdown
+  useEffect(() => {
+    const updateDropdownScrollbar = () => {
+      if (dropdownContentRef.current) {
+        setDropdownScrollHeight(dropdownContentRef.current.scrollHeight);
+        setDropdownClientHeight(dropdownContentRef.current.clientHeight);
+        setDropdownScrollTop(dropdownContentRef.current.scrollTop);
+      }
+    };
+
+    const dropdownContent = dropdownContentRef.current;
+    if (dropdownContent && open) {
+      updateDropdownScrollbar();
+      dropdownContent.addEventListener('scroll', updateDropdownScrollbar);
+      window.addEventListener('resize', updateDropdownScrollbar);
+      
+      return () => {
+        dropdownContent.removeEventListener('scroll', updateDropdownScrollbar);
+        window.removeEventListener('resize', updateDropdownScrollbar);
+      };
+    }
+  }, [open, datas]);
+
+  // Calculate thumb height and position for rules card
+  const thumbHeight = Math.max((clientHeight / scrollHeight) * clientHeight, 20);
+  const thumbTop = (scrollTop / (scrollHeight - clientHeight)) * (clientHeight - thumbHeight);
+  const showScrollbar = scrollHeight > clientHeight;
+
+  // Calculate thumb height and position for dropdown
+  const dropdownThumbHeight = Math.max((dropdownClientHeight / dropdownScrollHeight) * dropdownClientHeight, 20);
+  const dropdownThumbTop = (dropdownScrollTop / (dropdownScrollHeight - dropdownClientHeight)) * (dropdownClientHeight - dropdownThumbHeight);
+  const showDropdownScrollbar = dropdownScrollHeight > dropdownClientHeight;
+
+  // Handle thumb drag for rules card
+  const handleThumbMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsDragging(true);
+    setDragStartY(e.clientY);
+    setDragStartScrollTop(scrollTop);
+  };
+
+  // Handle thumb drag for dropdown
+  const handleDropdownThumbMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setDropdownIsDragging(true);
+    setDropdownDragStartY(e.clientY);
+    setDropdownDragStartScrollTop(dropdownScrollTop);
+  };
+
+  // Handle mouse move during drag for rules card
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isDragging || !contentRef.current) return;
+      
+      const deltaY = e.clientY - dragStartY;
+      const deltaScrollTop = (deltaY / (clientHeight - thumbHeight)) * (scrollHeight - clientHeight);
+      const newScrollTop = Math.max(0, Math.min(scrollHeight - clientHeight, dragStartScrollTop + deltaScrollTop));
+      
+      contentRef.current.scrollTop = newScrollTop;
+    };
+
+    const handleMouseUp = () => {
+      setIsDragging(false);
+    };
+
+    if (isDragging) {
+      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener('mouseup', handleMouseUp);
+      
+      return () => {
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseup', handleMouseUp);
+      };
+    }
+  }, [isDragging, dragStartY, dragStartScrollTop, clientHeight, thumbHeight, scrollHeight]);
+
+  // Handle mouse move during drag for dropdown
+  useEffect(() => {
+    const handleDropdownMouseMove = (e: MouseEvent) => {
+      if (!dropdownIsDragging || !dropdownContentRef.current) return;
+      
+      const deltaY = e.clientY - dropdownDragStartY;
+      const deltaScrollTop = (deltaY / (dropdownClientHeight - dropdownThumbHeight)) * (dropdownScrollHeight - dropdownClientHeight);
+      const newScrollTop = Math.max(0, Math.min(dropdownScrollHeight - dropdownClientHeight, dropdownDragStartScrollTop + deltaScrollTop));
+      
+      dropdownContentRef.current.scrollTop = newScrollTop;
+    };
+
+    const handleDropdownMouseUp = () => {
+      setDropdownIsDragging(false);
+    };
+
+    if (dropdownIsDragging) {
+      document.addEventListener('mousemove', handleDropdownMouseMove);
+      document.addEventListener('mouseup', handleDropdownMouseUp);
+      
+      return () => {
+        document.removeEventListener('mousemove', handleDropdownMouseMove);
+        document.removeEventListener('mouseup', handleDropdownMouseUp);
+      };
+    }
+  }, [dropdownIsDragging, dropdownDragStartY, dropdownDragStartScrollTop, dropdownClientHeight, dropdownThumbHeight, dropdownScrollHeight]);
+
+  // Handle track click for rules card
+  const handleTrackClick = (e: React.MouseEvent) => {
+    if (!contentRef.current || !scrollbarRef.current) return;
+    
+    const rect = scrollbarRef.current.getBoundingClientRect();
+    const clickY = e.clientY - rect.top;
+    const clickRatio = clickY / clientHeight;
+    const newScrollTop = clickRatio * (scrollHeight - clientHeight);
+    
+    contentRef.current.scrollTop = Math.max(0, Math.min(scrollHeight - clientHeight, newScrollTop));
+  };
+
+  // Handle track click for dropdown
+  const handleDropdownTrackClick = (e: React.MouseEvent) => {
+    if (!dropdownContentRef.current || !dropdownScrollbarRef.current) return;
+    
+    const rect = dropdownScrollbarRef.current.getBoundingClientRect();
+    const clickY = e.clientY - rect.top;
+    const clickRatio = clickY / dropdownClientHeight;
+    const newScrollTop = clickRatio * (dropdownScrollHeight - dropdownClientHeight);
+    
+    dropdownContentRef.current.scrollTop = Math.max(0, Math.min(dropdownScrollHeight - dropdownClientHeight, newScrollTop));
+  };
 
   return (
     <div className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")]'>
@@ -46,7 +220,7 @@ export default function Rules() {
               onClick={() => setOpen((v) => !v)}
               type="button"
             >
-              <p className="font-roboto text text-center w-[100rem] overflow-hidden">
+              <p className="font-roboto text text-left flex-1 overflow-hidden whitespace-nowrap text-ellipsis">
                 {selectedData?.pasal} ({selectedData?.category})
               </p>
               <svg
@@ -65,69 +239,136 @@ export default function Rules() {
               `}
               style={{ transitionProperty: "transform, opacity" }}
             >
-              {/* Scrollable container */}
-              <div className="max-h-60 overflow-y-auto scrollbar-thin scrollbar-thumb-[#8ea7d6] scrollbar-track-[#A2BFE6]">
-                {datas.map((data) => (
-                  <div
-                    key={data.id}
-                    className={`p-1 sm:p-2 text-center text font-roboto text-white text-2xl cursor-pointer hover:bg-[#8ea7d6] transition`}
-                    onClick={() => {
-                      setSelectedPasal(data.id);
-                      setOpen(false);
-                    }}
+              {/* Scrollable container with custom scrollbar */}
+              <div className="relative flex">
+                <div 
+                  ref={dropdownContentRef}
+                  className="max-h-60 overflow-auto flex-1 pr-4"
+                  style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+                >
+                  <style>{`
+                    div::-webkit-scrollbar {
+                      display: none;
+                    }
+                  `}</style>
+                  {datas.map((data) => (
+                    <div
+                      key={data.id}
+                      className={`p-1 sm:p-2 text-center text font-roboto text-white text-2xl cursor-pointer hover:bg-[#8ea7d6] transition`}
+                      onClick={() => {
+                        setSelectedPasal(data.id);
+                        setOpen(false);
+                      }}
+                    >
+                      {data.pasal} ({data.category})
+                    </div>
+                  ))}
+                </div>
+
+                {/* Custom Dropdown Scrollbar */}
+                {showDropdownScrollbar && (
+                  <div 
+                    ref={dropdownScrollbarRef}
+                    className="absolute right-2 top-2 bottom-2 w-2 bg-[#8ea7d6] rounded-full cursor-pointer z-10"
+                    onClick={handleDropdownTrackClick}
                   >
-                    {data.pasal} ({data.category})
+                    {/* Dropdown Scrollbar Thumb */}
+                    <div
+                      ref={dropdownThumbRef}
+                      className={`absolute left-0 w-full bg-[#ead99e] rounded-full cursor-grab transition-colors duration-200 ${
+                        dropdownIsDragging ? 'bg-[#ead99e] cursor-grabbing' : 'hover:bg-[#ead99e]'
+                      }`}
+                      style={{
+                        height: `${dropdownThumbHeight}px`,
+                        top: `${dropdownThumbTop}px`,
+                      }}
+                      onMouseDown={handleDropdownThumbMouseDown}
+                    />
                   </div>
-                ))}
+                )}
               </div>
             </div>
           </div>
 
           {/* Rules Card */}
-          <div className="rules-card bg-blend-screen rounded-3xl w-[80%] min-h-[35rem] p-4 flex items-start justify-center overflow-hidden">
-            <div className="font-roboto text-description text-[#AB6528] text-start text-2xl max-h-[30rem] p-4 overflow-auto scrollbar-thin scrollbar-thumb-[#8ea7d6] scrollbar-track-[#A2BFE6] scrollbar-corner-[#A2BFE6] hover:scrollbar-thumb-[#7a9ace] w-full">
-              {selectedData?.description.some((desc) => desc.heading) ? (
-                <ol className="list-decimal ml-4 sm:ml-10 ">
-                  {selectedData.description.map((desc, idx) =>
-                    desc.heading ? (
-                      <li key={`${selectedData.id}-heading-${idx}`}>
-                        <div
-                          className="font-bold"
-                          dangerouslySetInnerHTML={{ __html: desc.heading }}
-                        />
-                        <ol className="list-[lower-alpha] ml-6">
-                          {desc.details.map((detail, i) => (
-                            <li
-                              key={i}
-                              dangerouslySetInnerHTML={{ __html: detail }}
-                              className="text"
-                            />
-                          ))}
-                        </ol>
-                      </li>
-                    ) : (
-                      desc.details.map((detail, i) => (
+          <div className="rules-card bg-blend-screen rounded-3xl w-[80%] min-h-[35rem] max-h-[40rem] p-4 flex items-start justify-center overflow-hidden">
+            <div className="relative w-full flex">
+              {/* Content */}
+              <div 
+                ref={contentRef}
+                className="font-roboto text-description text-[#AB6528] text-start text-2xl max-h-[36rem] p-4 overflow-auto flex-1 pr-6"
+                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              >
+                <style>{`
+                  div::-webkit-scrollbar {
+                    display: none;
+                  }
+                `}</style>
+                {selectedData?.description.some((desc) => desc.heading) ? (
+                  <ol className="list-decimal ml-4 sm:ml-10 ">
+                    {selectedData.description.map((desc, idx) =>
+                      desc.heading ? (
+                        <li key={`${selectedData.id}-heading-${idx}`}>
+                          <div
+                            className="font-bold"
+                            dangerouslySetInnerHTML={{ __html: desc.heading }}
+                          />
+                          <ol className="list-[lower-alpha] ml-6">
+                            {desc.details.map((detail, i) => (
+                              <li
+                                key={i}
+                                dangerouslySetInnerHTML={{ __html: detail }}
+                                className="text"
+                              />
+                            ))}
+                          </ol>
+                        </li>
+                      ) : (
+                        desc.details.map((detail, i) => (
+                          <li
+                            key={`${selectedData.id}-detail-${idx}-${i}`}
+                            dangerouslySetInnerHTML={{ __html: detail }}
+                            className="text"
+                          />
+                        ))
+                      )
+                    )}
+                  </ol>
+                ) : (
+                  selectedData?.description.map((desc, idx) => (
+                    <ol className="list-decimal ml-6" key={`${selectedData.id}-noheading-${idx}`}>
+                      {desc.details.map((detail, i) => (
                         <li
-                          key={`${selectedData.id}-detail-${idx}-${i}`}
+                          key={i}
                           dangerouslySetInnerHTML={{ __html: detail }}
                           className="text"
                         />
-                      ))
-                    )
-                  )}
-                </ol>
-              ) : (
-                selectedData?.description.map((desc, idx) => (
-                  <ol className="list-decimal ml-6" key={`${selectedData.id}-noheading-${idx}`}>
-                    {desc.details.map((detail, i) => (
-                      <li
-                        key={i}
-                        dangerouslySetInnerHTML={{ __html: detail }}
-                        className="text"
-                      />
-                    ))}
-                  </ol>
-                ))
+                      ))}
+                    </ol>
+                  ))
+                )}
+              </div>
+
+              {/* Custom Scrollbar */}
+              {showScrollbar && (
+                <div 
+                  ref={scrollbarRef}
+                  className="absolute overflow-hidden right-2 top-4 bottom-4 w-2 sm:w-3 bg-[#8ea7d6] rounded-full cursor-pointer z-10"
+                  onClick={handleTrackClick}
+                >
+                  {/* Scrollbar Thumb */}
+                  <div
+                    ref={thumbRef}
+                    className={`absolute left-0 w-full bg-[#e9cc6e] rounded-full cursor-grab transition-colors duration-200 ${
+                      isDragging ? 'bg-[#e9cc6e] cursor-grabbing' : 'hover:bg-[#e9cc6e]'
+                    }`}
+                    style={{
+                      height: `${thumbHeight}px`,
+                      top: `${thumbTop}px`,
+                    }}
+                    onMouseDown={handleThumbMouseDown}
+                  />
+                </div>
               )}
             </div>
           </div>

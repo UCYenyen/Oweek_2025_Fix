@@ -22,6 +22,7 @@ export default function Navbar() {
           <img
             src="/elements/icons/luminate.svg"
             className="luminate-logo w-1/2 sm:w-[70%]"
+            draggable="false"
             alt=""
           />
         </a>
@@ -219,12 +220,14 @@ export default function Navbar() {
           src="/elements/navbar/leaves-left.svg"
           loading="lazy"
           className="leaves-left absolute z-[6] -top-5 sm:-top-[7.5rem] left-0"
+          draggable="false"
           alt=""
         />
         <img
           src="/elements/navbar/leaves-right.svg"
           loading="lazy"
           className="leaves-right absolute z-[6] -top-5 sm:-top-[7.5rem] right-0"
+          draggable="false"
           alt=""
         />
       </div>

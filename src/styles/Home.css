@@ -1422,10 +1422,9 @@
     }
     .sun-home{
         z-index: 0;
-        scale: 2;
-        height: 100%;
-        width: auto;
-        bottom: -9rem;
+        height: auto;
+        min-width: 42.5rem;
+        bottom: -11.5rem;
     }
     .welcoming-logo{
         margin-top: 20%;

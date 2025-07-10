@@ -216,20 +216,38 @@ export default function Rules() {
           {/* Custom Dropdown */}
           <div className="dropdown w-[80%] max-w-3xl mt-8 relative" ref={dropdownRef}>
             <button
-              className="w-full overflow-hidden h-full bg-[#A2BFE6] border-4 border-[#F7E7B6] rounded-full px-8 text-white text-2xl font-serif flex justify-between items-center transition-all duration-300"
+              className={`w-full overflow-hidden h-full border-4 border-[#F7E7B6] rounded-full px-8 text-white text-2xl font-serif flex justify-between items-center transition-all duration-300
+              ${open 
+                ? "bg-gradient-to-r from-[#75ABDC] to-[#B2D5F1]" 
+                : "bg-gradient-to-r from-[#FFF0B8] to-[#FFD054]"
+              }
+              `}
               onClick={() => setOpen((v) => !v)}
               type="button"
             >
-              <p className="font-roboto text text-left flex-1 overflow-hidden whitespace-nowrap text-ellipsis">
+              <p
+                className={`font-roboto dropdown-text flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-bold text-center
+                  ${open
+                    ? "text-[#FFF0B8]"
+                    : "text-transparent bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text"
+                  }
+                `}
+              >
                 {selectedData?.pasal} ({selectedData?.category})
               </p>
               <svg
                 className={`ml-2 w-6 h-6 sm:w-8 sm:h-8 transition-transform duration-300 flex-shrink-0 ${open ? "rotate-180" : ""}`}
                 fill="none"
-                stroke="currentColor"
+                stroke={open ? "#FFF0B8" : "url(#dropdown-arrow-gradient)"}
                 strokeWidth={2}
                 viewBox="0 0 24 24"
               >
+                <defs>
+                  <linearGradient id="dropdown-arrow-gradient" x1="0" y1="0" x2="0" y2="24" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#F5AC01" />
+                    <stop offset="1" stopColor="#C03A00" />
+                  </linearGradient>
+                </defs>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
@@ -254,7 +272,7 @@ export default function Rules() {
                   {datas.map((data) => (
                     <div
                       key={data.id}
-                      className={`p-1 sm:p-2 text-center text font-roboto text-white text-2xl cursor-pointer hover:bg-[#8ea7d6] transition`}
+                      className={`p-1 sm:p-2 text-center text font-roboto text-[#FFF0B8] text-2xl cursor-pointer hover:bg-[#8ea7d6] transition`}
                       onClick={() => {
                         setSelectedPasal(data.id);
                         setOpen(false);

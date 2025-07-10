@@ -16,8 +16,9 @@
         width: 410px;
         font-size: 4rem;
     }
-    .sun{
+    .sun-home{
         width: 85%;
+        height: auto;
         scale: 1;
         bottom: -125rem;
     }
@@ -86,7 +87,7 @@
         width: 300px;
         font-size: 3rem;
     }
-    .sun{
+    .sun-home{
          width: 80%;
         bottom: -85.5rem;
     }
@@ -135,7 +136,7 @@
         width: 300px;
         font-size: 3rem;
     }
-    .sun{
+    .sun-home{
         width: 80%;
         bottom: -72.5rem;
     }
@@ -204,7 +205,7 @@
         width: 300px;
         font-size: 2rem;
     }
-    .sun{
+    .sun-home{
         bottom: -75.5rem;
     }
     .stars{
@@ -253,7 +254,7 @@
         width: 230px;
         font-size: 2rem;
     }
-    .sun{
+    .sun-home{
         scale: 0.8;
         bottom: -58.5rem;
     }
@@ -302,7 +303,7 @@
         width: 230px;
         font-size: 2rem;
     }
-    .sun{
+    .sun-home{
         scale: 0.9;
         bottom: -36.5rem;
     }
@@ -348,7 +349,7 @@
         width: 210px;
         font-size: 2rem;
     }
-    .sun{
+    .sun-home{
         scale: 0.9;
         bottom: -51.5rem;
     }
@@ -381,7 +382,7 @@
         width: 55%;
         top: 10.5rem;
     }
-    .sun{
+    .sun-home{
         bottom: -45.5rem;
     }
     .count-down-card{
@@ -438,7 +439,7 @@
         width: 160px;
         font-size: 1.5rem;
     }
-    .sun{
+    .sun-home{
         bottom: -40.5rem;
     }
     .welcoming-logo{
@@ -502,7 +503,7 @@
         width: 165px;
         font-size: 1.5rem;
     }
-    .sun
+    .sun-home
     {
         bottom: -41.5rem;
     }
@@ -512,7 +513,7 @@
         width: 55%;
         top: 8.5rem;
     }
-    .sun{
+    .sun-home{
         bottom: -38.5rem;
     }
     .chiken-yuca{
@@ -560,7 +561,7 @@
         width: 140px;
         font-size: 1.25rem;
     }
-    .sun{
+    .sun-home{
         scale: 0.9;
         bottom: -22.5rem;
     }
@@ -598,7 +599,7 @@
         top: auto;
         bottom: 0;
     }
-    .sun{
+    .sun-home{
         z-index: 0;
         width: 100%;
         bottom: -25rem;
@@ -692,7 +693,7 @@
          width: 120px;
         font-size: 1.5rem;
     }
-    .sun{
+    .sun-home{
         scale: 0.9;
         bottom: -22.5rem;
     }
@@ -738,7 +739,7 @@
          width: 120px;
         font-size: 1rem;
     }
-    .sun{
+    .sun-home{
         scale: 0.9;
         bottom: -22.5rem;
     }
@@ -784,7 +785,7 @@
          width: 120px;
         font-size: 1rem;
     }
-    .sun{
+    .sun-home{
         scale: 0.9;
         bottom: -22.5rem;
     }
@@ -823,7 +824,7 @@
         top: auto;
         bottom: 0;
     }
-    .sun{
+    .sun-home{
         z-index: 0;
         width: 95%;
         bottom: -17rem;
@@ -908,7 +909,7 @@
         top: auto;
         bottom: 0;
     }
-    .sun{
+    .sun-home{
         z-index: 0;
         width: 95%;
         bottom: -17rem;
@@ -1001,7 +1002,7 @@
          width: 120px;
         font-size: 1rem;
     }
-    .sun{
+    .sun-home{
         scale: 0.9;
         bottom: -22.5rem;
     }
@@ -1040,7 +1041,7 @@
         top: auto;
         bottom: 0;
     }
-    .sun{
+    .sun-home{
         z-index: 0;
         width: 95%;
         bottom: -17rem;
@@ -1135,7 +1136,7 @@
         border-width: 0.2rem;
         border-radius: 0.5rem;
     }
-    .sun{
+    .sun-home{
         scale: 0.9;
         bottom: -22.5rem;
     }
@@ -1189,7 +1190,7 @@
         border-width: 0.2rem;
         border-radius: 0.5rem;
     }
-    .sun{
+    .sun-home{
         scale: 0.9;
         bottom: -22.5rem;
     }
@@ -1247,7 +1248,7 @@
         bottom: -8rem;
         left: -2rem;
     }
-    .sun{
+    .sun-home{
         z-index: 0;
         bottom: -12rem;
     }
@@ -1333,7 +1334,7 @@
          width: 120px;
         font-size: 1.5rem;
     }
-    .sun{
+    .sun-home{
         z-index: 0;
         scale: 2;
         bottom: -9rem;
@@ -1419,10 +1420,11 @@
          width: 120px;
         font-size: 1.5rem;
     }
-    .sun{
+    .sun-home{
         z-index: 0;
-        scale: 2;
-        bottom: -9rem;
+        height: auto;
+        min-width: 42.5rem;
+        bottom: -11.5rem;
     }
     .welcoming-logo{
         margin-top: 20%;
@@ -1505,7 +1507,7 @@
          width: 120px;
         font-size: 1.5rem;
     }
-    .sun{
+    .sun-home{
         z-index: 0;
         scale: 2;
         bottom: -9rem;
@@ -1593,7 +1595,7 @@
          width: 120px;
         font-size: 1.5rem;
     }
-    .sun{
+    .sun-home{
         z-index: 0;
         scale: 2;
         bottom: -8rem;
@@ -1671,7 +1673,7 @@
         top: auto;
         bottom: 0;
     }
-    .sun{
+    .sun-home{
         z-index: 0;
         width: 100%;
         bottom: -8rem;

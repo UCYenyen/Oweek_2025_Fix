@@ -11,7 +11,7 @@ export default function Footer(){
                     <img className="uc-logo w-[2.5rem] sm:w-fit" src="/elements/icons/uc-logo.svg" alt="" />
                     <img className="oweek-logo w-[2rem] sm:w-fit" src="/elements/icons/oweek-logo.svg" alt="" />
                 </div>
-                <img className="luminate-footer-logo flex w-[5rem] sm:w-fit" src="/elements/icons/luminate-logo-text.svg" alt="" />
+                <img className="luminate-footer-logo flex w-[5rem] sm:w-fit" src="/elements/icons/luminate-logo-text.png" alt="" />
                 <div className="overflow-hidden">
                     <h1 className="text-footer text-white text-[12px] sm:text-2xl font-bold">Contact person: </h1>
                     <h1 className="text-footer text-white text-[12px] sm:text-2xl font-bold">@Banana </h1>

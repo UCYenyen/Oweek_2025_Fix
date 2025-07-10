@@ -25,7 +25,7 @@ function App() {
         <img className="wall-left absolute left-0 -top-1 w-[20%]" src="/elements/section/pillar-left.svg" alt="" draggable="false"/>
         <img className="wall-right absolute right-0 -top-1 w-[20%]" src="/elements/section/pillar-right.svg" alt="" draggable="false"/>
         <div className="flex flex-col justify-center items-center">
-          <img ref={luminateTitleRef} src="/elements/icons/welcoming-logo.svg" className="welcoming-logo z-[5] -mt-[2.5%]" alt="" draggable="false" />
+          <img ref={luminateTitleRef} src="/elements/icons/welcoming-logo.png" className="welcoming-logo z-[5] -mt-[2.5%]" alt="" draggable="false" />
           <Countdown/>
         </div>
         <div className="flex flex-col items-center justify-center overflow-hidden -z-[10]">

@@ -17,7 +17,7 @@ export default function Mascots() {
 
       <div className="absolute top-[18vh] left-1/2 -translate-x-1/2 w-[65%] z-[6] mascot-yucca-section">
         <img
-          src="/elements/about/iyucca.svg"
+          src="/elements/about/imyucca.svg"
           className="w-full h-auto mascot-yucca-title"
           alt="im-yucca"
         />
@@ -31,7 +31,7 @@ export default function Mascots() {
 
       <div className="absolute -bottom-[0vh] left-1/2 -translate-x-1/2 w-[65%] h-auto z-[6] mascot-chickens-section">
         <img
-          src="/elements/about/ccc.svg"
+          src="/elements/about/ccccimg.png"
           className="w-full h-auto mascot-chickens-title"
           alt="capcipcup"
         />

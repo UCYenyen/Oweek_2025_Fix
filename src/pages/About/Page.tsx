@@ -33,7 +33,7 @@ export const useAboutPageAnimation = () => {
 };
 
 export default function About() {
-  const { pillarLeftRef, pillarRightRef, sunTopRef, starCircleRef, aboutContentRef } = useAboutPageAnimation();
+  const { pillarLeftRef, pillarRightRef, sunTopRef, starCircleRef } = useAboutPageAnimation();
 
   return (
     <>

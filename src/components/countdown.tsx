@@ -44,7 +44,7 @@ export default function Countdown() {
       {/* Countdown */}
       <div
         ref={countdownRef}
-        className="countdown mt-6 relative h-full z-20 grid grid-cols-2 sm:grid-cols-4 gap-4 items-end mb-12 justify-center"
+        className="countdown mt-6 relative h-auto z-20 grid grid-cols-2 sm:grid-cols-4 gap-4 items-end mb-12 justify-center"
       >
         {/* Days */}
         <div className="countdown-card-container flex flex-col gap-4">

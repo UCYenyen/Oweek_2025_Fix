@@ -1,4 +1,10 @@
 /* Default styles (Desktop) */
+.mascot-pillar-mobile {
+  display: none;
+}
+.mascot-pillar-desktop {
+  display: block;
+}
 .mobile-about-bg {
   display: none; /* Hide mobile background by default */
 }
@@ -15,6 +21,12 @@
 
   .mobile-about-bg {
     display: block; /* Show mobile background on mobile */
+  }
+  .mascot-pillar-desktop {
+    display: none;
+  }
+  .mascot-pillar-mobile {
+    display: block;
   }
 }
 
@@ -258,7 +270,7 @@
   }
 
   .mascot-chickens-section {
-    bottom: 6vh; 
+    bottom: 4vh; 
   }
 
   .mascot-yucca-title,

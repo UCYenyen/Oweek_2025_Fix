@@ -2,10 +2,17 @@ export default function Mascots() {
   return (
     <div className="relative w-screen h-full mascot-container">
       <div className="relative w-[220%] -left-[40vh] h-auto mascot-pillar-container">
+        {/* Desktop Pillar */}
+        <img
+          src="/elements/about/newpillar.svg"
+          className="w-full h-full relative -top-[0vh] z-[5] mascot-pillar mascot-pillar-desktop"
+          alt="pillar-center-desktop"
+        />
+        {/* Mobile Pillar */}
         <img
           src="/elements/about/pillartall.svg"
-          className="w-full h-full relative -top-[0vh] z-[5] mascot-pillar"
-          alt="pillar-center"
+          className="w-full h-full relative -top-[0vh] z-[5] mascot-pillar mascot-pillar-mobile"
+          alt="pillar-center-mobile"
         />
       </div>
 
@@ -15,9 +22,9 @@ export default function Mascots() {
         alt="sun"
       />
 
-      <div className="absolute top-[18vh] left-1/2 -translate-x-1/2 w-[65%] z-[6] mascot-yucca-section">
+      <div className="absolute top-[18vh] left-1/2 -translate-x-1/2 w-[50%] z-[6] mascot-yucca-section">
         <img
-          src="/elements/about/imyucca.svg"
+          src="/elements/about/iyc.png"
           className="w-full h-auto mascot-yucca-title"
           alt="im-yucca"
         />
@@ -29,7 +36,7 @@ export default function Mascots() {
         </p> */}
       </div>
 
-      <div className="absolute -bottom-[0vh] left-1/2 -translate-x-1/2 w-[65%] h-auto z-[6] mascot-chickens-section">
+      <div className="absolute -bottom-[0vh] left-1/2 -translate-x-1/2 w-[50%] h-auto z-[6] mascot-chickens-section">
         <img
           src="/elements/about/ccccimg.png"
           className="w-full h-auto mascot-chickens-title"

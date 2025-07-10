@@ -7,7 +7,7 @@ export default function Schedule() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const currentSchedule = scheduleData[currentIndex];
-  const title =
+  // const title =
     currentSchedule.day === "PRA-OWEEK" ? "PRA-OWEEK" : "OWEEK 2025";
 
   return (

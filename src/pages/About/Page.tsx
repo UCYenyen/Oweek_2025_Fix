@@ -73,7 +73,7 @@ export default function About() {
               alt="about-bg"
             />
             <img
-              src="/elements/about/mobileabout.svg"
+              src="/elements/about/aboutmobile.svg"
               className="w-[90%] h-auto absolute left-1/2 -translate-x-1/2 about-bg mobile-about-bg"
               alt="mobile-about-bg"
             />

@@ -3,7 +3,7 @@ export default function Mascots() {
     <div className="relative w-screen h-full mascot-container">
       <div className="relative w-[220%] -left-[40vh] h-auto mascot-pillar-container">
         <img
-          src="/elements/about/newpillar.svg"
+          src="/elements/about/pillartall.svg"
           className="w-full h-full relative -top-[0vh] z-[5] mascot-pillar"
           alt="pillar-center"
         />

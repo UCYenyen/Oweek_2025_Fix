@@ -448,10 +448,17 @@
         height: 4rem;
         max-width: 40rem;
     }
-    .text{
+    .dropdown-text{
         font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+    .text{
+        font-size: 1.25rem;
+        line-height: 2.25em;
     }
     .text-description{
+        font-size: 1.25rem;
+        line-height: 2.25rem;
         max-width: 60rem;
         max-height: 30rem;
     }
@@ -503,7 +510,6 @@
         min-height: 35rem;
         padding-bottom: 5rem;
         border-width: 0.25rem;
-        padding-bottom: 16px;
     }
     .pillar-left{
         width: 32.5%;
@@ -522,6 +528,10 @@
         height: 3.5rem;
         max-width: 35.5rem;
     }
+    .dropdown-text{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
     .text{
         line-height: 2.5rem;
         font-size: 1.5rem;
@@ -530,8 +540,8 @@
         line-height: 2.5rem;
         font-size: 1.5rem;
         max-width: 60rem;
-        min-height: 35rem;
-        max-height: 35rem;
+        min-height: 37rem;
+        max-height: 37rem;
     }
 }
 
@@ -594,8 +604,12 @@
     }
     .dropdown{
         width: 80%;
-        height: 4rem;
+        height: 3rem;
         max-width: 30rem;
+    }
+    .dropdown-text{
+        font-size: 1.25rem;
+        line-height: 2rem;
     }
     .text{
         line-height: 2rem;
@@ -690,17 +704,17 @@
     }
     .rules-card{
         max-width: 35.5rem;
-        min-height: 35rem;
+        min-height: 43rem;
         padding-bottom: 5rem;
         border-width: 0.25rem;
         padding-bottom: 16px;
     }
     .pillar-left{
-        width: 33%;
+        width: 38%;
         left: -10.5rem;
     }
     .pillar-right{
-        width: 33%;
+        width: 38%;
         right: -10.5rem;
     }   
     .sun-rules{
@@ -712,6 +726,10 @@
         height: 3.5rem;
         max-width: 30.5rem;
     }
+    .dropdown-text{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
     .text{
         line-height: 2.2rem;
         font-size: 1.5rem;
@@ -720,8 +738,8 @@
         line-height: 2.5rem;
         font-size: 1.5rem;
         max-width: 60rem;
-        min-height: 35rem;
-        max-height: 35rem;
+        min-height: 41rem;
+        max-height: 41rem;
     }
 }
 @media(max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
@@ -824,12 +842,17 @@
         height: 2.5rem;
         max-width: 32.5rem;
     }
+    .dropdown-text{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
     .text{
-        line-height: 1.5rem;
+        margin-left: 0rem;
+        line-height: 2rem;
         font-size: 1.2rem;
     }
     .text-description{
-        line-height: 1.7rem;
+        line-height: 2rem;
         font-size: 1.2rem;
         max-width: 60rem;
         min-height: 35rem;
@@ -1242,6 +1265,55 @@
         max-height: 25rem;
     }
 }
+
+@media(max-width: 412px) and (max-height: 915px) and (orientation: portrait) {
+    .rules-logo{
+        width: 60%;
+        margin-top: 2.5%;
+    }
+    .rules-card{
+        padding: 0;
+        max-width: 20rem;
+        min-height: 30rem;
+        padding: 0;
+        padding-bottom: 5rem;
+        border-width: 0.25rem;
+        padding-bottom: 16px;
+    }
+    .pillar-left{
+        width: 57%;
+        left: -10rem;
+    }
+    .pillar-right{
+        width: 57%;
+        right: -10rem;
+    }   
+    .sun-rules{
+        scale: 1.5;
+        bottom: 0%;
+    }
+    .dropdown-text{
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 17.5rem;
+    }
+    .text{
+        margin-left: 0;
+        line-height: 2rem;
+        font-size: 0.95rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 0.95rem;
+        max-width: 60rem;
+        min-height: 29rem;
+        max-height: 29rem;
+    }
+}
 @media(max-width: 412px) and (max-height: 914px) and (orientation: portrait) {
     .rules-logo{
         width: 60%;
@@ -1250,23 +1322,27 @@
     .rules-card{
         padding: 0;
         max-width: 20rem;
-        min-height: 15rem;
+        min-height: 30rem;
         padding: 0;
         padding-bottom: 5rem;
         border-width: 0.25rem;
         padding-bottom: 16px;
     }
     .pillar-left{
-        width: 54.5%;
+        width: 57%;
         left: -9rem;
     }
     .pillar-right{
-        width: 54.5%;
+        width: 57%;
         right: -9rem;
     }   
     .sun-rules{
         scale: 1.5;
         bottom: 0%;
+    }
+    .dropdown-text{
+        font-size: 0.95rem;
+        line-height: 1.5rem;
     }
     .dropdown{
         width: 80%;
@@ -1274,15 +1350,16 @@
         max-width: 17.5rem;
     }
     .text{
-        line-height: 1.5rem;
+        margin-left: 0;
+        line-height: 2rem;
         font-size: 0.95rem;
     }
     .text-description{
-        line-height: 1.5rem;
+        line-height: 2rem;
         font-size: 0.95rem;
         max-width: 60rem;
-        min-height: 25rem;
-        max-height: 25rem;
+        min-height: 29rem;
+        max-height: 29rem;
     }
 }
 @media(max-width: 390px) and (max-height: 844px) and (orientation: portrait) {
@@ -1369,6 +1446,48 @@
         padding-bottom: 0;
     }
 }
+@media(max-width: 360px) and (max-height:800px) and (orientation: portrait) {
+    .rules-logo{
+        width: 65%;
+    }
+    .rules-card{
+        max-width: 16rem;
+        min-height: 30rem;
+        padding: 0;
+        padding-bottom: 5rem;
+        border-width: 0.25rem;
+        padding-bottom: 0;
+    }
+    .pillar-left{
+        width: 70%;
+        left: -10rem;
+    }
+    .pillar-right{
+        width: 70%;
+        right: -10rem;
+    }   
+    .sun-rules{
+        scale: 2;
+        bottom: 0%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem; 
+        max-width: 14.5rem;
+    }
+    .text{
+        line-height: 1.2rem;
+        font-size: 0.85rem;
+    }
+    .text-description{
+        line-height: 1.2rem;
+        font-size: 0.85rem;
+        max-width: 60rem;
+        max-height: 29rem;
+        min-height: 29rem;
+        padding-bottom: 0;
+    }
+}
 @media(max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
     .rules-logo{
         width: 65%;
@@ -1406,8 +1525,8 @@
         line-height: 1.5rem;
         font-size: 0.75rem;
         max-width: 60rem;
-        max-height: 25rem;
-        min-height: 25rem;
+        max-height: 29rem;
+        min-height: 29rem;
         padding-bottom: 0;
     }
 }

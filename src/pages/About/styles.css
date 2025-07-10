@@ -170,7 +170,7 @@
 
     .about-container .pillar-left,
     .about-container .pillar-right {
-      /* Adjust the width and height for mobile */
+      
       width: auto;
       height: 100%;
     }
@@ -181,11 +181,11 @@
         right: -5vh;
     }
   .about-container .about-bg {
-    /* Make the background scroll larger on mobile */
+    
     width: 90%;
   }
 
-  /* And adjust it again for smaller screens */
+  
   .mobile-about-bg {
     width: 85% !important;
     height: auto;
@@ -193,26 +193,26 @@
   }
 
   .about-container .about-content {
-    /* Adjust the vertical position of the content */
+    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    /* Reduce the title font size significantly for mobile */
+    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    /* Make the description text wider and slightly larger */
+    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.45vh;
   }
 
-  /* You can also add styles for the Mascots component here */
+  
   .mascot-container {
     width: auto;
     height: 75vh;
@@ -254,23 +254,23 @@
   }
 
   .mascot-yucca-section {
-    top: 10vh; /* Position from the top */
+    top: 10vh; 
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; /* Position from the bottom */
+    bottom: 5vh; 
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; /* Make title images fill their parent section */
+    width: 100%; 
     height: auto;
   }
 
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; /* Adjusted for better readability */
+    font-size: 1vh; 
   }
 
   .mascot-pot {
@@ -284,10 +284,10 @@
   }
 
   .mascot-background-shape {
-    width: 100%;
+    width: 110%;
     height: auto;
     position: absolute;
-    top: 11vh;
+    top: 17vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;

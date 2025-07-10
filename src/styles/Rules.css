@@ -1446,6 +1446,48 @@
         padding-bottom: 0;
     }
 }
+@media(max-width: 360px) and (max-height:800px) and (orientation: portrait) {
+    .rules-logo{
+        width: 65%;
+    }
+    .rules-card{
+        max-width: 16rem;
+        min-height: 30rem;
+        padding: 0;
+        padding-bottom: 5rem;
+        border-width: 0.25rem;
+        padding-bottom: 0;
+    }
+    .pillar-left{
+        width: 70%;
+        left: -10rem;
+    }
+    .pillar-right{
+        width: 70%;
+        right: -10rem;
+    }   
+    .sun-rules{
+        scale: 2;
+        bottom: 0%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem; 
+        max-width: 14.5rem;
+    }
+    .text{
+        line-height: 1.2rem;
+        font-size: 0.85rem;
+    }
+    .text-description{
+        line-height: 1.2rem;
+        font-size: 0.85rem;
+        max-width: 60rem;
+        max-height: 29rem;
+        min-height: 29rem;
+        padding-bottom: 0;
+    }
+}
 @media(max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
     .rules-logo{
         width: 65%;

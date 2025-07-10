@@ -323,7 +323,7 @@ export default function Rules() {
                   }
                 `}</style>
                 {selectedData?.description.some((desc) => desc.heading) ? (
-                  <ol className="list-decimal ml-4 sm:ml-10 ">
+                  <ol className="list-decimal ml-4 sm:ml-10 flex flex-col gap-4">
                     {selectedData.description.map((desc, idx) =>
                       desc.heading ? (
                         <li key={`${selectedData.id}-heading-${idx}`}>
@@ -331,7 +331,7 @@ export default function Rules() {
                             className="font-bold"
                             dangerouslySetInnerHTML={{ __html: desc.heading }}
                           />
-                          <ol className="list-[lower-alpha] ml-6">
+                          <ol className="list-[lower-alpha] ml-6 flex flex-col gap-1">
                             {desc.details.map((detail, i) => (
                               <li
                                 key={i}
@@ -354,7 +354,7 @@ export default function Rules() {
                   </ol>
                 ) : (
                   selectedData?.description.map((desc, idx) => (
-                    <ol className="list-decimal ml-6" key={`${selectedData.id}-noheading-${idx}`}>
+                    <ol className="list-decimal ml-6 flex flex-col gap-2" key={`${selectedData.id}-noheading-${idx}`}>
                       {desc.details.map((detail, i) => (
                         <li
                           key={i}

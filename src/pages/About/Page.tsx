@@ -73,11 +73,11 @@ export default function About() {
               alt="about-bg"
             />
             <img
-              src="/elements/about/aboutmobile.svg"
+              src="/elements/about/aboutbgfinal.svg"
               className="w-[90%] h-auto absolute left-1/2 -translate-x-1/2 about-bg mobile-about-bg"
               alt="mobile-about-bg"
             />
-            <div
+            {/* <div
               ref={aboutContentRef}
               className="absolute top-[24vh] left-1/2 -translate-x-1/2 w-full flex flex-col items-center z-20 about-content"
             >
@@ -97,7 +97,7 @@ export default function About() {
                 yang ditanamkan dengan integrasi dalam kegiatan pembelajaran
                 yang diterima oleh mahasiswa-mahasiswi.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 

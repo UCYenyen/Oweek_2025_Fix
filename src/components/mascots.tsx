@@ -17,32 +17,32 @@ export default function Mascots() {
 
       <div className="absolute top-[18vh] left-1/2 -translate-x-1/2 w-[65%] z-[6] mascot-yucca-section">
         <img
-          src="/elements/about/im-yucca.svg"
+          src="/elements/about/iyucca.svg"
           className="w-full h-auto mascot-yucca-title"
           alt="im-yucca"
         />
 
-        <p className="absolute top-[65%] left-1/2 -translate-x-1/2 text-center text-[2vh] text-[#AB6528] font-roboto w-[70%] px-4 z-[10] mascot-yucca-description">
+        {/* <p className="absolute top-[65%] left-1/2 -translate-x-1/2 text-center text-[2vh] text-[#AB6528] font-roboto w-[70%] px-4 z-[10] mascot-yucca-description">
           Yucca adalah seekor unicorn lucu yang berpendirian teguh. Ia tidak
           mudah menyerah, bahkan mudah beradaptasi ketika menghadapi situasi
           yang sulit.
-        </p>
+        </p> */}
       </div>
 
       <div className="absolute -bottom-[0vh] left-1/2 -translate-x-1/2 w-[65%] h-auto z-[6] mascot-chickens-section">
         <img
-          src="/elements/about/capcipcup.svg"
+          src="/elements/about/ccc.svg"
           className="w-full h-auto mascot-chickens-title"
           alt="capcipcup"
         />
 
-        <p className="absolute top-[50%] left-1/2 -translate-x-1/2 text-center text-[2vh] text-[#AB6528] font-roboto w-[70%] px-4 z-[10] mascot-chickens-description">
+        {/* <p className="absolute top-[50%] left-1/2 -translate-x-1/2 text-center text-[2vh] text-[#AB6528] font-roboto w-[70%] px-4 z-[10] mascot-chickens-description">
           Chap, Chip, dan Chup, adalah tiga anak ayam bersaudara yang tumbuh
           bersama Yucca, Karakter Chap, Chip, dan Chup masing-masing
           melambangkan nilai-nilai Universitas Ciputra, yaitu Integrity,
           Professionalism, dan Entrepreneurship. Ciri khas mereka adalah jumlah
           jambul mereka yang sesuai dengan hand sign I, P, dan E.
-        </p>
+        </p> */}
       </div>
 
       <img

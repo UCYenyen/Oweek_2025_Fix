@@ -2,7 +2,6 @@ import "./styles.css";
 import Mascots from "../../components/mascots";
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import ShinyText from "../../components/ShinyText";
 
 export const useAboutPageAnimation = () => {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);

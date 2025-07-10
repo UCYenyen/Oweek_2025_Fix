@@ -30,7 +30,7 @@ function App() {
         </div>
         <div className="flex flex-col items-center justify-center overflow-hidden -z-[10]">
           <img src="/elements/section/building-center-home-page.svg" className="building-center z-[2] w-[60%] absolute -bottom-[40vh]" alt="" draggable="false"/>
-          <img ref={sunRef} src="/elements/section/sun.png" loading="lazy" className="sun-home absolute w-full z-[0] -bottom-[80%]" alt="" draggable="false"/>
+          <img ref={sunRef} src="/elements/section/sun.png" loading="lazy" className="sun-home absolute w-full h-auto z-[0] -bottom-[80%]" alt="" draggable="false"/>
           {/* <img src="/elements/section/stars.svg" loading="lazy aaa" className="stars absolute w-full z-[0] -bottom-[80%]" alt="" draggable="false"/> */}
           {/* Animated Characters */}
           <img 

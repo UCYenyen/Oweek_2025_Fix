@@ -18,6 +18,7 @@
     }
     .sun-home{
         width: 85%;
+        height: auto;
         scale: 1;
         bottom: -125rem;
     }
@@ -1422,6 +1423,8 @@
     .sun-home{
         z-index: 0;
         scale: 2;
+        height: 100%;
+        width: auto;
         bottom: -9rem;
     }
     .welcoming-logo{

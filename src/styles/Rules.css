@@ -823,7 +823,7 @@
         min-height: 35rem;
         padding-bottom: 5rem;
         border-width: 0.25rem;
-        padding-bottom: 16px;
+        padding-bottom: 32px;
     }
     .pillar-left{
         width: 37.5%;
@@ -1228,21 +1228,18 @@
         margin-top: 2.5%;
     }
     .rules-card{
-        padding: 0;
         max-width: 20rem;
-        min-height: 15rem;
-        padding: 0;
-        padding-bottom: 5rem;
+        min-height: 29rem;
         border-width: 0.25rem;
         padding-bottom: 16px;
     }
     .pillar-left{
-        width: 54.5%;
-        left: -9rem;
+        width: 57%;
+        left: -10rem;
     }
     .pillar-right{
-        width: 54.5%;
-        right: -9rem;
+        width: 57%;
+        right: -10rem;
     }   
     .sun-rules{
         scale: 1.5;
@@ -1261,8 +1258,8 @@
         line-height: 1.5rem;
         font-size: 0.95rem;
         max-width: 60rem;
-        min-height: 25rem;
-        max-height: 25rem;
+        min-height: 28rem;
+        max-height: 28rem;
     }
 }
 
@@ -1275,10 +1272,8 @@
         padding: 0;
         max-width: 20rem;
         min-height: 30rem;
-        padding: 0;
-        padding-bottom: 5rem;
         border-width: 0.25rem;
-        padding-bottom: 16px;
+        padding-bottom: 24px;
     }
     .pillar-left{
         width: 57%;
@@ -1326,7 +1321,7 @@
         padding: 0;
         padding-bottom: 5rem;
         border-width: 0.25rem;
-        padding-bottom: 16px;
+        padding-bottom: 24px;
     }
     .pillar-left{
         width: 57%;
@@ -1360,6 +1355,48 @@
         max-width: 60rem;
         min-height: 29rem;
         max-height: 29rem;
+    }
+}
+@media(max-width: 393px) and (max-height: 873px) and (orientation: portrait) {
+    .rules-logo{
+        width: 65%;
+    }
+    .rules-card{
+        max-width: 16rem;
+        min-height: 29rem;
+        padding: 0;
+        padding-bottom: 5rem;
+        border-width: 0.25rem;
+        padding-bottom: 0;
+    }
+    .pillar-left{
+        width: 60%;
+        left: -9rem;
+    }
+    .pillar-right{
+        width: 60%;
+        right: -9rem;
+    }   
+    .sun-rules{
+        scale: 2;
+        bottom: 0%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 14.5rem;
+    }
+    .text{
+        line-height: 1.5rem;
+        font-size: 0.85rem;
+    }
+    .text-description{
+        line-height: 1.5rem;
+        font-size: 0.85rem;
+        max-width: 60rem;
+        max-height: 28rem;
+        min-height: 28rem;
+        padding-bottom: 0;
     }
 }
 @media(max-width: 390px) and (max-height: 844px) and (orientation: portrait) {

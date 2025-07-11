@@ -61,18 +61,24 @@ export default function About() {
           <img
             ref={starCircleRef}
             src="/elements/about/star-circle.svg"
-            className="absolute top-[5vh] w-[85%] left-1/2 -translate-x-1/2"
+            className="absolute top-[5vh] w-[85%] left-1/2 -translate-x-1/2 star-circle"
+            alt="star-circle"
+          />
+          <img
+            ref={starCircleRef}
+            src="/elements/about/star-circle.svg"
+            className="absolute w-[100%] left-1/2 -translate-x-1/2 star-circle-mobile"
             alt="star-circle"
           />
 
           <div className="absolute top-[2vh] w-full h-full z-10 left-1/2 -translate-x-1/2">
             <img
-              src="/elements/about/aboutbgdesktop.png"
+              src="/elements/about/aboutnew.png"
               className="w-[60%] h-auto absolute left-1/2 -translate-x-1/2 about-bg desktop-about-bg"
               alt="about-bg"
             />
             <img
-              src="/elements/about/aboutbgfinal.svg"
+              src="/elements/about/aboutmobilefinal.png"
               className="w-[90%] h-auto absolute left-1/2 -translate-x-1/2 about-bg mobile-about-bg"
               alt="mobile-about-bg"
             />

@@ -12,6 +12,12 @@
 .desktop-about-bg {
   display: block; /* Show desktop background by default */
 }
+.star-circle {
+  display: block;
+}
+.star-circle-mobile {
+  display: none; 
+}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -191,6 +197,13 @@
     }
     .about-container .pillar-right{
         right: -5vh;
+    }
+  .about-container .star-circle {
+      display: none; 
+    }
+    .about-container .star-circle-mobile{
+      display: block; /* Show mobile star circle */
+      bottom: -20vh;
     }
   .about-container .about-bg {
     

@@ -331,15 +331,26 @@ export default function Rules() {
                             className="font-bold"
                             dangerouslySetInnerHTML={{ __html: desc.heading }}
                           />
-                          <ol className="list-[lower-alpha] ml-6 flex flex-col gap-1">
-                            {desc.details.map((detail, i) => (
-                              <li
-                                key={i}
-                                dangerouslySetInnerHTML={{ __html: detail }}
-                                className="text"
-                              />
-                            ))}
-                          </ol>
+                          {/* Only render the sublist if there are non-empty details */}
+                          {desc.details && desc.details.length > 0 && desc.details.some(detail => detail.trim() !== "") && (
+                            <ol className="list-[lower-alpha] ml-6 flex flex-col gap-1">
+                              {desc.details
+                                .filter(detail => detail.trim() !== "") // Filter out empty details
+                                .map((detail, i) => (
+                                  <li
+                                    key={i}
+                                    dangerouslySetInnerHTML={{ __html: detail }}
+                                    className="text"
+                                  />
+                                ))}
+                            </ol>
+                          )}
+                          {/* Display notes if they exist and are not empty */}
+                          {desc.notes && desc.notes.trim() !== "" && (
+                            <div className="mt-2 flex flex-col gap-1">
+                              <div dangerouslySetInnerHTML={{ __html: desc.notes }} className="text"/>
+                            </div>
+                          )}
                         </li>
                       ) : (
                         desc.details.map((detail, i) => (
@@ -362,6 +373,12 @@ export default function Rules() {
                           className="text"
                         />
                       ))}
+                      {/* Display notes for non-heading sections */}
+                      {desc.notes && desc.notes.trim() !== "" && (
+                        <div className="mt-2 flex flex-col gap-1">
+                          <div dangerouslySetInnerHTML={{ __html: desc.notes }} className="text"/>
+                        </div>
+                      )}
                     </ol>
                   ))
                 )}

@@ -215,12 +215,15 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="h-[100px] sm:h-[113px]">
         
-        <div className="relative bg-[url('/elements/navbar/navbar-below.svg')] w-screen bg-cover h-[2.5rem] sm:bg-auto sm:h-[5rem]">
+      </div>
+      <div className="relative bg-[url('/elements/navbar/navbar-below.svg')] w-screen bg-cover h-[2.5rem] sm:bg-auto sm:h-[5rem]">
           <img
             src="/elements/navbar/leaves-left.svg"
             loading="lazy"
-            className="leaves-left absolute z-[6] -top-5 sm:-top-[7.5rem] left-0"
+            className="overflow-hidden leaves-left absolute z-[6] -top-5 sm:-top-[7.5rem] left-0"
             draggable="false"
             alt=""
           />
@@ -232,12 +235,6 @@ export default function Navbar() {
             alt=""
           />
         </div>
-      </div>
-      <div className="h-[100px] sm:h-[190px]">
-        <div className="relative w-screen bg-cover h-[2.5rem] sm:bg-auto sm:h-[5rem]">
-      </div>
-      </div>
-      
     </>
   );
 }

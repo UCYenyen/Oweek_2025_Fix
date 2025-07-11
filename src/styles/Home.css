@@ -1473,6 +1473,7 @@
         font-size: 1.5rem;
     }
     .sun-home{
+        height: 45rem;
         min-height: auto;
         min-width: 45rem;
         z-index: 0;
@@ -1569,6 +1570,7 @@
     }
     .sun-home{
         z-index: 0;
+        height: 40rem;
         min-height: auto;
         min-width: 42.5rem;
         bottom: -11.5rem;

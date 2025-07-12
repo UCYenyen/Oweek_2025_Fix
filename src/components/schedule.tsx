@@ -73,19 +73,40 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
       {/* Dress Code Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-0 flex items-center justify-center z-50">
-          <div className="schedule-card p-8 rounded-3xl max-w-md w-[100%]">
-            <h3 className="text-3xl font-bold text-center text-[#AB6528] mb-4">Dress Code</h3>
-            <div className="text-[#AB6528] space-y-2">
-              <p>{currentSchedule.baju}</p>
-              <p>{currentSchedule.celana}</p>
-              <p>{currentSchedule.sepatu}</p>
-              {currentSchedule.extra && <p className="font-bold">{currentSchedule.extra}</p>}
-              {currentSchedule.baju2 && <hr className="my-4 border-[#AB6528]" />}
-              {currentSchedule.baju2 && <p>{currentSchedule.baju2}</p>}
-              {currentSchedule.celana2 && <p>{currentSchedule.celana2}</p>}
-              {currentSchedule.sepatu2 && <p>{currentSchedule.sepatu2}</p>}
+          <div className="schedule-card relative rounded-3xl p-8 w-[90%] max-w-lg text-[#AB6528] font-roboto flex flex-col items-center">
+            {/* Title */}
+            <h2 className="text-4xl font-bold mb-6">Dress Code</h2>
+
+            {/* Details */}
+            <div className="text-lg space-y-4 w-full text-center">
+              {currentSchedule.baju && (
+                <div>
+                  <p className="font-bold">Baju:</p>
+                  <p>{currentSchedule.baju}</p>
+                </div>
+              )}
+              {currentSchedule.baju2 && (
+                <div>
+                  <p className="font-bold">Baju 2:</p>
+                  <p>{currentSchedule.baju2}</p>
+                </div>
+              )}
+              {currentSchedule.celana && (
+                <div>
+                  <p className="font-bold">Celana:</p>
+                  <p>{currentSchedule.celana}</p>
+                </div>
+              )}
+              {currentSchedule.sepatu && (
+                <div>
+                  <p className="font-bold">Sepatu:</p>
+                  <p>{currentSchedule.sepatu}</p>
+                </div>
+              )}
             </div>
-            <button onClick={() => setIsModalOpen(false)} className="button-font button-schedule mt-6 w-full py-2 rounded-full">
+
+            {/* Close Button */}
+            <button onClick={() => setIsModalOpen(false)} className="button-schedule mt-8 w-full py-2 rounded-full">
               Close
             </button>
           </div>

@@ -166,24 +166,24 @@
   .schedule-pillar-left,
   .schedule-pillar-right {
     position: absolute;
-    width: 10%;
-    height: 85%;
+    width: auto;
+    height: 100%;
     top: 0;
     z-index: 5;
   }
   .schedule-pillar-left {
-    left: 0;
+    left: -3vh;
   }
   .schedule-pillar-right {
-    right: 0;
+    right: -3vh;
   }
 
   .schedule-duck-right {
     position: absolute;
-    width: 35vh;
+    width: 40vh;
     height: auto;
-    bottom: 17vh;
-    right: 5vh;
+    bottom: 13vh;
+    right: 2vh;
     z-index: 10;
   }
 
@@ -244,7 +244,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 60%;
     height: auto;
     min-height: 260px;
   }

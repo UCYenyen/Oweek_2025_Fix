@@ -22,7 +22,7 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
 
   return (
     <div className="relative w-full flex items-center justify-center flex-col pt-[2vh] z-[21]">
-      <div className="schedule-card relative rounded-3xl p-6 sm:p-8 flex items-center justify-center w-[90%] h-auto">
+      <div className="schedule-card relative rounded-3xl p-6 sm:p-8 flex items-center justify-center w-[90%] h-auto min-h-[260px]">
         {/* Left Arrow Button */}
         <button onClick={handlePrev} className="button-left p-2 absolute -left-4 sm:-left-20">
           <img src="/elements/schedule/buttonleft.svg" alt="Previous" />
@@ -56,12 +56,12 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
         {hasDressCode && (
           <button
             onClick={() => setIsModalOpen(true)}
-            className=" flex items-center justify-center"
+            className="button-dresscode flex items-center justify-center"
           >
             <img
               src="/elements/schedule/shirt.svg"
               alt="Ketentuan Pakaian"
-              className="h-24 w-24"
+              className="h-16 w-16 sm:h-24 sm:w-24"
             />
           </button>
         )}

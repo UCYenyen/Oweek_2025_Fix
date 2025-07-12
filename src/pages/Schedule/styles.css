@@ -169,13 +169,15 @@
   }
 
   .schedule-duck-left {
-    left: -5vw;
-    bottom: -3vh;
+    left: 5vw;
+    bottom: 3vh;
+    transform: scale(1.3) !important;
   }
 
   .schedule-duck-right {
-    right: -4vw;
-    bottom: -7vh;
+    right: 5vw;
+    bottom: -5vh;
+    transform: scale(1.3) !important;
   }
 
   /* Cleaned up mobile styles for the new structure */
@@ -208,10 +210,31 @@
     line-height: 1.2;
   }
 
-  .schedule-button-group {
-    gap: 0.5rem; /* Reduce gap between buttons */
-    transform: scale(0.8); /* Make the whole button group smaller */
+  .schedule-button-group { 
+    gap: 0.5rem; /* ini buat button yang dibawah yang ada 2 itu */
+    transform: none !important; /* Remove the scaling from the group */
   }
+
+  .button-schedule {
+    font-size: 1rem !important;
+    padding: 0.25rem 0.75rem !important;
+  }
+
+  .button-dresscode img {
+    height: 5rem !important;
+    width: auto !important;
+  }
+
+  .button-left {
+    left: -4rem !important;
+    transform: scale(0.7) !important; 
+  }
+
+  .button-right {
+    right: -4rem !important;
+    transform: scale(0.7) !important; 
+  }
+
   .schedule-card {
   cursor: pointer;
   border: 4px solid transparent;

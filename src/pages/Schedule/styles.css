@@ -28,7 +28,6 @@
   }
   .schedule-card-bg-mobile {
     display: block;
-
   }
 }
 
@@ -131,6 +130,7 @@
   }
 
   .schedule-content-area {
+    height: 120vh !important; /* Manually set the height for mobile view */
   }
 
   .schedule-title-img {
@@ -147,14 +147,14 @@
   .schedule-pillar-left,
   .schedule-pillar-right{
     z-index: 10;
-    width: 50%;
+    width: auto;
     height: 100%;
   }
     .schedule-pillar-left{
-    left: -8vh;
+    left: -10vh;
   }
   .schedule-pillar-right{
-    right: -8vh;
+    right: -10vh;
   }
   .schedule-massive-pillar {
     width: 100%;
@@ -170,25 +170,32 @@
 
   .schedule-duck-left {
     left: -5vw;
+    bottom: -3vh;
   }
 
   .schedule-duck-right {
-    right: -5vw;
+    right: -4vw;
+    bottom: -7vh;
   }
 
+  /* Cleaned up mobile styles for the new structure */
   .schedule-card-container {
     width: 200%;
     height: auto;
-    bottom: 25vh;
-    position: absolute;
+    position: relative;
+    bottom: auto;
   }
 
   .schedule-card-content {
-    width: 100%;
+    width: 90%; /* Adjust width for mobile screen */
     height: auto;
-    z-index: inherit;
+    position: absolute;
+    top: 60%; /* Start at the vertical center */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust based on the element's own size */
   }
-.schedule-item-title {
+
+  .schedule-item-title {
     font-size: 1.2rem; /* Smaller title */
   }
 
@@ -215,6 +222,29 @@
   opacity: 100%;
   width: 262px;
   height: 259; 
+}
+.button-schedule{
+    background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
+    cursor: pointer;
+    border: 4px solid transparent;
+    
+    background-image: linear-gradient(90deg, var(--countdown-top-gradient), var(--countdown-right-gradient)), radial-gradient(circle at top left, #F2B028,#FFF0B8);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    width: 50%;
+    height: auto;
+}
+.schedule-card-bg-mobile{
+  display: block !important;
+  width: 175% !important; /* Control the width here */
+  height: auto !important;
+  max-width: none !important; /* Prevent Tailwind from limiting the size */
+  
+  /* Center the oversized image */
+  position: absolute !important;
+  left: 50% !important;
+  top: 15vh !important;
+  transform: translate(-50%, -50%) !important;
 }
 
 }

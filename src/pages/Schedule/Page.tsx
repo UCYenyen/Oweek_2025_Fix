@@ -96,24 +96,26 @@ export default function Schedule() {
         />
 
         <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full schedule-card-wrapper">
-          <div ref={cardContainerRef} className="relative w-[65%] h-[85%] z-[9] schedule-card-container">
+          {/* Container for the background image, positioned behind pillars */}
+          <div ref={cardContainerRef} className="relative w-[65%] h-[85%] z-[4] schedule-card-container">
             <img
               src="/elements/schedule/schedulebg.png"
-              className="absolute top-0 left-0 w-full h-auto schedule-card-bg schedule-card-bg-desktop"
+              className="absolute top-0 left-0 w-full h-full schedule-card-bg schedule-card-bg-desktop"
               alt="schedule-bg"
             />
             <img
               src="/elements/schedule/mobilebg.png"
-              className="absolute top-0 left-0 w-full h-auto schedule-card-bg schedule-card-bg-mobile"
+              className="absolute top-0 left-0 schedule-card-bg schedule-card-bg-mobile"
               alt="schedule-bg-mobile"
             />
-            <div className="relative flex flex-col items-center justify-start w-full h-full pt-[40vh] schedule-card-content">
-              {/* <h1 className="title-font mb-4">{title}</h1> */}
-              <ScheduleDiv
-                currentIndex={currentIndex}
-                setCurrentIndex={setCurrentIndex}
-              />
-            </div>
+          </div>
+
+          {/* Container for the interactive schedule content, positioned above pillars */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[55%] z-10 schedule-card-content">
+            <ScheduleDiv
+              currentIndex={currentIndex}
+              setCurrentIndex={setCurrentIndex}
+            />
           </div>
         </div>
       </div>

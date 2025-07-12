@@ -72,8 +72,8 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
 
       {/* Dress Code Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-25 flex items-center justify-center z-50">
-          <div className="schedule-card p-8 rounded-3xl max-w-md w-[90%]">
+        <div className="fixed inset-0 bg-black bg-opacity-0 flex items-center justify-center z-50">
+          <div className="schedule-card p-8 rounded-3xl max-w-md w-[100%]">
             <h3 className="text-3xl font-bold text-center text-[#AB6528] mb-4">Dress Code</h3>
             <div className="text-[#AB6528] space-y-2">
               <p>{currentSchedule.baju}</p>

@@ -102,6 +102,220 @@
     top: 15vh !important; /* Change this position */
   }
 }
+@media (max-width: 1536px) and (max-height: 960px) {
+  /* Page Layout */
+  .schedule-page-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #B2D5F1;
+    background-size: cover;
+    background-image: url('/elements/real-background.svg');
+  }
+
+  .schedule-content-area {
+    position: relative;
+    width: 100vw;
+    height: 125vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Decorative Elements */
+  .schedule-title-img {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: -3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+  }
+
+  .schedule-star-circle {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: -3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .schedule-sun-top {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0.5;
+  }
+
+  .schedule-massive-pillar {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .schedule-pillar-left,
+  .schedule-pillar-right {
+    position: absolute;
+    width: 10%;
+    height: 85%;
+    top: 0;
+    z-index: 5;
+  }
+  .schedule-pillar-left {
+    left: 0;
+  }
+  .schedule-pillar-right {
+    right: 0;
+  }
+
+  .schedule-duck-right {
+    position: absolute;
+    width: 35vh;
+    height: auto;
+    bottom: 17vh;
+    right: 5vh;
+    z-index: 10;
+  }
+
+  .schedule-duck-left {
+    position: absolute;
+    width: 50vh;
+    height: auto;
+    bottom: 23vh;
+    left: 0;
+    z-index: 10;
+  }
+
+  .schedule-card-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .schedule-card-container {
+    position: relative;
+    width: 65%;
+    height: 85%;
+    z-index: 4;
+  }
+
+  .schedule-card-bg-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .schedule-card-bg-mobile {
+    display: none;
+  }
+
+  .schedule-card-content {
+    position: absolute;
+    margin-top: 4vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    z-index: 10;
+  }
+
+  .schedule-card {
+    position: relative;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    min-height: 260px;
+  }
+
+  .button-left {
+    padding: 0.5rem;
+    position: absolute;
+    left: -5rem;
+  }
+
+  .button-right {
+    padding: 0.5rem;
+    position: absolute;
+    right: -5rem;
+  }
+
+  .schedule-inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #AB6528;
+    font-family: 'Roboto', sans-serif;
+    row-gap: 1rem;
+  }
+
+  .schedule-item-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+
+  .schedule-item-desc {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .schedule-sessions-list {
+    padding-top: 1.75rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
+  .schedule-button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .button-schedule {
+    font-family: var(--main-font);
+    padding: 0.5rem 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    border-radius: 9999px;
+  }
+
+  .button-dresscode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-dresscode img {
+    height: 6rem;
+    width: 6rem;
+  }
+}
 
 @media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
 }
@@ -599,6 +813,172 @@
 
 }
 
+@media (max-width: 360px) and (max-height: 780px) and (orientation: portrait) {
+ .title-font {
+    font-size: 3rem; /* Change this */
+    top: 15vh !important; /* Change this position */
+  }
+
+  .schedule-page-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .schedule-content-area {
+    height: 120vh !important; /* Manually set the height for mobile view */
+  }
+
+  .schedule-title-img {
+    width: 80%;
+    top: 10vh;
+  }
+
+  .schedule-star-circle {
+    width: 175%;
+    height: auto;
+    top: 3vh;
+  }
+
+  .schedule-pillar-left,
+  .schedule-pillar-right{
+    z-index: 10;
+    width: auto;
+    height: 100%;
+  }
+    .schedule-pillar-left{
+    left: -10vh;
+  }
+  .schedule-pillar-right{
+    right: -10vh;
+  }
+  .schedule-massive-pillar {
+    width: 100%;
+    height: auto;
+    top: 0vh;
+  }
+
+  .schedule-duck-left,
+  .schedule-duck-right {
+    width: 20vh; /* Resize ducks */
+    bottom: 2vh;
+  }
+
+  .schedule-duck-left {
+    left: 5vw;
+    bottom: 3vh;
+    transform: scale(1.3) !important;
+  }
+
+  .schedule-duck-right {
+    right: 5vw;
+    bottom: -5vh;
+    transform: scale(1.3) !important;
+  }
+
+  /* Cleaned up mobile styles for the new structure */
+  .schedule-card-container {
+    width: 200%;
+    height: auto;
+    position: relative;
+    bottom: auto;
+  }
+
+  .schedule-card-content {
+    width: 90%; /* Adjust width for mobile screen */
+    height: auto;
+    position: absolute;
+    top: 60%; /* Start at the vertical center */
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.85); /* Adjust based on the element's own size */
+  }
+
+  .schedule-item-title {
+    font-size: 1.7rem; /* Smaller title */
+  }
+
+  .schedule-item-desc {
+    font-size: 1.1rem; /* Smaller description text */
+  }
+
+  .schedule-sessions-list p {
+    font-size: 1.2rem; /* Smaller session text */
+    line-height: 1.5;
+  }
+
+  .schedule-button-group { 
+    gap: 0.3rem; /* ini buat button yang dibawah yang ada 2 itu */
+    transform: none !important; /* Remove the scaling from the group */
+  }
+
+    .schedule-card .button-schedule {
+    margin-left: 3rem;
+    margin-top: 1rem !important; /* Adjust this value to move the button */
+  }
+
+  .button-schedule {
+    font-size: 1rem !important;
+    padding: 0.25rem 0.75rem !important;
+    margin-top: -2vh;
+  }
+
+  .button-dresscode img {
+    margin-top: -2vh;    
+    height: 7rem !important;
+    width: auto !important;
+  }
+
+  /* Target the close button inside the modal for landscape view */
+  .schedule-card .button-schedule {
+    margin-left: 4rem;
+    margin-top: 1rem !important; /* Adjust this value to move the button */
+  }
+
+  .button-left {
+    left: -5.3rem !important;
+    transform: scale(0.9) !important; 
+  }
+
+  .button-right {
+    right: -5.3rem !important;
+    transform: scale(0.9) !important; 
+  }
+
+  .schedule-card {
+  cursor: pointer;
+  border: 4px solid transparent;
+  background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-blend-mode: screen;
+  opacity: 100%;
+  width: 350px;
+  height: 259; 
+}
+.button-schedule{
+    background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
+    cursor: pointer;
+    border: 4px solid transparent;
+    
+    background-image: linear-gradient(90deg, var(--countdown-top-gradient), var(--countdown-right-gradient)), radial-gradient(circle at top left, #F2B028,#FFF0B8);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    width: 50%;
+    height: auto;
+}
+.schedule-card-bg-mobile{
+  display: block !important;
+  width: 175% !important; /* Control the width here */
+  height: auto !important;
+  max-width: none !important; /* Prevent Tailwind from limiting the size */
+  
+  /* Center the oversized image */
+  position: absolute !important;
+  left: 50% !important;
+  top: 15vh !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+}
 
 @media (max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
 }

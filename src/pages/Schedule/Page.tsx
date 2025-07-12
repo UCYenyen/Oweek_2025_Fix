@@ -12,6 +12,8 @@ export const useSchedulePageAnimation = () => {
   const duckLeftRef = useRef<HTMLImageElement>(null);
   const duckRightRef = useRef<HTMLImageElement>(null);
   const cardContainerRef = useRef<HTMLDivElement>(null);
+  const massivePillarRef = useRef<HTMLImageElement>(null);
+  const cloudRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out", duration: 1.2 } });
@@ -20,19 +22,34 @@ export const useSchedulePageAnimation = () => {
     gsap.set([pillarLeftRef.current, pillarRightRef.current], { opacity: 0, x: (i) => (i === 0 ? -50 : 50) });
     gsap.set([duckLeftRef.current, duckRightRef.current], { opacity: 0, y: 50 });
     gsap.set(cardContainerRef.current, { opacity: 0, scale: 0.9 });
+    gsap.set(massivePillarRef.current, { opacity: 0, y: -100 });
 
     tl.to([pillarLeftRef.current, pillarRightRef.current], { opacity: 1, x: 0, stagger: 0.2 })
       .to([titleRef.current, starCircleRef.current], { opacity: 1, y: 0, stagger: 0.2 }, "-=1")
       .to(cardContainerRef.current, { opacity: 1, scale: 1 }, "-=0.8")
+      .to(massivePillarRef.current, { opacity: 1, y: 0 }, "<+0.5")
       .to([duckLeftRef.current, duckRightRef.current], { opacity: 1, y: 0, stagger: 0.2 }, "-=0.5");
+
+    const cloudTween = gsap.to(cloudRef.current, {
+      x: -75,
+      duration: 10,
+      ease: "sine.inOut",
+      yoyo: true,
+      repeat: -1,
+    });
+
+    return () => {
+      tl.kill();
+      cloudTween.kill();
+    };
   }, []);
 
-  return { titleRef, starCircleRef, pillarLeftRef, pillarRightRef, duckLeftRef, duckRightRef, cardContainerRef };
+  return { titleRef, starCircleRef, pillarLeftRef, pillarRightRef, duckLeftRef, duckRightRef, cardContainerRef, massivePillarRef, cloudRef };
 };
 
 export default function Schedule() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const { titleRef, starCircleRef, pillarLeftRef, pillarRightRef, duckLeftRef, duckRightRef, cardContainerRef } = useSchedulePageAnimation();
+  const { titleRef, starCircleRef, pillarLeftRef, pillarRightRef, duckLeftRef, duckRightRef, cardContainerRef, massivePillarRef, cloudRef } = useSchedulePageAnimation();
 
   const currentSchedule = scheduleData[currentIndex];
   // const title =
@@ -53,6 +70,7 @@ export default function Schedule() {
         alt="star-circle"
       />
       <img
+          ref={cloudRef}
           src="/elements/schedule/cloudschedule.png"
           className="absolute w-full h-auto -top-[0vh] left-1/2 -translate-x-1/2 z-[2] schedule-sun-top opacity-50"
           alt="sun-top"
@@ -60,6 +78,7 @@ export default function Schedule() {
       <div className="relative w-screen h-[125vh] flex items-center justify-center schedule-content-area">
         
         <img
+          ref={massivePillarRef}
           src="/elements/schedule/massive-pillar.svg"
           className="absolute w-full h-auto top-0 left-0 z-0 schedule-massive-pillar"
           alt="pillar-massive"
@@ -111,7 +130,7 @@ export default function Schedule() {
           </div>
 
           {/* Container for the interactive schedule content, positioned above pillars */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[55%] z-10 schedule-card-content">
+          <div className="absolute mt-[4vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[55%] z-10 schedule-card-content">
             <ScheduleDiv
               currentIndex={currentIndex}
               setCurrentIndex={setCurrentIndex}

@@ -486,7 +486,7 @@
 
   .schedule-duck-left,
   .schedule-duck-right {
-    width: 25vh; /* Resize ducks */
+    width: 20vh; /* Resize ducks */
     bottom: 2vh;
   }
 
@@ -520,21 +520,26 @@
   }
 
   .schedule-item-title {
-    font-size: 1.2rem; /* Smaller title */
+    font-size: 1.7rem; /* Smaller title */
   }
 
   .schedule-item-desc {
-    font-size: 0.8rem; /* Smaller description text */
+    font-size: 1.1rem; /* Smaller description text */
   }
 
   .schedule-sessions-list p {
-    font-size: 0.9rem; /* Smaller session text */
-    line-height: 1.2;
+    font-size: 1.2rem; /* Smaller session text */
+    line-height: 1.5;
   }
 
   .schedule-button-group { 
-    gap: 0.5rem; /* ini buat button yang dibawah yang ada 2 itu */
+    gap: 0.3rem; /* ini buat button yang dibawah yang ada 2 itu */
     transform: none !important; /* Remove the scaling from the group */
+  }
+
+    .schedule-card .button-schedule {
+    margin-left: 3rem;
+    margin-top: 1rem !important; /* Adjust this value to move the button */
   }
 
   .button-schedule {
@@ -543,7 +548,7 @@
   }
 
   .button-dresscode img {
-    height: 5rem !important;
+    height: 6rem !important;
     width: auto !important;
   }
 

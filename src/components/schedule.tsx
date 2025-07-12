@@ -85,7 +85,7 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
               {currentSchedule.celana2 && <p>{currentSchedule.celana2}</p>}
               {currentSchedule.sepatu2 && <p>{currentSchedule.sepatu2}</p>}
             </div>
-            <button onClick={() => setIsModalOpen(false)} className="button-schedule mt-6 w-full py-2 rounded-full">
+            <button onClick={() => setIsModalOpen(false)} className="button-font button-schedule mt-6 w-full py-2 rounded-full">
               Close
             </button>
           </div>

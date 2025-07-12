@@ -216,7 +216,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="h-[100px] sm:h-[113px]">
+      <div className="h-[53px] sm:h-[113px]">
         
       </div>
       <div className="relative bg-[url('/elements/navbar/navbar-below.svg')] w-screen bg-cover h-[2.5rem] sm:bg-auto sm:h-[5rem]">

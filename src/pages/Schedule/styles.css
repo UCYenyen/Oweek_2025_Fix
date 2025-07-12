@@ -895,15 +895,15 @@
   }
 
   .schedule-item-title {
-    font-size: 1.7rem; /* Smaller title */
+    font-size: 1.3rem; /* Smaller title */
   }
 
   .schedule-item-desc {
-    font-size: 1.1rem; /* Smaller description text */
+    font-size: 0.8rem; /* Smaller description text */
   }
 
   .schedule-sessions-list p {
-    font-size: 1.2rem; /* Smaller session text */
+    font-size: 0.9rem; /* Smaller session text */
     line-height: 1.5;
   }
 
@@ -919,13 +919,13 @@
 
   .button-schedule {
     font-size: 1rem !important;
-    padding: 0.25rem 0.75rem !important;
+    padding: 0.15rem 0.55rem !important;
     margin-top: -2vh;
   }
 
   .button-dresscode img {
     margin-top: -2vh;    
-    height: 7rem !important;
+    height: 5rem !important;
     width: auto !important;
   }
 
@@ -936,13 +936,13 @@
   }
 
   .button-left {
-    left: -4.3rem !important;
-    transform: scale(0.9) !important; 
+    left: -4rem !important;
+    transform: scale(0.8) !important; 
   }
 
   .button-right {
-    right: -4.3rem !important;
-    transform: scale(0.9) !important; 
+    right: -4rem !important;
+    transform: scale(0.8) !important; 
   }
 
   .schedule-card {
@@ -953,8 +953,8 @@
   background-clip: padding-box, border-box;
   background-blend-mode: screen;
   opacity: 100%;
-  width: 250px;
-  height: 259; 
+  width: 220px;
+  height: 229; 
 }
 .button-schedule{
     background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));

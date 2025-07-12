@@ -353,10 +353,12 @@
   }
 
   .schedule-star-circle {
-    width: 175%;
+    width: 275% !important;
     height: auto;
     top: 3vh;
+    transform: translateX(-50%) scale(1.5)!important;
   }
+  
 
   .schedule-pillar-left,
   .schedule-pillar-right{
@@ -934,12 +936,12 @@
   }
 
   .button-left {
-    left: -5.3rem !important;
+    left: -4.3rem !important;
     transform: scale(0.9) !important; 
   }
 
   .button-right {
-    right: -5.3rem !important;
+    right: -4.3rem !important;
     transform: scale(0.9) !important; 
   }
 
@@ -951,7 +953,7 @@
   background-clip: padding-box, border-box;
   background-blend-mode: screen;
   opacity: 100%;
-  width: 350px;
+  width: 250px;
   height: 259; 
 }
 .button-schedule{

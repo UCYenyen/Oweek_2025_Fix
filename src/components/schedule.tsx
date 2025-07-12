@@ -75,7 +75,7 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
         <div className="fixed inset-0 bg-black bg-opacity-0 flex items-center justify-center z-50">
           <div className="schedule-card relative rounded-3xl p-8 w-[90%] max-w-lg text-[#AB6528] font-roboto flex flex-col items-center">
             {/* Title */}
-            <h2 className="text-4xl font-bold mb-6">Dress Code</h2>
+            <h2 className="text-4xl font-bold mb-6 text-center">Dress Code</h2>
 
             {/* Details */}
             <div className="text-lg space-y-4 w-full text-center">

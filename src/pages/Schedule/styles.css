@@ -889,7 +889,7 @@
     width: 90%; /* Adjust width for mobile screen */
     height: auto;
     position: absolute;
-    top: 60%; /* Start at the vertical center */
+    top: 55%; /* Start at the vertical center */
     left: 50%;
     transform: translate(-50%, -50%) scale(0.85); /* Adjust based on the element's own size */
   }
@@ -920,7 +920,7 @@
   .button-schedule {
     font-size: 1rem !important;
     padding: 0.15rem 0.55rem !important;
-    margin-top: -2vh;
+    margin-top: -1vh;
   }
 
   .button-dresscode img {

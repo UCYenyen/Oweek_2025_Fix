@@ -21,7 +21,7 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
   const hasDressCode = currentSchedule.baju || currentSchedule.baju2;
 
   return (
-    <div className="relative w-full flex items-center justify-center flex-col pt-[2vh]">
+    <div className="relative w-full flex items-center justify-center flex-col pt-[2vh] z-[21]">
       <div className="schedule-card relative rounded-3xl p-6 sm:p-8 flex items-center justify-center w-[90%] h-auto">
         {/* Left Arrow Button */}
         <button onClick={handlePrev} className="button-left p-2 absolute -left-4 sm:-left-20">
@@ -29,13 +29,13 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
         </button>
 
         {/* Schedule Content */}
-        <div className="flex flex-col items-center text-center text-[#AB6528] font-roboto space-y-2 sm:space-y-4">
+        <div className="flex flex-col items-center text-center text-[#AB6528] font-roboto space-y-2 sm:space-y-4 schedule-inner-content">
           <div>
-            <h2 className="text-title sm:text-4xl font-bold">{currentSchedule.title}</h2>
-            <p className="text-desc sm:text-xl">{currentSchedule.date}</p>
-            <p className="text-desc sm:text-xl">{currentSchedule.location}</p>
+            <h2 className="text-title sm:text-4xl font-bold schedule-item-title">{currentSchedule.title}</h2>
+            <p className="text-desc sm:text-xl schedule-item-desc">{currentSchedule.date}</p>
+            <p className="text-desc sm:text-xl schedule-item-desc">{currentSchedule.location}</p>
           </div>
-          <div className="pt-7 text-lg sm:text-2xl font-bold">
+          <div className="pt-7 text-lg sm:text-2xl font-bold schedule-sessions-list">
             {currentSchedule.sessions.map((session, index) => (
               <p key={index}>{session}</p>
             ))}
@@ -49,7 +49,7 @@ export default function Schedule({ currentIndex, setCurrentIndex }: ScheduleProp
       </div>
 
       {/* Bottom Buttons */}
-      <div className="flex items-center justify-center gap-4 pt-4">
+      <div className="flex items-center justify-center gap-4 pt-4 schedule-button-group">
         <button className="button-font button-schedule px-6 py-2 text-lg rounded-full">
           PENUGASAN
         </button>

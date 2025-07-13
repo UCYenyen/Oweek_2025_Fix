@@ -1,3 +1,4 @@
+
 :root {
   background-color: #e7bc68;
   --button-left-gradient: #FFF0B8;
@@ -100,17 +101,6 @@
   .title-font {
     font-size: 7rem; /* Change this */
     top: 15vh !important; /* Change this position */
-  }
-}
-@media (max-width: 2026px) and (max-height: 1184px) {
- .schedule-card-content {
-    position: absolute;
-    margin-top: 4vh;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.05) !important;
-    width: 55%;
-    z-index: 10;
   }
 }
 @media (max-width: 1536px) and (max-height: 960px) {
@@ -241,9 +231,9 @@
   .schedule-card-content {
     position: absolute;
     margin-top: 4vh;
-    top: 53%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.05) !important;
+    transform: translate(-50%, -50%);
     width: 55%;
     z-index: 10;
   }
@@ -257,7 +247,7 @@
     justify-content: center;
     width: 60%;
     height: auto;
-    min-height: 390px;
+    min-height: 260px;
   }
 
   .button-left {
@@ -454,9 +444,9 @@
   .schedule-card-content {
     position: absolute;
     margin-top: 4vh;
-    top: 55%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.9) !important;
+    transform: translate(-50%, -50%);
     width: 55%;
     z-index: 10;
   }
@@ -470,7 +460,7 @@
     justify-content: center;
     width: 60%;
     height: auto;
-    min-height: 360px;
+    min-height: 260px;
   }
 
   .button-left {
@@ -540,538 +530,8 @@
     width: 6rem;
   }
 }
-@media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
-.title-font {
-    font-size: 3rem; /* Change this */
-    top: 15vh !important; /* Change this position */
-  }
+@media (max-width: 820px) and (max-height: 1180px) and (orientation: portrait) {
 
-  .schedule-page-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  .schedule-content-area {
-    height: 120vh !important; /* Manually set the height for mobile view */
-  }
-
-  .schedule-title-img {
-    width: 80%;
-    top: 10vh;
-  }
-
-  .schedule-star-circle {
-    width: 275% !important;
-    height: auto;
-    top: 3vh;
-    transform: translateX(-50%) scale(1.5)!important;
-  }
-  
-
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 10;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -5vh;
-  }
-  .schedule-pillar-right{
-    right: -5vh;
-  }
-  .schedule-massive-pillar {
-    width: 100%;
-    height: auto;
-    top: 0vh;
-  }
-
-  .schedule-duck-left,
-  .schedule-duck-right {
-    width: 25vh; /* Resize ducks */
-    bottom: 2vh;
-  }
-
-  .schedule-duck-left {
-    left: 5vw;
-    bottom: 3vh;
-    transform: scale(1.3) !important;
-  }
-
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: -5vh;
-    transform: scale(1.3) !important;
-  }
-
-  /* Cleaned up mobile styles for the new structure */
-  .schedule-card-container {
-    width: 200%;
-    height: auto;
-    position: relative;
-    bottom: auto;
-  }
-
-  .schedule-card-content {
-    width: 90%; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 58%; /* Start at the vertical center */
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.0) !important; /* Adjust based on the element's own size */
-  }
-
-  .schedule-item-title {
-    font-size: 2.5rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1.5rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.6rem; /* Smaller session text */
-    line-height: 1.2;
-  }
-
-  .schedule-button-group { 
-    gap: 0.1rem; /* ini buat button yang dibawah yang ada 2 itu */
-    transform: none !important; /* Remove the scaling from the group */
-  }
-
-  .button-schedule {
-    font-size: 2rem !important;
-    padding: 1.25rem 1.75rem !important;
-  }
-
-  .button-dresscode img {
-    height: 8rem !important;
-    width: auto !important;
-  }
-
-  /* Target the close button inside the modal for landscape view */
-  .schedule-card .button-schedule {
-    margin-top: 1rem !important; /* Adjust this value to move the button */
-  }
-
-  .button-left {
-    left: -6.3rem !important;
-    transform: scale(1.5) !important; 
-  }
-
-  .button-right {
-    right: -6.3rem !important;
-    transform: scale(1.5) !important; 
-  }
-
-  .schedule-card {
-  cursor: pointer;
-  border: 4px solid transparent;
-  background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  background-blend-mode: screen;
-  opacity: 100%;
-  width: 462px;
-  height: 359px;
-}
-.button-schedule{
-    background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
-    cursor: pointer;
-    border: 4px solid transparent;
-    
-    background-image: linear-gradient(90deg, var(--countdown-top-gradient), var(--countdown-right-gradient)), radial-gradient(circle at top left, #F2B028,#FFF0B8);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    width: 50%;
-    height: auto;
-}
-.schedule-card-bg-mobile{
-  display: block !important;
-  width: 125% !important; /* Control the width here */
-  height: auto !important;
-  max-width: none !important; /* Prevent Tailwind from limiting the size */
-  
-  /* Center the oversized image */
-  position: absolute !important;
-  left: 50% !important;
-  top: 25vh !important;
-  transform: translate(-50%, -50%) !important;
-}
-}
-@media (max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
- .schedule-page-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: #B2D5F1;
-    background-size: cover;
-    background-image: url('/elements/real-background.svg');
-  }
-
-  .schedule-content-area {
-    position: relative;
-    width: 100vw;
-    height: 125vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Decorative Elements */
-  .schedule-title-img {
-    position: absolute;
-    width: 50%;
-    height: auto;
-    top: -3vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 4;
-  }
-
-  .schedule-star-circle {
-    position: absolute;
-    width: 80%;
-    height: auto;
-    top: -3vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-  }
-
-  .schedule-sun-top {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    opacity: 0.5;
-  }
-
-  .schedule-massive-pillar {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
-
-  .schedule-pillar-left,
-  .schedule-pillar-right {
-    position: absolute;
-    width: auto;
-    height: 100%;
-    top: 0;
-    z-index: 5;
-  }
-  .schedule-pillar-left {
-    left: -3vh;
-  }
-  .schedule-pillar-right {
-    right: -3vh;
-  }
-
-  .schedule-duck-right {
-    position: absolute;
-    width: 45vh !important;
-    height: auto;
-    bottom: 10vh !important;
-    right: 2vh;
-    z-index: 10;
-  }
-
-  .schedule-duck-left {
-    position: absolute;
-    width: 50vh;
-    height: auto;
-    bottom: 23vh;
-    left: 0;
-    z-index: 10;
-  }
-
-  .schedule-card-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  .schedule-card-container {
-    position: relative;
-    width: 75%;
-    height: 85%;
-    z-index: 4;
-  }
-
-  .schedule-card-bg-desktop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  .schedule-card-bg-mobile {
-    display: none;
-  }
-
-  .schedule-card-content {
-    position: absolute;
-    margin-top: 3vh;
-    top: 50% !important;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.8) !important;
-    width: 65% !important;
-    height: auto;
-    z-index: 10;
-  }
-
-  .schedule-card {
-    position: relative;
-    border-radius: 1.5rem;
-    padding: 1rem !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80% !important;
-    height: auto;
-    min-height: 330px !important;
-    transform: scale(0.8) !important;
-  }
-
-  .button-left {
-    padding: 0.5rem;
-    position: absolute;
-    left: -5rem;
-  }
-
-  .button-right {
-    padding: 0.5rem;
-    position: absolute;
-    right: -5rem;
-  }
-
-  .schedule-inner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #AB6528;
-    font-family: 'Roboto', sans-serif;
-    row-gap: 1rem;
-  }
-
-  .schedule-item-title {
-    font-size: 0.8rem !important;
-    line-height: 2.5rem;
-    font-weight: 700;
-  }
-
-  .schedule-item-desc {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .schedule-sessions-list {
-    padding-top: 1.05rem !important;
-    font-size: 0.9rem !important;
-    line-height: 2rem;
-    font-weight: 700;
-  }
-
-  .schedule-button-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding-top: 1rem;
-  }
-
-  .button-schedule {
-    font-family: var(--main-font);
-    padding: 0.5rem 1.5rem;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    border-radius: 9999px;
-  }
-
-  .button-dresscode {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .button-dresscode img {
-    height: 6rem;
-    width: 6rem;
-  }  
-}
-@media (max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
-.title-font {
-    font-size: 3rem; /* Change this */
-    top: 15vh !important; /* Change this position */
-  }
-
-  .schedule-page-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  .schedule-content-area {
-    height: 120vh !important; /* Manually set the height for mobile view */
-  }
-
-  .schedule-title-img {
-    width: 80%;
-    top: 10vh;
-  }
-
-  .schedule-star-circle {
-    width: 275% !important;
-    height: auto;
-    top: 3vh;
-    transform: translateX(-50%) scale(1.5)!important;
-  }
-  
-
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 10;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -5vh;
-  }
-  .schedule-pillar-right{
-    right: -5vh;
-  }
-  .schedule-massive-pillar {
-    width: 100%;
-    height: auto;
-    top: 0vh;
-  }
-
-  .schedule-duck-left,
-  .schedule-duck-right {
-    width: 25vh; /* Resize ducks */
-    bottom: 2vh;
-  }
-
-  .schedule-duck-left {
-    left: 5vw;
-    bottom: 3vh;
-    transform: scale(1.3) !important;
-  }
-
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: -5vh;
-    transform: scale(1.3) !important;
-  }
-
-  /* Cleaned up mobile styles for the new structure */
-  .schedule-card-container {
-    width: 200%;
-    height: auto;
-    position: relative;
-    bottom: auto;
-  }
-
-  .schedule-card-content {
-    width: 90%; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 60% !important; /* Start at the vertical center */
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.7) !important; /* Adjust based on the element's own size */
-  }
-
-  .schedule-item-title {
-    font-size: 2.5rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1.5rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.6rem; /* Smaller session text */
-    line-height: 1.2;
-  }
-
-  .schedule-button-group { 
-    gap: 0.1rem; /* ini buat button yang dibawah yang ada 2 itu */
-    transform: none !important; /* Remove the scaling from the group */
-  }
-
-  .button-schedule {
-    font-size: 2rem !important;
-    padding: 1.25rem 1.75rem !important;
-  }
-
-  .button-dresscode img {
-    height: 8rem !important;
-    width: auto !important;
-  }
-
-  /* Target the close button inside the modal for landscape view */
-  .schedule-card .button-schedule {
-    margin-top: 1rem !important; /* Adjust this value to move the button */
-  }
-
-  .button-left {
-    left: -6.3rem !important;
-    transform: scale(1.5) !important; 
-  }
-
-  .button-right {
-    right: -6.3rem !important;
-    transform: scale(1.5) !important; 
-  }
-
-  .schedule-card {
-  cursor: pointer;
-  border: 4px solid transparent;
-  background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  background-blend-mode: screen;
-  opacity: 100%;
-  width: 462px;
-  height: 329px;
-}
-.button-schedule{
-    background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
-    cursor: pointer;
-    border: 4px solid transparent;
-    
-    background-image: linear-gradient(90deg, var(--countdown-top-gradient), var(--countdown-right-gradient)), radial-gradient(circle at top left, #F2B028,#FFF0B8);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    width: 50%;
-    height: auto;
-}
-.schedule-card-bg-mobile{
-  display: block !important;
-  width: 125% !important; /* Control the width here */
-  height: auto !important;
-  max-width: none !important; /* Prevent Tailwind from limiting the size */
-  
-  /* Center the oversized image */
-  position: absolute !important;
-  left: 50% !important;
-  top: 25vh !important;
-  transform: translate(-50%, -50%) !important;
-}
 }
 @media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
 .title-font {
@@ -1151,7 +611,7 @@
     position: absolute;
     top: 55%; /* Start at the vertical center */
     left: 50%;
-    transform: translate(-50%, -50%); /* Adjust based on the element's own size */
+    transform: translate(-50%, -50%) scale(1.1) !important; /* Adjust based on the element's own size */
   }
 
   .schedule-item-title {
@@ -1233,597 +693,21 @@
 }
 }
 
-@media (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
-
-.schedule-page-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: #B2D5F1;
-    background-size: cover;
-    background-image: url('/elements/real-background.svg');
-  }
-
-  .schedule-content-area {
-    position: relative;
-    width: 100vw;
-    height: 125vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Decorative Elements */
-  .schedule-title-img {
-    position: absolute;
-    width: 50%;
-    height: auto;
-    top: -3vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 4;
-  }
-
-  .schedule-star-circle {
-    position: absolute;
-    width: 80%;
-    height: auto;
-    top: -3vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-  }
-
-  .schedule-sun-top {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    opacity: 0.5;
-  }
-
-  .schedule-massive-pillar {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
-
-  .schedule-pillar-left,
-  .schedule-pillar-right {
-    position: absolute;
-    width: auto;
-    height: 100%;
-    top: 0;
-    z-index: 5;
-  }
-  .schedule-pillar-left {
-    left: -3vh;
-  }
-  .schedule-pillar-right {
-    right: -3vh;
-  }
-
-  .schedule-duck-right {
-    position: absolute;
-    width: 45vh !important;
-    height: auto;
-    bottom: 11vh;
-    right: 2vh;
-    z-index: 10;
-  }
-
-  .schedule-duck-left {
-    position: absolute;
-    width: 50vh;
-    height: auto;
-    bottom: 23vh;
-    left: 0;
-    z-index: 10;
-  }
-
-  .schedule-card-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  .schedule-card-container {
-    position: relative;
-    width: 75%;
-    height: 85%;
-    z-index: 4;
-  }
-
-  .schedule-card-bg-desktop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  .schedule-card-bg-mobile {
-    display: none;
-  }
-
-  .schedule-card-content {
-    position: absolute;
-    margin-top: 4vh;
-    top: 50% !important;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.8) !important;
-    width: 55%;
-    z-index: 10;
-  }
-
-  .schedule-card {
-    position: relative;
-    border-radius: 1.5rem;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    height: auto;
-    min-height: 360px;
-  }
-
-  .button-left {
-    padding: 0.5rem;
-    position: absolute;
-    left: -5rem;
-  }
-
-  .button-right {
-    padding: 0.5rem;
-    position: absolute;
-    right: -5rem;
-  }
-
-  .schedule-inner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #AB6528;
-    font-family: 'Roboto', sans-serif;
-    row-gap: 1rem;
-  }
-
-  .schedule-item-title {
-    font-size: 2.5rem !important;
-    line-height: 2.5rem;
-    font-weight: 700;
-  }
-
-  .schedule-item-desc {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-
-  .schedule-sessions-list {
-    padding-top: 1.75rem;
-    font-size: 1.75rem;
-    line-height: 2rem;
-    font-weight: 700;
-  }
-
-  .schedule-button-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding-top: 1rem;
-  }
-
-  .button-schedule {
-    font-family: var(--main-font);
-    padding: 0.5rem 1.5rem;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    border-radius: 9999px;
-  }
-
-  .button-dresscode {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .button-dresscode img {
-    height: 6rem;
-    width: 6rem;
-  }
-}
-@media (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
-  .schedule-page-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: #B2D5F1;
-    background-size: cover;
-    background-image: url('/elements/real-background.svg');
-  }
-
-  .schedule-content-area {
-    position: relative;
-    width: 100vw;
-    height: 125vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Decorative Elements */
-  .schedule-title-img {
-    position: absolute;
-    width: 50%;
-    height: auto;
-    top: -3vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 4;
-  }
-
-  .schedule-star-circle {
-    position: absolute;
-    width: 80%;
-    height: auto;
-    top: -3vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-  }
-
-  .schedule-sun-top {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    opacity: 0.5;
-  }
-
-  .schedule-massive-pillar {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
-
-  .schedule-pillar-left,
-  .schedule-pillar-right {
-    position: absolute;
-    width: auto;
-    height: 100%;
-    top: 0;
-    z-index: 5;
-  }
-  .schedule-pillar-left {
-    left: -3vh;
-  }
-  .schedule-pillar-right {
-    right: -3vh;
-  }
-
-  .schedule-duck-right {
-    position: absolute;
-    width: 35vh;
-    height: auto;
-    bottom: 18vh;
-    right: 2vh;
-    z-index: 10;
-  }
-
-  .schedule-duck-left {
-    position: absolute;
-    width: 50vh;
-    height: auto;
-    bottom: 23vh;
-    left: 0;
-    z-index: 10;
-  }
-
-  .schedule-card-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  .schedule-card-container {
-    position: relative;
-    width: 75%;
-    height: 85%;
-    z-index: 4;
-  }
-
-  .schedule-card-bg-desktop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  .schedule-card-bg-mobile {
-    display: none;
-  }
-
-  .schedule-card-content {
-    position: absolute;
-    margin-top: 4vh;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.8) !important;
-    width: 55%;
-    z-index: 10;
-  }
-
-  .schedule-card {
-    position: relative;
-    border-radius: 1.5rem;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    height: auto;
-    min-height: 360px;
-  }
-
-  .button-left {
-    padding: 0.5rem;
-    position: absolute;
-    left: -5rem;
-  }
-
-  .button-right {
-    padding: 0.5rem;
-    position: absolute;
-    right: -5rem;
-  }
-
-  .schedule-inner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #AB6528;
-    font-family: 'Roboto', sans-serif;
-    row-gap: 1rem;
-  }
-
-  .schedule-item-title {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-  }
-
-  .schedule-item-desc {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .schedule-sessions-list {
-    padding-top: 1.75rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-  }
-
-  .schedule-button-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding-top: 1rem;
-  }
-
-  .button-schedule {
-    font-family: var(--main-font);
-    padding: 0.5rem 1.5rem;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    border-radius: 9999px;
-  }
-
-  .button-dresscode {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .button-dresscode img {
-    height: 6rem;
-    width: 6rem;
-  }
-}
-@media (max-width: 820px) and (max-height: 1180px) and (orientation: portrait) {
-.title-font {
-    font-size: 3rem; /* Change this */
-    top: 15vh !important; /* Change this position */
-  }
-
-  .schedule-page-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  .schedule-content-area {
-    height: 120vh !important; /* Manually set the height for mobile view */
-  }
-
-  .schedule-title-img {
-    width: 80%;
-    top: 10vh;
-  }
-
-  .schedule-star-circle {
-    width: 275% !important;
-    height: auto;
-    top: 3vh;
-    transform: translateX(-50%) scale(1.5)!important;
-  }
-  
-
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 10;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -5vh;
-  }
-  .schedule-pillar-right{
-    right: -5vh;
-  }
-  .schedule-massive-pillar {
-    width: 100%;
-    height: auto;
-    top: 0vh;
-  }
-
-  .schedule-duck-left,
-  .schedule-duck-right {
-    width: 25vh; /* Resize ducks */
-    bottom: 2vh;
-  }
-
-  .schedule-duck-left {
-    left: 5vw;
-    bottom: 3vh;
-    transform: scale(1.3) !important;
-  }
-
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: -5vh;
-    transform: scale(1.3) !important;
-  }
-
-  /* Cleaned up mobile styles for the new structure */
-  .schedule-card-container {
-    width: 200%;
-    height: auto;
-    position: relative;
-    bottom: -15vh;
-    transform: scale(0.7) !important;
-  }
-
-  .schedule-card-content {
-    width: 90% ; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 40%; /* Start at the vertical center */
-    left: 50%;
-    transform: translate(-50%, -50%); /* Adjust based on the element's own size */
-  }
-
-  .schedule-item-title {
-    font-size: 2.0rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1.2rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.4rem; /* Smaller session text */
-    line-height: 1.2;
-  }
-
-  .schedule-button-group { 
-    gap: 0.3rem; /* ini buat button yang dibawah yang ada 2 itu */
-    transform: none !important; /* Remove the scaling from the group */
-  }
-
-  .button-schedule {
-    font-size: 1.5rem !important;
-    padding: 0.75rem 1.25rem !important;
-  }
-
-  .button-dresscode img {
-    height: 7rem !important;
-    width: auto !important;
-  }
-
-  /* Target the close button inside the modal for landscape view */
-  .schedule-card .button-schedule {
-    margin-top: 1rem !important; /* Adjust this value to move the button */
-  }
-
-  .button-left {
-    left: -6.3rem !important;
-    transform: scale(1.1) !important; 
-  }
-
-  .button-right {
-    right: -6.3rem !important;
-    transform: scale(1.1) !important; 
-  }
-
-  .schedule-card {
-  cursor: pointer;
-  border: 4px solid transparent;
-  background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  background-blend-mode: screen;
-  opacity: 100%;
-  width: 362px;
-  height: 409px;
-}
-.button-schedule{
-    background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
-    cursor: pointer;
-    border: 4px solid transparent;
-    
-    background-image: linear-gradient(90deg, var(--countdown-top-gradient), var(--countdown-right-gradient)), radial-gradient(circle at top left, #F2B028,#FFF0B8);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    width: 50%;
-    height: auto;
-}
-.schedule-card-bg-mobile{
-  display: block !important;
-  width: 175% !important; /* Control the width here */
-  height: auto !important;
-  max-width: none !important; /* Prevent Tailwind from limiting the size */
-  
-  /* Center the oversized image */
-  position: absolute !important;
-  left: 50% !important;
-  top: 15vh !important;
-  transform: translate(-50%, -50%) !important;
+@media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
 }
 
+@media (max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
 }
 
 @media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
 }
+
+@media (max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
+}
+
+@media (max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
+}
+
 @media (max-width: 440px) and (max-height: 956px) and (orientation: portrait){
   .title-font {
     font-size: 3rem; /* Change this */
@@ -1900,9 +784,10 @@
     width: 90%; /* Adjust width for mobile screen */
     height: auto;
     position: absolute;
-    top: 55% !important; /* Start at the vertical center */
+    top: 55%; /* Start at the vertical center */
     left: 50%;
-    transform: translate(-50%, -50%); /* Adjust based on the element's own size */
+    transform: translate(-50%, -50%) scale(0.9) !important;
+
   }
 
   .schedule-item-title {
@@ -1957,8 +842,8 @@
   background-blend-mode: screen;
   opacity: 100%;
   width: 262px;
-  height: 229px;
-  min-height: 320px; 
+  height: 259px; 
+  min-height: 350px;
 }
 .button-schedule{
     background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
@@ -1973,14 +858,14 @@
 }
 .schedule-card-bg-mobile{
   display: block !important;
-  width: 250% !important; /* Control the width here */
+  width: 175% !important; /* Control the width here */
   height: auto !important;
   max-width: none !important; /* Prevent Tailwind from limiting the size */
   
   /* Center the oversized image */
   position: absolute !important;
   left: 50% !important;
-  top: 20vh !important;
+  top: 15vh !important;
   transform: translate(-50%, -50%) !important;
 }
 
@@ -1997,7 +882,7 @@
   }
 
   .schedule-content-area {
-    height: 130vh !important; /* Manually set the height for mobile view */
+    height: 120vh !important; /* Manually set the height for mobile view */
   }
   .schedule-title-img {
     width: 50% !important;
@@ -2059,12 +944,12 @@
   }
 
   .schedule-card-content {
-    width: 100%; /* Adjust width for mobile screen */
+    width: 90%; /* Adjust width for mobile screen */
     height: auto;
     position: absolute;
-    top: 70% !important; /* Start at the vertical center */
+    top: 70%; /* Start at the vertical center */
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.7) !important; /* Adjust based on the element's own size */
+    transform: translate(-50%, -50%) scale(0.7); /* Adjust based on the element's own size */
   }
 
   .schedule-item-title {
@@ -2121,9 +1006,8 @@
   background-clip: padding-box, border-box;
   background-blend-mode: screen;
   opacity: 100%;
-  width: 400px;
-  height: 259px;
-  min-height: 300px;
+  width: 350px;
+  height: 259; 
 }
 .button-schedule{
     background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
@@ -2296,14 +1180,14 @@
 }
 .schedule-card-bg-mobile{
   display: block !important;
-  width: 250% !important; /* Control the width here */
+  width: 175% !important; /* Control the width here */
   height: auto !important;
   max-width: none !important; /* Prevent Tailwind from limiting the size */
   
   /* Center the oversized image */
   position: absolute !important;
   left: 50% !important;
-  top: 20vh !important;
+  top: 15vh !important;
   transform: translate(-50%, -50%) !important;
 }
 
@@ -2476,164 +1360,10 @@
 
 }
 
-@media (max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
-   .title-font {
-    font-size: 3rem; /* Change this */
-    top: 15vh !important; /* Change this position */
-  }
-
-  .schedule-page-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  .schedule-content-area {
-    height: 110vh !important; /* Manually set the height for mobile view */
-  }
-
-  .schedule-title-img {
-    width: 80%;
-    top: 10vh;
-  }
-
-  .schedule-star-circle {
-    width: 275% !important;
-    height: auto;
-    top: 3vh;
-    transform: translateX(-50%) scale(1.5)!important;
-  }
-  
-
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 10;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -8vh;
-  }
-  .schedule-pillar-right{
-    right: -8vh;
-  }
-  .schedule-massive-pillar {
-    width: 100%;
-    height: auto;
-    top: 0vh;
-  }
-
-  .schedule-duck-left,
-  .schedule-duck-right {
-    width: 25vh; /* Resize ducks */
-    bottom: 2vh;
-  }
-
-  .schedule-duck-left {
-    left: 5vw;
-    bottom: 3vh;
-    transform: scale(1.3) !important;
-  }
-
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: -5vh;
-    transform: scale(1.3) !important;
-  }
-
-  /* Cleaned up mobile styles for the new structure */
-  .schedule-card-container {
-    width: 200%;
-    height: auto;
-    position: relative;
-    bottom: auto;
-  }
-
-  .schedule-card-content {
-    width: 90%; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 55% !important; /* Start at the vertical center */
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.8) !important; /* Adjust based on the element's own size */
-  }
-
-  .schedule-item-title {
-    font-size: 1.5rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.1rem; /* Smaller session text */
-    line-height: 1.2;
-  }
-
-  .schedule-button-group { 
-    gap: 0.1rem; /* ini buat button yang dibawah yang ada 2 itu */
-    transform: none !important; /* Remove the scaling from the group */
-  }
-
-  .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.25rem 0.75rem !important;
-  }
-
-  .button-dresscode img {
-    height: 7rem !important;
-    width: auto !important;
-  }
-
-  /* Target the close button inside the modal for landscape view */
-  .schedule-card .button-schedule {
-    margin-top: 1rem !important; /* Adjust this value to move the button */
-  }
-
-  .button-left {
-    left: -4.3rem !important;
-    transform: scale(0.9) !important; 
-  }
-
-  .button-right {
-    right: -4.3rem !important;
-    transform: scale(0.9) !important; 
-  }
-
-  .schedule-card {
-  cursor: pointer;
-  border: 4px solid transparent;
-  background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  background-blend-mode: screen;
-  opacity: 100%;
-  width: 262px;
-  height: 259px;
-  min-height: 300px;
-}
-.button-schedule{
-    background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
-    cursor: pointer;
-    border: 4px solid transparent;
-    
-    background-image: linear-gradient(90deg, var(--countdown-top-gradient), var(--countdown-right-gradient)), radial-gradient(circle at top left, #F2B028,#FFF0B8);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    width: 50%;
-    height: auto;
-}
+@media (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
 .schedule-card-bg-mobile{
-  display: block !important;
-  width: 275% !important; /* Control the width here */
-  height: auto !important;
-  max-width: none !important; /* Prevent Tailwind from limiting the size */
-  
-  position: absolute !important;
-  left: 50% !important;
-  top: 17vh !important;
-  transform: translate(-50%, -50%) !important;
+  width: 135% !important;
+  }
 }
 
-}
 

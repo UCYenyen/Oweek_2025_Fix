@@ -231,7 +231,7 @@
   .schedule-card-content {
     position: absolute;
     margin-top: 4vh;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 55%;
@@ -247,7 +247,7 @@
     justify-content: center;
     width: 60%;
     height: auto;
-    min-height: 260px;
+    min-height: 360px;
   }
 
   .button-left {
@@ -315,6 +315,13 @@
   .button-dresscode img {
     height: 6rem;
     width: 6rem;
+  }
+  .dresscode-popup{
+    margin-top: -10rem;
+  }
+  .xbutton{
+    width: 6rem;
+    height: 6rem;
   }
 }
 @media (max-width: 1366px) and (max-height: 1024px) and (orientation: landscape) {
@@ -529,6 +536,10 @@
     height: 6rem;
     width: 6rem;
   }
+  .xbutton{
+    width: 4rem;
+    height: 4rem;
+  }
 }
 @media (max-width: 820px) and (max-height: 1180px) and (orientation: portrait) {
 
@@ -537,6 +548,10 @@
 .title-font {
     font-size: 3rem; /* Change this */
     top: 15vh !important; /* Change this position */
+  }
+  .xbutton{
+    width: 4rem;
+    height: 4rem;
   }
 
   .schedule-page-container {
@@ -869,6 +884,46 @@
   transform: translate(-50%, -50%) !important;
 }
 
+.dresscode-title{
+  margin-top: 4rem;
+  font-size: 1.12rem;
+}
+.xbutton{
+    width: 4rem;
+    height: 4rem;
+    
+  }
+  .do-dont-container{
+    height: 2rem;
+    width: 100%;
+  }
+    .do-box,
+  .dont-box {
+    height: 10rem; /* Adjust this value to your desired height */
+  }
+  .dresscode-popup-inner{
+  }
+   .schedule-card-bg-desktop {
+    display: none;
+  }
+  .schedule-card-bg-mobile {
+    display: block;
+  }
+
+  .dresscode-content {
+    overflow-y: auto;
+    padding-bottom: 2rem; /* Add padding to prevent content from being cut off */
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    /* Hide scrollbar for WebKit browsers */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 }
 @media (max-width: 956px) and (max-height: 440px) and (orientation: landscape){
   .title-font {
@@ -1032,7 +1087,9 @@
   top: 35vh !important;
   transform: translate(-50%, -50%) !important;
 }
-
+.dresscode-title{
+  font-size: 2rem;
+}
 }
 @media (max-width: 430px) and (max-height: 932px) and (orientation: portrait) {
  .title-font {
@@ -1364,6 +1421,20 @@
 .schedule-card-bg-mobile{
   width: 135% !important;
   }
+}
+
+@media (max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
+  .schedule-card-content {
+    width: 80%; /* Adjust width for mobile screen */
+    height: auto;
+    position: absolute;
+    top: 65%; /* Start at the vertical center */
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.75); /* Adjust based on the element's own size */
+  }
+
+}
+@media (max-width: 820px) and (max-height: 1180px) and (orientation: landscape) {
 }
 
 

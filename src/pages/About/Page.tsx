@@ -5,8 +5,6 @@ import { gsap } from "gsap";
 
 export const useAboutPageAnimation = () => {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
-  const pillarLeftRef = useRef<HTMLImageElement>(null);
-  const pillarRightRef = useRef<HTMLImageElement>(null);
   const sunTopRef = useRef<HTMLImageElement>(null);
   const starCircleRef = useRef<HTMLImageElement>(null);
   const aboutContentRef = useRef<HTMLDivElement>(null);
@@ -17,36 +15,31 @@ export const useAboutPageAnimation = () => {
       onComplete: () => setIsAnimationComplete(true), 
     });
 
-    gsap.set([pillarLeftRef.current, pillarRightRef.current], { opacity: 0, y: -50 });
     
     gsap.set([sunTopRef.current, starCircleRef.current], { opacity: 0, y: 100 });
     gsap.set(aboutContentRef.current, { opacity: 0, y: 50 });
 
-    tl.to([pillarLeftRef.current, pillarRightRef.current], { opacity: 1, y: 0, stagger: 0.2 })
-      
-      .to([sunTopRef.current, starCircleRef.current], { opacity: 1, y: 0, stagger: 0.2 }, "-=1")
+    tl.to([sunTopRef.current, starCircleRef.current], { opacity: 1, y: 0, stagger: 0.2 }, "-=1")
       .to(aboutContentRef.current, { opacity: 1, y: 0 }, "-=0.8");
 
   }, []);
 
-  return { pillarLeftRef, pillarRightRef, sunTopRef, starCircleRef, aboutContentRef, isAnimationComplete };
+  return { sunTopRef, starCircleRef, aboutContentRef, isAnimationComplete };
 };
 
 export default function About() {
-  const { pillarLeftRef, pillarRightRef, sunTopRef, starCircleRef } = useAboutPageAnimation();
+  const { sunTopRef, starCircleRef } = useAboutPageAnimation();
 
   return (
     <>
       <div className="relative w-screen bg-[#B2D5F1] bg-cover bg-[url('/elements/real-background.svg')] about-container">
         <div className="relative w-screen h-screen about-main-content">
           <img
-            ref={pillarLeftRef}
             src="/elements/about/pillar-left.svg"
             className="w-auto h-full absolute -left-[0vh] -top-0 pillar-left"
             alt="pillar-left"
           />
           <img
-            ref={pillarRightRef}
             src="/elements/about/pillar-right.svg"
             className="w-auto h-full absolute right-[0vh] -top-0 pillar-right"
             alt="pillar-right"

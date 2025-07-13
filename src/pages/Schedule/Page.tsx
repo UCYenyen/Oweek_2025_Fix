@@ -20,14 +20,12 @@ export const useSchedulePageAnimation = () => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out", duration: 1.2 } });
 
     gsap.set([titleRef.current, starCircleRef.current], { opacity: 0, y: -50 });
-    gsap.set([pillarLeftRef.current, pillarRightRef.current], { opacity: 0, x: (i) => (i === 0 ? -50 : 50) });
     gsap.set([duckLeftRef.current, duckRightRef.current], { opacity: 0, y: 50 });
     gsap.set(cardContainerRef.current, { opacity: 0, scale: 0.9 });
     gsap.set(massivePillarRef.current, { opacity: 0, y: -100 });
     gsap.set(scheduleContentRef.current, { opacity: 0, y: 20 });
 
-    tl.to([pillarLeftRef.current, pillarRightRef.current], { opacity: 1, x: 0, stagger: 0.2 })
-      .to([titleRef.current, starCircleRef.current], { opacity: 1, y: 0, stagger: 0.2 }, "-=1")
+    tl.to([titleRef.current, starCircleRef.current], { opacity: 1, y: 0, stagger: 0.2 })
       .to(cardContainerRef.current, { opacity: 1, scale: 1 }, "-=0.8")
       .to(scheduleContentRef.current, { opacity: 1, y: 0, duration: 0.8 }, "<+0.4")
       .to(massivePillarRef.current, { opacity: 1, y: 0 }, "<+0.1")
@@ -43,7 +41,7 @@ export const useSchedulePageAnimation = () => {
 
     const starCircleTween = gsap.to(starCircleRef.current, {
       scale: 1.05, // pulses between 1 and 1.2
-      duration: 5,
+      duration: 10,
       ease: "sine.inOut",
       yoyo: true,
       repeat: -1,

@@ -191,7 +191,6 @@
     z-index: 1;
   }
 }
-
 @media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
   .mobile-about-bg {
   display: block; 
@@ -657,66 +656,89 @@
   }
 }
 
-@media (max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
+@media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+ .mobile-about-bg {
+  display: block; 
 }
-@media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    .about-main-content {
+
+.desktop-about-bg {
+  display: none; 
+}
+  .mascot-pillar-desktop {
+    display: none;
+  }
+  .mascot-pillar-mobile {
+    display: block;
+  }
+  .about-main-content {
       top: 0vh;
     width: auto;
-    height: 37vh;
+    height: 100vh;
     }
 
     .about-container .pillar-left,
     .about-container .pillar-right {
-      /* Adjust the width and height for mobile */
+      
       width: auto;
       height: 100%;
     }
+    .about-container .pillar-left{
+        left: -5vh;
+    }
+    .about-container .pillar-right{
+        right: -5vh;
+    }
+  .about-container .star-circle {
+      display: none; 
+    }
+    .about-container .star-circle-mobile{
+      display: block; /* Show mobile star circle */
+      bottom: -40vh;
 
+    }
   .about-container .about-bg {
-    /* Make the background scroll larger on mobile */
+    
     width: 90%;
   }
 
-  /* And adjust it again for smaller screens */
-  .about-container .mobile-about-bg {
-    width: 85%; /* This will now apply */
+  
+  .mobile-about-bg {
+    width: 75% !important;
     height: auto;
     top: 0vh;
   }
 
   .about-container .about-content {
-    /* Adjust the vertical position of the content */
+    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    /* Reduce the title font size significantly for mobile */
-    margin-top: -2vh;
+    
+    margin-top: -1vh;
     padding-bottom: 1vh;
-    font-size: 5vh;
+    font-size: 6vh;
   }
 
   .about-container .about-description {
-    /* Make the description text wider and slightly larger */
+    
     margin-top: -0.8vh;
-    width: 85%;
-    height: 10vh;
-    font-size: 1vh;
+    width: 80%;
+    font-size: 1.6vh;
   }
 
-  /* You can also add styles for the Mascots component here */
+  
   .mascot-container {
     width: auto;
-    height: 50vh;
+    height: 120vh;
     top: -0vh;
   }
 
   .mascot-pillar-container {
     position: relative;
-    width: 280%;
-    left: -41vh;
+    width: 100%;
+    left: -0vh;
     height: auto;
   }
 
@@ -730,10 +752,10 @@
 
   .mascot-sun-bottom {
     position: absolute;
-    top: 0;
+    top: 4vh;
     width: 100%;
     height: auto;
-    left: 50%;
+    left: 51%;
     transform: translateX(-50%);
   }
 
@@ -741,30 +763,30 @@
   .mascot-chickens-section {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    width: 75%; 
+    transform: translateX(-50%) scale(0.9);
+    width: 100%; 
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 10vh; /* Position from the top */
+    top: 15vh; 
   }
 
   .mascot-chickens-section {
-    bottom: -1vh; /* Position from the bottom */
+    bottom: 10vh; 
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; /* Make title images fill their parent section */
+    width: 100%; 
     height: auto;
   }
 
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 0.75vh; /* Adjusted for better readability */
+    font-size: 1vh; 
   }
 
   .mascot-pot {
@@ -778,10 +800,163 @@
   }
 
   .mascot-background-shape {
+    width: 110%;
+    height: auto;
+    position: absolute;
+    top: 17vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+@media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+   .mobile-about-bg {
+  display: block; 
+}
+
+.desktop-about-bg {
+  display: none; 
+}
+  .mascot-pillar-desktop {
+    display: none;
+  }
+  .mascot-pillar-mobile {
+    display: block;
+  }
+  .about-main-content {
+      top: 0vh;
+    width: auto;
+    height: 120vh;
+    }
+
+    .about-container .pillar-left,
+    .about-container .pillar-right {
+      
+      width: auto;
+      height: 100%;
+    }
+    .about-container .pillar-left{
+        left: -5vh;
+    }
+    .about-container .pillar-right{
+        right: -5vh;
+    }
+  .about-container .star-circle {
+      display: none; 
+    }
+    .about-container .star-circle-mobile{
+      display: block; /* Show mobile star circle */
+      bottom: -40vh;
+
+    }
+  .about-container .about-bg {
+    
+    width: 90%;
+  }
+
+  
+  .mobile-about-bg {
+    width: 75% !important;
+    height: auto;
+    top: 0vh;
+  }
+
+  .about-container .about-content {
+    
+    top: 10vh;
+    width: 75%;
+  }
+
+  .about-container .about-title {
+    
+    margin-top: -1vh;
+    padding-bottom: 1vh;
+    font-size: 6vh;
+  }
+
+  .about-container .about-description {
+    
+    margin-top: -0.8vh;
+    width: 80%;
+    font-size: 1.6vh;
+  }
+
+  
+  .mascot-container {
+    width: auto;
+    height: 140vh;
+    top: -0vh;
+  }
+
+  .mascot-pillar-container {
+    position: relative;
+    width: 100%;
+    left: -0vh;
+    height: auto;
+  }
+
+  .mascot-pillar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 5;
+  }
+
+  .mascot-sun-bottom {
+    position: absolute;
+    top: 4vh;
+    width: 100%;
+    height: auto;
+    left: 51%;
+    transform: translateX(-50%);
+  }
+
+  .mascot-yucca-section,
+  .mascot-chickens-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    height: auto;
+    z-index: 6;
+  }
+
+  .mascot-yucca-section {
+    top: 15vh; 
+  }
+
+  .mascot-chickens-section {
+    bottom: 10vh; 
+  }
+
+  .mascot-yucca-title,
+  .mascot-chickens-title {
+    width: 100%; 
+    height: auto;
+  }
+
+  .mascot-yucca-description,
+  .mascot-chickens-description {
+    width: 80%;
+    font-size: 1vh; 
+  }
+
+  .mascot-pot {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 11vh;
+    bottom: -1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+  }
+
+  .mascot-background-shape {
+    width: 110%;
+    height: auto;
+    position: absolute;
+    top: 17vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;

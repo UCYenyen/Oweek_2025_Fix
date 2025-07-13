@@ -388,7 +388,7 @@
       transform: translateX(-50%) !important;
     }
   .about-container .about-bg {
-    
+    top: 8vh;
     width: 90%;
   }
 
@@ -455,17 +455,17 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%; 
+    width: 90%; 
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 15vh; 
+    top: 18vh; 
   }
 
   .mascot-chickens-section {
-    bottom: 10vh; 
+    bottom: 13vh; 
   }
 
   .mascot-yucca-title,

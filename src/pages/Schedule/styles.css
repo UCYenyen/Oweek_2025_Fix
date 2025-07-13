@@ -443,9 +443,9 @@
   .schedule-card-content {
     position: absolute;
     margin-top: 4vh;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.9) !important;
     width: 55%;
     z-index: 10;
   }
@@ -459,7 +459,7 @@
     justify-content: center;
     width: 60%;
     height: auto;
-    min-height: 260px;
+    min-height: 360px;
   }
 
   .button-left {

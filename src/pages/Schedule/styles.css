@@ -103,7 +103,7 @@
     top: 15vh !important; /* Change this position */
   }
 }
-@media (max-width: 1536px) and (max-height: 960px) {
+@media (min-width: 1024px) and (max-width: 1536px) and (max-height: 960px) {
   /* Page Layout */
   .schedule-page-container {
     position: relative;
@@ -324,7 +324,7 @@
     height: 6rem;
   }
 }
-@media (max-width: 1366px) and (max-height: 1024px) and (orientation: landscape) {
+@media (min-width: 1024px) and (max-width: 1366px) and (max-height: 1024px) and (orientation: landscape) {
   .schedule-page-container {
     position: relative;
     width: 100vw;
@@ -453,7 +453,7 @@
     margin-top: 4vh;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.9) !important;
     width: 55%;
     z-index: 10;
   }
@@ -1002,7 +1002,7 @@
     position: absolute;
     top: 70%; /* Start at the vertical center */
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.7); /* Adjust based on the element's own size */
+    transform: translate(-50%, -50%) scale(0.65) !important; /* Adjust based on the element's own size */
   }
 
   .schedule-item-title {
@@ -1060,7 +1060,8 @@
   background-blend-mode: screen;
   opacity: 100%;
   width: 350px;
-  height: 259; 
+  height: 25px;
+  min-height: 300px; 
 }
 .button-schedule{
     background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
@@ -1247,7 +1248,17 @@
 }
 
 }
+@media (min-width: 668px) and (max-width: 780px) and (max-height: 360px) and (orientation: landscape) {
+  .schedule-card-content {
+    width: 90%; /* Adjust width for mobile screen */
+    height: auto;
+    position: absolute;
+    top: 70%; /* Start at the vertical center */
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.55) !important; /* Adjust based on the element's own size */
+  }
 
+}
 @media (max-width: 360px) and (max-height: 780px) and (orientation: portrait) {
  .title-font {
     font-size: 3rem; /* Change this */
@@ -1426,9 +1437,9 @@
     width: 80%; /* Adjust width for mobile screen */
     height: auto;
     position: absolute;
-    top: 65%; /* Start at the vertical center */
+    top: 70%; /* Start at the vertical center */
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.75); /* Adjust based on the element's own size */
+    transform: translate(-50%, -50%) scale(0.6) !important; /* Adjust based on the element's own size */
   }
 
 }
@@ -1466,11 +1477,12 @@
     bottom: auto;
   }
   .schedule-item-title {
-    font-size: 1.8rem; /* Smaller title */
+    font-size: 2.0rem; /* Smaller title */
   }
 
   .schedule-item-desc {
-    font-size: 1rem; /* Smaller description text */
+    font-size: 1.5rem; /* Smaller description text */
+    margin-top: 1.2rem;
   }
 
   .schedule-sessions-list p {
@@ -1485,7 +1497,7 @@
     position: absolute;
     top: 60%; /* Start at the vertical center */
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.2) !important;
+    transform: translate(-50%, -50%) scale(1.0) !important;
 
   }
    .button-schedule {

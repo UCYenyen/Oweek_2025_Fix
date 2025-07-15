@@ -66,7 +66,7 @@ export default function Schedule({
       </div>
 
       {/* Bottom Buttons */}
-      <div className="flex items-center justify-center gap-4 pt-4 schedule-button-group">
+      <div className="flex items-center justify-center gap-4 pt-2 schedule-button-group">
         <button className="button-font button-schedule px-6 py-2 text-lg rounded-full">
           PENUGASAN
         </button>

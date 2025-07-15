@@ -1841,7 +1841,7 @@
 }
 @media(max-width: 360px) and (max-height: 780px) and (orientation: portrait) {
 .schedule-card-content{
-    margin-top: 15rem;
+    margin-top: 18rem;
   }
        .schedule-button-group{
     min-height: 11rem;
@@ -1852,6 +1852,22 @@
    .button-dresscode img {
     margin-bottom: 3.5rem;
   }
+    .schedule-content-area {
+    height: 140vh !important; /* Manually set the height for mobile view */
+  }
+  .schedule-card-bg-mobile{
+    display: block !important;
+    width: 225% !important; /* Control the width here */
+    height: auto !important;
+    max-width: none !important; /* Prevent Tailwind from limiting the size */
+    
+    /* Center the oversized image */
+    position: absolute !important;
+    left: 50% !important;
+    top: 20vh !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
 }
 @media(max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
   .schedule-card-content{

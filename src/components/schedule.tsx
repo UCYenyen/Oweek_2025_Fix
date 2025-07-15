@@ -27,7 +27,7 @@ export default function Schedule({
 
   return (
     <div className="relative w-full flex items-center justify-center flex-col pt-[2vh] z-[21]">
-      <div className="schedule-card relative rounded-3xl p-6 sm:p-8 flex items-center justify-center w-[90%] h-auto min-h-[260px]">
+      <div className="schedule-card relative rounded-3xl p-1 sm:p-8 flex items-center justify-center w-[90%] h-auto min-h-[260px]">
         {/* Left Arrow Button */}
         <button
           onClick={handlePrev}
@@ -37,7 +37,7 @@ export default function Schedule({
         </button>
 
         {/* Schedule Content */}
-        <div className="flex flex-col items-center text-center text-[#AB6528] font-roboto space-y-2 sm:space-y-4 schedule-inner-content">
+        <div className="flex flex-col items-center text-center text-[#AB6528] font-roboto space-y-2 sm:space-y-3 schedule-inner-content">
           <div>
             <h2 className="text-title sm:text-4xl font-bold schedule-item-title">
               {currentSchedule.title}
@@ -49,7 +49,7 @@ export default function Schedule({
               {currentSchedule.location}
             </p>
           </div>
-          <div className="pt-7 text-lg sm:text-2xl font-bold schedule-sessions-list">
+          <div className="pt-2 text-lg sm:text-2xl font-bold schedule-sessions-list">
             {currentSchedule.sessions.map((session, index) => (
               <p key={index}>{session}</p>
             ))}
@@ -66,8 +66,8 @@ export default function Schedule({
       </div>
 
       {/* Bottom Buttons */}
-      <div className="flex items-center justify-center gap-4 pt-2 schedule-button-group">
-        <button className="button-font button-schedule px-6 py-2 text-lg rounded-full">
+      <div className="flex items-center justify-start gap-4 pt-2 min-w-[5vh] schedule-button-group">
+        <button className="button-font button-schedule px-2 py-2 text-lg rounded-full">
           PENUGASAN
         </button>
         {hasDressCode && (

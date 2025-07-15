@@ -130,7 +130,6 @@
 @media(max-width: 2560px) and (max-height:1600px){
  .schedule-duck-right {
     right: 1vw;
-    bottom: 17rem;
     width: 27rem;
   }
     .schedule-card {
@@ -154,7 +153,6 @@
 @media(max-width: 2560px) and (max-height: 1140px){
  .schedule-duck-right {
     right: 1vw;
-    bottom: 13vh;
     width: 27rem;
   }
     .schedule-card {
@@ -175,7 +173,6 @@
 @media(max-width: 1900px) and (max-height: 1200px) {
  .schedule-duck-right {
     right: 1vw;
-    bottom: 12vh;
     width: 27rem;
   }
   .schedule-card {
@@ -193,9 +190,41 @@
     min-height: 400px; 
   }
 }
+@media(max-width: 1536px) and (max-height: 960px){
+  .schedule-card-content{
+    padding-bottom: 5rem;
+    margin-top: 15rem;
+  }
+  .schedule-button-group{
+    min-height: 11rem;
+  }
+ .button-schedule {
+    font-size: 2rem !important;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+   .button-dresscode img {
+    height: 8rem !important;
+    width: auto !important;
+    margin-bottom: 1.8rem;
+  }
+   .schedule-item-title {
+    font-size: 2.0rem; /* Smaller title */
+  }
+
+  .schedule-item-desc {
+    font-size: 1.5rem; /* Smaller description text */
+  }
+
+  .schedule-sessions-list p {
+    font-size: 1.6rem; /* Smaller session text */
+    line-height: 1.2;
+  }
+}
 @media(max-width: 1536px) and (max-height: 982px) and (min-height: 981px){
    .schedule-duck-right {
     right: 1vw;
+    bottom: 0rem;
      width: 27rem;
   }
 
@@ -207,16 +236,20 @@
     font-size: 2.3rem; 
     margin-bottom: 1rem;
   }
-
 }
-@media(max-width: 1512px) and (max-height: 982px){
+@media(min-width: 1367px) and (max-width: 1512px) and (max-height: 982px){
     .schedule-card-content {
-    top: 53%; /* Start at the vertical center */
+    margin-top: 15rem;
   }
-
+  .schedule-button-group{
+    min-height: 11rem;
+  }
   .schedule-sessions-list p {
     font-size: 1.3rem; /* Smaller session text */
     line-height: 1.6;
+  }
+    .schedule-item-desc {
+    font-size: 1.5rem; /* Smaller description text */
   }
   .dresscode-bg-desktop{
     margin-top: -6rem;
@@ -226,10 +259,21 @@
        width: 22rem;
   }
 }
-@media(max-width: 1366px) and (max-height: 1024px){
+@media(max-width: 1425px) and (max-height: 900px) {
+}
+@media(max-width: 1368px) and (max-height: 912px) {
     .schedule-pillar-left,
   .schedule-pillar-right{
-    z-index: 10;
+    z-index: 5;
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media(max-width: 1366px) and (max-height: 1024px) and (orientation: landscape){
+    .schedule-pillar-left,
+  .schedule-pillar-right{
+    z-index: 5;
     width: auto;
     height: 100%;
   }
@@ -251,40 +295,152 @@
     right: 1vw;
      width: 25rem; /* Resize ducks */
   } 
+    .schedule-button-group{
+    min-height: 11rem;
+  }
+ .button-schedule {
+    font-size: 1rem !important;
+    padding: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+   .button-dresscode img {
+    height: 5rem !important;
+    width: auto !important;
+    margin-bottom: 1.8rem;
+  }
+    .schedule-item-title {
+    font-size: 2.0rem; /* Smaller title */
+  }
+
+  .schedule-item-desc {
+    font-size: 1.5rem; /* Smaller description text */
+  }
+
+  .schedule-sessions-list p {
+    font-size: 1.6rem; /* Smaller session text */
+    line-height: 1.2;
+  }
+    .schedule-card-content {
+      margin-top: 15rem;
+    }
 }
-@media(max-width: 1425px) and (max-height: 900px) {
-}
-@media(max-width: 1368px) and (max-height: 912px) {
-}
-@media(max-width: 1366px) and (max-height: 1024px) {
-}
+
 @media(max-width: 1366px) and (max-height: 768px) {
+    .schedule-card {
+    width: 40rem;
+    min-height: 20rem; 
+  }
+    .schedule-card-content {
+            margin-top: 18rem;
+    }
+     .button-schedule {
+    margin-bottom: 4rem;
+  }
+   .button-dresscode img {
+    margin-bottom: 4rem;
+  }
 }
 @media(max-width: 1280px) and (max-height: 853px) {
     .schedule-duck-right {
     right: 0vw;
      width: 22rem;
   }
+
     .schedule-card {
     width: 450px;
-    min-height: 1rem; 
+    min-height: 20rem; 
     
   }
     .schedule-card-content {
-    top: 55%; /* Start at the vertical center */
+            margin-top: 18rem;
+    }
+  .schedule-button-group{
+    min-height: 11rem;
+  }
+ .button-schedule {
+    font-size: 1rem !important;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+   .button-dresscode img {
+    height: 5rem !important;
+    width: auto !important;
+    margin-bottom: 1.8rem;
   }
 }
 @media(max-width: 1280px) and (max-height: 800px) {
+ .schedule-button-group{
+    min-height: 8rem;
+  }
+ .button-schedule {
+    font-size: 1rem !important;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+   .button-dresscode img {
+    height: 5rem !important;
+    width: auto !important;
+    margin-bottom: 1.8rem;
+  }
+  .schedule-card {
+    width: 500px;
+    min-height: 20rem;
+  }
+}
+@media(max-width: 1280px) and (max-height: 570px) {
+  .schedule-card-content{
+    padding-bottom: 10rem;
+    margin-top: 18rem;
+  }
+   .schedule-item-title {
+    font-size: 1.5rem; /* Smaller title */
+    margin-bottom: 0rem;
+
+  }
+    .button-schedule {
+    font-size: 0.9rem !important;
+    padding: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .button-dresscode img {
+    height: 4rem !important;
+    width: auto !important;
+    margin-bottom: 2.5rem;
+  }
+
+  .schedule-item-desc {
+    font-size: 1rem; /* Smaller description text */
+  }
+
+  .schedule-sessions-list p {
+    font-size: 1rem; /* Smaller session text */
+    line-height: 1.5;
+  }
+  .schedule-card{
+    min-height: 17rem;
+  }
 }
 @media(max-width: 1180px) and (max-height: 820px){
    .schedule-card {
     width: 450px;
     min-height: 350px; 
   }
+
    .schedule-duck-right {
     right: -1vw;
      width: 23rem; /* Resize ducks */
   } 
+   .button-schedule {
+    font-size: 1.2rem !important;
+    padding: 1.0rem;
+    margin-bottom: 3rem;
+  }
+   .button-dresscode img {
+    height: 6rem !important;
+    width: auto !important;
+    margin-bottom: 3rem;
+  }
 }
 @media(max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
   .title-font {
@@ -302,7 +458,7 @@
   }
 
   .schedule-content-area {
-    height: 120vh !important; /* Manually set the height for mobile view */
+    height: 130vh !important; /* Manually set the height for mobile view */
   }
 
   .schedule-title-img {
@@ -313,14 +469,16 @@
   .schedule-star-circle {
     width: 275% !important;
     height: auto;
-    top: 3vh;
+    top: 2vh;
     transform: translateX(-50%) scale(1.5)!important;
   }
-  
+    .schedule-button-group{
+    min-height: 8rem;
+  }
 
   .schedule-pillar-left,
   .schedule-pillar-right{
-    z-index: 10;
+    z-index: 5;
     width: auto;
     height: 100%;
   }
@@ -366,7 +524,7 @@
     width: 90%; /* Adjust width for mobile screen */
     height: auto;
     position: absolute;
-    top: 55%; /* Start at the vertical center */
+    top: 65%; /* Start at the vertical center */
     left: 50%;
     transform: translate(-50%, -50%) scale(1.1) !important; /* Adjust based on the element's own size */
   }
@@ -389,14 +547,16 @@
     transform: none !important; /* Remove the scaling from the group */
   }
 
-  .button-schedule {
-    font-size: 2rem !important;
-    padding: 1.25rem 1.75rem !important;
+ .button-schedule {
+    font-size: 1.6rem !important;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .button-dresscode img {
-    height: 8rem !important;
+    height: 6rem !important;
     width: auto !important;
+    margin-bottom: 1.3rem;
   }
 
   /* Target the close button inside the modal for landscape view */
@@ -434,7 +594,7 @@
     /* Center the oversized image */
     position: absolute !important;
     left: 50% !important;
-    top: 25vh !important;
+    top: 29vh !important;
     transform: translate(-50%, -50%) !important;
   }
 }
@@ -472,6 +632,49 @@
 
 }
 @media(max-width: 1024px) and (max-height: 600px) {
+    .schedule-pillar-left,
+  .schedule-pillar-right{
+    z-index: 5;
+    width: auto;
+    height: 100%;
+  }
+    .schedule-duck-right {
+    right: 2vw;
+    bottom: 0vh;
+    width: 15rem;
+  }
+  .schedule-card{
+    width: 27rem;
+    min-height: 17rem;
+  }
+
+  .schedule-card-content{
+    padding-bottom: 5rem;
+    margin-top: 15rem;
+  }
+  .schedule-button-group{
+    min-height: 8rem;
+  }
+ .button-schedule {
+    font-size: 1rem !important;
+    padding: 1.5rem;
+    margin-bottom: 4.5rem;
+  }
+   .button-dresscode img {
+    height: 4rem !important;
+    width: auto !important;
+    margin-bottom: 4.5rem;
+  }
+   .schedule-item-title {
+    font-size: 1.5rem; /* Smaller title */
+    margin-bottom: 0;
+  }
+}
+@media(max-width: 960px) and (max-height: 540px){
+  .schedule-card {
+    width: 27rem;
+    min-height: 10rem; 
+  }
 }
 @media(max-width: 956px) and (max-height: 440px) and (orientation: landscape){
   .title-font {
@@ -550,11 +753,10 @@
     width: 90%; /* Adjust width for mobile screen */
     height: auto;
     position: absolute;
-    top: 70%; /* Start at the vertical center */
+    top: 30%; /* Start at the vertical center */
     left: 50%;
     transform: translate(-50%, -50%) scale(0.65) !important; /* Adjust based on the element's own size */
   }
-
   .schedule-item-title {
     font-size: 1.8rem; /* Smaller title */
   }
@@ -580,9 +782,14 @@
   }
 
   .button-dresscode img {
-    margin-top: -2vh;    
-    height: 7rem !important;
+    margin-top: -2rem;    
+    height: 5rem !important;
     width: auto !important;
+  }
+    .button-schedule {
+    font-size: 0.9rem !important;
+    padding: 0.5rem;
+    margin-bottom: 3.5rem;
   }
 
   /* Target the close button inside the modal for landscape view */
@@ -609,9 +816,9 @@
     background-clip: padding-box, border-box;
     background-blend-mode: screen;
     opacity: 100%;
-    width: 350px;
-    height: 25px;
+    width: 450px;
     min-height: 300px; 
+    margin-bottom: -1rem;
   }
   .schedule-card-bg-mobile{
     display: block !important;
@@ -642,6 +849,16 @@
   }
 }
 @media(max-width: 914px) and (max-height: 412px) and (orientation: landscape) {
+    .schedule-duck-right {
+    right: 5vw;
+    bottom: 5vh;
+  }
+  .schedule-pillar-left,
+  .schedule-pillar-right{
+    z-index: 5;
+    width: auto;
+    height: 100%;
+  }
 }
 @media(max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
   .title-font {
@@ -673,7 +890,7 @@
 
   .schedule-pillar-left,
   .schedule-pillar-right{
-    z-index: 10;
+    z-index: 5;
     width: auto;
     height: 100%;
   }
@@ -818,8 +1035,17 @@
 @media(max-width: 882px) and (max-height: 344px) and (orientation: landscape) {
 }
 @media(max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
+  .schedule-duck-right {
+    right: 5vw;
+    bottom: 3vh;
+    width: 18rem; /* Resize ducks */
+  }
+
 }
 @media(max-width: 844px) and (max-height: 390px) {
+    .schedule-card-content {
+    top: 27%;
+    }
 }
 @media(max-width: 824px) and (max-height: 384px){
   .button-dresscode{
@@ -906,6 +1132,16 @@
 
 }
 @media(max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .schedule-pillar-left,
+  .schedule-pillar-right{
+    z-index: 5;
+    width: auto;
+    height: 100%;
+  }
+    .schedule-duck-right {
+    right: 5vw;
+    bottom: 3vh;
+  }
 }
 @media(max-width: 740px) and (max-height: 360px) and (orientation: landscape) {
   .button-dresscode img {
@@ -927,6 +1163,9 @@
     .schedule-card {
     width: 350px;
     min-height: 250px; 
+  }
+    .schedule-content-area {
+    height: 130vh !important; /* Manually set the height for mobile view */
   }
 }
 @media(max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
@@ -962,11 +1201,7 @@
     min-height: 200px; 
   }
    .schedule-card-content {
-    width: 90%; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 55%; /* Start at the vertical center */
-    left: 50%;
+    top: 15%; /* Start at the vertical center */
     }
      .button-left {
     left: -4.3rem !important;
@@ -994,10 +1229,16 @@
    .schedule-item-desc {
     font-size: 1.0rem; /* Smaller description text */
   }
+  .schedule-card-content{
+    top: 35%;
+  }
 
   .schedule-sessions-list p {
     font-size: 1.0rem; /* Smaller session text */
     line-height: 1.5;
+  }
+ .schedule-content-area {
+    height: 140vh !important; /* Manually set the height for mobile view */
   }
 
 }
@@ -1017,6 +1258,16 @@
 
   .schedule-item-desc {
     font-size: 1.0rem; /* Smaller description text */
+  }
+  .schedule-card-content{
+    top: 50%;
+  }
+    .schedule-content-area {
+    height: 160vh !important; /* Manually set the height for mobile view */
+  }
+    .schedule-card-bg-mobile{
+    width: 150% !important; /* Control the width here */
+    top: 25vh !important;
   }
 }
 @media(max-width: 440px) and (max-height: 956px) and (orientation: portrait){
@@ -1049,7 +1300,7 @@
 
   .schedule-pillar-left,
   .schedule-pillar-right{
-    z-index: 10;
+    z-index: 5;
     width: auto;
     height: 100%;
   }
@@ -1095,7 +1346,7 @@
     width: 90%; /* Adjust width for mobile screen */
     height: auto;
     position: absolute;
-    top: 55%; /* Start at the vertical center */
+    top: 42%; /* Start at the vertical center */
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9) !important;
 
@@ -1155,6 +1406,7 @@
     width: 262px;
     height: 259px; 
     min-height: 350px;
+    margin-bottom: -2rem;
   }
   .schedule-card-bg-mobile{
     display: block !important;
@@ -1203,7 +1455,7 @@
 
   .schedule-pillar-left,
   .schedule-pillar-right{
-    z-index: 10;
+    z-index: 5;
     width: auto;
     height: 100%;
   }
@@ -1233,7 +1485,7 @@
 
   .schedule-duck-right {
     right: 5vw;
-    bottom: -0vh;
+    bottom: 2vh;
     transform: scale(1.3) !important;
   }
 
@@ -1249,7 +1501,7 @@
     width: 90%; /* Adjust width for mobile screen */
     height: auto;
     position: absolute;
-    top: 60%; /* Start at the vertical center */
+    top: 45%; /* Start at the vertical center */
     left: 50%;
     transform: translate(-50%, -50%); /* Adjust based on the element's own size */
   }
@@ -1346,6 +1598,9 @@
   .dresscode-title{
     font-size: 1.5rem;
   }
+  .schedule-card-content {
+  top: 43%;
+  }
 }
 @media(max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
   .schedule-card-bg-mobile{
@@ -1372,8 +1627,23 @@
     font-size: 1.1rem; /* Smaller session text */
     line-height: 1.5;
   }
+    .schedule-content-area {
+    height: 140vh !important; /* Manually set the height for mobile view */
+  }
+   .schedule-card-bg-mobile{
+    display: block !important;
+    width: 175% !important; /* Control the width here */
+    height: auto !important;
+    top: 20vh !important;
+  }
+  .schedule-card-content{
+    top: 37%;
+  }
 }
 @media(max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
+  .schedule-card-content{
+    top: 40%;
+  }
 }
 @media(max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
   .schedule-pillar-left,

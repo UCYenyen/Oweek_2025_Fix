@@ -83,7 +83,7 @@ export default function Schedule() {
          <img
           ref={duckRightRef}
           src="/elements/schedule/ccc3.png"
-          className="absolute w-[50vh] bottom-0h-auto right-[5vh] z-[10] schedule-duck-right"
+          className="absolute w-[50vh] bottom-0 h-auto right-[5vh] z-[10] schedule-duck-right"
           width={100}
           height={100}
           alt="bebekkanan"
@@ -105,7 +105,7 @@ export default function Schedule() {
         <img
           ref={pillarRightRef}
           src="/elements/schedule/pillar-right.svg"
-          className="absolute w-[10%] h-[85%] top-0 right-0 z-[5] schedule-pillar-right"
+          className="absolute w-[10%] h-[85%] top-0 right-0 z-[4] schedule-pillar-right"
           alt="pillar-right"
         />
 
@@ -134,14 +134,15 @@ export default function Schedule() {
             />
           </div>
 
-          {/* Container for the interactive schedule content, positioned above pillars */}
-          <div ref={scheduleContentRef} className="absolute mt-[4vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[55%] z-10 schedule-card-content">
+          
+        </div>
+        {/* Container for the interactive schedule content, positioned above pillars */}
+          <div ref={scheduleContentRef} className="mt-[2vh] pb-[1vh] w-[55%] z-10 flex justify-center items-center schedule-card-content">
             <ScheduleDiv
               currentIndex={currentIndex}
               setCurrentIndex={setCurrentIndex}
             />
           </div>
-        </div>
       </div>
     </div>
   );

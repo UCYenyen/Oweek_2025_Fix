@@ -80,6 +80,14 @@ export default function Schedule() {
           className="absolute w-full h-auto -top-[0vh] left-1/2 -translate-x-1/2 z-[2] schedule-sun-top opacity-50"
           alt="sun-top"
         />
+         <img
+          ref={duckRightRef}
+          src="/elements/schedule/ccc3.png"
+          className="absolute w-[50vh] bottom-0h-auto right-[5vh] z-[10] schedule-duck-right"
+          width={100}
+          height={100}
+          alt="bebekkanan"
+        />
       <div className="relative w-screen h-[125vh] flex items-center justify-center schedule-content-area">
         
         <img
@@ -101,14 +109,7 @@ export default function Schedule() {
           alt="pillar-right"
         />
 
-        <img
-          ref={duckRightRef}
-          src="/elements/schedule/bebekkanan.svg"
-          className="absolute w-[50vh] h-auto bottom-[10vh] right-[5vh] z-[10] schedule-duck-right"
-          width={100}
-          height={100}
-          alt="bebekkanan"
-        />
+       
         <img
           ref={duckLeftRef}
           src="/elements/schedule/bebekkiri.svg"

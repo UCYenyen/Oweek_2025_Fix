@@ -117,7 +117,7 @@ export default function Schedule({
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#D45A0A] font-serif mt-4 md:mt-[7rem]">
                 {currentSchedule.title}
               </h3>
-              <p className="text-sm sm:text-base md:text-lg text-[#AB6528] font-roboto mt-2 px-4 dresscode-description">
+              {/* <p className="text-sm sm:text-base md:text-lg text-[#AB6528] font-roboto mt-2 px-4 dresscode-description">
                 {currentSchedule.baju}, {currentSchedule.celana},{" "}
                 {currentSchedule.sepatu}
               </p>
@@ -136,7 +136,7 @@ export default function Schedule({
                   </h4>
                   <div className="w-full h-32 sm:h-48 bg-[#D1E7DD] mt-2 rounded-lg do-box"></div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

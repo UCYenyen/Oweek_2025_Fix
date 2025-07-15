@@ -623,6 +623,43 @@
         max-height: 33rem;
     }
 }
+@media(max-width: 956px) and (max-height: 440px) and (orientation: landscape) {
+    .rules-logo{
+        width: 50%;
+    }
+    .pillar-left{
+        width: 30.5%;
+        left: -2rem;
+    }
+    .pillar-right{
+        width: 30.5%;
+        right: -2rem;
+    }
+    .rules-card{
+        max-width: 30rem;
+        min-height: 35em;
+        max-height: 35rem;
+    }
+    .sun-rules{
+        bottom: -20%;
+    }
+    .dropdown{
+        width: 80%;
+        height: 2.5rem;
+        max-width: 28rem;
+    }
+    .text{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .text-description{
+        line-height: 2rem;
+        font-size: 1rem;
+        max-width: 40rem;
+        min-height: 33rem;
+        max-height: 33rem;
+    }
+}
 @media(max-width: 932px) and (max-height: 430px) and (orientation: landscape) {
     .rules-logo{
         width: 50%;

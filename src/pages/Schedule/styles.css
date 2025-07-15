@@ -95,13 +95,29 @@
 
   .schedule-item-desc {
     font-size: 3rem; /* Smaller description text */
+    margin-bottom: 2rem;
   }
 
   .schedule-sessions-list p {
     font-size: 3rem; /* Smaller session text */
     line-height: 1.5;
   }
-
+ .button-schedule {
+    font-size: 2rem !important;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+   .button-dresscode img {
+    height: 8rem !important;
+    width: auto !important;
+    margin-bottom: 1.8rem;
+  }
+          .schedule-card-content{
+    margin-top: 15rem;
+  }
+   .schedule-button-group{
+    min-height: 11rem;
+  }
 }
 @media(max-width: 2850px) and (max-height: 1800px){
 .schedule-duck-right {
@@ -110,8 +126,8 @@
     width: 42rem;
   }
     .schedule-card {
-    width: 50rem;
-    min-height: 30rem; 
+    width: 60rem;
+    min-height: 40rem; 
   }
   .schedule-item-title {
     font-size: 2.6rem; /* Smaller title */
@@ -120,11 +136,28 @@
 
   .schedule-item-desc {
     font-size: 2rem; /* Smaller description text */
+    margin-bottom: 2rem;
   }
 
   .schedule-sessions-list p {
     font-size: 2rem; /* Smaller session text */
     line-height: 1.5;
+  }
+        .schedule-card-content{
+    margin-top: 15rem;
+  }
+   .schedule-button-group{
+    min-height: 11rem;
+  }
+   .button-schedule {
+    font-size: 2rem !important;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+   .button-dresscode img {
+    height: 8rem !important;
+    width: auto !important;
+    margin-bottom: 1.8rem;
   }
 }
 @media(max-width: 2560px) and (max-height:1600px){
@@ -143,11 +176,27 @@
 
   .schedule-item-desc {
     font-size: 2rem; /* Smaller description text */
+    margin-bottom: 1rem;
   }
 
   .schedule-sessions-list p {
     font-size: 2rem; /* Smaller session text */
     line-height: 1.5;
+  }
+        .schedule-card-content{
+    margin-top: 15rem;
+  }
+   .schedule-button-group{
+    min-height: 13rem;
+  }
+   .button-schedule {
+    font-size: 3rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+   .button-dresscode img {
+    height: 10rem !important;
+    margin-bottom: 1.8rem;
   }
 }
 @media(max-width: 2560px) and (max-height: 1140px){
@@ -159,6 +208,16 @@
     width: 40rem;
     min-height: 25rem; 
   }
+      .schedule-card-content{
+    margin-top: 15rem;
+  }
+   .schedule-button-group{
+    min-height: 11rem;
+  }
+    .schedule-item-desc {
+    font-size: 1.5rem; 
+    margin-bottom: 2rem;
+  }
 }
 @media(max-width: 1920px) and (max-height: 1080px) {
     .schedule-duck-right {
@@ -166,8 +225,20 @@
      width: 27rem;
   }
     .schedule-card {
-    width: 550px;
-    min-height: 400px; 
+    width: 600px;
+    min-height: 30rem; 
+  }
+      .schedule-card-content{
+    margin-top: 19rem;
+  }
+   .schedule-button-group{
+    min-height: 17rem;
+  }
+   .button-schedule {
+    margin-bottom: 6.5rem;
+  }
+   .button-dresscode img {
+    margin-bottom: 6.5rem;
   }
 }
 @media(max-width: 1900px) and (max-height: 1200px) {
@@ -179,6 +250,12 @@
     width: 550px;
     min-height: 400px; 
   }
+      .schedule-card-content{
+    margin-top: 15rem;
+  }
+   .schedule-button-group{
+    min-height: 11rem;
+  }
 }
 @media(max-width: 1728px) and (max-height: 1117px) {
    .schedule-duck-right {
@@ -188,6 +265,12 @@
   .schedule-card {
     width: 550px;
     min-height: 400px; 
+  }
+    .schedule-card-content{
+    margin-top: 15rem;
+  }
+   .schedule-button-group{
+    min-height: 11rem;
   }
 }
 @media(max-width: 1536px) and (max-height: 960px){
@@ -206,7 +289,7 @@
    .button-dresscode img {
     height: 8rem !important;
     width: auto !important;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
   }
    .schedule-item-title {
     font-size: 2.0rem; /* Smaller title */
@@ -230,11 +313,38 @@
 
   .schedule-card {
     width: 550px;
-    min-height: 350px; 
+    min-height: 27rem; 
+    margin-top: 5rem;
   }
     .schedule-item-title {
     font-size: 2.3rem; 
     margin-bottom: 1rem;
+  }
+    .schedule-card-content {
+        margin-top: 10rem;
+
+    }
+     .schedule-button-group{
+    min-height: 11rem;
+  }
+  .button-schedule {
+        font-size: 1.5rem !important;
+    padding: 1.0rem;
+
+    margin-bottom: 4rem;
+  }
+   .button-dresscode img {
+        height: 5rem !important;
+    width: auto !important;
+
+    margin-bottom: 4rem;
+  }
+   .schedule-card-content{
+    padding-bottom: 5rem;
+    margin-top: 15rem;
+  }
+  .schedule-button-group{
+    min-height: 11rem;
   }
 }
 @media(min-width: 1367px) and (max-width: 1512px) and (max-height: 982px){
@@ -348,7 +458,7 @@
 
     .schedule-card {
     width: 450px;
-    min-height: 20rem; 
+    min-height: 24rem; 
     
   }
     .schedule-card-content {
@@ -360,12 +470,12 @@
  .button-schedule {
     font-size: 1rem !important;
     padding: 0.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5.5rem;
   }
    .button-dresscode img {
     height: 5rem !important;
     width: auto !important;
-    margin-bottom: 1.8rem;
+    margin-bottom: 5.8rem;
   }
 }
 @media(max-width: 1280px) and (max-height: 800px) {
@@ -375,22 +485,30 @@
  .button-schedule {
     font-size: 1rem !important;
     padding: 0.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
   }
    .button-dresscode img {
     height: 5rem !important;
     width: auto !important;
-    margin-bottom: 1.8rem;
+    margin-bottom: 3.8rem;
   }
   .schedule-card {
     width: 500px;
     min-height: 20rem;
   }
+      .schedule-item-title {
+    font-size: 1.2rem; 
+    margin-bottom: 1rem;
+  }
 }
 @media(max-width: 1280px) and (max-height: 570px) {
   .schedule-card-content{
-    padding-bottom: 10rem;
-    margin-top: 18rem;
+    padding-bottom: 13rem;
+    margin-top: 20rem;
+    transform: scale(0.7) !important; /* Adjust based on the element's own size */
+  }
+    .schedule-button-group{
+    min-height: 11rem;
   }
    .schedule-item-title {
     font-size: 1.5rem; /* Smaller title */
@@ -400,13 +518,13 @@
     .button-schedule {
     font-size: 0.9rem !important;
     padding: 0.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 6.5rem;
   }
 
   .button-dresscode img {
     height: 4rem !important;
     width: auto !important;
-    margin-bottom: 2.5rem;
+    margin-bottom: 6.5rem;
   }
 
   .schedule-item-desc {
@@ -418,29 +536,36 @@
     line-height: 1.5;
   }
   .schedule-card{
-    min-height: 17rem;
+    min-height: 22rem;
+    width: 24rem;
   }
+
 }
 @media(max-width: 1180px) and (max-height: 820px){
    .schedule-card {
     width: 450px;
-    min-height: 350px; 
+    min-height: 24rem; 
+    margin-top: 3rem;
   }
 
    .schedule-duck-right {
     right: -1vw;
      width: 23rem; /* Resize ducks */
   } 
-   .button-schedule {
-    font-size: 1.2rem !important;
-    padding: 1.0rem;
-    margin-bottom: 3rem;
+ .button-schedule {
+    font-size: 1rem !important;
+    padding: 0.8rem;
+    margin-bottom: 7.5rem;
   }
    .button-dresscode img {
-    height: 6rem !important;
+    height: 5rem !important;
     width: auto !important;
-    margin-bottom: 3rem;
+    margin-bottom: 7.5rem;
   }
+    .schedule-button-group{
+    min-height: 15rem;
+  }
+
 }
 @media(max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
   .title-font {
@@ -521,12 +646,7 @@
   }
 
   .schedule-card-content {
-    width: 90%; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 65%; /* Start at the vertical center */
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.1) !important; /* Adjust based on the element's own size */
+    margin-top: 28rem;
   }
 
   .schedule-item-title {
@@ -601,22 +721,24 @@
 @media(max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
 .schedule-card {
     width: 400px;
-    min-height: 300px; 
+    min-height: 23rem; 
     margin-bottom: 0.5rem;
   }
    .schedule-card-content {
-    top: 55%; /* Start at the vertical center */
+    margin-top: 18rem;
   }
-    .button-schedule {
+    .schedule-button-group{
+    min-height: 11rem;
+  }
+ .button-schedule {
     font-size: 1rem !important;
-    padding: 0.25rem 0.75rem !important;
-    margin-top: -2vh;
+    padding: 0.7rem;
+    margin-bottom: 5.5rem;
   }
-
-  .button-dresscode img {
-    margin-top: -2vh;    
-    height: 5rem !important;
+   .button-dresscode img {
+    height: 4rem !important;
     width: auto !important;
+    margin-bottom: 5.5rem;
   }
   .schedule-item-title {
     font-size: 1.4rem; /* Smaller title */
@@ -645,25 +767,26 @@
   }
   .schedule-card{
     width: 27rem;
-    min-height: 17rem;
+    min-height: 21rem;
   }
 
   .schedule-card-content{
     padding-bottom: 5rem;
     margin-top: 15rem;
+        transform: scale(0.8) !important; /* Adjust based on the element's own size */
   }
   .schedule-button-group{
     min-height: 8rem;
   }
  .button-schedule {
-    font-size: 1rem !important;
-    padding: 1.5rem;
-    margin-bottom: 4.5rem;
+    font-size: 0.8rem !important;
+    padding: 0.6rem;
+    margin-bottom: 8.5rem;
   }
    .button-dresscode img {
     height: 4rem !important;
     width: auto !important;
-    margin-bottom: 4.5rem;
+    margin-bottom: 8.5rem;
   }
    .schedule-item-title {
     font-size: 1.5rem; /* Smaller title */
@@ -673,7 +796,21 @@
 @media(max-width: 960px) and (max-height: 540px){
   .schedule-card {
     width: 27rem;
-    min-height: 10rem; 
+    min-height: 22rem; 
+    transform: scale(0.8) !important; /* Adjust based on the element's own size */
+  }
+   .schedule-card-content{
+    padding-bottom: 5rem;
+    margin-top: 13rem;
+  }
+  .schedule-button-group{
+    min-height: 12rem;
+  }
+   .button-schedule {
+    margin-bottom: 10.5rem;
+  }
+   .button-dresscode img {
+    margin-bottom: 10.5rem;
   }
 }
 @media(max-width: 956px) and (max-height: 440px) and (orientation: landscape){
@@ -781,15 +918,15 @@
     margin-top: -2vh;
   }
 
-  .button-dresscode img {
-    margin-top: -2rem;    
+ .button-schedule {
+    font-size: 1.5rem !important;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+   .button-dresscode img {
     height: 5rem !important;
     width: auto !important;
-  }
-    .button-schedule {
-    font-size: 0.9rem !important;
-    padding: 0.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
   }
 
   /* Target the close button inside the modal for landscape view */
@@ -839,13 +976,26 @@
 @media(max-width: 932px) and (max-height: 430px) {
     .schedule-card {
     width: 400px;
-    min-height: 300px; 
+    min-height: 24rem; 
+    margin-top: 4rem;
+    transform: scale(0.9) !important; /* Adjust based on the element's own size */
   }
     .schedule-pillar-left{
     left: -2vh;
   }
   .schedule-pillar-right{
     right: -2vh;
+  }
+     .button-dresscode img {
+    margin-bottom: 1.8rem;
+  }
+}
+@media(max-width: 915px) and (max-height: 412px) and (orientation: landscape) {
+ .button-schedule {
+    margin-bottom: 6.5rem;
+  }
+   .button-dresscode img {
+    margin-bottom: 5.5rem;
   }
 }
 @media(max-width: 914px) and (max-height: 412px) and (orientation: landscape) {
@@ -933,13 +1083,7 @@
   }
 
   .schedule-card-content {
-    width: 90%; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 65%; /* Start at the vertical center */
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.4) !important;
-
+    margin-top: 25rem;
   }
 
   .schedule-item-title {
@@ -988,16 +1132,9 @@
     width: 5rem;
   }
   .schedule-card {
-    cursor: pointer;
-    border: 4px solid transparent;
-    background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    background-blend-mode: screen;
-    opacity: 100%;
-    width: 250px;
-    height: 259px; 
-    min-height: 300px;
+    margin-top: 12rem;
+    width: 20rem;
+    min-height: 25rem;
   }
   .schedule-card-bg-mobile{
     display: block !important;
@@ -1030,8 +1167,25 @@
       height: 10rem; /* Adjust this value to your desired height */
     }
 }
-@media(max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+@media  (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+
+   .button-dresscode img {
+    margin-bottom: 1.8rem;
+  }
+    .schedule-card{
+    transform: scale(0.9) !important; /* Adjust based on the element's own size */
+    margin-top: 1rem;
+    min-height: 23rem;
+  }
+    .schedule-card-content{
+    padding-bottom: 5rem;
+    margin-top: 15rem;
+  }
+  .schedule-button-group{
+    min-height: 8rem;
+  }
 }
+
 @media(max-width: 882px) and (max-height: 344px) and (orientation: landscape) {
 }
 @media(max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
@@ -1048,8 +1202,14 @@
     }
 }
 @media(max-width: 824px) and (max-height: 384px){
-  .button-dresscode{
-    width: 5rem;
+
+   .button-schedule {
+    margin-bottom: 5.5rem;
+  }
+   .button-dresscode img {
+    height: 5rem !important;
+    width: auto !important;
+    margin-bottom: 5.5rem;
   }
 }
 @media(max-width: 820px) and (max-height: 1180px) and (orientation: portrait){
@@ -1121,15 +1281,19 @@
   }
 }
 @media(max-width: 780px) and (max-height: 360px) {
-  .button-dresscode{ 
-    width: 5rem;
-    margin-top: -1.5rem;
+ .button-schedule {
+    margin-bottom: 6.5rem;
   }
-    .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.25rem 0.75rem !important;
+   .button-dresscode img {
+    margin-bottom: 6.5rem;
   }
+    .schedule-card-content{
+    margin-top: 15rem;
 
+    }
+  .schedule-card{
+    transform: scale(0.8) !important; /* Adjust based on the element's own size */
+  }
 }
 @media(max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     .schedule-pillar-left,
@@ -1141,6 +1305,13 @@
     .schedule-duck-right {
     right: 5vw;
     bottom: 3vh;
+  }
+    .schedule-card-content{
+    padding-bottom: 5rem;
+    margin-top: 7rem;
+  }
+  .schedule-button-group{
+    min-height: 11rem;
   }
 }
 @media(max-width: 740px) and (max-height: 360px) and (orientation: landscape) {
@@ -1162,17 +1333,28 @@
   }
     .schedule-card {
     width: 350px;
-    min-height: 250px; 
+    min-height: 22rem; 
   }
     .schedule-content-area {
     height: 130vh !important; /* Manually set the height for mobile view */
   }
+   .button-schedule {
+    margin-bottom: 3.5rem;
+  }
+   .button-dresscode img {
+    margin-bottom: 1.5rem;
+  }
 }
 @media(max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
-  .button-dresscode img {
-    margin-top: -2vh;    
+ .button-schedule {
+    font-size: 0.8rem !important;
+    padding: 0.8rem;
+    margin-bottom: 10.5rem;
+  }
+   .button-dresscode img {
     height: 5rem !important;
     width: auto !important;
+    margin-bottom: 10.5rem;
   }
    .schedule-item-title {
     font-size: 1.2rem; /* Smaller title */
@@ -1187,8 +1369,8 @@
     line-height: 1.5;
   }
   .schedule-card {
-    width: 350px;
-    min-height: 250px; 
+    width: 25rem;
+    min-height: 35rem; 
   }
   .schedule-duck-right {
     right: 1vw;
@@ -1343,12 +1525,7 @@
   }
 
   .schedule-card-content {
-    width: 90%; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 42%; /* Start at the vertical center */
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.9) !important;
+    margin-top: -7rem;
 
   }
 
@@ -1422,6 +1599,15 @@
   }
 }
 @media(max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
+   .button-schedule {
+    margin-bottom: -1.5rem;
+  }
+   .button-dresscode img {
+    margin-bottom: -1.5rem;
+  }
+  .schedule-card{
+    margin-top: -2rem;
+  }
 }
 @media(max-width: 412px) and (max-height: 915px) and (orientation: portrait) {
 }
@@ -1602,6 +1788,19 @@
   top: 43%;
   }
 }
+@media(max-width: 384px) and (max-height: 824px) and (orientation: portrait) {
+  .schedule-card-content{
+    padding-bottom: 5rem;
+    margin-top: 15rem;
+  }
+  .schedule-button-group{
+    min-height: 11rem;
+  }
+    .schedule-card {
+    width: 15rem;
+    min-height: 24rem; 
+  }
+}
 @media(max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
   .schedule-card-bg-mobile{
     width: 135% !important;
@@ -1640,10 +1839,25 @@
     top: 37%;
   }
 }
+@media(max-width: 360px) and (max-height: 780px) and (orientation: portrait) {
+.schedule-card-content{
+    margin-top: 15rem;
+  }
+       .schedule-button-group{
+    min-height: 11rem;
+  }
+     .button-schedule {
+    margin-bottom: 3.5rem;
+  }
+   .button-dresscode img {
+    margin-bottom: 3.5rem;
+  }
+}
 @media(max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
   .schedule-card-content{
     top: 40%;
   }
+
 }
 @media(max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
   .schedule-pillar-left,
@@ -1688,6 +1902,9 @@
     bottom: 2vh;
     width: 10rem;
   }
+    .schedule-card {
+    margin-top: 25rem;
+    }
 }
 
 /* 1280 570

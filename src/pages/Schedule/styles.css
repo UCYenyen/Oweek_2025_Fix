@@ -1281,18 +1281,21 @@
   }
 }
 @media(max-width: 780px) and (max-height: 360px) {
- .button-schedule {
-    margin-bottom: 6.5rem;
+  .button-schedule {
+    margin-bottom: 15rem; /* Move button up by reducing margin */
   }
-   .button-dresscode img {
-    margin-bottom: 6.5rem;
+  .button-dresscode img {
+    margin-bottom: 15rem;
   }
-    .schedule-card-content{
-    margin-top: 15rem;
-
-    }
-  .schedule-card{
-    transform: scale(0.8) !important; /* Adjust based on the element's own size */
+  .schedule-card-content {
+    margin-top: 17rem;
+  }
+  .schedule-button-group {
+    min-height: 14rem;
+  }
+  .schedule-card {
+    min-height: 23rem;
+    transform: scale(0.7) !important;
   }
 }
 @media(max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {

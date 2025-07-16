@@ -66,12 +66,12 @@ export default function About() {
 
           <div className="absolute top-[2vh] w-full h-full z-10 left-1/2 -translate-x-1/2">
             <img
-              src="/elements/about/aboutnew.png"
+              src="/elements/about/aboutpc.png"
               className="w-[60%] h-auto absolute left-1/2 -translate-x-1/2 about-bg desktop-about-bg"
               alt="about-bg"
             />
             <img
-              src="/elements/about/aboutmobilefinal.png"
+              src="/elements/about/aboutmb.png"
               className="w-[90%] h-auto absolute left-1/2 -translate-x-1/2 about-bg mobile-about-bg"
               alt="mobile-about-bg"
             />

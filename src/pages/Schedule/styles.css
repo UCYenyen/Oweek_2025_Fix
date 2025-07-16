@@ -223,26 +223,29 @@
      width: 27rem;
   }
     .schedule-card {
-    width: 600px;
-    min-height: 30rem; 
+    width: 40rem;
+    min-height: 25rem; 
+    padding-top: 3rem;
   }
       .schedule-card-content{
-    margin-top: 19rem;
+    margin-top: 1rem;
   }
    .schedule-button-group{
-    min-height: 17rem;
+    min-height: 1rem;
   }
    .button-schedule {
         font-size: 1.5rem !important;
     padding: 1.0rem;
 
-    margin-bottom: 8.5rem;
+    margin-bottom: 0.5rem;
   }
    .button-dresscode img {
     height: 7rem !important;
-    margin-bottom: 8.5rem;
+    margin-bottom: 0.5rem;
   }
-
+  .schedule-item-title{
+    line-height: 3rem;
+  }
 
 }
 @media(max-width: 1900px) and (max-height: 1200px) {
@@ -260,6 +263,7 @@
    .schedule-button-group{
     min-height: 11rem;
   }
+  
 }
 @media(max-width: 1728px) and (max-height: 1117px) {
    .schedule-duck-right {
@@ -1474,10 +1478,10 @@
     height: 120vh !important; /* Manually set the height for mobile view */
   }
 
-  .schedule-title-img {
-    width: 80%;
-    top: 10vh;
-  }
+    .schedule-title-img {
+      width: 80%;
+      top: 10vh;
+    }
 
   .schedule-star-circle {
     width: 275% !important;

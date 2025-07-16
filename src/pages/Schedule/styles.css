@@ -29,8 +29,6 @@
   background-clip: padding-box, border-box;
   background-blend-mode: screen;
   opacity: 100%;
-  width: 462px;
-  height: 259;
 }
 .button-schedule{
     background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));

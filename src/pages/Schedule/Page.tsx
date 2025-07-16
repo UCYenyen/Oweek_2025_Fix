@@ -10,9 +10,9 @@ export default function Schedule() {
       <img className="absolute right-0 top-0 h-full w-auto z-[5]" src="/elements/schedule/pillar-right.svg" alt="" />
       <img src="/elements/schedule/pcbg.png " className="schedule-title-img w-[50%] absolute -bottom-[0rem] z-[6]" alt="" />
       <img className="absolute top-0 h-auto w-full z-[4]" src="/elements/schedule/newpillar.png" alt="" />
-      <img className="absolute -bottom-2 h-auto w-[30rem] z-[5] right-0" src="/elements/schedule/ccc3.png" alt="" />
-      <img className="absolute -bottom-2 h-auto w-[30rem] z-[5] left-0" src="/elements/schedule/bebekiri.png" alt="" />
-      <img className="absolute -top-2 h-auto w-[70rem] z-[5] " src="/elements/schedule/star-circle.svg" alt="" />
+      <img className="bebekanan absolute -bottom-2 h-auto w-[30rem] z-[5] right-0" src="/elements/schedule/ccc3.png" alt="" />
+      <img className="bebekiri absolute -bottom-2 h-auto w-[30rem] z-[5] left-0" src="/elements/schedule/bebekiri.png" alt="" />
+      <img className="star absolute -top-2 h-auto w-[70rem] z-[5] " src="/elements/schedule/star-circle.svg" alt="" />
 
       {/* non absolute  */}
       <div className="title-wrapper flex flex-col justify-center items-center">

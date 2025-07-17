@@ -1,5 +1,7 @@
 :root {
   background-color: #e7bc68;
+  color-scheme: light only;
+  -webkitcolor-scheme: light only;
   /* --button-left-gradient: #FFF0B8;
   --button-right-gradient: #FFD054; */
   /* --button-left-border: #F2B028;

@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { scheduleData } from "../data/scheduleData";
+import PopUpPanel from "./popUpPanel";
 
 export default function Schedule() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  // Set default value to true so popup is hidden by default
+  const [isHidden, setIsHidden] = useState(true);
+  const [isDressCode, setIsDressCode] = useState(false);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % scheduleData.length);
@@ -13,6 +17,11 @@ export default function Schedule() {
       (prevIndex) => (prevIndex - 1 + scheduleData.length) % scheduleData.length
     );
   };
+
+  function openPopUpPanel(isDresscode: boolean){
+    setIsHidden(!isHidden);
+    setIsDressCode(isDresscode);
+  }
 
   const currentSchedule = scheduleData[currentIndex];
 
@@ -50,12 +59,20 @@ export default function Schedule() {
 
       {/* Button dresscode bawah penugasan dan ketentuan*/}
       <div className="flex items-center justify-between w-[78%] gap-4 schedule-button-group">
-        <button className="penugasan button-schedule rounded-full font-lettertype text-white">PENUGASAN</button>
-        <button className="">
+        <button className="penugasan button-schedule rounded-full font-lettertype text-white" onClick={() => openPopUpPanel(false)}>PENUGASAN</button>
+        <button className="" onClick={() => openPopUpPanel(true)}>
           <img src="/elements/schedule/shirt.svg" alt="Dress Code" className="button-dresscode" />
         </button>
-        <button className="ketentuan button-schedule rounded-full font-lettertype text-white">KETENTUAN</button>
+        <button className="ketentuan button-schedule rounded-full font-lettertype text-white" onClick={() => openPopUpPanel(false)}>KETENTUAN</button>
       </div>
+
+      {/* Add PopUpPanel component */}
+      <PopUpPanel 
+        isHidden={isHidden}
+        setIsHidden={setIsHidden}
+        isDressCode={isDressCode}
+        setIsDressCode={setIsDressCode}
+      />
     </div>
   );
 }

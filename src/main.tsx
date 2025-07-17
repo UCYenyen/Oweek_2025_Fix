@@ -13,7 +13,7 @@ const Rules = lazy(() => import("./pages/Rules.tsx"));
 
 // Loading component
 const LoadingSpinner = () => (
-  <div className="fixed inset-0 bg-[#B2D5F1] bg-cover bg-[url('/elements/real-background.svg')] flex items-center justify-center z-50">
+  <div className="fixed inset-0 bg-gradient-to-br from-[#3F61AD] via-[#75ABDC] to-[#B2D5F1] flex items-center justify-center z-50">
     <div className="relative flex flex-col items-center gap-8 p-8">
       {/* Main spinner container */}
       <div className="relative">
@@ -22,29 +22,29 @@ const LoadingSpinner = () => (
           <div className="w-full h-full rounded-full border-8 border-[#B2D5F1] border-t-transparent"></div>
         </div>
         
-        {/* Inner spinning ring */}
-        <div className="absolute inset-4 w-24 h-24 rounded-full border-6 border-transparent bg-gradient-to-r from-[#FFD054] via-[#FFF0B8] to-[#F5AC01] animate-spin animate-reverse">
-          <div className="w-full h-full rounded-full border-6 border-[#B2D5F1] border-b-transparent"></div>
-        </div>
-        
-        {/* Center logo/icon */}
+        {/* Center logo - Luminate SVG (not spinning) */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-16 h-16 bg-gradient-to-br from-[#3F61AD] to-[#75ABDC] rounded-full flex items-center justify-center animate-pulse">
-            <div className="w-8 h-8 bg-gradient-to-br from-[#FFF0B8] to-[#FFD054] rounded-full"></div>
-          </div>
+          <img 
+            src="/luminate.svg" 
+            className="w-[90%] h-auto animate-pulse" 
+            alt="Luminate Logo"
+          />
         </div>
       </div>
       
       {/* Loading text */}
       <div className="text-center">
-        <h2 className="font-lettertype text-4xl bg-gradient-to-b from-[#263a65] to-[#3481c9] bg-clip-text text-transparent mb-2 animate-pulse">
+        <h2 className="font-lettertype text-4xl bg-gradient-to-b from-[#1e2d4e] to-[#2f69a0] bg-clip-text text-transparent mb-2 animate-pulse">
           LUMINATE
         </h2>
-        <p className="text-[#263a65] font-roboto text-lg animate-pulse delay-300">
-          OWEEK 2025
+        <p className="text-[#263a65] font-roboto text-xl font-semibold animate-pulse delay-300 tracking-wider">
+            OWEEK 2025
         </p>
+        <div className="mt-2 h-1 bg-gradient-to-r from-transparent via-[#293e83] to-transparent animate-pulse delay-500"></div>
       </div>
+      
     </div>
+     <div className="absolute inset-0 bg-[url('/elements/real-background.svg')] opacity-15 bg-cover bg-center"></div>
   </div>
 );
 

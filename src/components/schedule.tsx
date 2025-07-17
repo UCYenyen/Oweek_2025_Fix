@@ -58,7 +58,7 @@ export default function Schedule() {
       </div>
 
       {/* Button dresscode bawah penugasan dan ketentuan*/}
-      <div className="flex items-center justify-between w-[78%] gap-4 schedule-button-group">
+      <div className="flex items-center justify-between w-[50%] gap-4 schedule-button-group">
         <button className="penugasan button-schedule rounded-full font-lettertype text-white" onClick={() => openPopUpPanel(false)}>PENUGASAN</button>
         <button className="" onClick={() => openPopUpPanel(true)}>
           <img src="/elements/schedule/shirt.svg" alt="Dress Code" className="button-dresscode" />

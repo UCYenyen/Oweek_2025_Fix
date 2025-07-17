@@ -1,1937 +1,3394 @@
 :root {
   background-color: #e7bc68;
-  --button-left-gradient: #FFF0B8;
-  --button-right-gradient: #FFF0B8;
-  --button-left-border: #F2B028;
-  --button-right-border: #FFF0B8;
+  --button-left-gradient: #fff0b8;
+  --button-right-gradient: #fff0b8;
+  --button-left-border: #f2b028;
+  --button-right-border: #fff0b8;
 
-  --countdown-top-gradient: #75ABDC;
-  --countdown-right-gradient: #B2D5F1;
-  --countdown-bottom-gradient: #FFF0B8;
+  --countdown-top-gradient: #75abdc;
+  --countdown-right-gradient: #b2d5f1;
+  --countdown-bottom-gradient: #fff0b8;
   --countdown-card: #fff0b8;
   --main-font: "Lettertype";
   --main-font-url: "/fonts/Lettertype.ttf";
 }
 
-/* Default styles (Desktop) */
-.schedule-card-bg-mobile {
-  display: none;
-}
-.schedule-card-bg-desktop {
-  display: block;
-}
-
 .schedule-card {
-  cursor: pointer;
   border: 4px solid transparent;
-  background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
+  background-image: linear-gradient(
+      180deg,
+      var(--countdown-card),
+      var(--countdown-card)
+    ),
+    radial-gradient(circle at top, #75abdc, #fff0b8);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-blend-mode: screen;
   opacity: 100%;
-  width: 462px;
-  height: 259;
 }
-.button-schedule{
-    background: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient));
-    cursor: pointer;
-    border: 4px solid transparent;
-    
-    background-image: linear-gradient(90deg, var(--countdown-top-gradient), var(--countdown-right-gradient)), radial-gradient(circle at top left, #F2B028,#FFF0B8);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-}
-.title-font{
-    font-family:var(--main-font);
-    src: var(--main-font-url);
-    font-size: 80px; /* Change this to your desired size */
-    background: linear-gradient(#3F61AD, #75ABDC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
-.button-font{
-    font-family:var(--main-font);
-    src: var(--main-font-url);
-    font-size: 30px;
-    color: #ffffff;
-}
-.text-title{
+.button-font {
+  font-family: var(--main-font);
+  src: var(--main-font-url);
   font-size: 30px;
+  color: #ffffff;
 }
-.text-desc{
-  font-size: 25px;
+.button-schedule {
+  background: linear-gradient(
+    90deg,
+    var(--button-left-gradient),
+    var(--button-right-gradient)
+  );
+  cursor: pointer;
+  border: 4px solid transparent;
+
+  background-image: linear-gradient(
+      90deg,
+      var(--countdown-top-gradient),
+      var(--countdown-right-gradient)
+    ),
+    radial-gradient(circle at top left, #f2b028, #fff0b8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
-
-/* --- Media Queries --- */
-
-@media(max-width: 3840px) and (max-height: 2160px) {
-    .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 10;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -2vh;
-  }
-  .schedule-pillar-right{
-    right: -2vh;
-  }
-  .schedule-duck-right {
-    right: 1vw;
-     width: 60rem;
-  }
-    .schedule-card {
-    width: 70rem;
-    min-height: 50rem; 
-  }
-  .schedule-item-title {
-    font-size: 4rem; /* Smaller title */
-    margin-bottom: 2rem;
-  }
-
-  .schedule-item-desc {
-    font-size: 3rem; /* Smaller description text */
-    margin-bottom: 2rem;
-  }
-
-  .schedule-sessions-list p {
-    font-size: 3rem; /* Smaller session text */
-    line-height: 1.5;
-  }
- .button-schedule {
-    font-size: 2rem !important;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-   .button-dresscode img {
-    height: 8rem !important;
-    width: auto !important;
-    margin-bottom: 1.8rem;
-  }
-          .schedule-card-content{
-    margin-top: 15rem;
-  }
-   .schedule-button-group{
-    min-height: 11rem;
-  }
+.schedule-title-img-mb {
+  display: none;
 }
-@media(max-width: 2850px) and (max-height: 1800px){
-.schedule-duck-right {
-    right: 1vw;
-    bottom: 0cqh;
-    width: 42rem;
-  }
-    .schedule-card {
-    width: 60rem;
-    min-height: 40rem; 
-  }
-  .schedule-item-title {
-    font-size: 2.6rem; /* Smaller title */
-    margin-bottom: 2rem;
-  }
-
-  .schedule-item-desc {
-    font-size: 2rem; /* Smaller description text */
-    margin-bottom: 2rem;
-  }
-
-  .schedule-sessions-list p {
-    font-size: 2rem; /* Smaller session text */
-    line-height: 1.5;
-  }
-        .schedule-card-content{
-    margin-top: 15rem;
-  }
-   .schedule-button-group{
-    min-height: 11rem;
-  }
-   .button-schedule {
-    font-size: 2rem !important;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-   .button-dresscode img {
-    height: 8rem !important;
-    width: auto !important;
-    margin-bottom: 1.8rem;
-  }
+.schedule-title-img {
+  display: block;
 }
-@media(max-width: 2560px) and (max-height:1600px){
- .schedule-duck-right {
-    right: 1vw;
-    width: 27rem;
-  }
-    .schedule-card {
+@media (max-width: 3840px) and (max-height: 2160px) {
+  .schedule-card {
     width: 50rem;
-    min-height: 30rem; 
-  }
-  .schedule-item-title {
-    font-size: 2.6rem; /* Smaller title */
-    margin-bottom: 2rem;
-  }
-
-  .schedule-item-desc {
-    font-size: 2rem; /* Smaller description text */
-    margin-bottom: 1rem;
-  }
-
-  .schedule-sessions-list p {
-    font-size: 2rem; /* Smaller session text */
-    line-height: 1.5;
-  }
-        .schedule-card-content{
-    margin-top: 15rem;
-  }
-   .schedule-button-group{
-    min-height: 13rem;
-  }
-   .button-schedule {
-    font-size: 3rem;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-   .button-dresscode img {
-    height: 10rem !important;
-    margin-bottom: 1.8rem;
-  }
-}
-@media(max-width: 2560px) and (max-height: 1140px){
- .schedule-duck-right {
-    right: 1vw;
-    width: 27rem;
-  }
-    .schedule-card {
-    width: 40rem;
-    min-height: 25rem; 
-  }
-      .schedule-card-content{
-    margin-top: 15rem;
-  }
-   .schedule-button-group{
-    min-height: 11rem;
-  }
-    .schedule-item-desc {
-    font-size: 1.5rem; 
-    margin-bottom: 2rem;
-  }
-}
-@media(max-width: 1920px) and (max-height: 1080px) {
-    .schedule-duck-right {
-    right: 1vw;
-     width: 27rem;
-  }
-    .schedule-card {
-    width: 600px;
-    min-height: 30rem; 
-  }
-      .schedule-card-content{
-    margin-top: 19rem;
-  }
-   .schedule-button-group{
-    min-height: 17rem;
-  }
-   .button-schedule {
-        font-size: 1.5rem !important;
-    padding: 1.0rem;
-
-    margin-bottom: 8.5rem;
-  }
-   .button-dresscode img {
-    height: 7rem !important;
-    margin-bottom: 8.5rem;
-  }
-
-
-}
-@media(max-width: 1900px) and (max-height: 1200px) {
- .schedule-duck-right {
-    right: 1vw;
-    width: 27rem;
-  }
-  .schedule-card {
-    width: 550px;
-    min-height: 400px; 
-  }
-      .schedule-card-content{
-    margin-top: 15rem;
-  }
-   .schedule-button-group{
-    min-height: 11rem;
-  }
-}
-@media(max-width: 1728px) and (max-height: 1117px) {
-   .schedule-duck-right {
-    right: 1vw;
-     width: 27rem;
-  }
-  .schedule-card {
-    width: 550px;
-    min-height: 400px; 
-  }
-    .schedule-card-content{
-    margin-top: 15rem;
-  }
-   .schedule-button-group{
-    min-height: 11rem;
-  }
-}
-@media(max-width: 1536px) and (max-height: 960px){
-  .schedule-card-content{
-    padding-bottom: 5rem;
-    margin-top: 15rem;
-  }
-  .schedule-button-group{
-    min-height: 11rem;
-  }
- .button-schedule {
-    font-size: 1.5rem !important;
-    padding: 1.0rem;
-    margin-bottom: 3.5rem;
-  }
-   .button-dresscode img {
-    height: 6rem !important;
-    width: auto !important;
-    margin-bottom: 3.5rem;
-  }
-   .schedule-item-title {
-    font-size: 2.0rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1.5rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.6rem; /* Smaller session text */
-    line-height: 1.2;
-  }
-}
-@media(max-width: 1536px) and (max-height: 982px) and (min-height: 981px){
-   .schedule-duck-right {
-    right: 1vw;
-    bottom: 0rem;
-     width: 27rem;
-  }
-
-  .schedule-card {
-    width: 550px;
-    min-height: 27rem; 
-    margin-top: 5rem;
-  }
-    .schedule-item-title {
-    font-size: 2.3rem; 
-    margin-bottom: 1rem;
-  }
-    .schedule-card-content {
-        margin-top: 10rem;
-
-    }
-     .schedule-button-group{
-    min-height: 11rem;
+    min-height: 35rem;
+    padding-top: 3rem;
   }
   .button-schedule {
-        font-size: 1.5rem !important;
-    padding: 1.0rem;
-
-    margin-bottom: 4rem;
-  }
-   .button-dresscode img {
-        height: 5rem !important;
-    width: auto !important;
-
-    margin-bottom: 4rem;
-  }
-   .schedule-card-content{
-    padding-bottom: 5rem;
-    margin-top: 15rem;
-  }
-  .schedule-button-group{
-    min-height: 11rem;
-  }
-}
-@media(min-width: 1367px) and (max-width: 1512px) and (max-height: 982px){
-    .schedule-card-content {
-    margin-top: 15rem;
-  }
-  .schedule-button-group{
-    min-height: 11rem;
-  }
-  .schedule-sessions-list p {
-    font-size: 1.3rem; /* Smaller session text */
-    line-height: 1.6;
-  }
-    .schedule-item-desc {
-    font-size: 1.5rem; /* Smaller description text */
-  }
-  .dresscode-bg-desktop{
-    margin-top: -6rem;
-  }
-    .schedule-duck-right {
-    right: 0vw;
-       width: 22rem;
-  }
-}
-@media(max-width: 1425px) and (max-height: 900px) {
-}
-@media(max-width: 1368px) and (max-height: 912px) {
-    .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 5;
-    width: auto;
-    height: 100%;
-  }
-}
-
-@media(max-width: 1366px) and (max-height: 1024px) and (orientation: landscape){
-    .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 5;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -5vh;
-  }
-  .schedule-pillar-right{
-    right: -5vh;
-  }
-    .schedule-duck-right {
-    right: 1vw;
-     width: 25rem; /* Resize ducks */
-  } 
-    .schedule-card {
-    width: 500px;
-    min-height: 400px; 
-  }
-   .schedule-duck-right {
-    right: 1vw;
-     width: 25rem; /* Resize ducks */
-  } 
-    .schedule-button-group{
-    min-height: 11rem;
-  }
- .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.9rem;
-    margin-bottom: 1.5rem;
-  }
-   .button-dresscode img {
-    height: 5rem !important;
-    width: auto !important;
-    margin-bottom: 1.8rem;
-  }
-    .schedule-item-title {
-    font-size: 2.0rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1.5rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.6rem; /* Smaller session text */
-    line-height: 1.2;
-  }
-    .schedule-card-content {
-      margin-top: 15rem;
-    }
-}
-
-@media(max-width: 1366px) and (max-height: 768px) {
-    .schedule-card {
-    width: 40rem;
-    min-height: 20rem; 
-  }
-    .schedule-card-content {
-            margin-top: 18rem;
-    }
-     .button-schedule {
-    margin-bottom: 4rem;
-  }
-   .button-dresscode img {
-    margin-bottom: 4rem;
-  }
-}
-@media(max-width: 1280px) and (max-height: 853px) {
-    .schedule-duck-right {
-    right: 0vw;
-     width: 22rem;
-  }
-
-    .schedule-card {
-    width: 450px;
-    min-height: 24rem; 
-    
-  }
-    .schedule-card-content {
-            margin-top: 18rem;
-    }
-  .schedule-button-group{
-    min-height: 11rem;
-  }
- .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.8rem;
-    margin-bottom: 5.5rem;
-  }
-   .button-dresscode img {
-    height: 5rem !important;
-    width: auto !important;
-    margin-bottom: 5.8rem;
-  }
-}
-@media(max-width: 1280px) and (max-height: 800px) {
- .schedule-button-group{
-    min-height: 8rem;
-  }
- .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.8rem;
-    margin-bottom: 3.5rem;
-  }
-   .button-dresscode img {
-    height: 5rem !important;
-    width: auto !important;
-    margin-bottom: 3.8rem;
-  }
-  .schedule-card {
-    width: 500px;
-    min-height: 20rem;
-  }
-      .schedule-item-title {
-    font-size: 1.2rem; 
-    margin-bottom: 1rem;
-  }
-}
-@media(max-width: 1280px) and (max-height: 570px) {
-  .schedule-card-content{
-    padding-bottom: 13rem;
-    margin-top: 20rem;
-    transform: scale(0.7) !important; /* Adjust based on the element's own size */
-  }
-    .schedule-button-group{
-    min-height: 11rem;
-  }
-   .schedule-item-title {
-    font-size: 1.5rem; /* Smaller title */
-    margin-bottom: 0rem;
-
-  }
-    .button-schedule {
-    font-size: 0.9rem !important;
-    padding: 0.5rem;
-    margin-bottom: 6.5rem;
-  }
-
-  .button-dresscode img {
-    height: 4rem !important;
-    width: auto !important;
-    margin-bottom: 6.5rem;
-  }
-
-  .schedule-item-desc {
-    font-size: 1rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1rem; /* Smaller session text */
-    line-height: 1.5;
-  }
-  .schedule-card{
-    min-height: 22rem;
-    width: 24rem;
-  }
-
-}
-@media(max-width: 1180px) and (max-height: 820px){
-   .schedule-card {
-    width: 450px;
-    min-height: 24rem; 
-    margin-top: 3rem;
-  }
-
-   .schedule-duck-right {
-    right: -1vw;
-     width: 23rem; /* Resize ducks */
-  } 
- .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.8rem;
-    margin-bottom: 7.5rem;
-  }
-   .button-dresscode img {
-    height: 5rem !important;
-    width: auto !important;
-    margin-bottom: 7.5rem;
-  }
-    .schedule-button-group{
-    min-height: 15rem;
-  }
-
-}
-@media(max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
-  .title-font {
-    font-size: 3rem; /* Change this */
-    top: 15vh !important; /* Change this position */
-  }
-  .xbutton{
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .schedule-page-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  .schedule-content-area {
-    height: 130vh !important; /* Manually set the height for mobile view */
-  }
-
-  .schedule-title-img {
-    width: 80%;
-    top: 10vh;
-  }
-
-  .schedule-star-circle {
-    width: 275% !important;
-    height: auto;
-    top: 2vh;
-    transform: translateX(-50%) scale(1.5)!important;
-  }
-    .schedule-button-group{
-    min-height: 8rem;
-  }
-
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 5;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -5vh;
-  }
-  .schedule-pillar-right{
-    right: -5vh;
-  }
-  .schedule-massive-pillar {
-    width: 100%;
-    height: auto;
-    top: 0vh;
-  }
-
-  .schedule-duck-left,
-  .schedule-duck-right {
-    width: 25vh; /* Resize ducks */
-    bottom: 2vh;
-  }
-
-  .schedule-duck-left {
-    left: 5vw;
-    bottom: 3vh;
-    transform: scale(1.3) !important;
-  }
-
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: 0vh;
-    transform: scale(1.3) !important;
-  }
-
-  /* Cleaned up mobile styles for the new structure */
-  .schedule-card-container {
-    width: 200%;
-    height: auto;
-    position: relative;
-    bottom: auto;
-  }
-
-  .schedule-card-content {
-    margin-top: 28rem;
-  }
-
-  .schedule-item-title {
-    font-size: 2.5rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1.5rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.6rem; /* Smaller session text */
-    line-height: 1.2;
-  }
-
-  .schedule-button-group { 
-    gap: 0.1rem; /* ini buat button yang dibawah yang ada 2 itu */
-    transform: none !important; /* Remove the scaling from the group */
-  }
-
- .button-schedule {
-    font-size: 1.6rem !important;
     padding: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .button-dresscode img {
-    height: 6rem !important;
-    width: auto !important;
-    margin-bottom: 1.3rem;
-  }
-
-  /* Target the close button inside the modal for landscape view */
-  .schedule-card .button-schedule {
-    margin-top: 1rem !important; /* Adjust this value to move the button */
-  }
-
-  .button-left {
-    left: -6.3rem !important;
-    transform: scale(1.5) !important; 
-  }
-
-  .button-right {
-    right: -6.3rem !important;
-    transform: scale(1.5) !important; 
-  }
-
-  .schedule-card {
-    cursor: pointer;
-    border: 4px solid transparent;
-    background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    background-blend-mode: screen;
-    opacity: 100%;
-    width: 462px;
-    height: 359px;
-  }
-  .schedule-card-bg-mobile{
-    display: block !important;
-    width: 125% !important; /* Control the width here */
-    height: auto !important;
-    max-width: none !important; /* Prevent Tailwind from limiting the size */
-    
-    /* Center the oversized image */
-    position: absolute !important;
-    left: 50% !important;
-    top: 29vh !important;
-    transform: translate(-50%, -50%) !important;
-  }
-}
-@media(max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
-.schedule-card {
-    width: 400px;
-    min-height: 23rem; 
     margin-bottom: 0.5rem;
   }
-   .schedule-card-content {
-    margin-top: 18rem;
-  }
-    .schedule-button-group{
-    min-height: 11rem;
-  }
- .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.7rem;
-    margin-bottom: 5.5rem;
-  }
-   .button-dresscode img {
-    height: 4rem !important;
-    width: auto !important;
-    margin-bottom: 5.5rem;
-  }
-  .schedule-item-title {
-    font-size: 1.4rem; /* Smaller title */
-  }
-   .schedule-item-desc {
-    font-size: 1rem; /* Smaller description text */
-  }
+  .schedule-wrapper {
+    padding-bottom: 12rem;
 
-  .schedule-sessions-list p {
-    font-size: 1rem; /* Smaller session text */
-    line-height: 1.5;
   }
-
-}
-@media(max-width: 1024px) and (max-height: 600px) {
-    .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 5;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-duck-right {
-    right: 2vw;
-    bottom: 0vh;
-    width: 15rem;
-  }
-  .schedule-card{
-    width: 27rem;
-    min-height: 21rem;
-  }
-
-  .schedule-card-content{
+  .title-owik {
+    font-size: 7rem;
+    margin-bottom: 5rem;
     padding-bottom: 5rem;
-    margin-top: 15rem;
-        transform: scale(0.8) !important; /* Adjust based on the element's own size */
   }
-  .schedule-button-group{
-    min-height: 8rem;
+  .schedule-title-img{
+    width: 48%;
+
   }
- .button-schedule {
-    font-size: 0.8rem !important;
-    padding: 0.6rem;
-    margin-bottom: 8.5rem;
-  }
-   .button-dresscode img {
-    height: 4rem !important;
-    width: auto !important;
-    margin-bottom: 8.5rem;
-  }
-   .schedule-item-title {
-    font-size: 1.5rem; /* Smaller title */
-    margin-bottom: 0;
-  }
-}
-@media(max-width: 960px) and (max-height: 540px){
-  .schedule-card {
-    width: 27rem;
-    min-height: 22rem; 
-    transform: scale(0.8) !important; /* Adjust based on the element's own size */
-  }
-   .schedule-card-content{
-    padding-bottom: 5rem;
-    margin-top: 13rem;
-  }
-  .schedule-button-group{
-    min-height: 12rem;
-  }
-   .button-schedule {
-    margin-bottom: 10.5rem;
-  }
-   .button-dresscode img {
-    margin-bottom: 10.5rem;
-  }
-}
-@media(max-width: 956px) and (max-height: 440px) and (orientation: landscape){
-  .title-font {
-    font-size: 3rem; /* Change this */
-    top: 15vh !important; /* Change this position */
+  .title-img{
+    width: 60rem;
+    padding-bottom: 15rem;
   }
 
-  .schedule-page-container {
-    width: 100%;
-    height: 100%;
+  .title-wrapper{
+    margin-top: 1rem;
   }
-
-  .schedule-content-area {
-    height: 120vh !important; /* Manually set the height for mobile view */
-  }
-  .schedule-title-img {
-    width: 50% !important;
-    height: auto !important;
-    position: absolute !important; /* Ensure positioning context */
-    top: 0vh !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-  }
-
-  .schedule-star-circle {
-    width: 175%;
-    height: auto;
-    top: 3vh;
-  }
-
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 10;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -2vh;
-  }
-  .schedule-pillar-right{
-    right: -2vh;
-  }
-  .schedule-massive-pillar {
-    width: 100%;
-    height: auto;
-    top: 0vh;
-  }
-
-  .schedule-duck-left,
-  .schedule-duck-right {
-    width: 45vh; /* Resize ducks */
-    bottom: 2vh;
-  }
-
-  .schedule-duck-left {
-    left: 5vw;
-    bottom: 3vh;
-    transform: scale(1.3) !important;
-  }
-
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: -0vh;
-    transform: scale(1.3) !important;
-  }
-
-  /* Cleaned up mobile styles for the new structure */
-  .schedule-card-container {
-    width: 200%;
-    height: auto;
-    position: relative;
-    bottom: auto;
-  }
-
-  .schedule-card-content {
-    width: 90%; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 30%; /* Start at the vertical center */
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.65) !important; /* Adjust based on the element's own size */
-  }
-  .schedule-item-title {
-    font-size: 1.8rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1.3rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.3rem; /* Smaller session text */
-    line-height: 1.5;
-  }
-
-  .schedule-button-group { 
-    gap: 0.4rem; /* ini buat button yang dibawah yang ada 2 itu */
-    transform: none !important; /* Remove the scaling from the group */
-  }
-
-  .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.25rem 0.75rem !important;
-    margin-top: -2vh;
-  }
-
- .button-schedule {
-    font-size: 1.5rem !important;
-    padding: 1.5rem;
+  .schedule-item-title{
+    font-size: 3.5rem;
     margin-bottom: 1.5rem;
+    line-height: 4rem;
   }
-   .button-dresscode img {
-    height: 5rem !important;
-    width: auto !important;
-    margin-bottom: 1.5rem;
-  }
-
-  /* Target the close button inside the modal for landscape view */
-  .schedule-card .button-schedule {
-    margin-left: 4rem;
-    margin-top: 1rem !important; /* Adjust this value to move the button */
-  }
-
-  .button-left {
-    left: -5.3rem !important;
-    transform: scale(0.9) !important; 
-  }
-
-  .button-right {
-    right: -5.3rem !important;
-    transform: scale(0.9) !important; 
-  }
-
-  .schedule-card {
-    cursor: pointer;
-    border: 4px solid transparent;
-    background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    background-blend-mode: screen;
-    opacity: 100%;
-    width: 450px;
-    min-height: 300px; 
-    margin-bottom: -1rem;
-  }
-  .schedule-card-bg-mobile{
-    display: block !important;
-    width: 55% !important; /* Control the width here */
-    height: auto !important;
-    max-width: none !important; /* Prevent Tailwind from limiting the size */
-    
-    /* Center the oversized image */
-    position: absolute !important;
-    left: 50% !important;
-    top: 35vh !important;
-    transform: translate(-50%, -50%) !important;
-  }
-  .dresscode-title{
+  .schedule-item-desc{
     font-size: 2rem;
-  }
-}
-@media(max-width: 932px) and (max-height: 430px) {
-    .schedule-card {
-    width: 400px;
-    min-height: 24rem; 
-    margin-top: 4rem;
-    transform: scale(0.9) !important; /* Adjust based on the element's own size */
-  }
-    .schedule-pillar-left{
-    left: -2vh;
-  }
-  .schedule-pillar-right{
-    right: -2vh;
-  }
-     .button-dresscode img {
-    margin-bottom: 1.8rem;
-  }
-}
-@media(max-width: 915px) and (max-height: 412px) and (orientation: landscape) {
- .button-schedule {
-    margin-bottom: 6.5rem;
-  }
-   .button-dresscode img {
-    margin-bottom: 5.5rem;
-  }
-}
-@media(max-width: 914px) and (max-height: 412px) and (orientation: landscape) {
-    .schedule-duck-right {
-    right: 5vw;
-    bottom: 5vh;
-  }
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 5;
-    width: auto;
-    height: 100%;
-  }
-}
-@media(max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
-  .title-font {
-    font-size: 3rem; /* Change this */
-    top: 15vh !important; /* Change this position */
-  }
+    margin-bottom: 1.5rem;
 
-  .schedule-page-container {
-    width: 100%;
-    height: 100%;
   }
-
-  .schedule-content-area {
-    height: 120vh !important; /* Manually set the height for mobile view */
+  .schedule-sessions-list{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
-
-  .schedule-title-img {
-    width: 80%;
-    top: 10vh;
-  }
-
-  .schedule-star-circle {
-    width: 275% !important;
+  .button-left{
+    width: 8rem;
     height: auto;
-    top: 3vh;
-    transform: translateX(-50%) scale(1.5)!important;
+    margin: 3rem;
   }
-  
-
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 5;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -5vh;
-  }
-  .schedule-pillar-right{
-    right: -5vh;
-  }
-  .schedule-massive-pillar {
-    width: 100%;
+  .button-right{
+    width: 8rem;
     height: auto;
-    top: 0vh;
+    margin: 3rem;
   }
-
-  .schedule-duck-left,
-  .schedule-duck-right {
-    width: 25vh; /* Resize ducks */
-    bottom: 2vh;
-  }
-
-  .schedule-duck-left {
-    left: 5vw;
-    bottom: 3vh;
-    transform: scale(1.3) !important;
-  }
-
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: -0vh;
-    transform: scale(1.3) !important;
-  }
-
-  /* Cleaned up mobile styles for the new structure */
-  .schedule-card-container {
-    width: 200%;
-    height: auto;
-    position: relative;
-    bottom: auto;
-  }
-
-  .schedule-card-content {
-    margin-top: 25rem;
-  }
-
-  .schedule-item-title {
-    font-size: 1.5rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.1rem; /* Smaller session text */
-    line-height: 1.2;
-  }
-
-  .schedule-button-group { 
-    gap: 0.1rem; /* ini buat button yang dibawah yang ada 2 itu */
-    transform: none !important; /* Remove the scaling from the group */
-  }
-
-  .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.25rem 0.75rem !important;
-  }
-
-  .button-dresscode img {
-    height: 7rem !important;
-    width: auto !important;
-  }
-
-  /* Target the close button inside the modal for landscape view */
-  .schedule-card .button-schedule {
-    margin-top: 1rem !important; /* Adjust this value to move the button */
-  }
-
-  .button-left {
-    left: -4.3rem !important;
-    transform: scale(0.9) !important; 
-  }
-
-  .button-right {
-    right: -4.3rem !important;
-    transform: scale(0.9) !important; 
+  .button-schedule{
+    padding: 2rem;
+    width: 20rem;
+    font-size: 2.4rem;
   }
   .button-dresscode{
-    width: 5rem;
-  }
-  .schedule-card {
-    margin-top: 12rem;
-    width: 20rem;
-    min-height: 25rem;
-  }
-  .schedule-card-bg-mobile{
-    display: block !important;
-    width: 100% !important; /* Control the width here */
-    height: auto !important;
-    max-width: none !important; /* Prevent Tailwind from limiting the size */
-    
-    /* Center the oversized image */
-    position: absolute !important;
-    left: 50% !important;
-    top: 22vh !important;
-    transform: translate(-50%, -50%) !important;
-  }
-
-  .dresscode-title{
-    margin-top: 4rem;
-    font-size: 1.12rem;
-  }
-  .xbutton{
-      width: 4rem;
-      height: 4rem;
-      
-    }
-    .do-dont-container{
-      height: 2rem;
-      width: 100%;
-    }
-      .do-box,
-    .dont-box {
-      height: 10rem; /* Adjust this value to your desired height */
-    }
-}
-@media  (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
-
-   .button-dresscode img {
-    margin-bottom: 1.8rem;
-  }
-    .schedule-card{
-    transform: scale(0.9) !important; /* Adjust based on the element's own size */
-    margin-top: 1rem;
-    min-height: 23rem;
-  }
-    .schedule-card-content{
-    padding-bottom: 5rem;
-    margin-top: 15rem;
-  }
-  .schedule-button-group{
-    min-height: 8rem;
-  }
-}
-
-@media(max-width: 882px) and (max-height: 344px) and (orientation: landscape) {
-}
-@media(max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: 3vh;
-    width: 18rem; /* Resize ducks */
-  }
-
-}
-@media(max-width: 844px) and (max-height: 390px) {
-    .schedule-card-content {
-    top: 27%;
-    }
-}
-@media(max-width: 824px) and (max-height: 384px){
-
-   .button-schedule {
-    margin-bottom: 5.5rem;
-  }
-   .button-dresscode img {
-    height: 5rem !important;
-    width: auto !important;
-    margin-bottom: 5.5rem;
-  }
-}
-@media(max-width: 820px) and (max-height: 1180px) and (orientation: portrait){
-  .dresscode-bg-desktop {
-    display: none !important;
-  }
-  .dresscode-bg-mobile {
-    display: block !important;
-  }
-  .dresscode-popup-inner {
-    transform: scale(0.8); /* Adjust this value to make the popup smaller */
-    padding-bottom: -15rem;
-  }
-  .dresscode-title{
-    font-size: 3rem;
-  }
-      .schedule-pillar-left{
-    left: -5vh;
-  }
-  .schedule-pillar-right{
-    right: -5vh;
-  }
-  .schedule-card {
-    width: 362px;
-    height: 259px; 
-    min-height: 400px;
-  }
-  .schedule-card-container {
-    width: 200%;
+    width: 15rem;
     height: auto;
-    position: relative;
-    bottom: auto;
   }
-  .schedule-item-title {
-    font-size: 2.0rem; /* Smaller title */
+  .bebekiri{
+    width: 50rem;
+    bottom: -2rem;
   }
-
-  .schedule-item-desc {
-    font-size: 1.5rem; /* Smaller description text */
-    margin-top: 1.2rem;
+  .bebekanan{
+    width: 50rem;
   }
-
-  .schedule-sessions-list p {
-    font-size: 1.1rem; /* Smaller session text */
-    line-height: 1.2;
-  }
-
-  .schedule-card-content {
-    width: 100%; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 65%; /* Start at the vertical center */
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.0) !important;
-  }
-   .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.25rem 0.75rem !important;
-  }
-
-  .button-left {
-    left: -4.3rem !important;
-    transform: scale(0.9) !important; 
-  }
-
-  .button-right {
-    right: -4.3rem !important;
-    transform: scale(0.9) !important; 
+  .star{
+    width: 150rem;
   }
 }
-@media(max-width: 780px) and (max-height: 360px) {
+@media (max-width: 2850px) and (max-height: 1800px) {
+  .schedule-card {
+    width: 50rem;
+    min-height: 30rem;
+    padding-top: 3rem;
+  }
   .button-schedule {
-    margin-bottom: 15rem; /* Move button up by reducing margin */
+    padding: 1rem;
+    margin-bottom: 0.5rem;
   }
-  .button-dresscode img {
-    margin-bottom: 15rem;
+  .schedule-wrapper {
+    padding-bottom: 10rem;
+
   }
-  .schedule-card-content {
-    margin-top: 17rem;
+  .title-owik {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
   }
-  .schedule-button-group {
-    min-height: 14rem;
+  .schedule-title-img{
+    width: 49%;
+
   }
-  .schedule-card {
-    min-height: 23rem;
-    transform: scale(0.7) !important;
-  }
-}
-@media(max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 5;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-duck-right {
-    right: 5vw;
-    bottom: 3vh;
-  }
-    .schedule-card-content{
-    padding-bottom: 5rem;
-    margin-top: 7rem;
-  }
-  .schedule-button-group{
-    min-height: 11rem;
-  }
-}
-@media(max-width: 740px) and (max-height: 360px) and (orientation: landscape) {
-  .button-dresscode img {
-    margin-top: 2vh;    
-    height: 5rem !important;
-    width: auto !important;
-  }
- .schedule-item-title {
-    font-size: 1.5rem; /* Smaller title */
+  .title-img{
+    width: 60rem;
+    padding-bottom: 10rem;
   }
 
-  .schedule-item-desc {
-    font-size: 1.1rem; /* Smaller description text */
+  .title-wrapper{
+    margin-top: 1rem;
   }
+  .schedule-item-title{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 3rem;
+  }
+  .schedule-item-desc{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 
-  .schedule-sessions-list p {
-    font-size: 1.1rem; /* Smaller session text */
   }
-    .schedule-card {
-    width: 350px;
-    min-height: 22rem; 
-  }
-    .schedule-content-area {
-    height: 130vh !important; /* Manually set the height for mobile view */
-  }
-   .button-schedule {
-    margin-bottom: 3.5rem;
-  }
-   .button-dresscode img {
+  .schedule-sessions-list{
+    font-size: 2rem;
     margin-bottom: 1.5rem;
   }
+    .button-left{
+    width: 6rem;
+    height: auto;
+    margin: 3rem;
+  }
+  .button-right{
+    width: 6rem;
+    height: auto;
+    margin: 3rem;
+  }
+  .button-schedule{
+    padding: 2rem;
+    width: 15rem;
+    font-size: 2rem;
+  }
+  .button-dresscode{
+    width: 10rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 50rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 50rem;
+  }
+    .star{
+    width: 100rem;
+  }
 }
-@media(max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
- .button-schedule {
-    font-size: 0.8rem !important;
-    padding: 0.8rem;
-    margin-bottom: 10.5rem;
+@media (max-width: 2560px) and (max-height: 1600px) {
+  .schedule-card {
+    width: 50rem;
+    min-height: 30rem;
+    padding-top: 3rem;
   }
-   .button-dresscode img {
-    height: 5rem !important;
-    width: auto !important;
-    margin-bottom: 10.5rem;
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
   }
-   .schedule-item-title {
-    font-size: 1.2rem; /* Smaller title */
+  .schedule-wrapper {
+    padding-bottom: 5rem;
+
+  }
+  .title-owik {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+  }
+  .schedule-title-img{
+    width: 49%;
+
+  }
+  .title-img{
+    width: 60rem;
+    padding-bottom: 10rem;
   }
 
-  .schedule-item-desc {
-    font-size: 0.8rem; /* Smaller description text */
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 3rem;
+  }
+  .schedule-item-desc{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+    .button-left{
+    width: 6rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 6rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 1.5rem;
+    width: 12rem;
+    font-size: 1.5rem;
+  }
+  .button-dresscode{
+    width: 8rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 40rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 40rem;
+  }
+    .star{
+    width: 100rem;
+  }
+}
+@media (max-width: 2560px) and (max-height: 1140px) {
+  .schedule-card {
+    width: 50rem;
+    min-height: 30rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 5rem;
+
+  }
+  .title-owik {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+  }
+  .schedule-title-img{
+    width: 49%;
+
+  }
+  .title-img{
+    width: 60rem;
+    padding-bottom: 10rem;
   }
 
-  .schedule-sessions-list p {
-    font-size: 0.7rem; /* Smaller session text */
-    line-height: 1.5;
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 3rem;
+  }
+  .schedule-item-desc{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+    .button-left{
+    width: 6rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 6rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 1.2rem;
+    width: 12rem;
+    font-size: 1.5rem;
+  }
+  .button-dresscode{
+    width: 8rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 40rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 40rem;
+  }
+    .star{
+    width: 100rem;
+  }
+}
+@media (max-width: 1920px) and (max-height: 1080px) {
+ .schedule-card {
+    width: 30rem;
+    min-height: 24rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 5rem;
+
+  }
+  .title-owik {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+  }
+  .schedule-title-img{
+    width: 55%;
+
+  }
+  .title-img{
+    width: 60rem;
+    padding-bottom: 5rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+    .button-left{
+    width: 6rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 6rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 1.2rem;
+    width: 12rem;
+    font-size: 1.5rem;
+  }
+  .button-dresscode{
+    width: 8rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 25rem;
+  }
+    .star{
+    width: 100rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1900px) and (max-height: 1200px) {
+  .schedule-card {
+    width: 30rem;
+    min-height: 25rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 3rem;
+
+  }
+  .title-owik {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+  }
+  .schedule-title-img{
+    width: 55%;
+
+  }
+  .title-img{
+    width: 60rem;
+    padding-bottom: 5rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+    .button-left{
+    width: 6rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 6rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 1.2rem;
+    width: 12rem;
+    font-size: 1.5rem;
+  }
+  .button-dresscode{
+    width: 8rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 30rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 30rem;
+  }
+    .star{
+    width: 100rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1728px) and (max-height: 1117px) {
+   .schedule-card {
+    width: 30rem;
+    min-height: 25rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 3rem;
+
+  }
+  .title-owik {
+    font-size: 4rem;
+    margin-top: 10%;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+  }
+  .schedule-title-img{
+    width: 60%;
+
+  }
+  .title-img{
+    width: 60rem;
+    padding-bottom: 5rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+    .button-left{
+    width: 5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 1.2rem;
+    width: 12rem;
+    font-size: 1.5rem;
+  }
+  .button-dresscode{
+    width: 8rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 30rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 30rem;
+  }
+    .star{
+    width: 100rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1536px) and (max-height: 960px) {
+  .schedule-card {
+    width: 30rem;
+    min-height: 25rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 3rem;
+
+  }
+  .title-owik {
+    font-size: 4rem;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+  }
+  .schedule-title-img{
+    width: 64%;
+
+  }
+  .title-img{
+    width: 40rem;
+    padding-bottom: 5rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 1.2rem;
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+  .button-dresscode{
+    width: 6rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 25rem;
+  }
+    .star{
+    width: 70rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1536px) and (max-height: 982px) and (min-height: 981px) {
+.schedule-card {
+    width: 30rem;
+    min-height: 25rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 3rem;
+
+  }
+  .title-owik {
+    font-size: 4rem;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+  }
+  .schedule-title-img{
+    width: 64%;
+
+  }
+  .title-img{
+    width: 40rem;
+    padding-bottom: 5rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 1.2rem;
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+  .button-dresscode{
+    width: 6rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 25rem;
+  }
+    .star{
+    width: 70rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1512px) and (max-height: 982px) {
+.schedule-card {
+    width: 30rem;
+    min-height: 25rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 5rem;
+
+  }
+  .title-owik {
+    font-size: 4rem;
+    margin-top: 7%;
+    margin-bottom: 1rem;
+    padding-bottom: 7rem;
+  }
+  .schedule-title-img{
+    width: 72%;
+  }
+  .title-img{
+    width: 40rem;
+    padding-bottom: 12rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.9rem;
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+  .button-dresscode{
+    width: 6rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 25rem;
+  }
+    .star{
+    width: 70rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1425px) and (max-height: 900px) {
+}
+@media (max-width: 1368px) and (max-height: 912px) {
+  .schedule-card {
+    width: 30rem;
+    min-height: 20rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 5rem;
+
+  }
+  .title-owik {
+    font-size: 3.5rem;
+    margin-top: 7%;
+    margin-bottom: 1rem;
+    padding-bottom: 2.5rem;
+  }
+  .schedule-title-img{
+    width: 65%;
+
+  }
+  .title-img{
+    width: 40rem;
+    padding-bottom: 12rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.9rem;
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+  .button-dresscode{
+    width: 6rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 20rem;
+  }
+    .star{
+    width: 70rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1366px) and (max-height: 1024px) and (orientation: landscape) {
+.schedule-card {
+    width: 30rem;
+    min-height: 20rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 5rem;
+
+  }
+  .title-owik {
+    font-size: 3.5rem;
+    margin-top: 7%;
+    margin-bottom: 1rem;
+    padding-bottom: 2.5rem;
+  }
+  .schedule-title-img{
+    width: 65%;
+
+  }
+  .title-img{
+    width: 40rem;
+    padding-bottom: 12rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.9rem;
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+  .button-dresscode{
+    width: 6rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 20rem;
+  }
+    .star{
+    width: 70rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1366px) and (max-height: 768px) {
+  .schedule-card {
+    width: 30rem;
+    min-height: 20rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 5rem;
+
+  }
+  .title-owik {
+    font-size: 3.5rem;
+    margin-top: 7%;
+    margin-bottom: 1rem;
+    padding-bottom: 2.5rem;
+  }
+  .schedule-title-img{
+    width: 65%;
+
+  }
+  .title-img{
+    width: 40rem;
+    padding-bottom: 12rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.9rem;
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+  .button-dresscode{
+    width: 6rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 25rem;
+  }
+    .star{
+    width: 70rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1280px) and (max-height: 853px) {
+  .schedule-card {
+    width: 30rem;
+    min-height: 19rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 5rem;
+
+  }
+  .title-owik {
+    font-size: 3.5rem;
+    margin-top: 9%;
+    margin-bottom: 1rem;
+    padding-bottom: 2.5rem;
+  }
+  .schedule-title-img{
+    width: 69%;
+
+  }
+  .title-img{
+    width: 40rem;
+    padding-bottom: 12rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.9rem;
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+  .button-dresscode{
+    width: 6rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 20rem;
+  }
+    .star{
+    width: 70rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1280px) and (max-height: 570px) {
+}
+@media (max-width: 1280px) and (max-height: 570px) {
+}
+@media (max-width: 1180px) and (max-height: 820px) {
+    .schedule-card {
+    width: 30rem;
+    min-height: 19rem;
+    padding-top: 3rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 2rem;
+
+  }
+  .title-owik {
+    font-size: 3.5rem;
+    margin-top: 9%;
+    margin-bottom: 1rem;
+    padding-bottom: 3.5rem;
+  }
+  .schedule-title-img{
+    width: 69%;
+
+  }
+  .title-img{
+    width: 40rem;
+    padding-bottom: 12rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.9rem;
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+  .button-dresscode{
+    width: 6rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 20rem;
+  }
+    .star{
+    width: 70rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 90%;
+    margin-bottom: -4rem;
+  }
+  .pillar-left{
+    left: -2rem;
+  }
+  .pillar-right{
+    right: -2rem;
   }
   .schedule-card {
     width: 25rem;
-    min-height: 35rem; 
+    min-height: 19rem;
+    padding-top: 2rem;
   }
-  .schedule-duck-right {
-    right: 1vw;
-    bottom: 0vh;
-    width: 15rem;
-  }
-    .schedule-card {
-
-    width: 300px;
-    min-height: 200px; 
-  }
-   .schedule-card-content {
-    top: 15%; /* Start at the vertical center */
-    }
-     .button-left {
-    left: -4.3rem !important;
-    transform: scale(0.7) !important; 
-  }
-
-  .button-right {
-    right: -4.3rem !important;
-    transform: scale(0.7) !important; 
-  }
-}
-@media(max-width: 667px) and (max-height: 375px) {
-    .schedule-duck-right {
-    right: 5vw;
-    bottom: 0vh;
-    width: 10rem; /* Resize ducks */
-  }
-    .schedule-card-content {
-    top: 70%; /* Start at the vertical center */
-  }
-    .schedule-card {
-    width: 300px;
-    min-height: 250px; 
-  }
-   .schedule-item-desc {
-    font-size: 1.0rem; /* Smaller description text */
-  }
-  .schedule-card-content{
-    top: 35%;
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.0rem; /* Smaller session text */
-    line-height: 1.5;
-  }
- .schedule-content-area {
-    height: 140vh !important; /* Manually set the height for mobile view */
-  }
-
-}
-@media(max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
- .schedule-card {
-    width: 350px;
-    min-height: 300px; 
-    margin-top: 2rem;
-  }
-    .schedule-sessions-list p {
-    font-size: 0.8rem; /* Smaller session text */
-    line-height: 1.5;
-  }
-   .schedule-item-title {
-    font-size: 1.3rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1.0rem; /* Smaller description text */
-  }
-  .schedule-card-content{
-    top: 50%;
-  }
-    .schedule-content-area {
-    height: 160vh !important; /* Manually set the height for mobile view */
-  }
-    .schedule-card-bg-mobile{
-    width: 150% !important; /* Control the width here */
-    top: 25vh !important;
-  }
-}
-@media(max-width: 440px) and (max-height: 956px) and (orientation: portrait){
-  .title-font {
-    font-size: 3rem; /* Change this */
-    top: 15vh !important; /* Change this position */
-  }
-
-  .schedule-page-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  .schedule-content-area {
-    height: 120vh !important; /* Manually set the height for mobile view */
-  }
-
-  .schedule-title-img {
-    width: 80%;
-    top: 10vh;
-  }
-
-  .schedule-star-circle {
-    width: 275% !important;
-    height: auto;
-    top: 3vh;
-    transform: translateX(-50%) scale(1.5)!important;
-  }
-  
-
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 5;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -10vh;
-  }
-  .schedule-pillar-right{
-    right: -10vh;
-  }
-  .schedule-massive-pillar {
-    width: 100%;
-    height: auto;
-    top: 0vh;
-  }
-
-  .schedule-duck-left,
-  .schedule-duck-right {
-    width: 25vh; /* Resize ducks */
-    bottom: 2vh;
-  }
-
-  .schedule-duck-left {
-    left: 5vw;
-    bottom: 3vh;
-    transform: scale(1.3) !important;
-  }
-
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: 0vh;
-    transform: scale(1.3) !important;
-  }
-
-  /* Cleaned up mobile styles for the new structure */
-  .schedule-card-container {
-    width: 200%;
-    height: auto;
-    position: relative;
-    bottom: auto;
-  }
-
-  .schedule-card-content {
-    margin-top: -7rem;
-
-  }
-
-  .schedule-item-title {
-    font-size: 1.5rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.1rem; /* Smaller session text */
-    line-height: 1.2;
-  }
-
-  .schedule-button-group { 
-    gap: 0.1rem; /* ini buat button yang dibawah yang ada 2 itu */
-    transform: none !important; /* Remove the scaling from the group */
-  }
-
   .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.25rem 0.75rem !important;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
   }
+  .schedule-wrapper {
+    padding-bottom: 25rem;
 
-  .button-dresscode img {
-    height: 7rem !important;
-    width: auto !important;
   }
-
-  /* Target the close button inside the modal for landscape view */
-  .schedule-card .button-schedule {
-    margin-top: 1rem !important; /* Adjust this value to move the button */
+  .title-owik {
+    font-size: 4rem;
+    margin-top: 9%;
+    margin-bottom: 1rem;
+    padding-bottom: 7rem;
   }
-
-  .button-left {
-    left: -4.3rem !important;
-    transform: scale(0.9) !important; 
+    .title-img{
+    width: 35rem;
+    padding-bottom: 25rem;
   }
-
-  .button-right {
-    right: -4.3rem !important;
-    transform: scale(0.9) !important; 
+  .bebekiri{
+    width: 30rem;
+    bottom: -2rem;
   }
-
-  .schedule-card {
-    cursor: pointer;
-    border: 4px solid transparent;
-    background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    background-blend-mode: screen;
-    opacity: 100%;
-    width: 262px;
-    height: 259px; 
-    min-height: 350px;
-    margin-bottom: -2rem;
+  .bebekanan{
+    width: 25rem;
   }
-  .schedule-card-bg-mobile{
-    display: block !important;
-    width: 175% !important; /* Control the width here */
-    height: auto !important;
-    max-width: none !important; /* Prevent Tailwind from limiting the size */
-    
-    /* Center the oversized image */
-    position: absolute !important;
-    left: 50% !important;
-    top: 15vh !important;
-    transform: translate(-50%, -50%) !important;
+    .schedule-button-group {
+    gap: 10%;
   }
-}
-@media(max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
-   .button-schedule {
-    margin-bottom: -1.5rem;
-  }
-   .button-dresscode img {
-    margin-bottom: -1.5rem;
-  }
-  .schedule-card{
-    margin-top: -2rem;
-  }
-}
-@media(max-width: 412px) and (max-height: 915px) and (orientation: portrait) {
-}
-@media(max-width: 412px) and (max-height: 914px) and (orientation: portrait) {
-}
-@media(max-width: 430px) and (max-height: 932px) and (orientation: portrait) {
-  .title-font {
-    font-size: 3rem; /* Change this */
-    top: 15vh !important; /* Change this position */
-  }
-
-  .schedule-page-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  .schedule-content-area {
-    height: 120vh !important; /* Manually set the height for mobile view */
-  }
-
-  .schedule-title-img {
-    width: 80%;
-    top: 10vh;
-  }
-
-  .schedule-star-circle {
-    width: 175%;
-    height: auto;
-    top: 3vh;
-  }
-
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 5;
-    width: auto;
-    height: 100%;
-  }
-    .schedule-pillar-left{
-    left: -10vh;
-  }
-  .schedule-pillar-right{
-    right: -10vh;
-  }
-  .schedule-massive-pillar {
-    width: 100%;
-    height: auto;
-    top: 0vh;
-  }
-
-  .schedule-duck-left,
-  .schedule-duck-right {
-    width: 20vh; /* Resize ducks */
-    bottom: 2vh;
-  }
-
-  .schedule-duck-left {
-    left: 5vw;
-    bottom: 3vh;
-    transform: scale(1.3) !important;
-  }
-
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: 2vh;
-    transform: scale(1.3) !important;
-  }
-
-  /* Cleaned up mobile styles for the new structure */
-  .schedule-card-container {
-    width: 200%;
-    height: auto;
-    position: relative;
-    bottom: auto;
-  }
-
-  .schedule-card-content {
-    width: 90%; /* Adjust width for mobile screen */
-    height: auto;
-    position: absolute;
-    top: 45%; /* Start at the vertical center */
-    left: 50%;
-    transform: translate(-50%, -50%); /* Adjust based on the element's own size */
-  }
-
-  .schedule-item-title {
-    font-size: 1.75rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1.3rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.2rem; /* Smaller session text */
-    line-height: 1.5;
-  }
-
-  .schedule-button-group { 
-    gap: 0.3rem; /* ini buat button yang dibawah yang ada 2 itu */
-    transform: none !important; /* Remove the scaling from the group */
-  }
-
-    .schedule-card .button-schedule {
-    margin-left: 3rem;
-    margin-top: 1rem !important; /* Adjust this value to move the button */
-  }
-
-  .button-schedule {
-    font-size: 1rem !important;
-    padding: 0.25rem 0.75rem !important;
-  }
-
-  .button-dresscode img {
-    height: 6rem !important;
-    width: auto !important;
-  }
-
-  .button-left {
-    left: -4.0rem !important;
-    transform: scale(0.85) !important; 
-  }
-
-  .button-right {
-    right: -4.0rem !important;
-    transform: scale(0.85) !important; 
-  }
-
-  .schedule-card {
-    cursor: pointer;
-    border: 4px solid transparent;
-    background-image: linear-gradient(180deg, var(--countdown-card), var(--countdown-card)), radial-gradient(circle at top, #75ABDC, #FFF0B8);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    background-blend-mode: screen;
-    opacity: 100%;
-    width: 300px;
-    min-height: 400px;
-  }
-  .schedule-card-bg-mobile{
-    display: block !important;
-    width: 175% !important; /* Control the width here */
-    height: auto !important;
-    max-width: none !important; /* Prevent Tailwind from limiting the size */
-    
-    /* Center the oversized image */
-    position: absolute !important;
-    left: 50% !important;
-    top: 15vh !important;
-    transform: translate(-50%, -50%) !important;
-  }
-  .dresscode-title{
-    font-size: 2rem;
-  }
-}
-@media(max-width: 393px) and (max-height: 873px) and (orientation: portrait) {
-}
-@media(max-width: 390px) and (max-height: 844px) and (orientation: portrait) {
-  .schedule-card {
-    width: 250px;
-    min-height: 350px; 
-  }
-    .schedule-item-title {
-    font-size: 1.6rem; /* Smaller title */
-  }
-
-  .schedule-item-desc {
-    font-size: 1.3rem; /* Smaller description text */
-  }
-
-  .schedule-sessions-list p {
-    font-size: 1.05rem; /* Smaller session text */
-    line-height: 1.5;
-  }
-  .dresscode-title{
+    .schedule-item-title{
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
   }
-  .schedule-card-content {
-  top: 43%;
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
   }
-}
-@media(max-width: 384px) and (max-height: 824px) and (orientation: portrait) {
-  .schedule-card-content{
-    padding-bottom: 5rem;
-    margin-top: 15rem;
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
-  .schedule-button-group{
-    min-height: 11rem;
-  }
-    .schedule-card {
-    width: 15rem;
-    min-height: 24rem; 
+      .star{
+    width: 50rem;
   }
 }
-@media(max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
-  .schedule-card-bg-mobile{
-    width: 135% !important;
+@media (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+     .schedule-card {
+    width: 25rem;
+    min-height: 18rem;
+    padding-top: 2rem;
   }
-    .schedule-item-title {
-    font-size: 1.5rem; /* Smaller title */
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 2rem;
+
+  }
+  .title-owik {
+    font-size: 2.5rem;
+    margin-top: 9%;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+  }
+  .schedule-title-img{
+    width: 69%;
+
+  }
+  .title-img{
+    width: 30rem;
+    padding-bottom: 6rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+    .button-left{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.5rem;
+    width: 7rem;
+    font-size: 0.8rem;
   }
   .button-dresscode{
-    margin-top: -1rem;
-    width: 5rem;
+    width: 4rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 17rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 13rem;
+  }
+    .star{
+    width: 70rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1024px) and (max-height: 600px) {
+    .schedule-card {
+    width: 25rem;
+    min-height: 18rem;
+    padding-top: 2.5rem;
   }
   .button-schedule {
-    font-size: 0.9rem !important;
-    padding: 0.25rem 0.75rem !important;
-    margin-top: -2vh;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 1rem;
 
   }
-    .schedule-item-desc {
-    font-size: 1.1rem; /* Smaller description text */
+  .title-owik {
+    font-size: 2.5rem;
+    margin-top: 8%;
+    margin-bottom: 1rem;
+    padding-bottom: 2.5rem;
+    padding-top: 4rem;
+  }
+  .schedule-title-img{
+    width: 72%;
+
+  }
+  .title-img{
+    width: 40rem;
+    padding-bottom: 4rem;
   }
 
-  .schedule-sessions-list p {
-    font-size: 1.1rem; /* Smaller session text */
-    line-height: 1.5;
+  .title-wrapper{
+    margin-top: 1rem;
   }
-    .schedule-content-area {
-    height: 140vh !important; /* Manually set the height for mobile view */
+  .schedule-item-title{
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    line-height: 2rem;
   }
-   .schedule-card-bg-mobile{
-    display: block !important;
-    width: 175% !important; /* Control the width here */
-    height: auto !important;
-    top: 20vh !important;
+  .schedule-item-desc{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+
   }
-  .schedule-card-content{
-    top: 37%;
+  .schedule-sessions-list{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.6rem;
+    width: 9rem;
+    font-size: 0.9rem;
+  }
+  .button-dresscode{
+    width: 5rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 18rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 15rem;
+  }
+    .star{
+    width: 50rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
   }
 }
-@media(max-width: 360px) and (max-height: 780px) and (orientation: portrait) {
-.schedule-card-content{
-    margin-top: 18rem;
+@media (max-width: 960px) and (max-height: 540px) {
+}
+@media (max-width: 956px) and (max-height: 440px) and (orientation: landscape) {
+}
+@media (max-width: 932px) and (max-height: 430px) {
+.schedule-card {
+    width: 25rem;
+    min-height: 16rem;
+    padding-top: 2rem;
   }
-       .schedule-button-group{
-    min-height: 11rem;
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
   }
-     .button-schedule {
-    margin-bottom: 3.5rem;
+  .schedule-wrapper {
+    padding-bottom: 1rem;
+
   }
-   .button-dresscode img {
-    margin-bottom: 3.5rem;
+  .title-owik {
+    font-size: 2.5rem;
+    margin-top: 8%;
+    margin-bottom: 1rem;
+    padding-bottom: 2.5rem;
+    padding-top: 8rem;
   }
-    .schedule-content-area {
-    height: 140vh !important; /* Manually set the height for mobile view */
+  .schedule-title-img{
+    width: 72%;
+
   }
-  .schedule-card-bg-mobile{
-    display: block !important;
-    width: 225% !important; /* Control the width here */
-    height: auto !important;
-    max-width: none !important; /* Prevent Tailwind from limiting the size */
-    
-    /* Center the oversized image */
-    position: absolute !important;
-    left: 50% !important;
-    top: 20vh !important;
-    transform: translate(-50%, -50%) !important;
+  .title-img{
+    width: 40rem;
+    padding-bottom: 4rem;
   }
 
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.6rem;
+    width: 9rem;
+    font-size: 0.9rem;
+  }
+  .button-dresscode{
+    width: 5rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 18rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 15rem;
+  }
+    .star{
+    width: 50rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
 }
-@media(max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
-  .schedule-card-content{
-    top: 40%;
+@media (max-width: 915px) and (max-height: 412px) and (orientation: landscape) {
+.schedule-card {
+    width: 25rem;
+    min-height: 15rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 2rem;
+
+  }
+  .title-owik {
+    font-size: 2.5rem;
+    margin-top: 8%;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  .schedule-title-img{
+    width: 69%;
+
+  }
+  .title-img{
+    width: 25rem;
+    padding-bottom: 10rem;
   }
 
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
+  }
+    .button-left{
+    width: 2.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 2.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.4rem;
+    width: 7rem;
+    font-size: 0.7rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 18rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 15rem;
+  }
+    .star{
+    width: 50rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
 }
-@media(max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
-  .schedule-pillar-left,
-  .schedule-pillar-right{
-    z-index: 10;
-    width: auto;
-    height: 100%;
+@media (max-width: 914px) and (max-height: 412px) and (orientation: landscape) {
+  .schedule-card {
+    width: 25rem;
+    min-height: 15rem;
+    padding-top: 1.5rem;
   }
-    .schedule-pillar-left{
-    left: -10vh;
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
   }
-  .schedule-pillar-right{
-    right: -10vh;
+  .schedule-wrapper {
+    padding-bottom: 2rem;
+
   }
-  .schedule-card-bg-mobile{
-    width: 55rem !important; /* Control the width here */
-    height: auto !important;
-    
-    /* Center the oversized image */
-    left: 50% !important;
-    top: 30vh !important;
-    transform: translate(-50%, -50%) !important;
+  .title-owik {
+    font-size: 2.5rem;
+    margin-top: 8%;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  .schedule-title-img{
+    width: 69%;
+
+  }
+  .title-img{
+    width: 25rem;
+    padding-bottom: 10rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
+  }
+    .button-left{
+    width: 2.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 2.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.4rem;
+    width: 7rem;
+    font-size: 0.7rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 18rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 15rem;
+  }
+    .star{
+    width: 50rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+}
+@media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+}
+@media (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+.schedule-card {
+    width: 25rem;
+    min-height: 16rem;
+    padding-top: 2rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 0rem;
+
+  }
+  .title-owik {
+    font-size: 2.5rem;
+    margin-top: 8%;
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 10rem;
+  }
+  .schedule-title-img{
+    width: 72%;
+
+  }
+  .title-img{
+    width: 30rem;
+    padding-bottom: 3rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.6rem;
+    width: 9rem;
+    font-size: 0.9rem;
+  }
+  .button-dresscode{
+    width: 5rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 18rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 15rem;
+  }
+    .star{
+    width: 50rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+}
+@media (max-width: 882px) and (max-height: 344px) and (orientation: landscape) {
+  .schedule-card {
+    width: 25rem;
+    min-height: 15rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 2rem;
+
+  }
+  .title-owik {
+    font-size: 2.5rem;
+    margin-top: 10%;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  .schedule-title-img{
+    width: 72%;
+
+  }
+  .title-img{
+    width: 25rem;
+    padding-bottom: 12rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
+  }
+    .button-left{
+    width: 2.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 2.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.4rem;
+    width: 7rem;
+    font-size: 0.7rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 18rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 15rem;
+  }
+    .star{
+    width: 50rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+}
+@media (max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
+    .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 90%;
+    margin-bottom: -4rem;
+  }
+  .pillar-left{
+    left: -2rem;
+  }
+  .pillar-right{
+    right: -2rem;
   }
   .schedule-card {
-    width: 250px;
-    min-height: 400px; 
+    width: 23rem;
+    min-height: 16rem;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
   }
-    .schedule-item-title {
-    font-size: 1.5rem; /* Smaller title */
+  .button-schedule {
+    padding: 0.5rem;
+    width: 7rem;
+    font-size: 0.8rem;
   }
-    .schedule-sessions-list p {
-    font-size: 0.9rem; /* Smaller session text */
-    line-height: 1.5;
+  .penugasan{
+    margin-left: 2rem;
   }
-  .schedule-duck-right {
-    right: 5vw;
-    bottom: -0vh;
+  .ketentuan{
+    margin-right: 2rem;
+  }
+      .button-left{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+    .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .schedule-wrapper {
+    padding-bottom: 20rem;
+
+  }
+  .title-owik {
+    font-size: 3.4rem;
+    margin-top: 9%;
+    margin-bottom: 1rem;
+    padding-bottom: 5rem;
+  }
+    .title-img{
+    width: 35rem;
+    padding-bottom: 20rem;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 20rem;
+  }
+    .schedule-button-group {
+    gap: 10%;
+  }
+    .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 844px) and (max-height: 390px) {
+.schedule-card {
+    width: 25rem;
+    min-height: 16rem;
+    padding-top: 2rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 0rem;
+
+  }
+  .title-owik {
+    font-size: 2.5rem;
+    margin-top: 8%;
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 10rem;
+  }
+  .schedule-title-img{
+    width: 72%;
+
+  }
+  .title-img{
+    width: 40rem;
+    padding-bottom: 3rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+    .button-left{
+    width: 4rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.6rem;
+    width: 9rem;
+    font-size: 0.9rem;
+  }
+  .button-dresscode{
+    width: 5rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 18rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 15rem;
+  }
+    .star{
+    width: 50rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+}
+@media (max-width: 824px) and (max-height: 384px) {
+}
+@media (max-width: 820px) and (max-height: 1180px) and (orientation: portrait) {
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    margin-bottom: -4rem;
+  }
+  .pillar-left{
+    left: -2rem;
+  }
+  .pillar-right{
+    right: -2rem;
+  }
+  .schedule-card {
+    width: 23rem;
+    min-height: 16rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule {
+    padding: 0.5rem;
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+      .button-left{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+    .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .schedule-wrapper {
+    padding-bottom: 25rem;
+
+  }
+  .title-owik {
+    font-size: 4rem;
+    margin-top: 9%;
+    margin-bottom: 1rem;
+    padding-bottom: 5rem;
+  }
+    .title-img{
+    width: 35rem;
+    padding-bottom: 15rem;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 20rem;
+  }
+    .schedule-button-group {
+    gap: 10%;
+  }
+    .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 780px) and (max-height: 360px) {
+    .schedule-card {
+    width: 20rem;
+    min-height: 14rem;
+    padding-top: 1rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 4rem;
+
+  }
+  .title-owik {
+    font-size: 2.5rem;
+    margin-top: 8%;
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 10rem;
+  }
+  .schedule-title-img{
+    width: 80%;
+
+  }
+  .title-img{
+    width: 30rem;
+    padding-bottom: 3rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+    .button-left{
+    width: 2rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.4rem;
+    width: 6rem;
+    font-size: 0.7rem;
+  }
+  .button-dresscode{
+    width: 3.5rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 12rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
     width: 9rem;
   }
-  .schedule-duck-left {
-    left: 5vw;
-    bottom: 2vh;
+    .star{
+    width: 50rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+}
+@media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    margin-bottom: -4rem;
+  }
+  .pillar-left{
+    left: -2rem;
+  }
+  .pillar-right{
+    right: -2rem;
+  }
+  .schedule-card {
+    width: 23rem;
+    min-height: 16rem;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+  }
+  .button-schedule {
+    padding: 0.5rem;
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+      .button-left{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+    .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .schedule-wrapper {
+    padding-bottom: 20rem;
+
+  }
+  .title-owik {
+    font-size: 3.4rem;
+    margin-top: 9%;
+    margin-bottom: 1rem;
+    padding-bottom: 5rem;
+  }
+    .title-img{
+    width: 35rem;
+    padding-bottom: 20rem;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 20rem;
+  }
+    .schedule-button-group {
+    gap: 10%;
+  }
+    .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 740px) and (max-height: 360px) and (orientation: landscape) {
+
+}
+@media (max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    margin-bottom: -4rem;
+  }
+  .pillar-left{
+    left: -5rem;
+  }
+  .pillar-right{
+    right: -5rem;
+  }
+  .schedule-card {
+    width: 23rem;
+    min-height: 16rem;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+  }
+  .button-schedule {
+    padding: 0.5rem;
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+      .button-left{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3.5rem;
+    height: auto;
+    margin: 1rem;
+  }
+    .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .schedule-wrapper {
+    padding-bottom: 20rem;
+
+  }
+  .title-owik {
+    font-size: 3.4rem;
+    margin-top: 9%;
+    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+  }
+    .title-img{
+    width: 35rem;
+    padding-bottom: 20rem;
+  }
+  .bebekiri{
+    width: 25rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 20rem;
+  }
+    .schedule-button-group {
+    gap: 10%;
+  }
+    .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 667px) and (max-height: 375px) {
+  .schedule-card {
+    width: 20rem;
+    min-height: 14rem;
+    padding-top: 1rem;
+  }
+  .button-schedule {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 0rem;
+
+  }
+  .title-owik {
+    font-size: 2.5rem;
+    margin-top: 8%;
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 10rem;
+  }
+  .schedule-title-img{
+    width: 80%;
+
+  }
+  .title-img{
+    width: 30rem;
+    padding-bottom: 3rem;
+  }
+
+  .title-wrapper{
+    margin-top: 1rem;
+  }
+  .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+    .button-left{
+    width: 2rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-schedule{
+    padding: 0.4rem;
+    width: 6rem;
+    font-size: 0.7rem;
+  }
+  .button-dresscode{
+    width: 3.5rem;
+    height: auto;
+  }
+  .bebekiri{
+    width: 12rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 9rem;
+  }
+    .star{
+    width: 50rem;
+  }
+  .schedule-button-group {
+    gap: 1rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+}
+@media (max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
+    .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    margin-bottom: -4rem;
+  }
+  .pillar-left{
+    left: -5rem;
+  }
+  .pillar-right{
+    right: -5rem;
+  }
+  .schedule-card {
+    width: 23rem;
+    min-height: 16rem;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+  }
+  .button-schedule {
+    padding: 0.5rem;
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+      .button-left{
+    width: 3rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .button-right{
+    width: 3rem;
+    height: auto;
+    margin: 1rem;
+  }
+    .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .schedule-wrapper {
+    padding-bottom: 7rem;
+
+  }
+  .title-owik {
+    font-size: 2.4rem;
+    margin-top: 9%;
+    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+  }
+    .title-img{
+    width: 35rem;
+    padding-bottom: 10rem;
+  }
+  .bebekiri{
+    width: 15rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
     width: 10rem;
   }
-    .schedule-card {
-    margin-top: 25rem;
-    }
+    .schedule-button-group {
+    gap: 10%;
+  }
+    .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+      .star{
+    width: 50rem;
+  } 
+}
+@media (max-width: 440px) and (max-height: 956px) and (orientation: portrait) {
+  
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+  .schedule-card {
+    width: 15rem;
+    min-height: 13rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule{
+    padding: 0.5rem;
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .button-left{
+    width: 2rem;
+    height: auto;
+    margin-left: 3rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 9rem;
+  }
+  .title-owik {
+    font-size: 2.4rem;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+  }
+    .title-img{
+    width: 20rem;
+    padding-bottom: 10rem;
+  }
+  .bebekiri{
+    width: 15rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 12rem;
+  }
+    .schedule-button-group {
+    gap: 1rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+    .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+      .star{
+    width: 50rem;
+  }
 }
 
-/* 1280 570
-960 540
-*/
+@media (max-width: 430px) and (max-height: 932px) and (orientation: portrait) {
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+  .schedule-card {
+    width: 15rem;
+    min-height: 12rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule{
+    padding: 0.5rem;
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .button-left{
+    width: 2rem;
+    height: auto;
+    margin-left: 3rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 9rem;
+  }
+  .title-owik {
+    font-size: 2.4rem;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+  }
+    .title-img{
+    width: 20rem;
+    padding-bottom: 10rem;
+  }
+  .bebekiri{
+    width: 15rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 12rem;
+  }
+    .schedule-button-group {
+    gap: 1rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+    .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.6rem;
+    margin-bottom: 0rem;
+  }
+  .schedule-sessions-list{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
+.schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+  .schedule-card {
+    width: 15rem;
+    min-height: 12rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule{
+    padding: 0.5rem;
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .button-left{
+    width: 2rem;
+    height: auto;
+    margin-left: 3rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 9rem;
+  }
+  .title-owik {
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+  }
+    .title-img{
+    width: 20rem;
+    padding-bottom: 10rem;
+  }
+  .bebekiri{
+    width: 12rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 9rem;
+  }
+    .schedule-button-group {
+    gap: 1rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+    .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.6rem;
+    margin-bottom: 0rem;
+  }
+  .schedule-sessions-list{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 412px) and (max-height: 915px) and (orientation: portrait) {
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+  .schedule-card {
+    width: 15rem;
+    min-height: 13rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule{
+    padding: 0.4rem;
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .button-left{
+    width: 2rem;
+    height: auto;
+    margin-left: 3rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 7rem;
+  }
+  .title-owik {
+    font-size: 1.8rem;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+  }
+    .title-img{
+    width: 20rem;
+    padding-bottom: 5rem;
+  }
+  .bebekiri{
+    width: 10rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 8rem;
+  }
+    .schedule-button-group {
+    gap: 1rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+    .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 412px) and (max-height: 914px) and (orientation: portrait) {
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+  .schedule-card {
+    width: 15rem;
+    min-height: 13rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule{
+    padding: 0.4rem;
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .button-left{
+    width: 2rem;
+    height: auto;
+    margin-left: 3rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 7rem;
+  }
+  .title-owik {
+    font-size: 1.8rem;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+  }
+    .title-img{
+    width: 20rem;
+    padding-bottom: 5rem;
+  }
+  .bebekiri{
+    width: 10rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 8rem;
+  }
+    .schedule-button-group {
+    gap: 1rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+    .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 393px) and (max-height: 873px) and (orientation: portrait) {
+}
+@media (max-width: 390px) and (max-height: 844px) and (orientation: portrait) {
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+  .schedule-card {
+    width: 15rem;
+    min-height: 12rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule{
+    padding: 0.5rem;
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .button-left{
+    width: 2rem;
+    height: auto;
+    margin-left: 3rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 7rem;
+  }
+  .title-owik {
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+  }
+    .title-img{
+    width: 15rem;
+    padding-bottom: 8rem;
+  }
+  .bebekiri{
+    width: 10rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 9rem;
+  }
+    .schedule-button-group {
+    gap: 1rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+    .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.6rem;
+    margin-bottom: 0rem;
+  }
+  .schedule-sessions-list{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 384px) and (max-height: 824px) and (orientation: portrait) {
+}
+@media (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+.schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+  .schedule-card {
+    width: 15rem;
+    min-height: 12rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule{
+    padding: 0.5rem;
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .button-left{
+    width: 2rem;
+    height: auto;
+    margin-left: 3rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 6rem;
+  }
+  .title-owik {
+    font-size: 1.8rem;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+  }
+    .title-img{
+    width: 15rem;
+    padding-bottom: 8rem;
+  }
+  .bebekiri{
+    width: 10rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 9rem;
+  }
+    .schedule-button-group {
+    gap: 1rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+    .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.6rem;
+    margin-bottom: 0rem;
+  }
+  .schedule-sessions-list{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 360px) and (max-height: 780px) and (orientation: portrait) {
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+  .schedule-card {
+    width: 15rem;
+    min-height: 13rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule{
+    padding: 0.4rem;
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .button-left{
+    width: 2rem;
+    height: auto;
+    margin-left: 3rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 3.5rem;
+  }
+  .title-owik {
+    font-size: 1.8rem;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+  }
+    .title-img{
+    width: 20rem;
+    padding-bottom: 5rem;
+  }
+  .bebekiri{
+    width: 10rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 8rem;
+  }
+    .schedule-button-group {
+    gap: 1rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+    .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+@media (max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
+}
+@media (max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
+  .schedule-title-img{
+    display: none;
+  }
+  .schedule-title-img-mb{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0rem;
+  }
+  .pillar-left{
+    left: -3rem;
+  }
+  .pillar-right{
+    right: -3rem;
+  }
+  .schedule-card {
+    width: 12rem;
+    min-height: 13rem;
+    padding-top: 1.5rem;
+  }
+  .button-schedule{
+    padding: 0.4rem;
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+  .button-dresscode{
+    width: 4rem;
+    height: auto;
+  }
+  .button-left{
+    width: 2rem;
+    height: auto;
+    margin-left: 3rem;
+  }
+  .button-right{
+    width: 2rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 3rem;
+  }
+  .title-owik {
+    font-size: 1.8rem;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 0rem;
+    padding-top: 5rem;
+  }
+    .title-img{
+    width: 20rem;
+    padding-bottom: 10rem;
+  }
+  .bebekiri{
+    width: 10rem;
+    bottom: -2rem;
+  }
+  .bebekanan{
+    width: 8rem;
+  }
+    .schedule-button-group {
+    gap: 1rem;
+  }
+  .penugasan{
+    margin-left: 2rem;
+  }
+  .ketentuan{
+    margin-right: 2rem;
+  }
+    .schedule-item-title{
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+  }
+  .schedule-item-desc{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+      .star{
+    width: 50rem;
+  }
+}
+

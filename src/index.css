@@ -3,6 +3,51 @@
 @tailwind utilities;
 
 /* filepath: src/index.csssdd */
+/* filepath: src/index.csssdd */
+/* Force light mode and prevent Samsung Browser dark mode */
+:root {
+  color-scheme: light only !important;
+  -webkit-color-scheme: light only !important;
+}
+
+html, body {
+  color-scheme: light only !important;
+  -webkit-color-scheme: light only !important;
+  background-color: #e7bc68 !important;
+  filter: none !important;
+}
+
+/* Override dark mode media queries */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light only !important;
+    -webkit-color-scheme: light only !important;
+    background-color: #e7bc68 !important;
+  }
+  
+  html, body {
+    color-scheme: light only !important;
+    -webkit-color-scheme: light only !important;
+    background-color: #e7bc68 !important;
+    filter: none !important;
+  }
+}
+
+/* Samsung Browser specific fixes */
+@supports (-webkit-appearance: none) {
+  :root {
+    color-scheme: light only !important;
+    -webkit-color-scheme: light only !important;
+  }
+  
+  html, body {
+    background-color: #e7bc68 !important;
+    color-scheme: light only !important;
+    -webkit-color-scheme: light only !important;
+    filter: none !important;
+  }
+}
+
 @font-face {
   font-family: 'Lettertype';
   src: url('/fonts/Lettertype-Bold.woff2') format('woff2'),

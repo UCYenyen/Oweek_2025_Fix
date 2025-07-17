@@ -1142,6 +1142,7 @@
     width: 70rem;
   }
   .schedule-button-group {
+    width: 68%;
     gap: 1rem;
   }
 }
@@ -1451,6 +1452,7 @@
   }
   .schedule-button-group {
     gap: 1rem;
+    width: 62%;
   }
   .pillar-left{
     left: -3rem;
@@ -3055,7 +3057,7 @@
     font-size: 0.7rem;
   }
   .button-dresscode{
-    width: 4rem;
+    width: 10rem;
     height: auto;
   }
   .button-left{
@@ -3090,7 +3092,8 @@
     width: 8rem;
   }
     .schedule-button-group {
-    gap: 1rem;
+      width: 65%;
+      gap: 1rem;
   }
   .penugasan{
     margin-left: 2rem;

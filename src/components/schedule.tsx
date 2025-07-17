@@ -6,7 +6,7 @@ export default function Schedule() {
   const [currentIndex, setCurrentIndex] = useState(0);
   // Set default value to true so popup is hidden by default
   const [isHidden, setIsHidden] = useState(true);
-  const [isDressCode, setIsDressCode] = useState(false);
+  const [popupType, setPopupType] = useState<'dresscode' | 'penugasan' | 'ketentuan'>('dresscode');
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % scheduleData.length);
@@ -18,9 +18,9 @@ export default function Schedule() {
     );
   };
 
-  function openPopUpPanel(isDresscode: boolean){
+  function openPopUpPanel(type: 'dresscode' | 'penugasan' | 'ketentuan'){
     setIsHidden(!isHidden);
-    setIsDressCode(isDresscode);
+    setPopupType(type);
   }
 
   const currentSchedule = scheduleData[currentIndex];
@@ -59,19 +59,19 @@ export default function Schedule() {
 
       {/* Button dresscode bawah penugasan dan ketentuan*/}
       <div className="flex items-center justify-between w-[50%] gap-4 schedule-button-group">
-        <button className="penugasan button-schedule rounded-full font-lettertype text-white" onClick={() => openPopUpPanel(false)}>PENUGASAN</button>
-        <button className="" onClick={() => openPopUpPanel(true)}>
+        <button className="penugasan button-schedule rounded-full font-lettertype text-white" onClick={() => openPopUpPanel('penugasan')}>PENUGASAN</button>
+        <button className="" onClick={() => openPopUpPanel('dresscode')}>
           <img src="/elements/schedule/shirt.svg" alt="Dress Code" className="button-dresscode" />
         </button>
-        <button className="ketentuan button-schedule rounded-full font-lettertype text-white" onClick={() => openPopUpPanel(false)}>KETENTUAN</button>
+        <button className="ketentuan button-schedule rounded-full font-lettertype text-white" onClick={() => openPopUpPanel('ketentuan')}>KETENTUAN</button>
       </div>
 
       {/* Add PopUpPanel component */}
       <PopUpPanel 
         isHidden={isHidden}
         setIsHidden={setIsHidden}
-        isDressCode={isDressCode}
-        setIsDressCode={setIsDressCode}
+        popupType={popupType}
+        setPopupType={setPopupType}
       />
     </div>
   );

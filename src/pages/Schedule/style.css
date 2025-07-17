@@ -1234,17 +1234,18 @@
   }
   .schedule-title-img-mb{
     display: block;
-    width: 67%;
+    width: 90%;
+    margin-bottom: -0rem;
   }
   .pillar-left{
-    left: -3.5rem;
+    left: -2rem;
   }
   .pillar-right{
-    right: -3.5rem;
+    right: -2rem;
   }
   .schedule-card {
     width: 25rem;
-    min-height: 18rem;
+    min-height: 19rem;
     padding-top: 2rem;
   }
   .button-schedule {
@@ -1252,24 +1253,45 @@
     margin-bottom: 0.5rem;
   }
   .schedule-wrapper {
-    padding-bottom: 2rem;
+    padding-bottom: 25rem;
 
   }
   .title-owik {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-top: 9%;
     margin-bottom: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 7rem;
+  }
+    .title-img{
+    width: 35rem;
+    padding-bottom: 25rem;
   }
   .bebekiri{
-    width: 20rem;
+    width: 30rem;
     bottom: -2rem;
   }
   .bebekanan{
-    width: 15rem;
+    width: 25rem;
   }
     .schedule-button-group {
     gap: 10%;
+  }
+    .schedule-item-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+  .schedule-item-desc{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  .schedule-sessions-list{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+      .star{
+    width: 50rem;
   }
 }
 @media (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {

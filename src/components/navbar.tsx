@@ -19,15 +19,19 @@ export default function Navbar() {
     <>
       <div className="fixed top-0 z-[10000]">
         <nav className="relative w-screen z-[10] h-[60px] sm:h-[113px] bg-[url('/elements/navbar/navbar.svg')] bg-cover bg-center flex items-center justify-between px-6 sm:px-8">
-          <a href="/">
+          <div className="left-logo-wrapper w-full h-full flex gap-4 items-center justify-start">
+            <img
+              className="uc-navbar-logo w-auto h-auto"
+              src="/elements/icons/logo-uc-color.png"
+              alt=""
+            />
             <img
               src="/elements/icons/luminate.svg"
               className="luminate-logo w-1/2 sm:w-[70%]"
               draggable="false"
               alt=""
             />
-          </a>
-          
+          </div>
           {/* Desktop Navigation */}
           <div className="hidden md:flex font-roboto font-extrabold items-center gap-4">
             <Link
@@ -112,17 +116,23 @@ export default function Navbar() {
           >
             <div
               className={`w-6 h-0.5 transition-all duration-300 ${
-                isMenuOpen ? 'rotate-45 translate-y-1.5 bg-[#FFF0B8]' : 'bg-gradient-to-r from-[#F5AC01] to-[#C03A00]'
+                isMenuOpen
+                  ? "rotate-45 translate-y-1.5 bg-[#FFF0B8]"
+                  : "bg-gradient-to-r from-[#F5AC01] to-[#C03A00]"
               }`}
             />
             <div
               className={`w-6 h-0.5 transition-all duration-300 ${
-                isMenuOpen ? 'opacity-0 bg-[#FFF0B8]' : 'bg-gradient-to-r from-[#F5AC01] to-[#C03A00]'
+                isMenuOpen
+                  ? "opacity-0 bg-[#FFF0B8]"
+                  : "bg-gradient-to-r from-[#F5AC01] to-[#C03A00]"
               }`}
             />
             <div
               className={`w-6 h-0.5 transition-all duration-300 ${
-                isMenuOpen ? '-rotate-45 -translate-y-1.5 bg-[#FFF0B8]' : 'bg-gradient-to-r from-[#F5AC01] to-[#C03A00]'
+                isMenuOpen
+                  ? "-rotate-45 -translate-y-1.5 bg-[#FFF0B8]"
+                  : "bg-gradient-to-r from-[#F5AC01] to-[#C03A00]"
               }`}
             />
           </button>
@@ -133,7 +143,7 @@ export default function Navbar() {
         {/* Mobile Menu - Below Navbar */}
         <div
           className={`relative w-full bg-gradient-to-b from-[#F0B130] to-[#F0B130] z-[16] lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <div className="flex flex-col items-center justify-center gap-4 p-6">
@@ -216,25 +226,23 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="h-[53px] sm:h-[113px]">
-        
-      </div>
+      <div className="h-[53px] sm:h-[113px]"></div>
       <div className="relative bg-[url('/elements/navbar/navbar-below.svg')] w-screen bg-cover h-[2.5rem] sm:bg-auto sm:h-[5rem]">
-          <img
-            src="/elements/navbar/leaves-left.svg"
-            loading="lazy"
-            className="overflow-hidden leaves-left absolute z-[6] -top-5 sm:-top-[7.5rem] left-0"
-            draggable="false"
-            alt=""
-          />
-          <img
-            src="/elements/navbar/leaves-right.svg"
-            loading="lazy"
-            className="leaves-right absolute z-[6] -top-5 sm:-top-[7.5rem] right-0"
-            draggable="false"
-            alt=""
-          />
-        </div>
+        <img
+          src="/elements/navbar/leaves-left.svg"
+          loading="lazy"
+          className="overflow-hidden leaves-left absolute z-[6] -top-5 sm:-top-[7.5rem] left-0"
+          draggable="false"
+          alt=""
+        />
+        <img
+          src="/elements/navbar/leaves-right.svg"
+          loading="lazy"
+          className="leaves-right absolute z-[6] -top-5 sm:-top-[7.5rem] right-0"
+          draggable="false"
+          alt=""
+        />
+      </div>
     </>
   );
 }

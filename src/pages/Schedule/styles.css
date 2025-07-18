@@ -1212,7 +1212,7 @@
     font-size: 1.1rem;
   }
   .button-dresscode{
-    width: 6rem;
+    width: 4rem;
     height: auto;
   }
   .bebekiri{
@@ -1226,7 +1226,8 @@
     width: 70rem;
   }
   .schedule-button-group {
-    gap: 1rem;
+      justify-content: center;
+
   }
 }
 @media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
@@ -1253,6 +1254,10 @@
     padding: 1rem;
     margin-bottom: 0.5rem;
   }
+    .button-dresscode{
+    min-width: 6rem;
+    height: auto;
+  }
   .schedule-wrapper {
     padding-bottom: 25rem;
 
@@ -1275,8 +1280,9 @@
     width: 25rem;
   }
     .schedule-button-group {
-    gap: 10%;
-  }
+      margin: auto;
+      justify-content: center;
+    }
     .schedule-item-title{
     font-size: 1.5rem;
     margin-bottom: 1rem;

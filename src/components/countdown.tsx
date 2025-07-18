@@ -14,7 +14,7 @@ export default function Countdown() {
   const { countdownRef } = useCountdownAnimation();
 
   useEffect(() => {
-    const targetDate = new Date("August 25, 2025 00:00:00").getTime();
+    const targetDate = new Date("August 17, 2025 00:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();

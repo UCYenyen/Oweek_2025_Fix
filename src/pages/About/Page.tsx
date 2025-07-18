@@ -10,6 +10,7 @@ export const useAboutPageAnimation = () => {
   const starCircleMobileRef = useRef<HTMLImageElement>(null); // For mobile
   const aboutContentRef = useRef<HTMLDivElement>(null);
   const backgroundRef = useRef<HTMLDivElement>(null);
+  const backgroundShapeRef = useRef<HTMLImageElement>(null); // Ref for mascot background
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -28,8 +29,8 @@ export const useAboutPageAnimation = () => {
       .to([sunTopRef.current, starCircleRef.current, starCircleMobileRef.current], { opacity: 1, y: 0, stagger: 0.2, duration: 0.8 }, "-=2.0")
       .to(aboutContentRef.current, { opacity: 1, y: 0 }, "-=0.5");
 
-    // Add infinite rotation animation to both star circles
-    gsap.to([starCircleRef.current, starCircleMobileRef.current], {
+    // Add infinite rotation animation to all rotating elements
+    gsap.to([starCircleRef.current, starCircleMobileRef.current, backgroundShapeRef.current], {
       rotation: 360,
       duration: 80,
       ease: "none",
@@ -39,12 +40,12 @@ export const useAboutPageAnimation = () => {
   }, []);
 
   // Return all refs
-  return { sunTopRef, starCircleRef, starCircleMobileRef, aboutContentRef, backgroundRef, isAnimationComplete };
+  return { sunTopRef, starCircleRef, starCircleMobileRef, aboutContentRef, backgroundRef, backgroundShapeRef, isAnimationComplete };
 };
 
 export default function About() {
   // Destructure the new ref
-  const { sunTopRef, starCircleRef, starCircleMobileRef, backgroundRef } = useAboutPageAnimation();
+  const { sunTopRef, starCircleRef, starCircleMobileRef, backgroundRef, backgroundShapeRef } = useAboutPageAnimation();
 
   return (
     <>
@@ -117,7 +118,7 @@ export default function About() {
         </div>
 
         <div className="w-full">
-          <Mascots />
+          <Mascots backgroundShapeRef={backgroundShapeRef} />
         </div>
       </div>
     </>

@@ -1,4 +1,6 @@
-export default function Mascots() {
+import React from "react";
+
+export default function Mascots({ backgroundShapeRef }: { backgroundShapeRef: React.Ref<HTMLImageElement> }) {
   return (
     <div className="relative w-screen h-full mascot-container">
       <div className="relative w-[220%] -left-[40vh] h-auto mascot-pillar-container">
@@ -58,6 +60,7 @@ export default function Mascots() {
         alt="pot-both"
       />
       <img
+        ref={backgroundShapeRef}
         src="/elements/about/triangle-circle.svg"
         className="w-full h-auto absolute top-[10vh] left-1/2 -translate-x-1/2 z-[1] mascot-background-shape"
         alt="triangle-circle"

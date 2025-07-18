@@ -6,8 +6,10 @@ import { gsap } from "gsap";
 export const useAboutPageAnimation = () => {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const sunTopRef = useRef<HTMLImageElement>(null);
-  const starCircleRef = useRef<HTMLImageElement>(null);
+  const starCircleRef = useRef<HTMLImageElement>(null); // For desktop
+  const starCircleMobileRef = useRef<HTMLImageElement>(null); // For mobile
   const aboutContentRef = useRef<HTMLDivElement>(null);
+  const backgroundRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -15,24 +17,38 @@ export const useAboutPageAnimation = () => {
       onComplete: () => setIsAnimationComplete(true), 
     });
 
-    
-    gsap.set([sunTopRef.current, starCircleRef.current], { opacity: 0, y: 100 });
+    // Set initial states for both star circles
+    gsap.set(backgroundRef.current, { backgroundColor: "#3F61AD" });
+    gsap.set([sunTopRef.current, starCircleRef.current, starCircleMobileRef.current], { opacity: 0, y: 100 });
     gsap.set(aboutContentRef.current, { opacity: 0, y: 50 });
 
-    tl.to([sunTopRef.current, starCircleRef.current], { opacity: 1, y: 0, stagger: 0.2 }, "-=1")
-      .to(aboutContentRef.current, { opacity: 1, y: 0 }, "-=0.8");
+    // Animate background color and other elements
+    tl.to(backgroundRef.current, { backgroundColor: "#B2D5F1", duration: 2.5, ease: "power2.out" })
+      // Animate both star circles
+      .to([sunTopRef.current, starCircleRef.current, starCircleMobileRef.current], { opacity: 1, y: 0, stagger: 0.2, duration: 0.8 }, "-=2.0")
+      .to(aboutContentRef.current, { opacity: 1, y: 0 }, "-=0.5");
+
+    // Add infinite rotation animation to both star circles
+    gsap.to([starCircleRef.current, starCircleMobileRef.current], {
+      rotation: 360,
+      duration: 80,
+      ease: "none",
+      repeat: -1,
+    });
 
   }, []);
 
-  return { sunTopRef, starCircleRef, aboutContentRef, isAnimationComplete };
+  // Return all refs
+  return { sunTopRef, starCircleRef, starCircleMobileRef, aboutContentRef, backgroundRef, isAnimationComplete };
 };
 
 export default function About() {
-  const { sunTopRef, starCircleRef } = useAboutPageAnimation();
+  // Destructure the new ref
+  const { sunTopRef, starCircleRef, starCircleMobileRef, backgroundRef } = useAboutPageAnimation();
 
   return (
     <>
-      <div className="relative w-screen bg-[#B2D5F1] bg-cover bg-[url('/elements/real-background.svg')] about-container">
+      <div ref={backgroundRef} className="relative w-screen bg-cover bg-[url('/elements/real-background.svg')] about-container">
         <div className="relative w-screen h-screen about-main-content">
           <img
             src="/elements/about/pillar-left.svg"
@@ -51,6 +67,7 @@ export default function About() {
             className="absolute -bottom-[4vh] w-full h-auto left-1/2 -translate-x-1/2"
             alt="sun"
           />
+          {/* Assign the correct ref to each image */}
           <img
             ref={starCircleRef}
             src="/elements/about/star-circle.svg"
@@ -58,7 +75,7 @@ export default function About() {
             alt="star-circle"
           />
           <img
-            ref={starCircleRef}
+            ref={starCircleMobileRef}
             src="/elements/about/star-circle.svg"
             className="absolute w-[100%] left-1/2 -translate-x-1/2 star-circle-mobile"
             alt="star-circle"

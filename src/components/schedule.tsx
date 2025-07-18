@@ -68,13 +68,13 @@ export default function Schedule() {
             <h2 className="text-2xl font-bold text-[#D45A0A] font-serif schedule-item-title">
               {currentSchedule.title}
             </h2>
-            <p className="mt-2 text-lg schedule-item-desc font-serif text-[#F2B028]"> 
+            <p className="mt-2 text-lg schedule-item-desc font-serif text-[#AB6528]"> 
               {currentSchedule.date}
             </p>
-            <p className="text-lg schedule-item-desc font-serif text-[#F2B028]">
+            <p className="text-lg schedule-item-desc font-serif text-[#AB6528]">
               {currentSchedule.location}
             </p>
-            <div className="mt-4 text-center schedule-sessions-list font-serif text-[#F2B028]">
+            <div className="mt-4 text-center schedule-sessions-list font-serif text-[#AB6528]">
               {currentSchedule.sessions.map((session, index) => (
                 <p key={index} className="text-md">
                   {session}

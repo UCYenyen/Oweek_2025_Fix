@@ -19,7 +19,7 @@ export default function Countdown() {
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const difference = targetDate - now;
-
+ 
       if (difference < 0) {
         clearInterval(interval);
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });

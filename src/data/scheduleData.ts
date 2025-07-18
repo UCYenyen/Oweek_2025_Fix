@@ -7,8 +7,7 @@ export const scheduleData = [
     date: "16 Agustus 2025",
     location: "Zoom Meeting",
     sessions: [
-      "Kloter 1 (7:15 - 10:00)",
-      "Kloter 2 (10:45 - 13:00)"
+      "",
     ],
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -20,8 +19,9 @@ export const scheduleData = [
     date: "17 Agustus 2025",
     location: "UC Plaza",
     sessions: [
-      "Flag Ceremony (6:30 - 18:00)",
-      "5 Seminars"
+      "Flag Ceremony",
+      "5 Seminars",
+      "Opening Ceremony",
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -54,7 +54,7 @@ export const scheduleData = [
     title: "DAY 1",
     date: "25 Agustus 2025",
     location: "Universitas Ciputra Surabaya",
-    sessions: [ "Opening", "Talkshow", "Ormawa Fest (7:00 - 16:30)" ],
+    sessions: [ "Talkshow", "Ormawa Fest" ],
     baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
@@ -64,7 +64,7 @@ export const scheduleData = [
     title: "DAY 2",
     date: "26 Agustus 2025",
     location: "Universitas Ciputra Surabaya",
-    sessions: [ "Pra-LDK (7:00 - 17:00)" ],
+    sessions: [ "Prodi Day (7:00 - 16:00)" ],
     baju: "Baju: Baju Batik Sopan", celana: "Celana: Celana Panjang Bebas", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
@@ -74,7 +74,7 @@ export const scheduleData = [
     title: "DAY 3",
     date: "27 Agustus 2025",
     location: "Universitas Ciputra Surabaya",
-    sessions: [ "Prodi Day (7:00 - 16:30)" ],
+    sessions: [ "Pra-LDK (7:00 - 15:30)" ],
     baju: "Sesuai dengan ketentuan masing masing prodi", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
@@ -94,7 +94,7 @@ export const scheduleData = [
     title: "DAY 5",
     date: "29 Agustus 2025",
     location: "Ciputra World Mall Surabaya",
-    sessions: [ "Selling Day (8:30 - 20:00)" ],
+    sessions: [ "Selling Day (8:30 - 21:00)" ],
     baju: "Baju: Kaos Universitas Ciputra Surabaya", celana: "Celana: Celana Panjang", sepatu: "Sepatu: Sepatu Bebas", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
@@ -104,7 +104,7 @@ export const scheduleData = [
     title: "DAY 6",
     date: "30 Agustus 2025",
     location: "Ciputra World Mall Surabaya",
-    sessions: [ "Closing Day (13:00 - 22:00)" ],
+    sessions: [ "Closing Day" ],
     baju: "Baju: Kemeja Putih", celana: "Celana: Celana Panjang Hitam", sepatu: "Sepatu: Celana Bebas", extra: "Setiap Trainee harus membawa Almameter",
     baju2: "Baju: Kemeja Putih", celana2: "Celana: Rok / Celana Hitam Panjang Dibawah Lutut", sepatu2: "Sepatu: Sepatu Bebas"
   }

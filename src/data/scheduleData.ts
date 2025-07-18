@@ -19,8 +19,6 @@ export const scheduleData = [
     date: "17 Agustus 2025",
     location: "UC Plaza",
     sessions: [
-      "Flag Ceremony",
-      "5 Seminars",
       "Opening Ceremony",
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
@@ -33,7 +31,7 @@ export const scheduleData = [
     date: "19-21 Agustus 2025",
     location: "Universitas Ciputra Surabaya",
     sessions: [
-      "Jadwal mengikuti Program Studi masing masing"
+      ""
     ],
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""

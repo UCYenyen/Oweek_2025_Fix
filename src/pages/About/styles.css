@@ -532,7 +532,7 @@
   .about-main-content {
       top: 0vh;
     width: auto;
-    height: 90vh;
+    height: 100vh;
     }
 
     .about-container .pillar-left,
@@ -593,7 +593,7 @@
   
   .mascot-container {
     width: auto;
-    height: 150vh;
+    height: 175vh;
     top: -0vh;
   }
 
@@ -672,6 +672,7 @@
     z-index: 1;
   }
 }
+
 @media (max-width: 1366px) and (max-height: 1024px) {
   .mobile-about-bg {
   display: none; 

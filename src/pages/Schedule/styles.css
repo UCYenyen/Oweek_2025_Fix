@@ -2794,7 +2794,7 @@
     font-size: 0.8rem;
   }
   .button-dresscode{
-    width: 4rem;
+    min-width: 4rem;
     height: auto;
   }
   .button-left{
@@ -2829,14 +2829,10 @@
     width: 12rem;
   }
     .schedule-button-group {
-    gap: 1rem;
-  }
-  .penugasan{
-    margin-left: 2rem;
-  }
-  .ketentuan{
-    margin-right: 2rem;
-  }
+      margin: auto;
+      justify-content: center;
+    }
+
     .schedule-item-title{
     font-size: 1rem;
     margin-bottom: 0rem;

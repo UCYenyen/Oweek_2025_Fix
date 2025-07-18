@@ -133,7 +133,23 @@
         height: auto;
     }
 }
-
+@media(max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+    .luminate-logo{
+        width: 12.5%;
+    }
+    .uc-navbar-logo{
+        width: 13%;
+        height: auto;
+    }
+    .leaves-left, .leaves-right {
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+    .button-navbar, .button-navbar-selected {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.2em;
+    }
+}
 @media(max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
     .luminate-logo{
         width: 15.5%;
@@ -157,6 +173,23 @@
         font-size: 1.2em;
     }
 }
+@media(max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+    .luminate-logo{
+        width: 12.5%;
+    }
+    .uc-navbar-logo{
+        width: 13%;
+        height: auto;
+    }
+    .leaves-left, .leaves-right {
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+    .button-navbar, .button-navbar-selected {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.2em;
+    }
+}
 @media(max-width: 1024px) and (max-height: 600px) {
     .luminate-logo{
         width: 12.5%;
@@ -174,12 +207,58 @@
         font-size: 1.2rem;
     }
 }
+@media(max-width: 932px) and (max-height: 430px) and (orientation: landscape){
+    .luminate-logo{
+        width: 24.5%;
+    }
+    .uc-navbar-logo{
+        width: 25%;
+        height: auto;
+    }
+    .leaves-left, .leaves-right {
+        width: 15rem;
+        height: 15rem;
+    }
+    .leaves-left{
+        left: -1rem;
+    }
+    .leaves-right{
+        right: -1rem;
+    }
+    .button-navbar, .button-navbar-selected {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.35em;
+    }
+}
 @media(max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
     .luminate-logo{
         width: 25.5%;
     }
     .uc-navbar-logo{
         width: 26%;
+        height: auto;
+    }
+    .leaves-left, .leaves-right {
+        width: 15rem;
+        height: 15rem;
+    }
+    .leaves-left{
+        left: -1rem;
+    }
+    .leaves-right{
+        right: -1rem;
+    }
+    .button-navbar, .button-navbar-selected {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.35em;
+    }
+}
+@media(max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+    .luminate-logo{
+        width: 24.5%;
+    }
+    .uc-navbar-logo{
+        width: 25%;
         height: auto;
     }
     .leaves-left, .leaves-right {
@@ -266,9 +345,61 @@
         font-size: 1.2em;
     }
 }
+@media(max-width: 740px) and (max-height: 360px) and (orientation: landscape) {
+    .luminate-logo{
+        width: 8%;
+    }
+    .uc-navbar-logo{
+        width: 8.5%;
+        height: auto;
+    }
+    .leaves-left, .leaves-right {
+        width: 10rem;
+        height: 10rem;
+        top:-2.5rem;
+    }
+    .leaves-left{
+        left: -1rem;
+    }
+    .leaves-right{
+        right: -1rem;
+    }
+    .button-navbar, .button-navbar-selected {
+        padding: 0.25rem 1rem;
+        font-size: 1.2em;
+    }
+}
 @media(max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
     .luminate-logo{
-        width: 80%;
+        width: 8.5%;
+    }
+    .uc-navbar-logo{
+        width: 8%;
+        height: auto;
+    }
+    .leaves-left, .leaves-right {
+        width: 10rem;
+        height: 10rem;
+        top:-2.5rem;
+    }
+    .leaves-left{
+        left: -1rem;
+    }
+    .leaves-right{
+        right: -1rem;
+    }
+    .button-navbar, .button-navbar-selected {
+        padding: 0.25rem 1rem;
+        font-size: 1.2em;
+    }
+}
+@media(max-width: 667px) and (max-height: 375px) and (orientation: landscape){
+    .luminate-logo{
+        width: 9%;
+    }
+    .uc-navbar-logo{
+        width: 9.5%;
+        height: auto;
     }
     .leaves-left, .leaves-right {
         width: 10rem;

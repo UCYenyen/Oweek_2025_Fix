@@ -14,7 +14,7 @@
 }
 
 .schedule-card {
-  border: 8px solid transparent;
+  border: 6px solid transparent;
   background-image: linear-gradient(
       180deg,
       var(--countdown-card),
@@ -25,6 +25,7 @@
   background-clip: padding-box, border-box;
   background-blend-mode: screen;
   opacity: 100%;
+  padding: 1rem;
 }
 .button-font {
   font-family: var(--main-font);
@@ -1770,7 +1771,7 @@
     margin: 1rem;
   }
     .button-dresscode{
-    width: 4rem;
+    width: 20rem;
     height: auto;
   }
   .schedule-wrapper {
@@ -1795,8 +1796,8 @@
     width: 20rem;
   }
     .schedule-button-group {
-    gap: 10%;
-  }
+      margin: auto;
+      justify-content: center;  }
     .schedule-item-title{
     font-size: 1.5rem;
     margin-bottom: 0.4rem;
@@ -2899,14 +2900,14 @@
     margin-right: 4rem;
   }
   .schedule-wrapper {
-    padding-bottom: 9rem;
+    padding-bottom: 8rem;
   }
   .title-owik {
     font-size: 2.4rem;
     margin-top: 5%;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
     .title-img{
     width: 20rem;
@@ -2986,14 +2987,14 @@
     margin-right: 4rem;
   }
   .schedule-wrapper {
-    padding-bottom: 9rem;
+    padding-bottom: 7rem;
   }
   .title-owik {
     font-size: 2rem;
     margin-top: 5%;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    padding-top: 5rem;
+    padding-top: 7rem;
   }
     .title-img{
     width: 20rem;
@@ -3252,14 +3253,14 @@
     margin-right: 4rem;
   }
   .schedule-wrapper {
-    padding-bottom: 7rem;
+    padding-bottom: 5.5rem;
   }
   .title-owik {
     font-size: 2rem;
     margin-top: 5%;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
   }
     .title-img{
     width: 15rem;
@@ -3341,14 +3342,14 @@
     margin-right: 4rem;
   }
   .schedule-wrapper {
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
   }
   .title-owik {
     font-size: 1.8rem;
     margin-top: 5%;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    padding-top: 5rem;
+    padding-top: 7rem;
   }
     .title-img{
     width: 15rem;

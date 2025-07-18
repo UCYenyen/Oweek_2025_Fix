@@ -15,7 +15,7 @@ export default function Schedule() {
     gsap.to(scheduleContentRef.current, {
       xPercent: -100,
       autoAlpha: 0,
-      duration: 0.4,
+      duration: 0.2,
       ease: 'power2.in',
       onComplete: () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % scheduleData.length);
@@ -28,7 +28,7 @@ export default function Schedule() {
     gsap.to(scheduleContentRef.current, {
       xPercent: 100,
       autoAlpha: 0,
-      duration: 0.4,
+      duration: 0.2,
       ease: 'power2.in',
       onComplete: () => {
         setCurrentIndex(
@@ -43,7 +43,7 @@ export default function Schedule() {
     if (scheduleContentRef.current) {
       gsap.fromTo(scheduleContentRef.current, 
         { xPercent: 100 * directionRef.current, autoAlpha: 0 },
-        { xPercent: 0, autoAlpha: 1, duration: 0.4, ease: 'power2.out' }
+        { xPercent: 0, autoAlpha: 1, duration: 0.2, ease: 'power2.out' }
       );
     }
   }, [currentIndex]);

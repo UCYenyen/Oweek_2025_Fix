@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import "./../styles/popUpPanel.css";
 
 type PopUpPanelProps = {
@@ -13,17 +15,89 @@ export default function PopUpPanel({
   popupType,
   setPopupType,
 }: PopUpPanelProps) {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isHidden && wrapperRef.current && overlayRef.current) {
+      // Set initial state for overlay
+      gsap.set(overlayRef.current, {
+        autoAlpha: 0
+      });
+      
+      // Set initial state for wrapper
+      gsap.set(wrapperRef.current, {
+        scale: 0.3,
+        rotation: 0,
+        y: -50,
+        autoAlpha: 0
+      });
+
+      // Create the pop animation
+      const tl = gsap.timeline();
+      
+      // Animate overlay first
+      tl.to(overlayRef.current, {
+        autoAlpha: 1,
+        duration: 0.3,
+        ease: "power2.out"
+      })
+      // Then animate the wrapper with pop effect
+      .to(wrapperRef.current, {
+        scale: 1,
+        rotation: 0,
+        y: 0,
+        autoAlpha: 1,
+        duration: 0.6,
+        ease: "elastic.out(1, 0.5)"
+      }, "<0.1");
+    }
+  }, [isHidden, popupType]);
+
   if (isHidden) return null;
 
   const handleClose = () => {
-    setIsHidden(true);
-    setPopupType('dresscode');
+    if (wrapperRef.current && overlayRef.current) {
+      // Animate out before closing
+      const tl = gsap.timeline({
+        onComplete: () => {
+          setIsHidden(true);
+          setPopupType('dresscode');
+        }
+      });
+      
+      tl.to(wrapperRef.current, {
+        scale: 0.8,
+        rotation: 0,
+        y: -20,
+        autoAlpha: 0,
+        duration: 0.3,
+        ease: "power2.in"
+      })
+      .to(overlayRef.current, {
+        autoAlpha: 0,
+        duration: 0.2,
+        ease: "power2.in"
+      }, "<0.1");
+    } else {
+      setIsHidden(true);
+      setPopupType('dresscode');
+    }
   };
 
   return (
-    <div className="main-container fixed inset-0 flex items-center justify-center z-10 bg-[#715c20]/25">
+    <div className="main-container fixed inset-0 flex items-center justify-center z-10">
+      {/* Animated overlay */}
+      <div 
+        ref={overlayRef}
+        className="absolute inset-0 bg-[#715c20]/25"
+      />
+      
       {popupType === 'dresscode' ? (
-        <div className="wrapper-container relative border-y-[#FFE18B] border-x-[#FFD462] border-8 flex flex-col justify-between z-20 bg-gradient-to-b from-[#FFEFB9] to-[#FFFFFE] rounded-lg min-w-[45vw] max-w-[45vw] min-h-auto">
+        <div 
+          ref={wrapperRef}
+          className="wrapper-container relative border-y-[#FFE18B] border-x-[#FFD462] border-8 flex flex-col justify-between z-20 bg-gradient-to-b from-[#FFEFB9] to-[#FFFFFE] rounded-lg min-w-[45vw] max-w-[45vw] min-h-auto"
+        >
             <img src="/elements/schedule/border.svg" className="w-full h-auto" alt="" />
             <div className="content-wrapper p-8 w-full h-full flex gap-4 flex-col justify-start items-center">
                 <h2 className="content-category-text text-6xl text-center font-bold font-lettertype text-transparent bg-gradient-to-r from-[#3F61AD] to-[#75ABDC] bg-clip-text">
@@ -64,7 +138,10 @@ export default function PopUpPanel({
             </button>
         </div>
       ) : popupType === 'penugasan' ? (
-         <div className="wrapper-container relative border-y-[#FFE18B] border-x-[#FFD462] border-8 flex flex-col justify-between z-20 bg-gradient-to-b from-[#FFEFB9] to-[#FFFFFE] rounded-lg min-w-[45vw] max-w-[45vw] min-h-auto">
+         <div 
+           ref={wrapperRef}
+           className="wrapper-container relative border-y-[#FFE18B] border-x-[#FFD462] border-8 flex flex-col justify-between z-20 bg-gradient-to-b from-[#FFEFB9] to-[#FFFFFE] rounded-lg min-w-[45vw] max-w-[45vw] min-h-auto"
+         >
             <img src="/elements/schedule/border.svg" className="w-full h-auto" alt="" />
             <div className="content-wrapper p-8 w-full h-full flex gap-4 flex-col justify-start items-center">
                 <h2 className="content-category-text text-6xl text-center font-bold font-lettertype text-transparent bg-gradient-to-r from-[#3F61AD] to-[#75ABDC] bg-clip-text">
@@ -89,15 +166,18 @@ export default function PopUpPanel({
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-[80%] h-[80%] bg-gradient-to-r from-[#FFF0BC] via-[#FFF7DC] to-[#FFFEFA] rounded-full shadow-lg relative flex justify-center items-center">
                 <div className="relative rounded-full w-full h-full flex justify-center items-center">
-                  <div className="absolute w-[80%] rotate-45 h-2 bg-gradient-to-r from-[#3D65BB] via-[#69B2FD] to-[#A9D1F3] rounded-full transition-colors duration-300 group-hover:from-[#C44401] group-hover:via-[#C44401] group-hover:to-[#C44401]"></div>
-                  <div className="absolute w-[80%] -rotate-45 h-2 bg-gradient-to-r from-[#3D65BB] via-[#69B2FD] to-[#A9D1F3] rounded-full transition-colors duration-300 group-hover:from-[#C44401] group-hover:via-[#C44401] group-hover:to-[#C44401]"></div>
+                  <div className="absolute w-[80%] rotate-45 h-2 bg-gradient-to-r from-[#3D65BB] via-[#69B2FD] to-[#A9D1F3] rounded-full transition-colors duration-300 group-hover:from-[#C44401] group_hover:via-[#C44401] group-hover:to-[#C44401]"></div>
+                  <div className="absolute w-[80%] -rotate-45 h-2 bg-gradient-to-r from-[#3D65BB] via-[#69B2FD] to-[#A9D1F3] rounded-full transition-colors duration-300 group-hover:from-[#C44401] group_hover:via-[#C44401] group-hover:to-[#C44401]"></div>
                 </div>
               </div>
             </div>
             </button>
         </div>
       ) : (
-         <div className="wrapper-container relative border-y-[#FFE18B] border-x-[#FFD462] border-8 flex flex-col justify-between z-20 bg-gradient-to-b from-[#FFEFB9] to-[#FFFFFE] rounded-lg min-w-[45vw] max-w-[45vw] min-h-auto">
+         <div 
+           ref={wrapperRef}
+           className="wrapper-container relative border-y-[#FFE18B] border-x-[#FFD462] border-8 flex flex-col justify-between z-20 bg-gradient-to-b from-[#FFEFB9] to-[#FFFFFE] rounded-lg min-w-[45vw] max-w-[45vw] min-h-auto"
+         >
             <img src="/elements/schedule/border.svg" className="w-full h-auto" alt="" />
             <div className="content-wrapper p-8 w-full h-full flex gap-4 flex-col justify-start items-center">
                 <h2 className="content-category-text text-6xl text-center font-bold font-lettertype text-transparent bg-gradient-to-r from-[#3F61AD] to-[#75ABDC] bg-clip-text">
@@ -122,7 +202,7 @@ export default function PopUpPanel({
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-[80%] h-[80%] bg-gradient-to-r from-[#FFF0BC] via-[#FFF7DC] to-[#FFFEFA] rounded-full shadow-lg relative flex justify-center items-center">
                 <div className="relative rounded-full w-full h-full flex justify-center items-center">
-                  <div className="absolute w-[80%] rotate-45 h-2 bg-gradient-to-r from-[#3D65BB] via-[#69B2FD] to-[#A9D1F3] rounded-full transition-colors duration-300 group-hover:from-[#C44401] group-hover:via-[#C44401] group-hover:to-[#C44401]"></div>
+                  <div className="absolute w-[80%] rotate-45 h-2 bg-gradient-to-r from-[#3D65BB] via-[#69B2FD] to-[#A9D1F3] rounded-full transition-colors duration-300 group-hover:from-[#C44401] group_hover:via-[#C44401] group-hover:to-[#C44401]"></div>
                   <div className="absolute w-[80%] -rotate-45 h-2 bg-gradient-to-r from-[#3D65BB] via-[#69B2FD] to-[#A9D1F3] rounded-full transition-colors duration-300 group-hover:from-[#C44401] group_hover:via-[#C44401] group-hover:to-[#C44401]"></div>
                 </div>
               </div>

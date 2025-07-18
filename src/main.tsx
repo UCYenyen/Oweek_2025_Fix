@@ -1,14 +1,3 @@
-// Force light mode for Samsung Browser - Add this at the very top of main.tsx
-if (typeof window !== 'undefined') {
-  // Force light mode styles
-  document.documentElement.style.setProperty('color-scheme', 'light only', 'important');
-  document.documentElement.style.setProperty('-webkit-color-scheme', 'light only', 'important');
-  document.body.style.setProperty('color-scheme', 'light only', 'important');
-  document.body.style.setProperty('-webkit-color-scheme', 'light only', 'important');
-  document.body.style.setProperty('background-color', '#e7bc68', 'important');
-  document.body.style.setProperty('filter', 'none', 'important');
-}
-
 import { StrictMode, lazy, Suspense, useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import { HashRouter, Routes, Route, useLocation } from "react-router-dom";

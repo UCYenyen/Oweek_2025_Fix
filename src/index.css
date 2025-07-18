@@ -2,59 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-/* SAMSUNG BROWSER DARK MODE FIX - Must be at the top */
-html {
+/* filepath: src/index.csssdd */
+/* filepath: src/index.csssdd */
+/* Force light mode and prevent Samsung Browser dark mode */
+:root {
   color-scheme: light only !important;
   -webkit-color-scheme: light only !important;
-  background-color: #e7bc68 !important;
 }
 
-body {
+html, body {
   color-scheme: light only !important;
   -webkit-color-scheme: light only !important;
   background-color: #e7bc68 !important;
   filter: none !important;
 }
 
-/* Prevent Samsung Browser from inverting ANY colors */
-*, *::before, *::after {
-  color-scheme: light only !important;
-  -webkit-color-scheme: light only !important;
-  filter: none !important;
-}
-
-/* Force override Samsung Browser's dark mode detection */
+/* Override dark mode media queries */
 @media (prefers-color-scheme: dark) {
-  html, body {
+  :root {
     color-scheme: light only !important;
     -webkit-color-scheme: light only !important;
     background-color: #e7bc68 !important;
-    filter: none !important;
   }
   
-  *, *::before, *::after {
+  html, body {
     color-scheme: light only !important;
     -webkit-color-scheme: light only !important;
+    background-color: #e7bc68 !important;
     filter: none !important;
   }
 }
 
-/* Samsung Internet Browser specific override */
+/* Samsung Browser specific fixes */
 @supports (-webkit-appearance: none) {
-  html, body {
+  :root {
     color-scheme: light only !important;
     -webkit-color-scheme: light only !important;
-    background-color: #e7bc68 !important;
-    filter: none !important;
   }
-}
-
-/* Additional Samsung Browser media query override */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  
   html, body {
+    background-color: #e7bc68 !important;
     color-scheme: light only !important;
     -webkit-color-scheme: light only !important;
-    background-color: #e7bc68 !important;
     filter: none !important;
   }
 }

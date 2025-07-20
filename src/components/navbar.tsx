@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="left-logo-wrapper w-full h-full flex gap-4 items-center justify-start">
             <img
               className="uc-navbar-logo w-auto h-auto"
-              src="/elements/icons/logo-uc-color.png"
+              src="/elements/icons/logo-uc.png"
               alt=""
             />
             <img

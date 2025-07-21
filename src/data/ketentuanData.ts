@@ -58,7 +58,7 @@ const ketentuanData = [
     events: [
       {
         title: "MARTIKULASI JURUSAN",
-        rules: ["jadwal matrikulasi mengikuti jadwal program studi masing masing"],
+        rules: ["Jadwal matrikulasi mengikuti jadwal program studi masing masing"],
       },
     ]
   },

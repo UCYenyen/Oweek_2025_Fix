@@ -206,6 +206,9 @@
     .star{
     width: 100rem;
   }
+  .text-icon-container{
+    align-items: start;
+  }
 }
 @media (max-width: 2560px) and (max-height: 1600px) {
   .schedule-card {
@@ -281,6 +284,9 @@
     .star{
     width: 100rem;
   }
+  .text-icon-container{
+    align-items: start;
+  }
 }
 @media (max-width: 2560px) and (max-height: 1140px) {
   .schedule-card {
@@ -355,6 +361,9 @@
   }
     .star{
     width: 100rem;
+  }
+  .text-icon-container{
+    align-items: start;
   }
 }
 @media (max-width: 1920px) and (max-height: 1080px) {
@@ -434,6 +443,9 @@
   .schedule-button-group {
     gap: 1rem;
   }
+  .text-icon-container{
+    align-items: start;
+  }
 }
 @media (max-width: 1900px) and (max-height: 1200px) {
   .schedule-card {
@@ -511,6 +523,9 @@
   }
   .schedule-button-group {
     gap: 1rem;
+  }
+  .text-icon-container{
+    align-items: start;
   }
 }
 @media (max-width: 1728px) and (max-height: 1117px) {
@@ -591,6 +606,9 @@
   .schedule-button-group {
     gap: 1rem;
   }
+  .text-icon-container{
+    align-items: start;
+  }
 }
 @media (max-width: 1536px) and (max-height: 960px) {
   .schedule-card {
@@ -669,6 +687,9 @@
   }
   .schedule-button-group {
     gap: 1rem;
+  }
+  .text-icon-container{
+    align-items: start;
   }
 }
 @media (max-width: 1536px) and (max-height: 982px) and (min-height: 981px) {
@@ -749,6 +770,9 @@
   .schedule-button-group {
     gap: 1rem;
   }
+  .text-icon-container{
+    align-items: start;
+  }
 }
 @media (min-width: 1367px) and (max-width: 1512px) and (max-height: 982px) {
 .schedule-card {
@@ -826,6 +850,9 @@
   }
   .schedule-button-group {
     gap: 1rem;
+  }
+  .text-icon-container{
+    align-items: start;
   }
 }
 @media (max-width: 1425px) and (max-height: 900px) {
@@ -908,6 +935,9 @@
   .schedule-button-group {
     gap: 1rem;
   }
+  .text-icon-container{
+    align-items: start;
+  }
 }
 @media (max-width: 1366px) and (max-height: 1024px) and (orientation: landscape) {
 .schedule-card {
@@ -986,6 +1016,9 @@
   }
   .schedule-button-group {
     gap: 1rem;
+  }
+  .text-icon-container{
+    align-items: start;
   }
 }
 @media (max-width: 1366px) and (max-height: 768px) {
@@ -1066,6 +1099,9 @@
   .schedule-button-group {
     gap: 1rem;
   }
+  .text-icon-container{
+    align-items: start;
+  }
 }
 @media (max-width: 1280px) and (max-height: 853px) {
   .schedule-card {
@@ -1145,6 +1181,9 @@
   .schedule-button-group {
     width: 68%;
     gap: 1rem;
+  }
+  .text-icon-container{
+    align-items: start;
   }
 }
 @media (max-width: 1280px) and (max-height: 570px) {
@@ -1230,6 +1269,9 @@
       justify-content: center;
 
   }
+  .text-icon-container{
+    align-items: start;
+  }
 }
 @media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
   .schedule-title-img{
@@ -1300,6 +1342,9 @@
   }
       .star{
     width: 50rem;
+  }
+  .text-icon-container{
+    align-items: start;
   }
 }
 @media (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
@@ -1379,6 +1424,9 @@
   }
   .schedule-button-group {
     gap: 1rem;
+  }
+  .text-icon-container{
+    align-items: start;
   }
 }
 @media (max-width: 1024px) and (max-height: 600px) {
@@ -1466,6 +1514,9 @@
   }
   .pillar-right-schedule{
     right: -3rem;
+  }
+  .text-icon-container{
+    align-items: start;
   }
 }
 @media (max-width: 960px) and (max-height: 540px) {
@@ -2944,6 +2995,12 @@
   }
       .star{
     width: 50rem;
+  }
+  .text-icon-container{
+    align-items: center;
+  }
+  .icon{
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {

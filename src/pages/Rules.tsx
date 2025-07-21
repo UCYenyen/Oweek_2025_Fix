@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import rules from "../data/rules";
 import "../styles/Rules.css";
+import { useRulesAnimations } from "../hooks/useRulesAnimation";
 
 export default function Rules() {
   const datas = rules;
@@ -31,6 +32,8 @@ export default function Rules() {
   const dropdownContentRef = useRef<HTMLDivElement>(null);
   const dropdownScrollbarRef = useRef<HTMLDivElement>(null);
   const dropdownThumbRef = useRef<HTMLDivElement>(null);
+
+  const { sunRef, backgroundRef } = useRulesAnimations();
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -196,9 +199,9 @@ export default function Rules() {
   };
 
   return (
-    <div className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")]'>
+    <div ref={backgroundRef} className='relative w-screen bg-[#B2D5F1] bg-cover bg-[url("/elements/real-background.svg")]'>
       <div className="relative w-screen flex items-center justify-center">
-        <img src="/elements/section/sun-rules.svg" loading="lazy" className="sun-rules w-full absolute -bottom-1/2" alt="" />
+        <img ref={sunRef} src="/elements/section/sun-rules.svg" loading="lazy" className="sun-rules w-full absolute -bottom-1/2" alt="" />
         <img
           src="/elements/section/pillar-left.svg"
           className="pillar-left w-[20%] absolute left-0 -top-2"

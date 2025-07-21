@@ -5,7 +5,19 @@ const ketentuanData = [
       {
         title: "Pra-Oweek",
         rules: [
-            "Belum ada ketentuan khusus untuk Pra-Oweek.",
+            "Kegiatan Pra O-WEEK akan dibagi menjadi kloter 1 dan 2.",
+            "Trainee WAJIB mengikuti kegiatan Pra O-Week yang diselenggarakan secara ONLINE via Zoom.",
+            "Trainee WAJIB memperhatikan segala informasi dan materi yang disampaikan selama kegiatan Pra - Oweek untuk mengerjakan tes yang akan diberikan.",
+            "Trainee WAJIB mengerjakan tes Mental Health Assessment, Mental Health Course, Student Development Assessment, Career Interest Assessment, dan membuat Linkedin",
+        ],
+      },
+      {
+        title: "Ketentuan Zoom",
+        rules: [
+            "Trainee WAJIB hadir 15 menit sebelum kegiatan dimulai.",
+            "Setiap trainee yang join WAJIB rename dengan FORMAT sebagai berikut: (no kelompok) - (nama kelompok) - (nama lengkap)",
+            "Trainee WAJIB menggunakan pakaian yang sopan dan rapi.",
+            "Trainee WAJIB menyalakan kamera (on camera) sepanjang kegiatan berlangsung.",
         ],
       },
     ],
@@ -16,39 +28,50 @@ const ketentuanData = [
       {
         title: "INDEPENDENCE DAY CEREMONY",
         rules: [
-          "Wajib Hadir Secara Offline",
-          "Waktu Regis:   06:30 - 07:15",
-          "Waktu Selesai: 08:35 - 09:20",
-
+          "Kegiatan Upacara 17 Agustus dan Opening Ceremony hanya boleh diikuti oleh Trainee.",
+          "Trainee WAJIB mengikuti keseluruhan kegiatan secara OFFLINE di Universitas Ciputra.",
+          "Trainee wajib membawa dan menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
+          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu.",
         ],
       },
       {
-        title: "Opening Ceremony",
+        title: "Ketentuan Parkir",
         rules: [
-          "Wajib Hadir Secara Offline",
-          "Opening (07:00 - 9:43)",
-          "Ignite Beyond Limits",
-
-        ],
-      },
-      {
-        title: "5 Seminars Online",
-        rules: [
-          "Setiap kelompok diharapkan membagi anggotanya ke berbagai topik seminar yang tersedia: ",
-          "Social Media dan Financial Report",
+          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
+          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
+          "Trainee yang membawa mobil wajib membawa dan memiliki SIM.",
+          "Trainee yang membawa motor dihimbau untuk memarkirkan kendaraan di area PARKIRAN MOTOR Universitas Ciputra.",
+          "Trainee yang membawa mobil dihimbau untuk memarkirkan kendaraan di area PARKIRAN LAPANGAN Universitas Ciputra.",
         ],
       },
       {
         title: "5 Seminars Offline",
         rules: [
-          "Setiap kelompok diharapkan membagi anggotanya ke berbagai topik seminar yang tersedia: ",
-          "Hygiene & Safety, BMC, dan Ethics.",
+          "Trainee akan mendapatkan materi: Hygiene & Safety, BMC, dan Ethics. ",
+          "Trainee WAJIB terbagi secara rata ke dalam 5 seminar dengan materi yang berbeda-beda.",
+          "Trainee WAJIB mengikuti kegiatan seminar sesuai dengan materi yang telah didapatkan.",
+          "Trainee WAJIB membawa dan menggunakan Name Tag Trainee yang telah dicetak dan dimasukkan ke dalam lanyard.",
+          "Dresscode: Kemeja putih, celana panjang hitam berbahan kain (tidak sobek & tidak ketat), sepatu.",
         ],
       },
       {
-        title: "TM Selling Day",
+        title: "5 Seminars Online",
         rules: [
-          "Dilaksanakan Secara Offline 13.50 - 17.00 ",
+          "Trainee akan mendapatkan materi: Social Media dan Financial Report",
+          "Trainee WAJIB terbagi secara rata ke dalam 5 Seminar dengan materi yang berbeda-beda",
+          "Trainee WAJIB mengikuti kegiatan 5 Seminar sesuai dengan materi yang didapatkan",
+          "Trainee WAJIB hadir tepat waktu pada zoom meeting",
+          "Trainee WAJIB ON CAM saat melakukan zoom meeting ",
+          "Trainee WAJIB  menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
+          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu",
+        ],
+      },
+      {
+        title: "TECHNICAL MEETING SELLING DAY",
+        rules: [
+          "Setiap kelompok WAJIB datang yang diwakilkan oleh 2 perwakilan trainee.",
+          "Diusahakan perwakilan trainee adalah trainee yang memahami dan dapat mengoperasikan google sheets.",
+          "Setiap trainee WAJIB berpakaian sopan, rapi, bersepatu, dan menggunakan celana panjang.",
         ],
       },
     ],

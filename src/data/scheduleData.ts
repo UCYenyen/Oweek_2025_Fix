@@ -5,7 +5,7 @@ export const scheduleData = [
     day: "PRA-OWEEK",
     title: "PRA-OWEEK",
     date: "16 Agustus 2025",
-    location: "Zoom Meeting",
+    location: "Online (Zoom)",
     sessions: [
       "",
     ],

@@ -15,7 +15,7 @@ export default function Footer(){
                 <img className="luminate-footer-logo flex w-[5rem] sm:w-fit" src="/elements/icons/luminate-logo-text.png" alt="" />
                 <div className="overflow-hidden">
                     <h1 className="text-footer text-white text-[12px] sm:text-2xl font-bold">Contact person: </h1>
-                    <h1 className="text-footer text-white text-[12px] sm:text-2xl font-bold">ID Line @829hzswf  </h1>
+                    <h1 className="text-footer text-white text-[12px] sm:text-2xl font-bold">Line CP: @829hzswf  </h1>
                 </div>
             </div>
         </footer>

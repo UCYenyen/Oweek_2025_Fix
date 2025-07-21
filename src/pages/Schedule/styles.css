@@ -1240,10 +1240,10 @@
     width: 90%;
     margin-bottom: -4rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -2rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -2rem;
   }
   .schedule-card {
@@ -1461,10 +1461,10 @@
     gap: 1rem;
     width: 62%;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
 }
@@ -1551,10 +1551,10 @@
   .schedule-button-group {
     gap: 1rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
 }
@@ -1636,10 +1636,10 @@
   .schedule-button-group {
     gap: 1rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
 }
@@ -1721,10 +1721,10 @@
   .schedule-button-group {
     gap: 1rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
 }
@@ -1737,10 +1737,10 @@
     width: 90%;
     margin-bottom: -4rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -2rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -2rem;
   }
   .schedule-card {
@@ -1895,10 +1895,10 @@
   .schedule-button-group {
     gap: 1rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
 }
@@ -1980,10 +1980,10 @@
   .schedule-button-group {
     gap: 1rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
 }
@@ -1996,10 +1996,10 @@
     width: 90%;
     margin-bottom: -4rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -2rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -2rem;
   }
   .schedule-card {
@@ -2154,10 +2154,10 @@
   .schedule-button-group {
     gap: 1rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
 }
@@ -2172,10 +2172,10 @@
     width: 100%;
     margin-bottom: -4rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -2rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -2rem;
   }
   .schedule-card {
@@ -2329,10 +2329,10 @@
   .schedule-button-group {
     gap: 1rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
 }
@@ -2345,10 +2345,10 @@
     width: 100%;
     margin-bottom: -4rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -2rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -2rem;
   }
   .schedule-card {
@@ -2503,10 +2503,10 @@
   .schedule-button-group {
     gap: 1rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
 }
@@ -2519,10 +2519,10 @@
     width: 100%;
     margin-bottom: -4rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -5rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -5rem;
   }
   .schedule-card {
@@ -2677,10 +2677,10 @@
   .schedule-button-group {
     gap: 1rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
 }
@@ -2693,10 +2693,10 @@
     width: 100%;
     margin-bottom: -4rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -5rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -5rem;
   }
   .schedule-card {
@@ -2784,10 +2784,10 @@
     height: auto;
     margin-bottom: -0rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
   .schedule-card {
@@ -2807,7 +2807,7 @@
   .button-left{
     width: 2rem;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   .button-right{
     width: 2rem;
@@ -2869,10 +2869,10 @@
     height: auto;
     margin-bottom: -0rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
   .schedule-card {
@@ -2892,7 +2892,7 @@
   .button-left{
     width: 2rem;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   .button-right{
     width: 2rem;
@@ -2956,10 +2956,10 @@
     height: auto;
     margin-bottom: -0rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
   .schedule-card {
@@ -2979,7 +2979,7 @@
   .button-left{
     width: 2rem;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   .button-right{
     width: 2rem;
@@ -3043,10 +3043,10 @@
     height: auto;
     margin-bottom: -0rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
   .schedule-card {
@@ -3066,7 +3066,7 @@
   .button-left{
     width: 2rem;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   .button-right{
     width: 2rem;
@@ -3132,10 +3132,10 @@
     height: auto;
     margin-bottom: -0rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
   .schedule-card {
@@ -3155,7 +3155,7 @@
   .button-left{
     width: 2rem;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   .button-right{
     width: 2rem;
@@ -3222,10 +3222,10 @@
     height: auto;
     margin-bottom: -0rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
   .schedule-card {
@@ -3245,7 +3245,7 @@
   .button-left{
     width: 2rem;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   .button-right{
     width: 2rem;
@@ -3311,10 +3311,10 @@
     height: auto;
     margin-bottom: -0rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
   .schedule-card {
@@ -3334,7 +3334,7 @@
   .button-left{
     width: 2rem;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   .button-right{
     width: 2rem;
@@ -3398,10 +3398,10 @@
     height: auto;
     margin-bottom: -0rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
   .schedule-card {
@@ -3421,7 +3421,7 @@
   .button-left{
     width: 2rem;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   .button-right{
     width: 2rem;
@@ -3488,10 +3488,10 @@
     height: auto;
     margin-bottom: -0rem;
   }
-  .pillar-left{
+  .pillar-left-schedule{
     left: -3rem;
   }
-  .pillar-right{
+  .pillar-right-schedule{
     right: -3rem;
   }
   .schedule-card {
@@ -3511,7 +3511,7 @@
   .button-left{
     width: 2rem;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   .button-right{
     width: 2rem;

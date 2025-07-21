@@ -40,8 +40,8 @@ export default function Schedule() {
   return (
     <div ref={backgroundRef} className="relative flex flex-col items-center justify-center w-screen bg-cover bg-[url('/elements/real-background.svg')] schedule-page-container">
       {/* absolute images here */}
-      <img className="pillar-left absolute left-0 top-0 h-full w-auto z-[5] " src="/elements/schedule/pillar-left.svg" alt="" />
-      <img className="pillar-right absolute right-0 top-0 h-full w-auto z-[5]" src="/elements/schedule/pillar-right.svg" alt="" />
+      <img className="pillar-left-schedule absolute left-0 top-0 h-full w-auto z-[5] " src="/elements/schedule/pillar-left.svg" alt="" />
+      <img className="pillar-right-schedule absolute right-0 top-0 h-full w-auto z-[5]" src="/elements/schedule/pillar-right.svg" alt="" />
       <img src="/elements/schedule/pcbg.png " className="schedule-title-img w-[50%] absolute -bottom-[0rem] z-[6]" alt="" />
       <img src="/elements/schedule/mobg.png " className="schedule-title-img-mb w-[50%] absolute -bottom-[0rem] z-[4]" alt="" />
       <img className="absolute top-0 h-auto w-full z-[2]" src="/elements/schedule/mpillar.png" alt="" />

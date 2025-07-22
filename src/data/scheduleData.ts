@@ -16,12 +16,12 @@ export const scheduleData = [
   {
     id: 1,
     day: "MINGGU",
-    title: "INDEPENDENCE DAY CEREMONY",
+    title: "UPACARA",
     date: "17 Agustus 2025",
-    location: "Universitas Ciputra Surabaya",
+    location: "UC Plaza",
     sessions: [
-      "Upacara",
-      '"Ignite Beyond Limits" Opening',
+      "06.30-08.20 (Upacara Bendera)",
+      '08.20-09:30 (Opening Ceremony)',
       "Seminar 5",
       "TM  Selling Day"
     ],
@@ -31,83 +31,64 @@ export const scheduleData = [
   {
     id: 2,
     day: "SENIN",
-    title: "MATRIKULASI JURUSAN",
-    date: "19-21 Agustus 2025",
-    location: "Universitas Ciputra Surabaya",
+    title: "NEXT GEN VISIONARIES",
+    date: "25 Agustus 2025",
+    location: "Hall Sekolah Ciputra Surabaya, Universitas Ciputra Surabaya",
     sessions: [
-      ""
+      "Talkshow",
+      "Showcase Selling Day"
     ],
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 3,
-    day: "OWEEK 2025",
-    title: "PARENTS GATHERING",
-    date: "22 Agustus 2025",
+    day: "SELASA",
+    title: "SPARK THE PATH",
+    date: "26 Agustus 2025",
     location: "Universitas Ciputra Surabaya",
-    sessions: [ " " ],
+    sessions: ['Prodi Day', 'ORMAWA FEST'],
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 4,
-    day: "OWEEK 2025",
-    title: "DAY 1",
-    date: "25 Agustus 2025",
+    day: "RABU",
+    title: "THE UNCHARTED COMPASS",
+    date: "27 Agustus 2025",
     location: "Universitas Ciputra Surabaya",
-    sessions: [ "Talkshow", "Ormawa Fest" ],
+    sessions: [ "Pra-LDK", "ORMAWA-FEST" ],
     baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 5,
-    day: "OWEEK 2025",
-    title: "DAY 2",
-    date: "26 Agustus 2025",
-    location: "Universitas Ciputra Surabaya",
-    sessions: [ "Prodi Day (7:00 - 16:00)" ],
-    baju: "Baju: Baju Batik Sopan", celana: "Celana: Celana Panjang Bebas", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
+    day: "KAMIS",
+    title: "THE INNER VOYAGE",
+    date: "28 Agustus 2025",
+    location: "Uninversitas Ciputra Surabaya",
+    sessions: [ "Student Development Program" ],
+    baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 6,
-    day: "OWEEK 2025",
-    title: "DAY 3",
-    date: "27 Agustus 2025",
-    location: "Universitas Ciputra Surabaya",
-    sessions: [ "Pra-LDK (7:00 - 15:30)" ],
-    baju: "Sesuai dengan ketentuan masing masing prodi", celana: "", sepatu: "", extra: "",
+    day: "JUMAT",
+    title: "HENOSIS FOOD FOYAGE",
+    date: "29 Agustus 2025",
+    location: "LT. 3 Ciputra World Mall Surabaya",
+    sessions: [ "Selling Day" ],
+    baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 7,
-    day: "OWEEK 2025",
-    title: "DAY 4",
-    date: "28 Agustus 2025",
-    location: "Universitas Ciputra Surabaya",
-    sessions: [ "Student Development Program (7:00 - 11:30)" ],
-    baju: "Baju: Kemeja / Blouse Berkerah", celana: "Celana: Celana Panjang Bebas", sepatu: "Sepatu: Sepatu Bebas", extra: "",
-    baju2: "", celana2: "", sepatu2: ""
-  },
-  {
-    id: 8,
-    day: "OWEEK 2025",
-    title: "DAY 5",
-    date: "29 Agustus 2025",
-    location: "Ciputra World Mall Surabaya",
-    sessions: [ "Selling Day (8:30 - 21:00)" ],
-    baju: "Baju: Kaos Universitas Ciputra Surabaya", celana: "Celana: Celana Panjang", sepatu: "Sepatu: Sepatu Bebas", extra: "",
-    baju2: "", celana2: "", sepatu2: ""
-  },
-  {
-    id: 9,
-    day: "OWEEK 2025",
-    title: "DAY 6",
+    day: "SABTU",
+    title: "FLAME OF TRIUMPH",
     date: "30 Agustus 2025",
-    location: "Ciputra World Mall Surabaya",
-    sessions: [ "Closing Day" ],
-    baju: "Baju: Kemeja Putih", celana: "Celana: Celana Panjang Hitam", sepatu: "Sepatu: Celana Bebas", extra: "Setiap Trainee harus membawa Almameter",
-    baju2: "Baju: Kemeja Putih", celana2: "Celana: Rok / Celana Hitam Panjang Dibawah Lutut", sepatu2: "Sepatu: Sepatu Bebas"
+    location: "Palimanan, Resto and Cafe",
+    sessions: [ "Closing" ],
+    baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
+    baju2: "", celana2: "", sepatu2: ""
   }
 ];

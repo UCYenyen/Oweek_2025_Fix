@@ -72,11 +72,16 @@ export default function Schedule() {
         </button>
 
         <div className="flex flex-col justify-center items-center schedule-card rounded-3xl overflow-hidden">
-          <div className="w-[90%]">
-            <div ref={scheduleContentRef} className="w-full flex flex-col items-center justify-center">
-              <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
-                {currentSchedule.title}
-              </h2>
+          <div className="w-[80%]">
+            <div ref={scheduleContentRef} className="w-full flex gap-4 flex-col items-center justify-center">
+              <div>
+                <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
+                  {currentSchedule.title}
+                </h2>
+                <h2 className="text-xl w-full font-bold text-center text-[#AB6528] font-roboto">
+                  {currentSchedule.day_ke}
+                </h2>
+              </div>
               <div className="flex items-center justify-center">
                 <div className="w-full">
                   {/* Date with aligned icon */}
@@ -84,7 +89,7 @@ export default function Schedule() {
                     <div className="w-8 flex-shrink-0 flex justify-center">
                       <i className="icon text-2xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
                     </div>
-                    <span className="text-xl">{currentSchedule.date}</span>
+                    <span className="text-xl">{currentSchedule.day}, {currentSchedule.date}</span>
                   </div>
 
                   {/* Location with aligned icon */}

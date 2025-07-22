@@ -31,7 +31,7 @@ const ketentuanData = [
           "Kegiatan Upacara 17 Agustus dan Opening Ceremony hanya boleh diikuti oleh Trainee.",
           "Trainee WAJIB mengikuti keseluruhan kegiatan secara OFFLINE di Universitas Ciputra.",
           "Trainee wajib membawa dan menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
-          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu.",
+          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu bebas.",
         ],
       },
       {
@@ -51,7 +51,7 @@ const ketentuanData = [
           "Trainee WAJIB terbagi secara rata ke dalam 5 seminar dengan materi yang berbeda-beda.",
           "Trainee WAJIB mengikuti kegiatan seminar sesuai dengan materi yang telah didapatkan.",
           "Trainee WAJIB membawa dan menggunakan Name Tag Trainee yang telah dicetak dan dimasukkan ke dalam lanyard.",
-          "Dresscode: Kemeja putih, celana panjang hitam berbahan kain (tidak sobek & tidak ketat), sepatu.",
+          "Dresscode: Kemeja putih, celana panjang hitam berbahan kain (tidak sobek & tidak ketat), sepatu bebas.",
         ],
       },
       {
@@ -63,7 +63,7 @@ const ketentuanData = [
           "Trainee WAJIB hadir tepat waktu pada zoom meeting",
           "Trainee WAJIB ON CAM saat melakukan zoom meeting ",
           "Trainee WAJIB  menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
-          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu",
+          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu bebas.",
         ],
       },
       {
@@ -80,9 +80,12 @@ const ketentuanData = [
     dayId: 2,
     events: [
       {
-        title: "MARTIKULASI JURUSAN",
+        title: "Opening Ceremony",
         rules: [
-          "Jadwal matrikulasi mengikuti jadwal program studi masing masing",
+          "Kegiatan Upacara 17 Agustus dan Opening Ceremony hanya boleh diikuti oleh Trainee.",
+          "Trainee WAJIB mengikuti keseluruhan kegiatan secara OFFLINE di Universitas Ciputra.",
+          "Trainee wajib membawa dan menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
+          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu bebas.",
         ],
       },
     ],
@@ -91,8 +94,14 @@ const ketentuanData = [
     dayId: 3,
     events: [
       {
-        title: "PARENTS GATHERING",
-        rules: ["Dilaksanakan secara Offline di Universitas Ciputra Surabaya."],
+        title: "5 Seminars",
+        rules: [
+          "Trainee akan mendapatkan materi: Hygiene & Safety, BMC, dan Ethics, Social Media dan Financial Report",
+          "Trainee WAJIB terbagi secara rata ke dalam 5 seminar dengan materi yang berbeda-beda.",
+          "Trainee WAJIB mengikuti kegiatan seminar sesuai dengan materi yang telah didapatkan.",
+          "Trainee WAJIB membawa dan menggunakan Name Tag Trainee yang telah dicetak dan dimasukkan ke dalam lanyard.",
+          "Dresscode: Kemeja putih, celana panjang hitam berbahan kain (tidak sobek & tidak ketat), sepatu bebas.",
+        ],
       },
     ],
   },
@@ -100,10 +109,23 @@ const ketentuanData = [
     dayId: 4,
     events: [
       {
-        title: "Ketentuan ",
+        title: "TECHNICAL MEETING SELLING DAY",
         rules: [
-          "Trainee diwajibkan untuk menggunakan kemeja Putih + Celana jeans warna gelap (Tidak sobek) + Sepatu sneakers (warna bebas) serta membawa tumblr dan peralatan makan O-Week 2025.",
-          "Dresscode: Kemeja/Blouse Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu",
+          "Setiap kelompok WAJIB datang yang diwakilkan oleh 2 perwakilan trainee.",
+          "Diusahakan perwakilan trainee adalah trainee yang memahami dan dapat mengoperasikan google sheets.",
+          "Setiap trainee WAJIB berpakaian sopan, rapi, bersepatu, dan menggunakan celana panjang.",
+        ],
+      },
+    ],
+  },
+  {
+    dayId: 5,
+    events: [
+      {
+        title: "Ketentuan Day 1",
+        rules: [
+          "Trainee diwajibkan untuk menggunakan kemeja Putih + Celana jeans warna gelap (Tidak sobek) + Sepatu bebas serta membawa tumblr dan peralatan makan O-Week 2025.",
+          "Dresscode: Kemeja/Blouse Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu bebas",
         ],
       },
       {
@@ -116,10 +138,10 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 5,
+    dayId: 6,
     events: [
       {
-        title: "Ketentuan",
+        title: "Ketentuan Day 2",
         rules: ["Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membwa SIM.",
           "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
 
@@ -128,22 +150,10 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 6,
-    events: [
-      {
-        title: "Ketentuan parkir",
-        rules: [
-          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
-          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
-        ],
-      },
-    ],
-  },
-  {
     dayId: 7,
     events: [
       {
-        title: "Ketentuan parkir",
+        title: "Ketentuan parkir Day 3",
         rules: [
           "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
           "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
@@ -155,8 +165,11 @@ const ketentuanData = [
     dayId: 8,
     events: [
       {
-        title: "Day 5",
-        rules: ["Coming Soon!"],
+        title: "Ketentuan parkir Day 4",
+        rules: [
+          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
+          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
+        ],
       },
     ],
   },
@@ -164,8 +177,36 @@ const ketentuanData = [
     dayId: 9,
     events: [
       {
-        title: "Day 6",
-        rules: ["Closing Day", "Coming Soon!"],
+        title: "Ketentuan Day 5",
+        rules: ["Dresscode Selling Day: Trainee diwajibkan untuk menggunakan kaos Universitas Ciputra, celana panjang gelap tidak sobek, name tag, bersepatu (warna bebas) serta membawa tumblr dan peralatan makan O-Week 2025, Atribut/Aksesoris Negara (detail ketentuan menyusul)",
+          "Setiap trainee wajib mengajak minimal 5 orang untuk datang ke Selling Day",
+          "Trainee diwajibkan untuk menggunakan kaos Universitas Ciputra, celana panjang gelap tidak sobek, name tag, bersepatu (warna bebas) serta membawa tumblr dan peralatan makan O-Week 2025.",
+          "Setiap trainee wajib mengajak minimal 5 orang untuk datang ke Selling Day",
+          "Trainee tidak diperbolehkan untuk membawa sepeda motor.",
+          "Trainee dihimbau untuk membawa mobil dengan minimal 4 orang dalam satu mobil.",
+          "Dresscode Loading in (Kamis, 28 Agustus 2025 22.30-01.00): Baju Kaos bebas (tidak crop/sleeveless/tembus pandang), Celana Panjang Gelap (tidak robek dan tidak ketat), Sepatu Sneakers (warna bebas)",
+        ],
+      },
+    ],
+  },
+  {
+    dayId: 10,
+    events: [
+      {
+        title: "Dresscode Day 6",
+        rules: [
+          "Laki-Laki : Kemeja Putih, Celana Panjang Kain Hitam, Sepatu Pantofel Hitam",
+          "Perempuan : Kemeja Putih, Rok Hitam Panjang dibawah lutut, Flat Shoes Hitam",
+          "*Setiap trainee WAJIB membawa jas almamater",
+          "*Setiap trainee DIHIMBAU membawa Topi dan Sunblock",
+        ],
+      },
+      {
+        title: "Ketentuan parkir",
+        rules: [
+          "Trainee tidak diperbolehkan untuk membawa sepeda motor dan mobil ke Venue Palimanan",
+          "Trainee sangat DIHIMBAU untuk melakukan drop-off di Venue Palimanan",
+        ],
       },
     ],
   },

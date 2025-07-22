@@ -205,7 +205,7 @@ export default function PopUpPanel({
                       <h3 className="font-bold text-lg text-[#C44401]">{event.title}</h3>
                       <ul className="list-disc list-inside ml-4">
                         {event.tasks.map((task, taskIdx) => (
-                          <li key={taskIdx} className="content-description text-[#C44401]">
+                          <li key={taskIdx} className="content-description text-[#C44401] break-words">
                             {task}
                           </li>
                         ))}
@@ -255,15 +255,13 @@ export default function PopUpPanel({
                   day.events.map((event, eventIdx) => (
                     <div key={eventIdx}>
                       <h3 className="font-bold text-lg text-[#C44401]">{event.title}</h3>
-                      {"rules" in event && (
-                        <ul className="list-disc list-inside ml-4">
-                          {event.rules.map((rule, ruleIdx) => (
-                            <li key={ruleIdx} className="content-description text-[#C44401]">
-                              {rule}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
+                      <ul className="list-disc list-inside ml-4">
+                        {event.rules.map((rule, ruleIdx) => (
+                          <li key={ruleIdx} className="content-description text-[#C44401] break-words">
+                            {rule}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   ))
                 )}

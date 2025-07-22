@@ -1,5 +1,5 @@
 export const dataDresscode = [
-   {
+  {
     dayId: 0,
     title: "PRA OWEEK",
     pakaian: [
@@ -7,7 +7,6 @@ export const dataDresscode = [
         title: "Coming Soon!",
         items: [""],
       },
-    
     ],
     images: {
       do: "/elements/icons/luminate.svg",
@@ -40,14 +39,13 @@ export const dataDresscode = [
         title: "Coming Soon!",
         items: [""],
       },
-    
     ],
     images: {
       do: "/elements/icons/luminate.svg",
       dont: "/elements/icons/luminate.svg",
     },
   },
-   {
+  {
     dayId: 3,
     title: "PARENTS GATHERING",
     pakaian: [
@@ -55,13 +53,13 @@ export const dataDresscode = [
         title: "Coming Soon!",
         items: [""],
       },
-    
     ],
     images: {
       do: "/elements/icons/luminate.svg",
       dont: "/elements/icons/luminate.svg",
     },
-  }, {
+  },
+  {
     dayId: 4,
     title: "Day 1",
     pakaian: [
@@ -69,14 +67,13 @@ export const dataDresscode = [
         title: "Coming Soon!",
         items: [""],
       },
-    
     ],
     images: {
       do: "/elements/icons/luminate.svg",
       dont: "/elements/icons/luminate.svg",
     },
   },
-   {
+  {
     dayId: 5,
     title: "Day 2",
     pakaian: [
@@ -84,14 +81,13 @@ export const dataDresscode = [
         title: "Coming Soon!",
         items: [""],
       },
-    
     ],
     images: {
       do: "/elements/icons/luminate.svg",
       dont: "/elements/icons/luminate.svg",
     },
   },
-   {
+  {
     dayId: 6,
     title: "Day 3",
     pakaian: [
@@ -99,14 +95,13 @@ export const dataDresscode = [
         title: "Coming Soon!",
         items: [""],
       },
-    
     ],
     images: {
       do: "/elements/icons/luminate.svg",
       dont: "/elements/icons/luminate.svg",
     },
   },
-   {
+  {
     dayId: 7,
     title: "Day 4",
     pakaian: [
@@ -114,14 +109,13 @@ export const dataDresscode = [
         title: "Coming Soon!",
         items: [""],
       },
-    
     ],
     images: {
       do: "/elements/icons/luminate.svg",
       dont: "/elements/icons/luminate.svg",
     },
   },
-   {
+  {
     dayId: 8,
     title: "Day 5",
     pakaian: [
@@ -129,14 +123,13 @@ export const dataDresscode = [
         title: "Coming Soon!",
         items: [""],
       },
-    
     ],
     images: {
       do: "/elements/icons/luminate.svg",
       dont: "/elements/icons/luminate.svg",
     },
   },
-   {
+  {
     dayId: 9,
     title: "Day 6",
     pakaian: [
@@ -144,7 +137,6 @@ export const dataDresscode = [
         title: "Coming Soon!",
         items: [""],
       },
-    
     ],
     images: {
       do: "/elements/icons/luminate.svg",

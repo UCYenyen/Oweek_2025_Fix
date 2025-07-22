@@ -20,7 +20,7 @@ export const scheduleData = [
     date: "17 Agustus 2025",
     location: "UC Plaza",
     sessions: [
-      "06.30-08.20 WIB (Upacara Bendera)",
+      "06.30-08.20 WIB",
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -32,7 +32,7 @@ export const scheduleData = [
     date: "17 Agustus 2025",
     location: "UC Plaza",
     sessions: [
-      '08.20-09:30 WIB (Opening Ceremony)',
+      '08.20-09:30 WIB',
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -44,7 +44,7 @@ export const scheduleData = [
     date: "17 Agustus 2025",
     location: "Online & Offline di Universitas Ciputra Surabaya",
     sessions: [
-      "10.10-12.40 WIB (Seminar 5)",
+      "10.10-12.40 WIB",
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -56,7 +56,7 @@ export const scheduleData = [
     date: "17 Agustus 2025",
     location: "Dian Auditorium 7th Floor, Universitas Ciputra Surabaya",
     sessions: [
-      "13.50-16.45 (TM Selling Day)"
+      "13.50-16.45"
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""

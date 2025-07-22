@@ -42,10 +42,9 @@ export const scheduleData = [
     day: "MINGGU",
     title: "SEMINAR 5",
     date: "17 Agustus 2025",
-    location: "UC Plaza",
+    location: "Online & Offline di Universitas Ciputra Surabaya",
     sessions: [
       "10.10-12.40 WIB (Seminar 5)",
-      "TM  Selling Day"
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -55,9 +54,9 @@ export const scheduleData = [
     day: "MINGGU",
     title: "TM SELLING DAY",
     date: "17 Agustus 2025",
-    location: "UC Plaza",
+    location: "Dian Auditorium 7th Floor, Universitas Ciputra Surabaya",
     sessions: [
-      "TM Selling Day"
+      "13.50-16.45 (TM Selling Day)"
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""

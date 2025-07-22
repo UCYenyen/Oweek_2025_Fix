@@ -2,31 +2,35 @@
 export const scheduleData = [
   {
     id: 0,
-    day: "PRA-OWEEK",
+    day: "SABTU",
     title: "PRA-OWEEK",
     date: "16 Agustus 2025",
     location: "Online (Zoom)",
     sessions: [
-      "",
+      "Kloter 1 : 07:15 - 10.40 WIB",
+      "Kloter 2 : 13:00 - 16:30 WIB",
     ],
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 1,
-    day: "OWEEK 2025",
+    day: "MINGGU",
     title: "INDEPENDENCE DAY CEREMONY",
     date: "17 Agustus 2025",
-    location: "UC Plaza",
+    location: "Universitas Ciputra Surabaya",
     sessions: [
-      "Opening Ceremony",
+      "Upacara",
+      '"Ignite Beyond Limits" Opening',
+      "Seminar 5",
+      "TM  Selling Day"
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 2,
-    day: "OWEEK 2025",
+    day: "SENIN",
     title: "MATRIKULASI JURUSAN",
     date: "19-21 Agustus 2025",
     location: "Universitas Ciputra Surabaya",

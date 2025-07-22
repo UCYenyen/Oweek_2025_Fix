@@ -71,8 +71,8 @@ export default function Schedule() {
           />
         </button>
 
-        <div className="flex flex-col items-center schedule-card rounded-3xl overflow-hidden">
-          <div className="w-[69%]">
+        <div className="flex flex-col justify-center items-center schedule-card rounded-3xl overflow-hidden">
+          <div className="w-[90%]">
             <div ref={scheduleContentRef} className="w-full flex flex-col items-center justify-center">
               <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
                 {currentSchedule.title}
@@ -80,28 +80,34 @@ export default function Schedule() {
               <div className="flex items-center justify-center">
                 <div className="w-full">
                   {/* Date with aligned icon */}
-                  <div className="text-icon-container flex gap-2 items-center text-lg schedule-item-desc font-serif text-[#AB6528]">
-                    <i className="icon text-xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
-                    <span>{currentSchedule.date}</span>
+                  <div className="text-icon-container flex items-center schedule-item-desc font-roboto text-[#AB6528]">
+                    <div className="w-8 flex-shrink-0 flex justify-center">
+                      <i className="icon text-2xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
+                    </div>
+                    <span className="text-2xl">{currentSchedule.date}</span>
                   </div>
 
                   {/* Location with aligned icon */}
-                  <div className="text-icon-container flex gap-2 items-center text-lg schedule-item-desc font-serif text-[#AB6528]">
-                    <i className="icon text-xl text-[#D45A0A] bi bi-geo-alt-fill"></i>
-                    <span>{currentSchedule.location}</span>
+                  <div className="text-icon-container flex items-center schedule-item-desc font-roboto text-[#AB6528]">
+                    <div className="w-8 flex-shrink-0 flex justify-center">
+                      <i className="icon text-2xl text-[#D45A0A] bi bi-geo-alt-fill"></i>
+                    </div>
+                    <span className="text-2xl">{currentSchedule.location}</span>
                   </div>
 
                   {/* Sessions with aligned icons */}
                   {currentSchedule.sessions &&
                     currentSchedule.sessions.length > 0 && (
-                      <div className="schedule-sessions-list font-serif text-[#AB6528]">
+                      <div className="font-roboto text-[#AB6528]">
                         {currentSchedule.sessions.map((session, index) => (
                           <div
                             key={index}
-                            className="text-icon-container flex items-start text-md gap-2"
+                            className="text-icon-container flex items-start font-roboto"
                           >
-                            <i className="icon text-xl text-[#D45A0A] bi bi-alarm-fill"></i>
-                            <span>{session}</span>
+                            <div className="w-8 flex-shrink-0 flex text-2xl justify-center">
+                              <i className="icon text-[#D45A0A] bi bi-alarm-fill"></i>
+                            </div>
+                            <span className="text-2xl">{session}</span>
                           </div>
                         ))}
                       </div>

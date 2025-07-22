@@ -74,7 +74,7 @@ export default function Schedule() {
         <div className="flex flex-col justify-center items-center schedule-card rounded-3xl overflow-hidden">
           <div className="parent-description-container w-[80%]">
             <div ref={scheduleContentRef} className="w-full flex gap-4 flex-col items-center justify-center">
-              <div>
+              <div className="flex flex-col gap-2">
                 <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
                   {currentSchedule.title}
                 </h2>

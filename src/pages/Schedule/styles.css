@@ -94,10 +94,16 @@
     line-height: 3rem;
   }
   .icon{
+    margin-top: 0.5rem;
     font-size: 2.5rem;
   }
-  .schedule-day-date {
-    font-size: 2.4rem;
+  .schedule-text-description {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+  .text-icon-container {
+    align-items: start;
+    gap: 1rem;
   }
   .button-left {
     width: 8rem;
@@ -356,6 +362,22 @@
     font-size: 2rem;
     line-height: 2rem;
   }
+  .schedule-subtitle{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .icon{
+    margin-top: 0rem;
+    font-size: 1.5rem;
+  }
+  .schedule-text-description {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .text-icon-container {
+    align-items: start;
+    gap: 1rem;
+  }
   .button-left {
     width: 6rem;
     height: auto;
@@ -458,6 +480,22 @@
   }
   .text-icon-container {
     align-items: start;
+  }
+  .schedule-subtitle{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .icon{
+    margin-top: 0rem;
+    font-size: 1.75rem;
+  }
+  .schedule-text-description {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .text-icon-container {
+    align-items: start;
+    gap: 1rem;
   }
 }
 @media (max-width: 1728px) and (max-height: 1117px) {
@@ -1149,6 +1187,26 @@
   .text-icon-container {
     align-items: start;
   }
+  .schedule-subtitle{
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+  .icon{
+    margin-top: 0rem;
+    width: 2rem;
+    font-size: 1.5rem;
+  }
+  .schedule-text-description {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .text-icon-container {
+    align-items: center;
+    gap: 0rem;
+  }
+  .parent-description-container{
+    width: 100%;
+  }
 }
 @media (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
   .schedule-card {
@@ -1294,6 +1352,22 @@
   }
   .text-icon-container {
     align-items: start;
+  }
+  .schedule-subtitle{
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  .icon{
+    margin-top: -0.1rem;
+    font-size: 1.5rem;
+  }
+  .schedule-text-description {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  .text-icon-container {
+    align-items: start;
+    gap: 1rem;
   }
 }
 @media (max-width: 960px) and (max-height: 540px) {
@@ -1593,6 +1667,26 @@
   .star {
     width: 50rem;
   }
+  .schedule-subtitle{
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+  .icon{
+    margin-top: 0rem;
+    width: 2rem;
+    font-size: 1.5rem;
+  }
+  .schedule-text-description {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .text-icon-container {
+    align-items: center;
+    gap: 0rem;
+  }
+  .parent-description-container{
+    width: 100%;
+  }
 }
 @media (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
   .schedule-card {
@@ -1813,6 +1907,26 @@
   }
   .star {
     width: 50rem;
+  }
+  .schedule-subtitle{
+    font-size: 1rem;
+    line-height: 0.75rem;
+  }
+  .icon{
+    margin-top: 0rem;
+    width: 3rem;
+    font-size: 1.25rem;
+  }
+  .schedule-text-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .text-icon-container {
+    align-items: center;
+    gap: 0rem;
+  }
+  .parent-description-container{
+    width: 90%;
   }
 }
 @media (max-width: 844px) and (max-height: 390px) {
@@ -2569,6 +2683,26 @@
   .icon {
     font-size: 0.75rem;
   }
+  .schedule-subtitle{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .icon{
+    margin-top: 0rem;
+    width: 2rem;
+    font-size: 1rem;
+  }
+  .schedule-text-description {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-icon-container {
+    align-items: center;
+    gap: 0rem;
+  }
+  .parent-description-container{
+    width: 100%;
+  }
 }
 @media (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
   .schedule-title-img {
@@ -2724,6 +2858,26 @@
   .star {
     width: 50rem;
   }
+  .schedule-subtitle{
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  .icon{
+    margin-top: 0rem;
+    width: 2rem;
+    font-size: 1rem;
+  }
+  .schedule-text-description {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-icon-container {
+    align-items: center;
+    gap: 0rem;
+  }
+  .parent-description-container{
+    width: 100%;
+  }
 }
 @media (max-width: 412px) and (max-height: 914px) and (orientation: portrait) {
   .schedule-title-img {
@@ -2800,6 +2954,26 @@
   }
   .star {
     width: 50rem;
+  }
+  .schedule-subtitle{
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+  }
+  .icon{
+    margin-top: 0rem;
+    width: 3rem;
+    font-size: 1rem;
+  }
+  .schedule-text-description {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-icon-container {
+    align-items: center;
+    gap: 0rem;
+  }
+  .parent-description-container{
+    width: 100%;
   }
 }
 @media (max-width: 393px) and (max-height: 873px) and (orientation: portrait) {
@@ -3122,5 +3296,25 @@
   }
   .star {
     width: 50rem;
+  }
+  .schedule-subtitle{
+    font-size: 0.6rem;
+    line-height: 0.75rem;
+  }
+  .icon{
+    margin-top: 0rem;
+    width: 2rem;
+    font-size: 0.75rem;
+  }
+  .schedule-text-description {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  .text-icon-container {
+    align-items: center;
+    gap: 0rem;
+  }
+  .parent-description-container{
+    width: 100%;
   }
 }

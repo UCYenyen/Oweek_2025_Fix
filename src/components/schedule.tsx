@@ -72,7 +72,7 @@ export default function Schedule() {
         </button>
 
         <div className="flex flex-col justify-center items-center schedule-card rounded-3xl overflow-hidden">
-          <div className="w-[80%]">
+          <div className="parent-description-container w-[80%]">
             <div ref={scheduleContentRef} className="w-full flex gap-4 flex-col items-center justify-center">
               <div>
                 <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
@@ -86,18 +86,18 @@ export default function Schedule() {
                 <div className="w-full">
                   {/* Date with aligned icon */}
                   <div className="text-icon-container flex items-center schedule-item-desc font-roboto text-[#AB6528]">
-                    <div className="w-8 flex-shrink-0 flex justify-center">
+                    <div className="w-8 flex justify-center">
                       <i className="icon text-2xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
                     </div>
-                    <span className="schedule-day-date text-xl">{currentSchedule.day}, {currentSchedule.date}</span>
+                    <span className="schedule-text-description text-xl">{currentSchedule.day}, {currentSchedule.date}</span>
                   </div>
 
                   {/* Location with aligned icon */}
                   <div className="text-icon-container flex items-center schedule-item-desc font-roboto text-[#AB6528]">
-                    <div className="w-8 flex-shrink-0 flex justify-center">
+                    <div className="w-8 flex justify-center">
                       <i className="icon text-2xl text-[#D45A0A] bi bi-geo-alt-fill"></i>
                     </div>
-                    <span className="schedule-location text-xl">{currentSchedule.location}</span>
+                    <span className="schedule-text-description text-xl">{currentSchedule.location}</span>
                   </div>
 
                   {/* Sessions with aligned icons */}
@@ -109,10 +109,10 @@ export default function Schedule() {
                             key={index}
                             className="text-icon-container flex items-start font-roboto"
                           >
-                            <div className="w-8 flex-shrink-0 flex text-2xl justify-center">
+                            <div className="text-icon-container w-8 flex text-2xl justify-center">
                               <i className="icon text-[#D45A0A] bi bi-alarm-fill"></i>
                             </div>
-                            <p className="schedule-session text-xl">{session}</p>
+                            <p className="schedule-text-description text-xl">{session}</p>
                           </div>
                         ))}
                       </div>

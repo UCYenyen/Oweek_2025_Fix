@@ -78,7 +78,7 @@ export default function Schedule() {
                 <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
                   {currentSchedule.title}
                 </h2>
-                <h2 className="text-xl w-full font-bold text-center text-[#AB6528] font-roboto">
+                <h2 className="schedule-subtitle text-xl w-full font-bold text-center text-[#AB6528] font-roboto">
                   {currentSchedule.day_ke}
                 </h2>
               </div>
@@ -89,7 +89,7 @@ export default function Schedule() {
                     <div className="w-8 flex-shrink-0 flex justify-center">
                       <i className="icon text-2xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
                     </div>
-                    <span className="text-xl">{currentSchedule.day}, {currentSchedule.date}</span>
+                    <span className="schedule-day-date text-xl">{currentSchedule.day}, {currentSchedule.date}</span>
                   </div>
 
                   {/* Location with aligned icon */}
@@ -97,7 +97,7 @@ export default function Schedule() {
                     <div className="w-8 flex-shrink-0 flex justify-center">
                       <i className="icon text-2xl text-[#D45A0A] bi bi-geo-alt-fill"></i>
                     </div>
-                    <span className="text-xl">{currentSchedule.location}</span>
+                    <span className="schedule-location text-xl">{currentSchedule.location}</span>
                   </div>
 
                   {/* Sessions with aligned icons */}
@@ -112,7 +112,7 @@ export default function Schedule() {
                             <div className="w-8 flex-shrink-0 flex text-2xl justify-center">
                               <i className="icon text-[#D45A0A] bi bi-alarm-fill"></i>
                             </div>
-                            <span className="text-xl">{session}</span>
+                            <p className="schedule-session text-xl">{session}</p>
                           </div>
                         ))}
                       </div>

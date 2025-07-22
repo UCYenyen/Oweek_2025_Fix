@@ -30,7 +30,7 @@ export const scheduleData = [
   {
     id: 2,
     day: "Minggu",
-    title: "Opening Ceremony",
+    title: "OPENING CEREMONY",
     date: "17 Agustus 2025",
     day_ke: "-",
     location: "UC Plaza",
@@ -61,7 +61,7 @@ export const scheduleData = [
     day_ke: "-",
     location: "Dian Auditorium 7th Floor, Universitas Ciputra Surabaya",
     sessions: [
-      "13.50-16.45"
+      "13.50-16.45 WIB"
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -71,67 +71,102 @@ export const scheduleData = [
     day: "Senin",
     title: "NEXT GEN VISIONARIES",
     date: "25 Agustus 2025",
-    day_ke: "Day 1",
-    location: "Hall Sekolah Ciputra Surabaya, Universitas Ciputra Surabaya",
+    day_ke: "Day 1 (Talkshow)",
+    location: "Hall Sekolah Ciputra Surabaya",
     sessions: [
-      "Talkshow",
-      "Showcase Selling Day"
+      "08.00-10.35 WIB (Sesi 1)",
+      "11.30-14.05 WIB (Sesi 2)"
     ],
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 6,
-    day: "Selasa",
-    title: "SPARK THE PATH",
-    date: "26 Agustus 2025",
-    day_ke: "Day 2",
+    day: "Senin",
+    title: "NEXT GEN VISIONARIES",
+    date: "25 Agustus 2025",
+    day_ke: "Day 1 (Showcase Selling Day)",
     location: "Universitas Ciputra Surabaya",
-    sessions: ['Prodi Day', 'ORMAWA FEST'],
+    sessions: [
+      "To Be Announced",
+    ],
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 7,
-    day: "Rabu",
-    title: "THE UNCHARTED COMPASS",
-    date: "27 Agustus 2025",
-    day_ke: "Day 3",
+    day: "Selasa",
+    title: "SPARK THE PATH",
+    date: "26 Agustus 2025",
+    day_ke: "Day 2 (Elicit Enlightenment)",
     location: "Universitas Ciputra Surabaya",
-    sessions: [ "Pra-LDK", "ORMAWA-FEST" ],
-    baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
+    sessions: ['07.00-16.00 WIB'],
+    baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
-  {
+   {
     id: 8,
-    day: "Kamis",
-    title: "THE INNER VOYAGE",
-    date: "28 Agustus 2025",
-    day_ke: "Day 4",
-    location: "Uninversitas Ciputra Surabaya",
-    sessions: [ "Student Development Program" ],
-    baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
+    day: "Selasa",
+    title: "SPARK THE PATH",
+    date: "26 Agustus 2025",
+    day_ke: "Day 2 (ORMAWA-FEST)",
+    location: "Universitas Ciputra Surabaya",
+    sessions: ['14.30-18.00 WIB'],
+    baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 9,
-    day: "Jumat",
-    title: "HENOSIS FOOD FOYAGE",
-    date: "29 Agustus 2025",
-    day_ke: "Day 5",
-    location: "LT. 3 Ciputra World Mall Surabaya",
-    sessions: [ "Selling Day" ],
+    day: "Rabu",
+    title: "THE UNCHARTED COMPASS",
+    date: "27 Agustus 2025",
+    day_ke: "Day 3 (PraLDK)",
+    location: "Universitas Ciputra Surabaya",
+    sessions: [ "07.00-15.30 WIB" ],
     baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
   {
     id: 10,
+    day: "Rabu",
+    title: "THE UNCHARTED COMPASS",
+    date: "27 Agustus 2025",
+    day_ke: "Day 3 (ORMAWA-FEST)",
+    location: "Universitas Ciputra Surabaya",
+    sessions: [ "14.30-18.00 WIB" ],
+    baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
+    baju2: "", celana2: "", sepatu2: ""
+  },
+  {
+    id: 11,
+    day: "Kamis",
+    title: "THE INNER VOYAGE",
+    date: "28 Agustus 2025",
+    day_ke: "Day 4 (Student Development)",
+    location: "UC Plaza, Uninversitas Ciputra Surabaya",
+    sessions: [ "07.00-12.00 WIB" ],
+    baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
+    baju2: "", celana2: "", sepatu2: ""
+  },
+  {
+    id: 12,
+    day: "Jumat",
+    title: "HENOSIS FOOD FOYAGE",
+    date: "29 Agustus 2025",
+    day_ke: "Day 5 (Selling Day)",
+    location: "LT. 3 Ciputra World Mall Surabaya",
+    sessions: [ "08.30-21.00 WIB" ],
+    baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
+    baju2: "", celana2: "", sepatu2: ""
+  },
+  {
+    id: 13,
     day: "Sabtu",
     title: "FLAME OF TRIUMPH",
     date: "30 Agustus 2025",
-    day_ke: "Day 6",
+    day_ke: "Day 6 (Closing)",
     location: "Palimanan, Resto and Cafe",
-    sessions: [ "Closing" ],
+    sessions: [ "14.20-21.45 WIB" ],
     baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   }

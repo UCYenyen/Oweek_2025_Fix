@@ -84,7 +84,7 @@ export default function Schedule() {
                     <div className="w-8 flex-shrink-0 flex justify-center">
                       <i className="icon text-2xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
                     </div>
-                    <span className="text-2xl">{currentSchedule.date}</span>
+                    <span className="text-xl">{currentSchedule.date}</span>
                   </div>
 
                   {/* Location with aligned icon */}
@@ -92,7 +92,7 @@ export default function Schedule() {
                     <div className="w-8 flex-shrink-0 flex justify-center">
                       <i className="icon text-2xl text-[#D45A0A] bi bi-geo-alt-fill"></i>
                     </div>
-                    <span className="text-2xl">{currentSchedule.location}</span>
+                    <span className="text-xl">{currentSchedule.location}</span>
                   </div>
 
                   {/* Sessions with aligned icons */}
@@ -107,7 +107,7 @@ export default function Schedule() {
                             <div className="w-8 flex-shrink-0 flex text-2xl justify-center">
                               <i className="icon text-[#D45A0A] bi bi-alarm-fill"></i>
                             </div>
-                            <span className="text-2xl">{session}</span>
+                            <span className="text-xl">{session}</span>
                           </div>
                         ))}
                       </div>

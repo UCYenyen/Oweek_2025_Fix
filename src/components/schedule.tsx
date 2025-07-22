@@ -71,30 +71,44 @@ export default function Schedule() {
           />
         </button>
 
-        <div className="flex flex-col items-center text-center schedule-card rounded-3xl overflow-hidden">
-          <div ref={scheduleContentRef}>
-            <h2 className="text-2xl font-bold text-[#D45A0A] font-serif schedule-item-title">
-              {currentSchedule.title}
-            </h2>
-            <p className="text-lg schedule-item-desc font-serif text-[#AB6528]">
-              <i className="mr-2 text-xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
-              {currentSchedule.date}
-            </p>
+        <div className="flex flex-col items-center schedule-card rounded-3xl overflow-hidden">
+          <div className="w-[69%]">
+            <div ref={scheduleContentRef} className="w-full flex flex-col items-center justify-center">
+              <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
+                {currentSchedule.title}
+              </h2>
+              <div className="flex items-center justify-center">
+                <div className="w-full">
+                  {/* Date with aligned icon */}
+                  <div className="text-icon-container flex gap-2 items-center text-lg schedule-item-desc font-serif text-[#AB6528]">
+                    <i className="icon text-xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
+                    <span>{currentSchedule.date}</span>
+                  </div>
 
-            <p className="text-lg schedule-item-desc font-serif text-[#AB6528]">
-              <i className="mr-2 text-xl text-[#D45A0A] bi bi-geo-alt-fill"></i>
-              {currentSchedule.location}
-            </p>
-            {currentSchedule.sessions && currentSchedule.sessions.length > 0 && (
-              <div className="mt-4 text-center schedule-sessions-list font-serif text-[#AB6528]">
-                {currentSchedule.sessions.map((session, index) => (
-                  <p key={index} className="text-md">
-                    <i className="bi bi-alarm-fill mr-2 text-xl text-[#D45A0A]"></i>
-                    {session}
-                  </p>
-                ))}
+                  {/* Location with aligned icon */}
+                  <div className="text-icon-container flex gap-2 items-center text-lg schedule-item-desc font-serif text-[#AB6528]">
+                    <i className="icon text-xl text-[#D45A0A] bi bi-geo-alt-fill"></i>
+                    <span>{currentSchedule.location}</span>
+                  </div>
+
+                  {/* Sessions with aligned icons */}
+                  {currentSchedule.sessions &&
+                    currentSchedule.sessions.length > 0 && (
+                      <div className="schedule-sessions-list font-serif text-[#AB6528]">
+                        {currentSchedule.sessions.map((session, index) => (
+                          <div
+                            key={index}
+                            className="text-icon-container flex items-start text-md gap-2"
+                          >
+                            <i className="icon text-xl text-[#D45A0A] bi bi-alarm-fill"></i>
+                            <span>{session}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                </div>
               </div>
-            )}
+            </div>
           </div>
         </div>
 

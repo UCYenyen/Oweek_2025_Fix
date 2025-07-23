@@ -332,6 +332,44 @@
         min-height: 38rem;
     }
 }
+@media(max-width: 1728px) and (max-height: 1992px) {
+    .pillar-left{
+        width: 20%;
+    }
+    .pillar-right{
+        width: 20%;
+    }
+    .sun-rules{
+        bottom: -30%;
+    }
+    .rules-logo{
+        width: 35%;
+    }
+    .rules-card{
+        min-height: 40rem;
+        max-height: 40rem;
+    }
+    .dropdown{
+        width: 80%;
+        height: 4rem;
+        max-width: 50rem;
+    }
+    .dropdown-text{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .text{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    .text-description{
+        font-size: 1.5rem;
+        line-height: 3rem;
+        max-width: 60rem;
+        max-height: 38rem;
+        min-height: 38rem;
+    }
+}
 @media(max-width: 1728px) and (max-height: 1117px) {
     .sun-rules{
         bottom: -30%;

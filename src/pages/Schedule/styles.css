@@ -2722,6 +2722,80 @@
     width: 50rem;
   }
 }
+@media(max-width: 457px) and (max-height: 874px) and (orientation: portrait) {
+  .schedule-title-img {
+    display: none;
+  }
+  .schedule-title-img-mb {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0rem;
+  }
+  .pillar-left-schedule {
+    left: -3rem;
+  }
+  .pillar-right-schedule {
+    right: -3rem;
+  }
+  .schedule-card {
+    width: 18rem;
+    min-height: 18rem;
+    margin: auto;
+  }
+  .button-schedule {
+    padding: 0.5rem;
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+  .button-dresscode {
+    min-width: 4rem;
+    height: auto;
+  }
+  .button-left {
+    width: 2rem;
+    height: auto;
+    margin-left: 4rem;
+  }
+  .button-right {
+    width: 2rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .schedule-wrapper {
+    padding-bottom: 4.5rem;
+  }
+  .title-owik {
+    font-size: 2.4rem;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+  }
+  .title-img {
+    width: 20rem;
+    padding-bottom: 10rem;
+  }
+  .bebekiri {
+    width: 15rem;
+    bottom: -2rem;
+  }
+  .bebekanan {
+    width: 12rem;
+  }
+  .schedule-button-group {
+    margin: auto;
+    justify-content: center;
+  }
+
+  .schedule-item-title {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .star {
+    width: 50rem;
+  }
+}
 @media (max-width: 440px) and (max-height: 956px) and (orientation: portrait) {
   .schedule-title-img {
     display: none;

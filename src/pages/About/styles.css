@@ -2548,6 +2548,12 @@
     z-index: 1;
   }
 }
+@media(max-width: 604px) and (max-height: 966px) and (orientation: portrait){ 
+  
+}
+@media(max-width: 534px) and (max-height: 834px) and (orientation: portrait) {
+  
+}
 @media (max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
 }
 @media (max-width: 459px) and (max-height: 841px) and (orientation: portrait) {

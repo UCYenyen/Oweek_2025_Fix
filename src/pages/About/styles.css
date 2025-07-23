@@ -6,35 +6,35 @@
   display: block;
 }
 .mobile-about-bg {
-  display: none; 
+  display: none;
 }
 .desktop-about-bg {
-  display: block; 
+  display: block;
 }
 .star-circle {
   display: block;
 }
 .star-circle-mobile {
-  display: none; 
+  display: none;
 }
 
 /* --- Standardized Media Queries --- */
 
 @media (max-width: 3840px) and (max-height: 2160px) {
 }
-@media (max-width: 2850px) and (max-height: 1800px){
+@media (max-width: 2850px) and (max-height: 1800px) {
 }
-@media (max-width: 2560px) and (max-height:1600px){
+@media (max-width: 2560px) and (max-height: 1600px) {
 }
-@media (max-width: 2560px) and (max-height: 1140px){
+@media (max-width: 2560px) and (max-height: 1140px) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -45,40 +45,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 130vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -86,26 +82,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 200vh;
@@ -141,22 +133,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 12rem; 
+    top: 12rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -164,7 +156,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -189,13 +181,13 @@
 }
 @media (max-width: 1920px) and (max-height: 1080px) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -206,40 +198,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 110vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -247,26 +235,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 180vh;
@@ -302,22 +286,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 12rem; 
+    top: 12rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -325,7 +309,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -350,13 +334,13 @@
 }
 @media (max-width: 1900px) and (max-height: 1200px) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -367,40 +351,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 90vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -408,26 +388,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 160vh;
@@ -463,22 +439,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 12rem; 
+    top: 12rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -486,7 +462,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -511,15 +487,15 @@
 }
 @media (max-width: 1728px) and (max-height: 1117px) {
 }
-@media (max-width: 1512px) and (max-height: 982px){
+@media (max-width: 1512px) and (max-height: 982px) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -530,40 +506,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 100vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -571,26 +543,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 175vh;
@@ -626,22 +594,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 8rem; 
+    top: 8rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -649,7 +617,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -675,13 +643,13 @@
 
 @media (max-width: 1366px) and (max-height: 1024px) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -692,40 +660,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 80vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -733,26 +697,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 150vh;
@@ -788,22 +748,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 8rem; 
+    top: 8rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -811,7 +771,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -836,13 +796,13 @@
 }
 @media (max-width: 1366px) and (max-height: 768px) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -853,40 +813,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 100vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -894,26 +850,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 175vh;
@@ -949,22 +901,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 8rem; 
+    top: 8rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -972,7 +924,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -996,14 +948,14 @@
   }
 }
 @media (max-width: 1280px) and (max-height: 853px) {
-.mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+  .mobile-about-bg {
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -1014,40 +966,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 90vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -1055,26 +1003,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 150vh;
@@ -1110,22 +1054,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 8rem; 
+    top: 8rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -1133,7 +1077,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -1158,13 +1102,13 @@
 }
 @media (max-width: 1280px) and (max-height: 570px) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -1175,40 +1119,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 120vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -1216,26 +1156,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 200vh;
@@ -1271,22 +1207,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 8rem; 
+    top: 8rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -1294,7 +1230,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -1317,14 +1253,14 @@
     z-index: 1;
   }
 }
-@media (max-width: 1180px) and (max-height: 820px){
+@media (max-width: 1180px) and (max-height: 820px) {
 }
 @media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
   .mobile-about-bg {
-    display: block; 
+    display: block;
   }
   .desktop-about-bg {
-    display: none; 
+    display: none;
   }
   .mascot-pillar-desktop {
     display: none;
@@ -1342,16 +1278,16 @@
     width: auto;
     height: 100%;
   }
-  .about-container .pillar-left{
+  .about-container .pillar-left {
     left: -5vh;
   }
-  .about-container .pillar-right{
+  .about-container .pillar-right {
     right: -5vh;
   }
   .about-container .star-circle {
-    display: none; 
+    display: none;
   }
-  .about-container .star-circle-mobile{
+  .about-container .star-circle-mobile {
     display: block;
     bottom: -40vh;
   }
@@ -1408,25 +1344,25 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%; 
+    width: 100%;
     height: auto;
     z-index: 6;
   }
   .mascot-yucca-section {
-    top: 15vh; 
+    top: 15vh;
   }
   .mascot-chickens-section {
-    bottom: 10vh; 
+    bottom: 10vh;
   }
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
   .mascot-pot {
     width: 100%;
@@ -1451,13 +1387,13 @@
 }
 @media (max-width: 1024px) and (max-height: 600px) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -1468,40 +1404,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 100vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -1509,26 +1441,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 170vh;
@@ -1564,22 +1492,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 8rem; 
+    top: 8rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -1587,7 +1515,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -1610,15 +1538,15 @@
     z-index: 1;
   }
 }
-@media (max-width: 956px) and (max-height: 440px) and (orientation: landscape){
+@media (max-width: 956px) and (max-height: 440px) and (orientation: landscape) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -1629,40 +1557,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 120vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -1670,26 +1594,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 200vh;
@@ -1725,22 +1645,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 8rem; 
+    top: 8rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -1748,7 +1668,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -1774,11 +1694,11 @@
 @media (max-width: 932px) and (max-height: 430px) {
 }
 @media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
-    .mobile-about-bg {
-    display: block; 
+  .mobile-about-bg {
+    display: block;
   }
   .desktop-about-bg {
-    display: none; 
+    display: none;
   }
   .mascot-pillar-desktop {
     display: none;
@@ -1796,16 +1716,16 @@
     width: auto;
     height: 100%;
   }
-  .about-container .pillar-left{
+  .about-container .pillar-left {
     left: -5vh;
   }
-  .about-container .pillar-right{
+  .about-container .pillar-right {
     right: -5vh;
   }
   .about-container .star-circle {
-    display: none; 
+    display: none;
   }
-  .about-container .star-circle-mobile{
+  .about-container .star-circle-mobile {
     display: block;
     bottom: -40vh;
   }
@@ -1862,25 +1782,25 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%; 
+    width: 100%;
     height: auto;
     z-index: 6;
   }
   .mascot-yucca-section {
-    top: 15vh; 
+    top: 15vh;
   }
   .mascot-chickens-section {
-    bottom: 10vh; 
+    bottom: 10vh;
   }
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
   .mascot-pot {
     width: 100%;
@@ -1903,13 +1823,13 @@
 }
 @media (max-width: 882px) and (max-height: 344px) and (orientation: landscape) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -1920,40 +1840,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 150vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -1961,26 +1877,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 250vh;
@@ -2016,22 +1928,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 8rem; 
+    top: 8rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -2039,7 +1951,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -2064,36 +1976,33 @@
 }
 @media (max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 110vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -7vh;
-    }
-    .about-container .pillar-right{
-        right: -7vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -7vh;
+  }
+  .about-container .pillar-right {
+    right: -7vh;
+  }
   .about-container .star-circle {
-      display: none; 
-    }
-    .about-container .star-circle-mobile{
-      display: block; /* Show mobile star circle */
-      bottom: -30vh;
-    }
+    display: none;
+  }
+  .about-container .star-circle-mobile {
+    display: block; /* Show mobile star circle */
+    bottom: -30vh;
+  }
   .about-container .about-bg {
-    
     width: 90%;
   }
 
-  
   .mobile-about-bg {
     width: 85% !important;
     height: auto;
@@ -2101,26 +2010,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 120vh;
@@ -2156,29 +2061,29 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%; 
+    width: 100%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 10vh; 
+    top: 10vh;
   }
 
   .mascot-chickens-section {
-    bottom: 6vh; 
+    bottom: 6vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
 
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -2203,7 +2108,7 @@
 }
 @media (max-width: 844px) and (max-height: 390px) {
 }
-@media (max-width: 820px) and (max-height: 1180px) and (orientation: portrait){
+@media (max-width: 820px) and (max-height: 1180px) and (orientation: portrait) {
 }
 @media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
 }
@@ -2211,13 +2116,13 @@
 }
 @media (max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -2228,40 +2133,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 80vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -2269,26 +2170,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 140vh;
@@ -2324,22 +2221,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 8rem; 
+    top: 8rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -2347,7 +2244,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -2372,13 +2269,13 @@
 }
 @media (max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
   .mobile-about-bg {
-  display: none; 
-}
-.desktop-about-bg {
-  display: block; 
-  width: 60% !important;
-  height: auto;
-}
+    display: none;
+  }
+  .desktop-about-bg {
+    display: block;
+    width: 60% !important;
+    height: auto;
+  }
 
   .mascot-pillar-desktop {
     display: none;
@@ -2389,40 +2286,36 @@
     display: block;
   }
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 100vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      top: 10rem;
-      display: block; 
-      width: 120% !important;
-      height: auto;
-    }
-    .about-container .star-circle-mobile{
-      display: none; /* Show mobile star circle */
-      bottom: -40vh;
-
-    }
+    top: 10rem;
+    display: block;
+    width: 120% !important;
+    height: auto;
+  }
+  .about-container .star-circle-mobile {
+    display: none; /* Show mobile star circle */
+    bottom: -40vh;
+  }
   .about-container .about-bg {
-    
     width: 75%;
   }
 
-  
   .mobile-about-bg {
     width: 75% !important;
     height: auto;
@@ -2430,26 +2323,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 180vh;
@@ -2485,22 +2374,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; 
+    width: 60%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 8rem; 
+    top: 8rem;
   }
 
   .mascot-chickens-section {
-    bottom: 5vh; 
+    bottom: 5vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.8);
   }
@@ -2508,7 +2397,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -2533,39 +2422,35 @@
 }
 @media (max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
 }
-@media (max-width: 440px) and (max-height: 956px) and (orientation: portrait){
-
-.about-main-content {
-      top: 0vh;
+@media (max-width: 459px) and (max-height: 841px) and (orientation: portrait) {
+  .about-main-content {
+    top: 0vh;
     width: auto;
     height: 80vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      display: none; 
-    }
-    .about-container .star-circle-mobile{
-      display: block; /* Show mobile star circle */
-      bottom: -20vh;
-    }
+    display: none;
+  }
+  .about-container .star-circle-mobile {
+    display: block; /* Show mobile star circle */
+    bottom: -20vh;
+  }
   .about-container .about-bg {
-    
     width: 90%;
   }
 
-  
   .mobile-about-bg {
     width: 85% !important;
     height: auto;
@@ -2573,26 +2458,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 80vh;
@@ -2628,29 +2509,161 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%; 
+    width: 100%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 10vh; 
+    top: 10vh;
   }
 
   .mascot-chickens-section {
-    bottom: 6vh; 
+    bottom: 6vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
 
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
+  }
+
+  .mascot-pot {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+  }
+
+  .mascot-background-shape {
+    width: 110%;
+    height: auto;
+    position: absolute;
+    top: 17vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+@media (max-width: 440px) and (max-height: 956px) and (orientation: portrait) {
+  .about-main-content {
+    top: 0vh;
+    width: auto;
+    height: 80vh;
+  }
+
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
+  .about-container .star-circle {
+    display: none;
+  }
+  .about-container .star-circle-mobile {
+    display: block; /* Show mobile star circle */
+    bottom: -20vh;
+  }
+  .about-container .about-bg {
+    width: 90%;
+  }
+
+  .mobile-about-bg {
+    width: 85% !important;
+    height: auto;
+    top: 0vh;
+  }
+
+  .about-container .about-content {
+    top: 10vh;
+    width: 75%;
+  }
+
+  .about-container .about-title {
+    margin-top: -1vh;
+    padding-bottom: 1vh;
+    font-size: 6vh;
+  }
+
+  .about-container .about-description {
+    margin-top: -0.8vh;
+    width: 80%;
+    font-size: 1.6vh;
+  }
+
+  .mascot-container {
+    width: auto;
+    height: 80vh;
+    top: -0vh;
+  }
+
+  .mascot-pillar-container {
+    position: relative;
+    width: 100%;
+    left: -0vh;
+    height: auto;
+  }
+
+  .mascot-pillar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 5;
+  }
+
+  .mascot-sun-bottom {
+    position: absolute;
+    top: 4vh;
+    width: 100%;
+    height: auto;
+    left: 51%;
+    transform: translateX(-50%);
+  }
+
+  .mascot-yucca-section,
+  .mascot-chickens-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: 6;
+  }
+
+  .mascot-yucca-section {
+    top: 10vh;
+  }
+
+  .mascot-chickens-section {
+    bottom: 6vh;
+  }
+
+  .mascot-yucca-title,
+  .mascot-chickens-title {
+    width: 100%;
+    height: auto;
+  }
+
+  .mascot-yucca-description,
+  .mascot-chickens-description {
+    width: 80%;
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -2681,36 +2694,33 @@
 }
 @media (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 80vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      display: none; 
-    }
-    .about-container .star-circle-mobile{
-      display: block; /* Show mobile star circle */
-      bottom: -20vh;
-    }
+    display: none;
+  }
+  .about-container .star-circle-mobile {
+    display: block; /* Show mobile star circle */
+    bottom: -20vh;
+  }
   .about-container .about-bg {
-    
     width: 90%;
   }
 
-  
   .mobile-about-bg {
     width: 80% !important;
     height: auto;
@@ -2718,26 +2728,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 90vh;
@@ -2773,22 +2779,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%; 
+    width: 100%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 10vh; 
+    top: 10vh;
   }
 
   .mascot-chickens-section {
-    bottom: 4vh; 
+    bottom: 4vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.9) !important;
   }
@@ -2796,7 +2802,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -2822,36 +2828,33 @@
 
 @media (max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 80vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -5vh;
-    }
-    .about-container .pillar-right{
-        right: -5vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -5vh;
+  }
+  .about-container .pillar-right {
+    right: -5vh;
+  }
   .about-container .star-circle {
-      display: none; 
-    }
-    .about-container .star-circle-mobile{
-      display: block; /* Show mobile star circle */
-      bottom: -20vh;
-    }
+    display: none;
+  }
+  .about-container .star-circle-mobile {
+    display: block; /* Show mobile star circle */
+    bottom: -20vh;
+  }
   .about-container .about-bg {
-    
     width: 90%;
   }
 
-  
   .mobile-about-bg {
     width: 80% !important;
     height: auto;
@@ -2859,26 +2862,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 80vh;
@@ -2914,22 +2913,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%; 
+    width: 100%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 10vh; 
+    top: 10vh;
   }
 
   .mascot-chickens-section {
-    bottom: 4vh; 
+    bottom: 4vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.9) !important;
   }
@@ -2937,7 +2936,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {
@@ -2963,36 +2962,33 @@
 
 @media (max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
   .about-main-content {
-      top: 0vh;
+    top: 0vh;
     width: auto;
     height: 60vh;
-    }
+  }
 
-    .about-container .pillar-left,
-    .about-container .pillar-right {
-      
-      width: auto;
-      height: 100%;
-    }
-    .about-container .pillar-left{
-        left: -3vh;
-    }
-    .about-container .pillar-right{
-        right: -3vh;
-    }
+  .about-container .pillar-left,
+  .about-container .pillar-right {
+    width: auto;
+    height: 100%;
+  }
+  .about-container .pillar-left {
+    left: -3vh;
+  }
+  .about-container .pillar-right {
+    right: -3vh;
+  }
   .about-container .star-circle {
-      display: none; 
-    }
-    .about-container .star-circle-mobile{
-      display: block; /* Show mobile star circle */
-      bottom: -20vh;
-    }
+    display: none;
+  }
+  .about-container .star-circle-mobile {
+    display: block; /* Show mobile star circle */
+    bottom: -20vh;
+  }
   .about-container .about-bg {
-    
     width: 90%;
   }
 
-  
   .mobile-about-bg {
     width: 80% !important;
     height: auto;
@@ -3000,26 +2996,22 @@
   }
 
   .about-container .about-content {
-    
     top: 10vh;
     width: 75%;
   }
 
   .about-container .about-title {
-    
     margin-top: -1vh;
     padding-bottom: 1vh;
     font-size: 6vh;
   }
 
   .about-container .about-description {
-    
     margin-top: -0.8vh;
     width: 80%;
     font-size: 1.6vh;
   }
 
-  
   .mascot-container {
     width: auto;
     height: 70vh;
@@ -3055,22 +3047,22 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%; 
+    width: 100%;
     height: auto;
     z-index: 6;
   }
 
   .mascot-yucca-section {
-    top: 10vh; 
+    top: 10vh;
   }
 
   .mascot-chickens-section {
-    bottom: 4vh; 
+    bottom: 4vh;
   }
 
   .mascot-yucca-title,
   .mascot-chickens-title {
-    width: 100%; 
+    width: 100%;
     height: auto;
     transform: scale(0.9) !important;
   }
@@ -3078,7 +3070,7 @@
   .mascot-yucca-description,
   .mascot-chickens-description {
     width: 80%;
-    font-size: 1vh; 
+    font-size: 1vh;
   }
 
   .mascot-pot {

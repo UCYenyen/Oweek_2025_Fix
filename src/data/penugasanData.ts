@@ -23,7 +23,8 @@ const penugasanData = [
           "Sebelum menyebutkan 7 competence, Trainee WAJIB memperkenalkan diri (nama, nomor kelompok, nama kelompok, dan jurusan).",
           "Video wajib diambil dalam pencahayaan yang baik dan dengan latar polos.",
           "Wajah Trainee harus terlihat jelas dan tidak tertutup oleh apapun (contoh: masker, rambut).",
-          "Video dikumpulkan dalam format mp4 ke dalam Google Drive yang akan diberikan oleh AMD. Trainee wajib membuat folder dengan format nama “Nama_NamaKelompok/Nokelompok_7Competence”.",
+          "Video dikumpulkan dalam format mp4 ke dalam Google Drive yang akan diberikan oleh AMD.",
+          "Trainee wajib membuat folder dengan format nama Nama _ NamaKelompok / Nokelompok _ 7Competence.",
           "Berikut adalah 7 COMPETENCE Universitas Ciputra:",
           "Moral Integrity",
           "High Sense of Achievement",
@@ -62,8 +63,8 @@ const penugasanData = [
           "Video wajib diambil dalam pencahayaan yang baik dan dengan latar polos.",
           "Wajah Trainee harus terlihat jelas dan tidak tertutup oleh apapun (contoh: masker, rambut).",
           "Trainee wajib menyanyikan Hymne UC dengan suara yang jelas dan lantang dengan posisi badan berdiri tegak dan tangan kanan mengepal di depan dada kiri.",
-          "Video lagu Hymne UC dapat diakses pada link berikut https://www.youtube.com/watch?v=dSL4dNt45zQ",
-          "Video dikumpulkan dalam format mp4 ke dalam Google Drive yang akan diberikan oleh AMD. Trainee wajib membuat folder dengan format nama “NamaLengkap_NamaKelompok/NoKelompok_Hymne UC”.",
+          "Video dikumpulkan dalam format mp4 ke dalam Google Drive yang akan diberikan oleh AMD.",
+          "Trainee wajib membuat folder dengan format nama NamaLengkap _ NamaKelompok / NoKelompok _ Hymne UC.",
         ],
       },
       {
@@ -293,12 +294,16 @@ const penugasanData = [
       {
         title: "GUIDEBOOK SELLING DAY",
         tasks: [
-          "https://bit.ly/GuidebookSellingday2024",
           "Penugasan refleksi individu maksimal dikumpulkan pada hari Minggu, 31 Agustus 2025, pukul 12.00 WIB kepada kakak mentor masing-masing.",
         ],
       },
+
       {
         title: "Line OA Selling Day: @891vvono",
+        tasks: [],
+      },
+      {
+        title: "https://bit.ly/GuidebookSellingday2024",
         tasks: [],
       },
     ],

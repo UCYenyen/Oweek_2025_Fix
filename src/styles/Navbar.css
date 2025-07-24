@@ -409,6 +409,30 @@
         font-size: 1.2em;
     }
 }
+@media(max-width: 720px) and (max-height: 1280px){
+    .luminate-logo{
+        width: 8.5%;
+    }
+    .uc-navbar-logo{
+        width: 9%;
+        height: auto;
+    }
+    .leaves-left, .leaves-right {
+        width: 10rem;
+        height: 10rem;
+        top:-2.5rem;
+    }
+    .leaves-left{
+        left: -1rem;
+    }
+    .leaves-right{
+        right: -1rem;
+    }
+    .button-navbar, .button-navbar-selected {
+        padding: 0.25rem 1rem;
+        font-size: 1.2em;
+    }
+}
 @media(max-width: 720px) and (max-height: 720px){
     .luminate-logo{
         width: 8.5%;
@@ -487,6 +511,30 @@
     }
     .uc-navbar-logo{
         width: 10%;
+        height: auto;
+    }
+    .leaves-left, .leaves-right {
+        width: 10rem;
+        height: 10rem;
+        top:-2.5rem;
+    }
+    .leaves-left{
+        left: -1rem;
+    }
+    .leaves-right{
+        right: -1rem;
+    }
+    .button-navbar, .button-navbar-selected {
+        padding: 0.25rem 1rem;
+        font-size: 1.2em;
+    }
+}
+@media(max-width: 600px) and (max-height: 1024px){
+    .luminate-logo{
+        width: 8.5%;
+    }
+    .uc-navbar-logo{
+        width: 9%;
         height: auto;
     }
     .leaves-left, .leaves-right {

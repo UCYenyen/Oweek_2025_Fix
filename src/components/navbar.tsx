@@ -49,7 +49,7 @@ export default function Navbar() {
                     : "bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent group-hover:text-[#FFF0B8]"
                 }
               >
-                HOME
+                BERANDA
               </p>
             </Link>
             <Link
@@ -67,7 +67,7 @@ export default function Navbar() {
                     : "bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent group-hover:text-[#FFF0B8]"
                 }
               >
-                ABOUT
+                TENTANG
               </p>
             </Link>
             <Link
@@ -85,7 +85,7 @@ export default function Navbar() {
                     : "bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent group-hover:text-[#FFF0B8]"
                 }
               >
-                SCHEDULE
+                JADWAL
               </p>
             </Link>
             <Link
@@ -103,7 +103,7 @@ export default function Navbar() {
                     : "bg-gradient-to-b from-[#F5AC01] to-[#C03A00] bg-clip-text text-transparent group-hover:text-[#FFF0B8]"
                 }
               >
-                RULES
+                PERATURAN
               </p>
             </Link>
           </div>

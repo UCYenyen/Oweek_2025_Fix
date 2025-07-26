@@ -71,11 +71,11 @@ export const dataDresscode = [
   },
   {
     dayId: 5,
-    title: "NEXT GEN VISIONARIES",
+    title: "COMING SOON",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Kain (tidak sobek & tidak ketat)", "Sepatu bebas"],
+        items: ["Coming Soon"],
       },
     ],
     images: {
@@ -99,11 +99,11 @@ export const dataDresscode = [
   },
   {
     dayId: 7,
-    title: "SPARK THE PATH",
+    title: "NEXT GEN VISIONARIES",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Sesuai dengan ketentuan prodi masing masing"],
+        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Kain (tidak sobek & tidak ketat)", "Sepatu bebas"],
       },
     ],
     images: {
@@ -127,11 +127,11 @@ export const dataDresscode = [
   },
   {
     dayId: 9,
-    title: "THE UNCHARTED COMPASS",
+    title: "SPARK THE PATH",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja Hitam", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu (bebas, menutupi jari & tumit)"],
+        items: ["Sesuai dengan ketentuan prodi masing masing"],
       },
     ],
     images: {
@@ -155,6 +155,20 @@ export const dataDresscode = [
   },
   {
     dayId: 11,
+    title: "THE UNCHARTED COMPASS",
+    pakaian: [
+      {
+        title: "Dresscode",
+        items: ["Kemeja Hitam", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu (bebas, menutupi jari & tumit)"],
+      },
+    ],
+    images: {
+      do: "/elements/icons/luminate.svg",
+      dont: "/elements/icons/luminate.svg",
+    },
+  },
+  {
+    dayId: 12,
     title: "THE INNER VOYAGE",
     pakaian: [
       {
@@ -168,7 +182,7 @@ export const dataDresscode = [
     },
   },
   {
-    dayId: 12,
+    dayId: 13,
     title: "HENOSIS FOOD FOYAGE",
     pakaian: [
       {
@@ -186,7 +200,7 @@ export const dataDresscode = [
     },
   },
   {
-    dayId: 13,
+    dayId: 14,
     title: "FLAME OF TRIUMPH",
     pakaian: [
       {

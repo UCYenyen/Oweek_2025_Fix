@@ -166,14 +166,8 @@ const penugasanData = [
     dayId: 5,
     events: [
       {
-        title: "Refleksi Individu (Upload TIKTOK)",
-        tasks: [
-          "Trainee membuat video diri mereka (Wajah terlihat jelas dengan menggunakan dresscode sesuai ketentuan UC) membaca refleksi tentang apa yang mereka pelajari setelah mengikuti sesi talkshow.",
-          "Video wajib mentag akun @universitasciputra, @oweekuc, @(mentor) dan memberikan hashtag #fyp #OWEEKUC25 #luminate #NamaKelompok #Talkshow #UC #UCSurabaya #UniversitasCiputraSurabaya.",
-          "Akun Tiktok trainee WAJIB di-public hingga acara O-Week 2025 berakhir.",
-          "Pengumpulan video maksimal hari Senin, 25 Agustus 2025, pukul 23.59 WIB melalui link  Google Form di bawah ini : <link>",
-          "Format penamaan pengumpulan sebagai berikut: Nomor Kelompok_Nama Kelompok_Nama Anggota (Contoh : 001_Luminate_ Albert Putra Tanbun)",
-        ],
+        title: "Ketentuan",
+        tasks: ["Coming Soon."],
       },
     ],
   },
@@ -310,6 +304,17 @@ const penugasanData = [
   },
   {
     dayId: 13,
+    events: [
+      {
+        title: "Closing Day.",
+        tasks: [
+          "Terdapat penugasan refleksi diri dan refleksi O-Week yang WAJIB dikerjakan pada buku penugasan trainee. ",
+        ],
+      },
+    ],
+  },
+  {
+    dayId: 14,
     events: [
       {
         title: "Closing Day.",

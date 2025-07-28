@@ -22,7 +22,7 @@ export const scheduleData = [
     day_ke: "-",
     location: "UC Plaza",
     sessions: [
-      "06.30-08.20 WIB",
+      "06.30-08.05 WIB",
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -35,7 +35,7 @@ export const scheduleData = [
     day_ke: "-",
     location: "UC Plaza",
     sessions: [
-      '08.20-09:30 WIB',
+      '08.05-09:48 WIB',
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -48,7 +48,7 @@ export const scheduleData = [
     day_ke: "-",
     location: "Online & Offline di Universitas Ciputra Surabaya",
     sessions: [
-      "10.10-12.40 WIB",
+      "09.48-13.00 WIB",
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""

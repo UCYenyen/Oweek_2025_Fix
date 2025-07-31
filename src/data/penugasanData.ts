@@ -140,6 +140,24 @@ const penugasanData = [
     ],
   },
   {
+    dayId: 2,
+    events: [
+      {
+        title: "Ketentuan",
+        tasks: ["Coming Soon."],
+      },
+    ],
+  },
+  {
+    dayId: 3,
+    events: [
+      {
+        title: "Ketentuan",
+        tasks: ["Coming Soon."],
+      },
+    ],
+  },
+  {
     dayId: 4,
     events: [
       {
@@ -150,24 +168,6 @@ const penugasanData = [
   },
   {
     dayId: 5,
-    events: [
-      {
-        title: "Ketentuan",
-        tasks: ["Coming Soon."],
-      },
-    ],
-  },
-  {
-    dayId: 6,
-    events: [
-      {
-        title: "Ketentuan",
-        tasks: ["Coming Soon."],
-      },
-    ],
-  },
-  {
-    dayId: 7,
     events: [
       {
         title: "Showcase",
@@ -186,7 +186,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 8,
+    dayId: 6,
     events: [
       {
         title: "Penugasan “Moodboard”",
@@ -204,7 +204,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 9,
+    dayId: 7,
     events: [
       {
         title: "Ketentuan",
@@ -213,7 +213,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 10,
+    dayId: 8,
     events: [
       {
         title: "Kartu Misi (Individu)",
@@ -257,7 +257,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 11,
+    dayId: 9,
     events: [
       {
         title: "Ketentuan",
@@ -266,7 +266,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 12,
+    dayId: 10,
     events: [
       {
         title: "Penugasan",
@@ -278,7 +278,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 13,
+    dayId: 11,
     events: [
       {
         title: "GUIDEBOOK SELLING DAY",
@@ -298,7 +298,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 14,
+    dayId: 12,
     events: [
       {
         title: "Closing Day.",
@@ -309,7 +309,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 15,
+    dayId: 13,
     events: [
       {
         title: "Closing Day.",

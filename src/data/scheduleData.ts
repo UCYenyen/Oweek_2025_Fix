@@ -28,7 +28,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 4,
+    id: 2,
     day: "Minggu",
     title: "TM SELLING DAY",
     date: "17 Agustus 2025",
@@ -41,7 +41,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 5,
+    id: 3,
     day: "Senin-Jumat",
     title: "MARTIKULASI JURUSAN",
     date: "18-22 Agustus 2025",
@@ -52,7 +52,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 6,
+    id: 4,
     day: "Jumat",
     title: "PARENTS GATHERING",
     date: "22 Agustus 2025",
@@ -63,7 +63,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 7,
+    id: 5,
     day: "Senin",
     title: "NEXT GEN VISIONARIES",
     date: "25 Agustus 2025",
@@ -77,7 +77,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 8,
+    id: 6,
     day: "Senin",
     title: "NEXT GEN VISIONARIES",
     date: "25 Agustus 2025",
@@ -90,7 +90,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 9,
+    id: 7,
     day: "Selasa",
     title: "SPARK THE PATH",
     date: "26 Agustus 2025",
@@ -101,7 +101,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
    {
-    id: 10,
+    id: 8,
     day: "Selasa",
     title: "SPARK THE PATH",
     date: "26 Agustus 2025",
@@ -112,7 +112,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 11,
+    id: 9,
     day: "Rabu",
     title: "THE UNCHARTED COMPASS",
     date: "27 Agustus 2025",
@@ -123,7 +123,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 12,
+    id: 10,
     day: "Rabu",
     title: "THE UNCHARTED COMPASS",
     date: "27 Agustus 2025",
@@ -134,7 +134,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 13,
+    id: 11,
     day: "Kamis",
     title: "THE INNER VOYAGE",
     date: "28 Agustus 2025",
@@ -145,7 +145,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 14,
+    id: 12,
     day: "Jumat",
     title: "HENOSIS FOOD FOYAGE",
     date: "29 Agustus 2025",
@@ -156,7 +156,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 15,
+    id: 13,
     day: "Sabtu",
     title: "FLAME OF TRIUMPH",
     date: "30 Agustus 2025",

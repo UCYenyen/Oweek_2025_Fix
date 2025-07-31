@@ -78,7 +78,7 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 4,
+    dayId: 2,
     events: [
       {
         title: "TM SELLING DAY",
@@ -91,7 +91,7 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 5,
+    dayId: 3,
     events: [
       {
         title: "Communication (COM)",
@@ -276,7 +276,7 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 6,
+    dayId: 4,
     events: [
       {
         title: "PARENTS GATHERING",
@@ -286,13 +286,37 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 7,
+    dayId: 5,
     events: [
       {
         title: "NEXT GEN VISIONARIES",
         rules: ["Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membwa SIM.",
           "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
           "Trainee diwajibkan untuk membawa tumblr dan peralatan makanan O-Week 2025.",
+        ],
+      },
+    ],
+  },
+  {
+    dayId: 6,
+    events: [
+      {
+        title: "Ketentuan Parkir",
+        rules: [
+          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
+          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
+        ],
+      },
+    ],
+  },
+  {
+    dayId: 7,
+    events: [
+      {
+        title: "Ketentuan Parkir",
+        rules: [
+          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
+          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
         ],
       },
     ],
@@ -337,30 +361,6 @@ const ketentuanData = [
     dayId: 11,
     events: [
       {
-        title: "Ketentuan Parkir",
-        rules: [
-          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
-          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
-        ],
-      },
-    ],
-  },
-  {
-    dayId: 12,
-    events: [
-      {
-        title: "Ketentuan Parkir",
-        rules: [
-          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
-          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
-        ],
-      },
-    ],
-  },
-  {
-    dayId: 13,
-    events: [
-      {
         title: "HENOSIS FOOD FOYAGE",
         rules: [
           "Dresscode Selling Day: Trainee diwajibkan untuk menggunakan kaos Universitas Ciputra, celana panjang gelap tidak sobek, name tag, bersepatu (warna bebas) serta membawa tumblr dan peralatan makan O-Week 2025, Atribut/Aksesoris Negara (detail ketentuan menyusul)",
@@ -379,7 +379,7 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 14,
+    dayId: 12,
     events: [
       {
         title: "Dresscode",
@@ -407,7 +407,7 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 15,
+    dayId: 13,
     events: [
       {
         title: "FLAME OF TRIUMPH",

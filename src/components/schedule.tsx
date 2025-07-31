@@ -73,24 +73,37 @@ export default function Schedule() {
 
         <div className="flex flex-col justify-center items-center schedule-card rounded-3xl overflow-hidden">
           <div className="parent-description-container w-[80%]">
-            <div ref={scheduleContentRef} className="w-full flex gap-4 flex-col items-center justify-center">
+            <div
+              ref={scheduleContentRef}
+              className="w-full flex gap-4 flex-col items-center justify-center"
+            >
               <div className="flex flex-col gap-2">
-                <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
-                  {currentSchedule.title}
-                </h2>
                 {currentSchedule.title === "PARENTS GATHERING" ? (
-                  <a
-                    href="https://oweek.uc.ac.id/parents/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center schedule-subtitle text-xl w-full font-bold text-center text-[#AB6528] font-roboto underline"
-                  >
-                   <i className="bi bi-link-45deg text-2xl text-[#D45A0A]"></i> Info Parents Gathering
-                  </a>
+                  <>
+                    <a href="https://oweek.uc.ac.id/parents/" target="_blank">
+                      <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
+                        {currentSchedule.title}
+                      </h2>
+                    </a>
+                    <a
+                      href="https://oweek.uc.ac.id/parents/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center schedule-subtitle text-xl w-full font-bold text-center text-[#AB6528] font-roboto underline"
+                    >
+                      <i className="bi bi-link-45deg text-2xl text-[#D45A0A]"></i>{" "}
+                      Click here for more info
+                    </a>
+                  </>
                 ) : (
-                  <h2 className="schedule-subtitle text-xl w-full font-bold text-center text-[#AB6528] font-roboto">
-                    {currentSchedule.day_ke}
-                  </h2>
+                  <>
+                    <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
+                      {currentSchedule.title}
+                    </h2>
+                    <h2 className="schedule-subtitle text-xl w-full font-bold text-center text-[#AB6528] font-roboto">
+                      {currentSchedule.day_ke}
+                    </h2>
+                  </>
                 )}
               </div>
               <div className="flex items-center justify-center">
@@ -100,7 +113,9 @@ export default function Schedule() {
                     <div className="w-8 flex justify-center">
                       <i className="icon text-2xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
                     </div>
-                    <span className="schedule-text-description text-xl">{currentSchedule.day}, {currentSchedule.date}</span>
+                    <span className="schedule-text-description text-xl">
+                      {currentSchedule.day}, {currentSchedule.date}
+                    </span>
                   </div>
 
                   {/* Location with aligned icon */}
@@ -108,7 +123,9 @@ export default function Schedule() {
                     <div className="w-8 flex justify-center">
                       <i className="icon text-2xl text-[#D45A0A] bi bi-geo-alt-fill"></i>
                     </div>
-                    <span className="schedule-text-description text-xl">{currentSchedule.location}</span>
+                    <span className="schedule-text-description text-xl">
+                      {currentSchedule.location}
+                    </span>
                   </div>
 
                   {/* Sessions with aligned icons */}
@@ -123,7 +140,9 @@ export default function Schedule() {
                             <div className="text-icon-container w-8 flex text-2xl justify-center">
                               <i className="icon text-[#D45A0A] bi bi-alarm-fill"></i>
                             </div>
-                            <p className="schedule-text-description text-xl">{session}</p>
+                            <p className="schedule-text-description text-xl">
+                              {session}
+                            </p>
                           </div>
                         ))}
                       </div>

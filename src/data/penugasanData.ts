@@ -83,7 +83,7 @@ const penugasanData = [
         ],
       },
       {
-        title: "Follow Akun UC",
+        title: "Upload Twibbon",
         tasks: [
           "Range waktu : 17 Agustus 2025 -  24 Agustus 2025",
           "Deadline: 24 Agustus 2025 23:59 WIB (Bukti dikumpulkan melalui Google form yang telah disediakan oleh PCD) (Jika sudah mengisi form, AMD diharap untuk checklist sheet dari PCD)",
@@ -170,6 +170,15 @@ const penugasanData = [
     dayId: 5,
     events: [
       {
+        title: "Ketentuan",
+        tasks: ["Coming Soon."],
+      },
+    ],
+  },
+  {
+    dayId: 6,
+    events: [
+      {
         title: "Showcase",
         tasks: [
           "Setiap kelompok wajib mempersiapkan 2 (dua) perwakilan dan wajib membawa prototype produk yang akan dijual untuk dipresentasikan pada:",
@@ -186,7 +195,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 6,
+    dayId: 7,
     events: [
       {
         title: "Penugasan “Moodboard”",
@@ -201,14 +210,18 @@ const penugasanData = [
           "Deadline pengumpulan: Rabu, 4 September 2024, pukul 23.59 WIB.",
         ],
       },
-    ],
-  },
-  {
-    dayId: 7,
-    events: [
       {
-        title: "Ketentuan",
-        tasks: ["Coming Soon."],
+        title: "Kartu Misi (Individu)",
+        tasks: [
+          "Trainee akan mendapatkan kartu misi yang dibagikan oleh kakak mentor masing-masing.",
+          "Kartu misi WAJIB dilengkapi dengan stiker yang didapatkan dengan menanyakan 3 pertanyaan kepada masing-masing ORMAWA (minimal 1 organisasi tingkat kampus (SC, SRB, MD), 1 SU, 2  UKM, DAN1 Club).",
+          "Berikut adalah pertanyaan untuk ORMAWA dari trainee:",
+          "1. Apa tujuan dari ORMAWA ini?",
+          "2. Kegiatan rutin apa yang dilakukan oleh ORMAWA ini ?",
+          "3. Apa benefit yang didapatkan dari mengikuti ORMAWA ini?",
+          "Trainee WAJIB mendapatkan dan menempelkan minimal 5 stiker yang telah didapatkan di kartu misi.",
+          "Trainee WAJIB mengumpulkan kartu misi kepada kakak mentor masing-masing saat registrasi day ke 4.",
+        ],
       },
     ],
   },
@@ -269,6 +282,15 @@ const penugasanData = [
     dayId: 10,
     events: [
       {
+        title: "Ketentuan",
+        tasks: ["Sama seperti Day-2 (ORMAWA-FEST)"],
+      },
+    ],
+  },
+  {
+    dayId: 11,
+    events: [
+      {
         title: "Penugasan",
         tasks: [
           "Trainee wajib mengerjakan soal quiz Student Development Program yang terdapat pada buku penugasan selama kegiatan materi berlangsung",
@@ -278,7 +300,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 11,
+    dayId: 12,
     events: [
       {
         title: "GUIDEBOOK SELLING DAY",
@@ -294,17 +316,6 @@ const penugasanData = [
       {
         title: "https://bit.ly/GuidebookSellingday2024",
         tasks: [],
-      },
-    ],
-  },
-  {
-    dayId: 12,
-    events: [
-      {
-        title: "Closing Day.",
-        tasks: [
-          "Terdapat penugasan refleksi diri dan refleksi O-Week yang WAJIB dikerjakan pada buku penugasan trainee. ",
-        ],
       },
     ],
   },

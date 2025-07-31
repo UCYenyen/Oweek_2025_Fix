@@ -100,19 +100,8 @@ export const scheduleData = [
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
-   {
-    id: 8,
-    day: "Selasa",
-    title: "SPARK THE PATH",
-    date: "26 Agustus 2025",
-    day_ke: "Day 2 (ORMAWA-FEST)",
-    location: "Universitas Ciputra Surabaya",
-    sessions: ['14.30-18.00 WIB'],
-    baju: "", celana: "", sepatu: "", extra: "",
-    baju2: "", celana2: "", sepatu2: ""
-  },
   {
-    id: 9,
+    id: 8,
     day: "Rabu",
     title: "THE UNCHARTED COMPASS",
     date: "27 Agustus 2025",
@@ -123,7 +112,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 10,
+    id: 9,
     day: ["Selasa","Rabu"],
     title: "THE UNCHARTED COMPASS",
     date: ["26 Agustus 2025" ,"27 Agustus 2025"],
@@ -134,7 +123,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 11,
+    id: 10,
     day: "Kamis",
     title: "THE INNER VOYAGE",
     date: "28 Agustus 2025",
@@ -145,7 +134,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 12,
+    id: 11,
     day: "Jumat",
     title: "HENOSIS FOOD FOYAGE",
     date: "29 Agustus 2025",
@@ -156,7 +145,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 13,
+    id: 12,
     day: "Sabtu",
     title: "FLAME OF TRIUMPH",
     date: "30 Agustus 2025",

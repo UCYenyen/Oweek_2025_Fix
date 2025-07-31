@@ -273,22 +273,48 @@ const penugasanData = [
     dayId: 9,
     events: [
       {
-        title: "Ketentuan",
-        tasks: ["Coming Soon."],
+        title: "Kartu Misi (Individu)",
+        tasks: [
+          "Trainee akan mendapatkan kartu misi yang dibagikan oleh kakak mentor masing-masing.",
+          "Kartu misi WAJIB dilengkapi dengan stiker yang didapatkan dengan menanyakan 3 pertanyaan kepada masing-masing ORMAWA (minimal 1 organisasi tingkat kampus (SC, SRB, MD), 1 SU, 2  UKM, DAN1 Club).",
+          "Berikut adalah pertanyaan untuk ORMAWA dari trainee:",
+          "1. Apa tujuan dari ORMAWA ini?",
+          "2. Kegiatan rutin apa yang dilakukan oleh ORMAWA ini ?",
+          "3. Apa benefit yang didapatkan dari mengikuti ORMAWA ini?",
+          "Trainee WAJIB mendapatkan dan menempelkan minimal 5 stiker yang telah didapatkan di kartu misi.",
+          "Trainee WAJIB mengumpulkan kartu misi kepada kakak mentor masing-masing saat registrasi day ke 4.",
+        ],
+      },
+      {
+        title: "Refleksi Pribadi (Individu)",
+        tasks: [
+          "Trainee WAJIB membuat refleksi pribadi di buku penugasan O-Week dengan minimal 100 kata.",
+          "Penugasan individu maksimal dikumpulkan pada hari Rabu, 27 Agustus 2025, pukul 23.59 WIB kepada kakak mentor masing-masing.",
+          "Penjelasan: Buatlah refleksi yang wajib ditulis tangan minimal 100 kata yang berisi tentang pengalaman dan pemahaman setelah mengikuti rangkaian kegiatan ORMAWAFEST 2025. Dengan adanya refleksi ini, diharapkan dapat membantu kalian dalam menentukan ORMAWA yang akan kalian ambil. Berikut adalah pertanyaan refleksi:",
+          "1. Pembelajaran apa saja yang trainee dapatkan setelah mengunjungi berbagai ORMAWA di ORMAWAFEST 2025?",
+          "2. Setelah mengikuti sesi ORMAWAFEST 2025, organisasi apa yang paling diminati trainee untuk bergabung? Mengapa?",
+          "3. Apa harapan trainee saat bergabung dengan salah satu ORMAWA setelah O-Week?",
+          "4. Apa informasi baru yang trainee dapatkan terkait organisasi yang ada?",
+          "5. Apa kesan dan pesan trainee setelah mengikuti ORMAWAFEST 2025?",
+        ],
+      },
+      {
+        title: "Video Kreatif TikTok (Penugasan Kelompok)",
+        tasks: [
+          "Setiap kelompok membuat video dengan mengikuti tren TikTok sesuai dengan link di bawah ini:  <link menyusul> ",
+          "Setiap anggota WAJIB menyebutkan 1 ORMAWA yang diminati sebelum mengikuti ORMAWAFEST 2025 di awal video.",
+          "Di akhir video, setiap anggota menyebutkan 1 ORMAWA yang paling diminati setelah mengikuti ORMAWAFEST 2025.",
+          "Setiap anggota WAJIB berpartisipasi di dalam video.",
+          "Video WAJIB di-upload oleh perwakilan kelompok di TikTok dengan menggunakan hashtag #fyp #OWEEKUC25 #luminate #Nama Kelompok #OrmawaFest2025 #UC #UniversitasCiputra serta tag @kakakmentor masing-masing.",
+          "Akun TikTok perwakilan kelompok WAJIB di-public hingga acara O-Week 2025 berakhir.",
+          "Pengumpulan video maksimal hari Rabu, 27 Agustus 2025, pukul 23.59 WIB melalui link  Google Form di bawah ini : <link>",
+          "Format penamaan pengumpulan sebagai berikut: Nomor Kelompok_Nama Kelompok (Contoh : 001_Luminate)",
+        ],
       },
     ],
   },
   {
     dayId: 10,
-    events: [
-      {
-        title: "Ketentuan",
-        tasks: ["Sama seperti Day-2 (ORMAWA-FEST)"],
-      },
-    ],
-  },
-  {
-    dayId: 11,
     events: [
       {
         title: "Penugasan",
@@ -300,7 +326,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 12,
+    dayId: 11,
     events: [
       {
         title: "GUIDEBOOK SELLING DAY",
@@ -320,7 +346,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 13,
+    dayId: 12,
     events: [
       {
         title: "Closing Day.",

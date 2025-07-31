@@ -361,18 +361,6 @@ const ketentuanData = [
     dayId: 11,
     events: [
       {
-        title: "Ketentuan Parkir",
-        rules: [
-          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
-          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
-        ],
-      },
-    ],
-  },
-  {
-    dayId: 12,
-    events: [
-      {
         title: "HENOSIS FOOD FOYAGE",
         rules: [
           "Dresscode Selling Day: Trainee diwajibkan untuk menggunakan kaos Universitas Ciputra, celana panjang gelap tidak sobek, name tag, bersepatu (warna bebas) serta membawa tumblr dan peralatan makan O-Week 2025, Atribut/Aksesoris Negara (detail ketentuan menyusul)",
@@ -390,7 +378,7 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 13,
+    dayId: 12,
     events: [
       {
         title: "FLAME OF TRIUMPH",

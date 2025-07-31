@@ -34,20 +34,26 @@
   color: #ffffff;
 }
 .button-schedule {
-  background: linear-gradient(
-    90deg,
-    var(--button-left-gradient),
-    var(--button-right-gradient)
-  );
   cursor: pointer;
   border: 4px solid transparent;
+  --button-left-gradient: #75ABDC;
+  --button-right-gradient: #B2D5F1;
+  --button-left-border: #F2B028;
+  --button-right-border: #FFF0B8;
+  background-image: linear-gradient(90deg, var(--button-left-gradient), var(--button-right-gradient)),
+    radial-gradient(circle at top left, var(--button-left-border), var(--button-right-border));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition:  --button-left-gradient 300ms,  --button-right-gradient 300ms;
 
-  background-image: linear-gradient(
-      90deg,
-      var(--countdown-top-gradient),
-      var(--countdown-right-gradient)
-    ),
-    radial-gradient(circle at top left, #f2b028, #fff0b8);
+}
+.button-schedule:hover {
+  cursor: pointer;
+  border: 4px solid transparent;
+   --button-left-gradient: #FFF0B8;
+  --button-right-gradient: #FFD054;
+  --button-left-border: #F2B028;
+  --button-right-border: #FFF0B8;
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }

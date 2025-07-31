@@ -361,6 +361,18 @@ const ketentuanData = [
     dayId: 11,
     events: [
       {
+        title: "Ketentuan Parkir",
+        rules: [
+          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
+          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
+        ],
+      },
+    ],
+  },
+  {
+    dayId: 12,
+    events: [
+      {
         title: "HENOSIS FOOD FOYAGE",
         rules: [
           "Dresscode Selling Day: Trainee diwajibkan untuk menggunakan kaos Universitas Ciputra, celana panjang gelap tidak sobek, name tag, bersepatu (warna bebas) serta membawa tumblr dan peralatan makan O-Week 2025, Atribut/Aksesoris Negara (detail ketentuan menyusul)",
@@ -369,7 +381,6 @@ const ketentuanData = [
           "Trainee tidak diperbolehkan untuk membawa sepeda motor.",
           "Trainee dihimbau untuk membawa mobil dengan minimal 4 orang dalam satu mobil.",
           "Dresscode Loading in (Kamis, 28 Agustus 2025 22.30-01.00): Baju Kaos bebas (tidak crop/sleeveless/tembus pandang), Celana Panjang Gelap (tidak robek dan tidak ketat), Sepatu Sneakers (warna bebas)",
-
         ],
       },
       {
@@ -379,8 +390,15 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 12,
+    dayId: 13,
     events: [
+      {
+        title: "FLAME OF TRIUMPH",
+        rules: [
+          "Trainee WAJIB mengikuti kegiatan Flame of Triumph yang diselenggarakan secara OFFLINE di Universitas Ciputra.",
+          "Trainee WAJIB membawa dan menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
+        ],
+      },
       {
         title: "Dresscode",
         rules: [
@@ -395,26 +413,6 @@ const ketentuanData = [
         rules: [
           "Trainee tidak diperbolehkan untuk membawa sepeda motor dan mobil ke Venue Palimanan",
           "Trainee sangat DIHIMBAU untuk melakukan drop-off di Venue Palimanan",
-        ],
-      },
-      {
-        title: "Refleksi Pribadi",
-        rules: [
-          "Trainee WAJIB membuat refleksi pribadi di buku penugasan O-Wee",
-          "Penugasan refleksi individu maksimal dikumpulkan pada hari Minggu, 31 Agustus 2025, pukul 12.00 WIB kepada kakak mentor masing-masing.",
-        ],
-      },
-    ],
-  },
-  {
-    dayId: 13,
-    events: [
-      {
-        title: "FLAME OF TRIUMPH",
-        rules: [
-          "Trainee WAJIB mengikuti kegiatan Flame of Triumph yang diselenggarakan secara OFFLINE di Universitas Ciputra.",
-          "Trainee WAJIB membawa dan menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
-          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu bebas.",
         ],
       },
     ],

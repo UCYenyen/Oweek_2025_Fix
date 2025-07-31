@@ -109,14 +109,33 @@ export default function Schedule() {
               <div className="flex items-center justify-center">
                 <div className="w-full">
                   {/* Date with aligned icon */}
-                  <div className="text-icon-container flex items-center schedule-item-desc font-roboto text-[#AB6528]">
-                    <div className="w-8 flex justify-center">
-                      <i className="icon text-2xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
-                    </div>
-                    <span className="schedule-text-description text-xl">
-                      {currentSchedule.day}, {currentSchedule.date}
-                    </span>
-                  </div>
+                  {Array.isArray(currentSchedule.date)
+                    ? currentSchedule.date.map((dateItem: string, idx: number) => (
+                        <div
+                          key={idx}
+                          className="text-icon-container flex items-center schedule-item-desc font-roboto text-[#AB6528]"
+                        >
+                          <div className="w-8 flex justify-center">
+                            <i className="icon text-2xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
+                          </div>
+                          <span className="schedule-text-description text-xl">
+                            {Array.isArray(currentSchedule.day)
+                              ? `${currentSchedule.day[idx]}, ${dateItem}`
+                              : `${currentSchedule.day}, ${dateItem}`}
+                          </span>
+                        </div>
+                      ))
+                    : (
+                        <div className="text-icon-container flex items-center schedule-item-desc font-roboto text-[#AB6528]">
+                          <div className="w-8 flex justify-center">
+                            <i className="icon text-2xl text-[#D45A0A] bi bi-calendar-check-fill"></i>
+                          </div>
+                          <span className="schedule-text-description text-xl">
+                            {currentSchedule.day}, {currentSchedule.date}
+                          </span>
+                        </div>
+                      )
+                  }
 
                   {/* Location with aligned icon */}
                   <div className="text-icon-container flex items-center schedule-item-desc font-roboto text-[#AB6528]">

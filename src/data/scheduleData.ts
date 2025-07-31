@@ -124,10 +124,10 @@ export const scheduleData = [
   },
   {
     id: 10,
-    day: "Rabu",
+    day: ["Selasa","Rabu"],
     title: "THE UNCHARTED COMPASS",
-    date: "27 Agustus 2025",
-    day_ke: "Day 3 (ORMAWA-FEST)",
+    date: ["26 Agustus 2025" ,"27 Agustus 2025"],
+    day_ke: "Day 2 & 3 (ORMAWA-FEST)",
     location: "Universitas Ciputra Surabaya",
     sessions: [ "14.30-18.00 WIB" ],
     baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",

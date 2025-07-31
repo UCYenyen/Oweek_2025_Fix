@@ -85,11 +85,11 @@ export const dataDresscode = [
   },
   {
     dayId: 6,
-    title: "NEXT GEN VISIONARIES",
+    title: "COMING SOON",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu"],
+        items: ["Coming Soon"],
       },
     ],
     images: {
@@ -103,7 +103,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Kain (tidak sobek & tidak ketat)", "Sepatu bebas"],
+        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu"],
       },
     ],
     images: {
@@ -113,11 +113,11 @@ export const dataDresscode = [
   },
   {
     dayId: 8,
-    title: "SPARK THE PATH",
+    title: "NEXT GEN VISIONARIES",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Sesuai dengan ketentuan prodi masing masing"],
+        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Kain (tidak sobek & tidak ketat)", "Sepatu bebas"],
       },
     ],
     images: {
@@ -141,11 +141,11 @@ export const dataDresscode = [
   },
   {
     dayId: 10,
-    title: "THE UNCHARTED COMPASS",
+    title: "SPARK THE PATH",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja Hitam", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu (bebas, menutupi jari & tumit)"],
+        items: ["Sesuai dengan ketentuan prodi masing masing"],
       },
     ],
     images: {
@@ -169,6 +169,20 @@ export const dataDresscode = [
   },
   {
     dayId: 12,
+    title: "THE UNCHARTED COMPASS",
+    pakaian: [
+      {
+        title: "Dresscode",
+        items: ["Kemeja Hitam", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu (bebas, menutupi jari & tumit)"],
+      },
+    ],
+    images: {
+      do: "/elements/icons/luminate.svg",
+      dont: "/elements/icons/luminate.svg",
+    },
+  },
+  {
+    dayId: 13,
     title: "THE INNER VOYAGE",
     pakaian: [
       {
@@ -182,7 +196,7 @@ export const dataDresscode = [
     },
   },
   {
-    dayId: 13,
+    dayId: 14,
     title: "HENOSIS FOOD FOYAGE",
     pakaian: [
       {
@@ -200,7 +214,7 @@ export const dataDresscode = [
     },
   },
   {
-    dayId: 14,
+    dayId: 15,
     title: "FLAME OF TRIUMPH",
     pakaian: [
       {

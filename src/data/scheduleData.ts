@@ -17,38 +17,12 @@ export const scheduleData = [
   {
     id: 1,
     day: "Minggu",
-    title: "UPACARA",
+    title: "UPACARA & PEMBUKAAN",
     date: "17 Agustus 2025",
     day_ke: "-",
-    location: "UC Plaza",
+    location: "UC Plaza & Universitas Ciputra Surabaya",
     sessions: [
-      "06.30-08.05 WIB",
-    ],
-    baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
-    baju2: "", celana2: "", sepatu2: ""
-  },
-  {
-    id: 2,
-    day: "Minggu",
-    title: "OPENING CEREMONY",
-    date: "17 Agustus 2025",
-    day_ke: "-",
-    location: "UC Plaza",
-    sessions: [
-      '08.05-09:48 WIB',
-    ],
-    baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
-    baju2: "", celana2: "", sepatu2: ""
-  },
-  {
-    id: 3,
-    day: "Minggu",
-    title: "SEMINAR 5",
-    date: "17 Agustus 2025",
-    day_ke: "-",
-    location: "Online & Offline di Universitas Ciputra Surabaya",
-    sessions: [
-      "09.48-13.00 WIB",
+      "06.30-13.00 WIB",
     ],
     baju: "Kemeja Putih", celana: "Celana Hitam Formal", sepatu: "Sepatu Hitam", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -79,6 +53,17 @@ export const scheduleData = [
   },
   {
     id: 6,
+    day: "Jumat",
+    title: "PARENTS GATHERING",
+    date: "22 Agustus 2025",
+    day_ke: "-",
+    location: "Sesuai ketentuan Prodi",
+    sessions: ["Sesuai ketentuan Prodi"],
+    baju: "Sesuai ketentuan Prodi", celana: "", sepatu: "", extra: "",
+    baju2: "", celana2: "", sepatu2: ""
+  },
+  {
+    id: 7,
     day: "Senin",
     title: "NEXT GEN VISIONARIES",
     date: "25 Agustus 2025",
@@ -92,7 +77,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 7,
+    id: 8,
     day: "Senin",
     title: "NEXT GEN VISIONARIES",
     date: "25 Agustus 2025",
@@ -105,7 +90,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 8,
+    id: 9,
     day: "Selasa",
     title: "SPARK THE PATH",
     date: "26 Agustus 2025",
@@ -116,7 +101,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
    {
-    id: 9,
+    id: 10,
     day: "Selasa",
     title: "SPARK THE PATH",
     date: "26 Agustus 2025",
@@ -127,7 +112,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 10,
+    id: 11,
     day: "Rabu",
     title: "THE UNCHARTED COMPASS",
     date: "27 Agustus 2025",
@@ -138,7 +123,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 11,
+    id: 12,
     day: "Rabu",
     title: "THE UNCHARTED COMPASS",
     date: "27 Agustus 2025",
@@ -149,7 +134,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 12,
+    id: 13,
     day: "Kamis",
     title: "THE INNER VOYAGE",
     date: "28 Agustus 2025",
@@ -160,7 +145,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 13,
+    id: 14,
     day: "Jumat",
     title: "HENOSIS FOOD FOYAGE",
     date: "29 Agustus 2025",
@@ -171,7 +156,7 @@ export const scheduleData = [
     baju2: "", celana2: "", sepatu2: ""
   },
   {
-    id: 14,
+    id: 15,
     day: "Sabtu",
     title: "FLAME OF TRIUMPH",
     date: "30 Agustus 2025",

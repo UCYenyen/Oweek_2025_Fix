@@ -108,12 +108,7 @@ const penugasanData = [
           "Ex :  Hi! I’m Kathleen Gabrielle from SMA Ciputra. I’m joining Psychology’24 and I believe we can achieve goals with quality to inspire.  ……. (tuliskan minimal 1 kalimat alasan positif memilih UC, 1 kalimat mengenai harapan kalian untuk O-Week UC, 1 kalimat harapan yang diinginkan selama berkuliah di UC) #LUMINATE #IgnitingDreamsCreatingLegacies #OweekUCS2025 #UCPeople #UniversitasCiputra",
         ],
       },
-    ],
-  },
-  {
-    dayId: 2,
-    events: [
-      {
+       {
         title: "Name Tag Trainee",
         tasks: [
           "Range waktu : 10 Agustus 2025 - 17 Agustus 2025",
@@ -145,15 +140,6 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 3,
-    events: [
-      {
-        title: "Ketentuan",
-        tasks: ["Coming Soon.."],
-      },
-    ],
-  },
-  {
     dayId: 4,
     events: [
       {
@@ -175,6 +161,15 @@ const penugasanData = [
     dayId: 6,
     events: [
       {
+        title: "Ketentuan",
+        tasks: ["Coming Soon."],
+      },
+    ],
+  },
+  {
+    dayId: 7,
+    events: [
+      {
         title: "Showcase",
         tasks: [
           "Setiap kelompok wajib mempersiapkan 2 (dua) perwakilan dan wajib membawa prototype produk yang akan dijual untuk dipresentasikan pada:",
@@ -191,7 +186,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 7,
+    dayId: 8,
     events: [
       {
         title: "Penugasan “Moodboard”",
@@ -209,7 +204,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 8,
+    dayId: 9,
     events: [
       {
         title: "Ketentuan",
@@ -218,7 +213,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 9,
+    dayId: 10,
     events: [
       {
         title: "Kartu Misi (Individu)",
@@ -262,7 +257,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 10,
+    dayId: 11,
     events: [
       {
         title: "Ketentuan",
@@ -271,7 +266,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 11,
+    dayId: 12,
     events: [
       {
         title: "Penugasan",
@@ -283,7 +278,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 12,
+    dayId: 13,
     events: [
       {
         title: "GUIDEBOOK SELLING DAY",
@@ -303,7 +298,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 13,
+    dayId: 14,
     events: [
       {
         title: "Closing Day.",
@@ -314,7 +309,7 @@ const penugasanData = [
     ],
   },
   {
-    dayId: 14,
+    dayId: 15,
     events: [
       {
         title: "Closing Day.",

@@ -44,11 +44,6 @@ const ketentuanData = [
           "Trainee yang membawa mobil dihimbau untuk memarkirkan kendaraan di area PARKIRAN LAPANGAN Universitas Ciputra.",
         ],
       },
-    ],
-  },
-  {
-    dayId: 2,
-    events: [
       {
         title: "OPENING CEREMONY",
         rules: [
@@ -58,11 +53,6 @@ const ketentuanData = [
           "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu bebas.",
         ],
       },
-    ],
-  },
-  {
-    dayId: 3,
-    events: [
       {
         title: "SEMINAR 5 Offline",
         rules: [
@@ -289,10 +279,8 @@ const ketentuanData = [
     dayId: 6,
     events: [
       {
-        title: "NEXT GEN VISIONARIES",
-        rules: ["Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membwa SIM.",
-          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
-          "Trainee diwajibkan untuk membawa tumblr dan peralatan makanan O-Week 2025.",
+        title: "PARENTS GATHERING",
+        rules: ["-",
         ],
       },
     ],
@@ -301,10 +289,10 @@ const ketentuanData = [
     dayId: 7,
     events: [
       {
-        title: "Ketentuan Parkir",
-        rules: [
-          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
+        title: "NEXT GEN VISIONARIES",
+        rules: ["Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membwa SIM.",
           "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
+          "Trainee diwajibkan untuk membawa tumblr dan peralatan makanan O-Week 2025.",
         ],
       },
     ],
@@ -361,6 +349,18 @@ const ketentuanData = [
     dayId: 12,
     events: [
       {
+        title: "Ketentuan Parkir",
+        rules: [
+          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
+          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
+        ],
+      },
+    ],
+  },
+  {
+    dayId: 13,
+    events: [
+      {
         title: "HENOSIS FOOD FOYAGE",
         rules: [
           "Dresscode Selling Day: Trainee diwajibkan untuk menggunakan kaos Universitas Ciputra, celana panjang gelap tidak sobek, name tag, bersepatu (warna bebas) serta membawa tumblr dan peralatan makan O-Week 2025, Atribut/Aksesoris Negara (detail ketentuan menyusul)",
@@ -379,7 +379,7 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 13,
+    dayId: 14,
     events: [
       {
         title: "Dresscode",
@@ -407,7 +407,7 @@ const ketentuanData = [
     ],
   },
   {
-    dayId: 14,
+    dayId: 15,
     events: [
       {
         title: "FLAME OF TRIUMPH",

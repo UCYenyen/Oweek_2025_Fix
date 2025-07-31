@@ -78,9 +78,20 @@ export default function Schedule() {
                 <h2 className="text-2xl w-full font-bold text-center text-[#D45A0A] font-serif schedule-item-title">
                   {currentSchedule.title}
                 </h2>
-                <h2 className="schedule-subtitle text-xl w-full font-bold text-center text-[#AB6528] font-roboto">
-                  {currentSchedule.day_ke}
-                </h2>
+                {currentSchedule.title === "PARENTS GATHERING" ? (
+                  <a
+                    href="https://oweek.uc.ac.id/parents/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center schedule-subtitle text-xl w-full font-bold text-center text-[#AB6528] font-roboto underline"
+                  >
+                   <i className="bi bi-link-45deg text-2xl text-[#D45A0A]"></i> Info Parents Gathering
+                  </a>
+                ) : (
+                  <h2 className="schedule-subtitle text-xl w-full font-bold text-center text-[#AB6528] font-roboto">
+                    {currentSchedule.day_ke}
+                  </h2>
+                )}
               </div>
               <div className="flex items-center justify-center">
                 <div className="w-full">

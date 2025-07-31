@@ -15,7 +15,7 @@ export const dataDresscode = [
   },
   {
     dayId: 1,
-    title: "UPACARA",
+    title: "UPACARA & PEMBUKAAN",
     pakaian: [
       {
         title: "Dresscode",
@@ -29,11 +29,11 @@ export const dataDresscode = [
   },
   {
     dayId: 2,
-    title: "OPENING CEREMONY",
+    title: "TM SELLING DAY",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Kain (tidak sobek & tidak ketat)", "Sepatu bebas"],
+        items: ["Pakaian sopan, rapi, bersepatu, dan menggunakan celana panjang."],
       },
     ],
     images: {
@@ -43,11 +43,11 @@ export const dataDresscode = [
   },
   {
     dayId: 3,
-    title: "SEMINAR 5",
+    title: "MARTIKULASI JURUSAN",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja putih", "Celana panjang hitam berbahan kain (tidak sobek & tidak ketat)", "Sepatu bebas"],
+        items: ["Sesuai dengan ketentuan prodi masing masing"],
       },
     ],
     images: {
@@ -57,11 +57,11 @@ export const dataDresscode = [
   },
   {
     dayId: 4,
-    title: "TM SELLING DAY",
+    title: "PARENTS GATHERING",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Kain (tidak sobek & tidak ketat)", "Sepatu bebas"],
+        items: ["Sesuai dengan ketentuan prodi masing masing"],
       },
     ],
     images: {
@@ -71,34 +71,6 @@ export const dataDresscode = [
   },
   {
     dayId: 5,
-    title: "COMING SOON",
-    pakaian: [
-      {
-        title: "Dresscode",
-        items: ["Coming Soon"],
-      },
-    ],
-    images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
-    },
-  },
-  {
-    dayId: 6,
-    title: "COMING SOON",
-    pakaian: [
-      {
-        title: "Dresscode",
-        items: ["Coming Soon"],
-      },
-    ],
-    images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
-    },
-  },
-  {
-    dayId: 7,
     title: "NEXT GEN VISIONARIES",
     pakaian: [
       {
@@ -112,7 +84,7 @@ export const dataDresscode = [
     },
   },
   {
-    dayId: 8,
+    dayId: 6,
     title: "NEXT GEN VISIONARIES",
     pakaian: [
       {
@@ -126,12 +98,40 @@ export const dataDresscode = [
     },
   },
   {
-    dayId: 9,
+    dayId: 7,
     title: "SPARK THE PATH",
     pakaian: [
       {
         title: "Dresscode",
         items: ["Sesuai dengan ketentuan prodi masing masing"],
+      },
+    ],
+    images: {
+      do: "/elements/icons/luminate.svg",
+      dont: "/elements/icons/luminate.svg",
+    },
+  },
+  {
+    dayId: 8,
+    title: "SPARK THE PATH",
+    pakaian: [
+      {
+        title: "Dresscode",
+        items: ["Sesuai dengan ketentuan prodi masing masing"],
+      },
+    ],
+    images: {
+      do: "/elements/icons/luminate.svg",
+      dont: "/elements/icons/luminate.svg",
+    },
+  },
+  {
+    dayId: 9,
+    title: "THE UNCHARTED COMPASS",
+    pakaian: [
+      {
+        title: "Dresscode",
+        items: ["Kemeja Hitam", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu (bebas, menutupi jari & tumit)"],
       },
     ],
     images: {
@@ -141,11 +141,11 @@ export const dataDresscode = [
   },
   {
     dayId: 10,
-    title: "SPARK THE PATH",
+    title: "THE UNCHARTED COMPASS",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Sesuai dengan ketentuan prodi masing masing"],
+        items: ["Kemeja Hitam", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu (bebas, menutupi jari & tumit)"],
       },
     ],
     images: {
@@ -155,34 +155,6 @@ export const dataDresscode = [
   },
   {
     dayId: 11,
-    title: "THE UNCHARTED COMPASS",
-    pakaian: [
-      {
-        title: "Dresscode",
-        items: ["Kemeja Hitam", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu (bebas, menutupi jari & tumit)"],
-      },
-    ],
-    images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
-    },
-  },
-  {
-    dayId: 12,
-    title: "THE UNCHARTED COMPASS",
-    pakaian: [
-      {
-        title: "Dresscode",
-        items: ["Kemeja Hitam", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu (bebas, menutupi jari & tumit)"],
-      },
-    ],
-    images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
-    },
-  },
-  {
-    dayId: 13,
     title: "THE INNER VOYAGE",
     pakaian: [
       {
@@ -196,7 +168,7 @@ export const dataDresscode = [
     },
   },
   {
-    dayId: 14,
+    dayId: 12,
     title: "HENOSIS FOOD FOYAGE",
     pakaian: [
       {
@@ -214,7 +186,7 @@ export const dataDresscode = [
     },
   },
   {
-    dayId: 15,
+    dayId: 13,
     title: "FLAME OF TRIUMPH",
     pakaian: [
       {

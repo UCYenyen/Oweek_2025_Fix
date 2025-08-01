@@ -4,7 +4,7 @@ export const dataDresscode = [
     title: "PRA-OWEEK",
     pakaian: [
       {
-        title: "PRA-OWEEK",
+        title: "DRESSCODE",
         items: ["Pakaian Bebas, Rapi, Sopan, Bersepatu"],
       },
     ],

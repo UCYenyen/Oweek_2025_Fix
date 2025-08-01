@@ -4,8 +4,8 @@ export const dataDresscode = [
     title: "PRA-OWEEK",
     pakaian: [
       {
-        title: "Coming Soon!",
-        items: [""],
+        title: "PRA-OWEEK",
+        items: ["Pakaian Bebas, Rapi, Sopan, Bersepatu"],
       },
     ],
     images: {
@@ -19,7 +19,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja putih", "Celana Panjang Hitam Kain (tidak sobek & tidak ketat)", "Sepatu bebas"],
+        items: ["Kemeja putih", "Celana Panjang Hitam Formal", "Sepatu Hitam"],
       },
     ],
     images: {
@@ -33,7 +33,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Pakaian sopan, rapi, bersepatu, dan menggunakan celana panjang."],
+        items: ["Kemeja putih", "Celana Panjang Hitam Formal", "Sepatu Hitam"],
       },
     ],
     images: {
@@ -43,7 +43,7 @@ export const dataDresscode = [
   },
   {
     dayId: 3,
-    title: "MARTIKULASI JURUSAN",
+    title: "MATRIKULASI JURUSAN",
     pakaian: [
       {
         title: "Dresscode",
@@ -75,7 +75,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu"],
+        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)"],
       },
     ],
     images: {
@@ -89,7 +89,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Kain (tidak sobek & tidak ketat)", "Sepatu bebas"],
+        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)"],
       },
     ],
     images: {
@@ -117,7 +117,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja Hitam", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu (bebas, menutupi jari & tumit)"],
+        items: ["Atasan Batik (Bukan Outer/Vest)", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)"],
       },
     ],
     images: {
@@ -131,7 +131,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja Hitam", "Celana Panjang Hitam (tidak sobek & tidak ketat)", "Sepatu (bebas, menutupi jari & tumit)"],
+        items: ["Atasan Batik (Bukan Outer/Vest)", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)"],
       },
     ],
     images: {
@@ -145,7 +145,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Baju Batik Berkerah", "Celana Panjang Kain Hitam (Tidak Sobek)", "Sepatu sneakers (warna bebas)"],
+        items: ["Kemeja/Blouse", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)"],
       },
     ],
     images: {
@@ -159,7 +159,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode Selling Day",
-        items: ["Kaos Universitas Ciputra", "Celana Panjang Kain Hitam (Tidak Sobek)", "Sepatu (warna bebas)"],
+        items: ["Kaos Universitas Ciputra", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)", "Menggunakan Atribut/Aksesoris Negara"],
       },
       {
         title: "Dresscode Loading In",
@@ -177,11 +177,11 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode Laki-Laki",
-        items: ["Kemeja Putih", "Celana Panjang Kain Hitam", "Sepatu Pantofel Hitam"],
+        items: ["Kemeja Putih", "Celana Panjang Hitam Formal", "Sepatu Bebas (Menutupi Jari dan Tumit)", "Setiap trainee WAJIB membawa jas almamater"],
       },
       {
         title: "Dresscode Perempuan",
-        items: ["Kemeja Putih", "Rok Hitam Panjang dibawah lutut", "Flat Shoes Hitam"],
+        items: ["Kemeja Putih", "Celana Panjang/Rok Hitam (Rok Dibawah Lutut dan Tidak Ketat)", "Sepatu Bebas (Menutupi Jari dan Tumit)", "Setiap trainee WAJIB membawa jas almamater"],
       },
     ],
     images: {

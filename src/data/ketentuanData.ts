@@ -6,6 +6,8 @@ const ketentuanData = [
         title: "PRA-OWEEK",
         rules: [
           "Kegiatan Pra O-WEEK akan dibagi menjadi kloter 1 dan 2.",
+          "Kloter 1 : ISB, IMT, HTEB, CBZ, FTP, COM, ARS, VCD, MED DEM",
+          "Kloter 2 :  IBM, BMI, ACC, PSY, Freshmen Induction",
           "Trainee WAJIB mengikuti kegiatan Pra O-Week yang diselenggarakan secara ONLINE via Zoom.",
           "Trainee WAJIB memperhatikan segala informasi dan materi yang disampaikan selama kegiatan Pra - Oweek untuk mengerjakan tes yang akan diberikan.",
           "Trainee WAJIB mengerjakan tes Mental Health Assessment, Mental Health Course, Student Development Assessment, Career Interest Assessment, dan membuat Linkedin",

@@ -17,7 +17,7 @@ export const scheduleData = [
   {
     id: 1,
     day: "Minggu",
-    title: "UPACARA & PEMBUKAAN",
+    title: "UPACARA & PEMBUKAAN & 5 SEMINAR",
     date: "17 Agustus 2025",
     day_ke: "-",
     location: "UC Plaza & Universitas Ciputra Surabaya",
@@ -43,7 +43,7 @@ export const scheduleData = [
   {
     id: 3,
     day: "Senin-Jumat",
-    title: "MARTIKULASI JURUSAN",
+    title: "MATRIKULASI JURUSAN",
     date: "18-22 Agustus 2025",
     day_ke: "-",
     location: "Sesuai ketentuan Prodi",

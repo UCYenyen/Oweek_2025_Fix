@@ -3,8 +3,14 @@ import { gsap } from "gsap";
 import penugasanData from "../data/penugasanData";
 import ketentuanData from "../data/ketentuanData";
 import { dataDresscode } from "../data/dresscodeData";
+import { linkData } from "../data/linksData";
 
 import "./../styles/popUpPanel.css";
+
+type LinkItem = {
+  text: string;
+  linkId: string;
+};
 
 type PopUpPanelProps = {
   isHidden: boolean;
@@ -204,11 +210,30 @@ export default function PopUpPanel({
                     <div key={eventIdx}>
                       <h3 className="font-bold text-lg text-[#C44401]">{event.title}</h3>
                       <ul className="list-disc list-inside ml-4">
-                        {event.tasks?.map((task, taskIdx) => (
-                          <li key={taskIdx} className="content-description text-[#C44401] break-words">
-                            {task}
-                          </li>
-                        ))}
+                        {event.tasks?.map((task: string | LinkItem, taskIdx) => {
+                          if (typeof task === "string") {
+                            return (
+                              <li key={taskIdx} className="content-description text-[#C44401] break-words">
+                                {task}
+                              </li>
+                            );
+                          }
+                          if (typeof task === "object" && task.linkId && linkData[task.linkId]) {
+                            return (
+                              <li key={taskIdx} className="content-description text-[#C44401] break-words">
+                                <a
+                                  href={linkData[task.linkId]}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="underline text-[#3F61AD] hover:text-[#75ABDC]"
+                                >
+                                  {task.text}
+                                </a>
+                              </li>
+                            );
+                          }
+                          return null;
+                        })}
                       </ul>
                     </div>
                   ))
@@ -256,11 +281,30 @@ export default function PopUpPanel({
                     <div key={eventIdx}>
                       <h3 className="font-bold text-lg text-[#C44401]">{event.title}</h3>
                       <ul className="list-disc list-inside ml-4">
-                        {event.rules.map((rule, ruleIdx) => (
-                          <li key={ruleIdx} className="content-description text-[#C44401] break-words">
-                            {rule}
-                          </li>
-                        ))}
+                        {event.rules.map((rule: string | LinkItem, ruleIdx) => {
+                          if (typeof rule === "string") {
+                            return (
+                              <li key={ruleIdx} className="content-description text-[#C44401] break-words">
+                                {rule}
+                              </li>
+                            );
+                          }
+                          if (typeof rule === "object" && rule.linkId && linkData[rule.linkId]) {
+                            return (
+                              <li key={ruleIdx} className="content-description text-[#C44401] break-words">
+                                <a
+                                  href={linkData[rule.linkId]}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="underline text-[#3F61AD] hover:text-[#75ABDC]"
+                                >
+                                  {rule.text}
+                                </a>
+                              </li>
+                            );
+                          }
+                          return null;
+                        })}
                       </ul>
                     </div>
                   ))

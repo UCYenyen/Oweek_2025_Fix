@@ -51,7 +51,7 @@ export default function Schedule() {
 
       {/* non absolute  */}
       <div className="title-wrapper flex flex-col justify-center items-center">
-        <img className="title-img mt-[-8%] z-10" src="/elements/schedule/title.svg" alt="" />
+        <img className="title-img mt-[-8%] z-10" src="/elements/schedule/jadwal.svg" alt="" />
         <h1 className="title-owik relative z-10 mt-[20%] mb-[2rem] font-lettertype text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#3F61AD] to-[#75ABDC]">OWEEK 2025</h1>
         <ScheduleDiv/>
       </div>

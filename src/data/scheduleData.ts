@@ -84,7 +84,7 @@ export const scheduleData = [
     day_ke: "Day 1 (Showcase Selling Day)",
     location: "Universitas Ciputra Surabaya",
     sessions: [
-      "To Be Announced",
+      "17.00 - 18.30 WIB",
     ],
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""

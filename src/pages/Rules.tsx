@@ -214,7 +214,7 @@ export default function Rules() {
         />
 
         <div className="relative w-full min-h-full flex flex-col items-center justify-start pb-10">
-          <img src="/elements/section/rules-title.svg" className="rules-logo mt-[-8%] z-[100]" alt="" />
+          <img src="/elements/section/peraturan.svg" className="rules-logo mt-[-8%] z-[100]" alt="" />
 
           {/* Custom Dropdown */}
           <div className="dropdown w-[80%] max-w-3xl mt-8 relative" ref={dropdownRef}>

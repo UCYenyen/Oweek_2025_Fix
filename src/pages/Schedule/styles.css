@@ -3052,7 +3052,7 @@
   }
   .schedule-card {
     width: 18rem;
-    min-height: 18rem;
+    min-height: 20rem;
     margin: auto;
   }
   .button-schedule {
@@ -3075,7 +3075,10 @@
     margin-right: 4rem;
   }
   .schedule-wrapper {
-    padding-bottom: 4.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .schedule-subtitle{
+    line-height: 1rem;
   }
   .title-owik {
     font-size: 2.4rem;

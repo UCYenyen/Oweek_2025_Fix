@@ -56,9 +56,9 @@ const ketentuanData = [
         ],
       },
       {
-        title: "SEMINAR 5 Offline",
+        title: "SEMINAR PILLARS OF ENTREPRENEURSHIP OFFLINE",
         rules: [
-          "Trainee akan mendapatkan materi: Hygiene & Safety, BMC, dan Ethics, Social Media dan Financial Report",
+          "Trainee akan mendapatkan materi: Hygiene & Safety, Business Model Canvas (BMC), dan Ethics",
           "Trainee WAJIB terbagi secara rata ke dalam 5 seminar dengan materi yang berbeda-beda.",
           "Trainee WAJIB mengikuti kegiatan seminar sesuai dengan materi yang telah didapatkan.",
           "Trainee WAJIB membawa dan menggunakan Name Tag Trainee yang telah dicetak dan dimasukkan ke dalam lanyard.",
@@ -66,7 +66,7 @@ const ketentuanData = [
         ],
       },
       {
-        title: "5 Seminars Online",
+        title: "SEMINAR PILLARS OF ENTREPRENEURSHIP ONLINE",
         rules: [
           "Trainee akan mendapatkan materi: Social Media dan Financial Report",
           "Trainee WAJIB terbagi secara rata ke dalam 5 Seminar dengan materi yang berbeda-beda",

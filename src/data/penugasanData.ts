@@ -275,19 +275,6 @@ const penugasanData = [
           "Deadline pengumpulan: Rabu, 4 September 2024, pukul 23.59 WIB.",
         ],
       },
-      {
-        title: "Kartu Misi (Individu)",
-        tasks: [
-          "Trainee akan mendapatkan kartu misi yang dibagikan oleh kakak mentor masing-masing.",
-          "Kartu misi WAJIB dilengkapi dengan stiker yang didapatkan dengan menanyakan 3 pertanyaan kepada masing-masing ORMAWA (minimal 1 organisasi tingkat kampus (SC, SRB, MD), 1 SU, 2  UKM, DAN1 Club).",
-          "Berikut adalah pertanyaan untuk ORMAWA dari trainee:",
-          "1. Apa tujuan dari ORMAWA ini?",
-          "2. Kegiatan rutin apa yang dilakukan oleh ORMAWA ini ?",
-          "3. Apa benefit yang didapatkan dari mengikuti ORMAWA ini?",
-          "Trainee WAJIB mendapatkan dan menempelkan minimal 5 stiker yang telah didapatkan di kartu misi.",
-          "Trainee WAJIB mengumpulkan kartu misi kepada kakak mentor masing-masing saat registrasi day ke 4.",
-        ],
-      },
     ],
   },
   {
@@ -397,7 +384,7 @@ const penugasanData = [
         title: "GUIDEBOOK SELLING DAY",
         tasks: [
           "Penugasan refleksi individu maksimal dikumpulkan pada hari Minggu, 31 Agustus 2025, pukul 12.00 WIB kepada kakak mentor masing-masing.",
-          { text: "GUIDEBOOK SELLING DAY", linkId: "guidebookSellingDay" },
+          // { text: "GUIDEBOOK SELLING DAY", linkId: "guidebookSellingDay" },
         ],
       },
 

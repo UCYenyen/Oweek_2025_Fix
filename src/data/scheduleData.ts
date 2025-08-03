@@ -17,7 +17,7 @@ export const scheduleData = [
   {
     id: 1,
     day: "Minggu",
-    title: "UPACARA & PEMBUKAAN & 5 SEMINAR",
+    title: "UPACARA & PEMBUKAAN & SEMINAR PILLARS OF ENTREPRENEURSHIP",
     date: "17 Agustus 2025",
     day_ke: "-",
     location: "UC Plaza & Universitas Ciputra Surabaya",

@@ -33,7 +33,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja putih", "Celana Panjang Hitam Formal", "Sepatu Hitam"],
+        items: ["Jas Hitam, Kemeja Warna Bebas", "Celana Panjang Hitam Formal", "Sepatu/Flat Shoes/Heels (Hitam/Putih)"],
       },
     ],
     images: {

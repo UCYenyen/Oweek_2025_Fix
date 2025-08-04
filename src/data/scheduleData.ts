@@ -1,4 +1,3 @@
-// filepath: src/data/scheduleData.ts
 export const scheduleData = [
   {
     id: 0,

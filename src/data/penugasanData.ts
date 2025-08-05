@@ -297,7 +297,7 @@ const penugasanData = [
         title: "Refleksi Pribadi (Individu)",
         tasks: [
           "Trainee WAJIB membuat refleksi pribadi di buku penugasan O-Week dengan minimal 100 kata.",
-          "Penugasan individu maksimal dikumpulkan pada hari Rabu, 27 Agustus 2025, pukul 23.59 WIB kepada kakak mentor masing-masing.",
+          "Penugasan individu maksimal dikumpulkan pada hari Kamis, 28 Agustus 2025, pukul 07.30 WIB pada saat registrasi day 4, kepada kakak mentor masing-masing.",
           "Penjelasan: Buatlah refleksi yang wajib ditulis tangan minimal 100 kata yang berisi tentang pengalaman dan pemahaman setelah mengikuti rangkaian kegiatan ORMAWAFEST 2025. Dengan adanya refleksi ini, diharapkan dapat membantu kalian dalam menentukan ORMAWA yang akan kalian ambil. Berikut adalah pertanyaan refleksi:",
           "1. Pembelajaran apa saja yang trainee dapatkan setelah mengunjungi berbagai ORMAWA di ORMAWAFEST 2025?",
           "2. Setelah mengikuti sesi ORMAWAFEST 2025, organisasi apa yang paling diminati trainee untuk bergabung? Mengapa?",

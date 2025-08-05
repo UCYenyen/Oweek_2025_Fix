@@ -107,8 +107,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/dresscodes/NO DAY 2.webp",
+      do: "/dresscodes/yesday2.webp",
+      dont: "/dresscodes/noday2.webp",
     },
   },
   {
@@ -121,8 +121,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/YES DAY 3.webp",
-      dont: "/dresscodes/NO DAY 3.webp",
+      do: "/dresscodes/yesday3.webp",
+      dont: "/dresscodes/noday3.webp",
     },
   },
   {
@@ -135,8 +135,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/YES DAY 3.webp",
-      dont: "/dresscodes/NO DAY 3.webp",
+      do: "/dresscodes/yesday3.webp",
+      dont: "/dresscodes/noday3.webp",
     },
   },
   {
@@ -149,8 +149,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/YES DAY 4.webp",
-      dont: "/dresscodes/NO DAY 4.webp",
+      do: "/dresscodes/yesday4.webp",
+      dont: "/dresscodes/noday4.webp",
     },
   },
   {
@@ -167,8 +167,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/YES DAY 5.webp",
-      dont: "/dresscodes/NO DAY 5.webp",
+      do: "/dresscodes/yesday5.webp",
+      dont: "/dresscodes/noday5.webp",
     },
   },
   {
@@ -185,8 +185,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/YES DAY 6.webp",
-      dont: "/dresscodes/NO DAY 6.webp",
+      do: "/dresscodes/yesday6.webp",
+      dont: "/dresscodes/noday6.webp",
     },
   },
 ];

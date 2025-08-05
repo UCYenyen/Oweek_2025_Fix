@@ -9,8 +9,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      do: "/dresscodes/DAY 1.webp",
+      dont: "/dresscodes/NO.webp",
     },
   },
   {
@@ -23,8 +23,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      do: "/dresscodes/YES DAY 1.webp",
+      dont: "/dresscodes/NO DAY 1.webp",
     },
   },
   {
@@ -37,8 +37,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      do: "/dresscodes/YES DAY 1.webp",
+      dont: "/dresscodes/NO DAY 1.webp",
     },
   },
   {
@@ -79,8 +79,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      do: "/dresscodes/YES DAY 1.webp",
+      dont: "/dresscodes/NO DAY 1.webp",
     },
   },
   {
@@ -93,8 +93,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      do: "/dresscodes/YES DAY 1.webp",
+      dont: "/dresscodes/NO DAY 1.webp",
     },
   },
   {
@@ -108,7 +108,7 @@ export const dataDresscode = [
     ],
     images: {
       do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      dont: "/dresscodes/NO DAY 2.webp",
     },
   },
   {
@@ -121,8 +121,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      do: "/dresscodes/YES DAY 3.webp",
+      dont: "/dresscodes/NO DAY 3.webp",
     },
   },
   {
@@ -135,8 +135,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      do: "/dresscodes/YES DAY 3.webp",
+      dont: "/dresscodes/NO DAY 3.webp",
     },
   },
   {
@@ -149,8 +149,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      do: "/dresscodes/YES DAY 4.webp",
+      dont: "/dresscodes/NO DAY 4.webp",
     },
   },
   {
@@ -167,8 +167,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      do: "/dresscodes/YES DAY 5.webp",
+      dont: "/dresscodes/NO DAY 5.webp",
     },
   },
   {
@@ -185,8 +185,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/elements/icons/luminate.svg",
-      dont: "/elements/icons/luminate.svg",
+      do: "/dresscodes/YES DAY 6.webp",
+      dont: "/dresscodes/NO DAY 6.webp",
     },
   },
 ];

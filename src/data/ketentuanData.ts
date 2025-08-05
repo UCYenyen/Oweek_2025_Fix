@@ -293,7 +293,7 @@ const ketentuanData = [
       {
         title: "NEXT GEN VISIONARIES",
         rules: ["Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membwa SIM.",
-          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
+          "Trainee tidak boleh membawa kendaraan.",
           "Trainee diwajibkan untuk membawa tumblr dan peralatan makanan O-Week 2025.",
         ],
       },

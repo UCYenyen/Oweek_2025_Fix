@@ -12,12 +12,20 @@ const penugasanData = [
     dayId: 1,
     events: [
       {
-        title: "Video 7 Competence",
+        title: "📹 Tugas Video 7 Competence",
+        tasks: [],
+      },
+      {
+        title: "📅 Periode Pengerjaan: 17–22 Agustus 2025",
+        tasks: [],
+      },
+      {
+        title: "⏰ Deadline: 22 Agustus 2025, pukul 21.00 WIB",
+        tasks: [],
+      },
+      {
+        title: "Instruksi:",
         tasks: [
-          "📹Tugas Video 7 Competence",
-          "📅 Periode Pengerjaan: 17–22 Agustus 2025",
-          "⏰ Deadline: 22 Agustus 2025, pukul 21.00 WIB",
-          "Instruksi:",
           "Buat video menyebutkan 7 Competence Universitas Ciputra.",
           "Awali video dengan perkenalan diri:",
           "✦ Nama",
@@ -31,8 +39,15 @@ const penugasanData = [
           "✦ Diambil dengan latar belakang polos dan pencahayaan yang baik",
           "✦ Wajah terlihat jelas (tidak tertutup masker, rambut, dsb)",
           "Simpan video dalam format .mp4, upload video ke Google Drive yang disediakan AMD dengan format nama:",
-          "📂Nama_NamaKelompok / NomorKelompok _ 7Competence",
-          "📚  7 Competence UC:",
+        ],
+      },
+      {
+        title: "📂 Nama_NamaKelompok / NomorKelompok _ 7Competence",
+        tasks: [],
+      },
+      {
+        title: "📚  7 Competence UC:",
+        tasks: [
           "✨ Moral Integrity",
           "✨ High Sense of Achievement",
           "✨ Long Life Learning",
@@ -43,12 +58,20 @@ const penugasanData = [
         ],
       },
       {
-        title: "Video IPE",
+        title: "🎥 Tugas Video IPE",
+        tasks: [],
+      },
+      {
+        title: "📅 Periode Pengerjaan: 17–22 Agustus 2025",
+        tasks: [],
+      },
+      {
+        title: "⏰ Deadline: 22 Agustus 2025, pukul 21.00 WIB",
+        tasks: [],
+      },
+      {
+        title: "📋 Instruksi:",
         tasks: [
-          "🎥 Tugas Video IPE",
-          "📅 Periode Pengerjaan: 17–22 Agustus 2025",
-          "⏰ Deadline: 22 Agustus 2025, pukul 21.00 WIB",
-          "📋 Instruksi:",
           "Buat video kreatif menjelaskan IPE (Integrity, Professionalism, Entrepreneurship) versi kamu!",
           "✦ Jangan lupa berikan 3 contoh penerapan untuk masing-masing point I, P, dan E sebagai mahasiswa selama 4 tahun kuliah ya!",
           "Perkenalan dulu dong!",
@@ -64,20 +87,31 @@ const penugasanData = [
           "✦ Diambil dengan pencahayaan yang baik dan wajah terlihat jelas (tanpa masker, rambut menutupi wajah, dsb.)",
           "Upload video ke Google Drive yang sudah disediakan AMD!",
           "Format folder & nama file:",
-          "📂 Nama_NamaKelompok / NomorKelompok_IPE",
-          "📝 IPE Reminder:",
-          "✨Integrity",
-          "✨Professionalism",
-          "✨Entrepreneurship",
         ],
       },
       {
-        title: "Video HYMNE UC",
+        title: "📂 Nama_NamaKelompok / NomorKelompok_IPE",
+        tasks: [],
+      },
+      {
+        title: "📝 IPE Reminder:",
+        tasks: ["✨Integrity", "✨Professionalism", "✨Entrepreneurship"],
+      },
+      {
+        title: "🎥 Tugas Video Hymne UC",
+        tasks: [],
+      },
+      {
+        title: "📅 Periode Pengerjaan: 17 Agustus 2025 - 22 Agustus 2025",
+        tasks: [],
+      },
+      {
+        title: "⏰ Deadline: 22 Agustus 2025, pukul 21.00 WIB",
+        tasks: [],
+      },
+      {
+        title: "🎥 Instruksi Pengerjaan:",
         tasks: [
-          "Tugas Video Hymne UC",
-          "📅 Periode Pengerjaan: 17 Agustus 2025 - 22 Agustus 2025",
-          "⏰ Deadline: 22 Agustus 2025, pukul 21.00 WIB",
-          "🎥 Instruksi Pengerjaan:",
           "Buat video menyanyikan lagu Hymne Universitas Ciputra.",
           "Pastikan video:",
           "Menampilkan wajah hingga pundak secara jelas",
@@ -90,20 +124,31 @@ const penugasanData = [
           "Tangan kanan mengepal di depan dada kiri",
           "Suara harus jelas dan lantang",
           "Simpan video dalam format .mp4, lalu upload ke Google Drive yang disediakan oleh AMD. Buat folder dengan format nama:",
-          "📁 NamaLengkap _ NamaKelompok / NoKelompok _ Hymne UC",
-          { text: "🔗 Referensi lagu Hymne UC", linkId: "hymneUC" },
         ],
       },
       {
-        title: "Follow Akun UC",
+        title: "📁 NamaLengkap _ NamaKelompok / NoKelompok _ Hymne UC",
+        tasks: [{ text: "🔗 Referensi lagu Hymne UC", linkId: "hymneUC" }],
+      },
+      {
+        title: "📲 Tugas Follow Media Sosial",
+        tasks: [],
+      },
+      {
+        title: "📅 Periode Pengerjaan: 17–24 Agustus 2025",
+        tasks: [],
+      },
+      {
+        title: "⏰ Deadline: 24 Agustus 2025, pukul 21.00 WIB",
         tasks: [
-          "📲 Tugas Follow Media Sosial",
-          "📅 Periode Pengerjaan: 17–24 Agustus 2025",
-          "⏰ Deadline: 24 Agustus 2025, pukul 21.00 WIB",
           "🔗 Submit bukti melalui Google Form: ",
           { text: "🔗 Link Google Form", linkId: "formAkunUC" },
           "Setelah submit, AMD WAJIB checklist di sheet yang disediakan oleh PCD",
-          "📌 Instruksi:",
+        ],
+      },
+      {
+        title: "📌 Instruksi:",
+        tasks: [
           "Trainee WAJIB follow akun media sosial berikut:",
           "📷 Instagram",
           "@universitasciputra",
@@ -119,18 +164,30 @@ const penugasanData = [
         ],
       },
       {
-        title: "Upload Twibbon",
+        title: "📸 Tugas Twibbon",
+        tasks: [],
+      },
+      {
+        title: "📅 Periode Unggah: 17–24 Agustus 2025",
+        tasks: [],
+      },
+      {
+        title: "⏰ Deadline: 24 Agustus 2025, pukul 21.00 WIB",
         tasks: [
-          "📸 Tugas Twibbon",
-          "📅 Periode Unggah: 17–24 Agustus 2025",
-          "⏰ Deadline: 24 Agustus 2025, pukul 21.00 WIB",
           "📩 Submit bukti posting melalui Google Form: ",
           {
             text: "🔗 Link Google Form",
             linkId: "buktiTwibbon",
           },
-          "📌 Postingan WAJIB dipertahankan hingga penutupan O-Week tanggal 30 Agustus 2025",
-          "📝 Ketentuan Umum:",
+        ],
+      },
+      {
+        title: "📌 Postingan WAJIB dipertahankan hingga penutupan O-Week tanggal 30 Agustus 2025",
+        tasks: [],
+      },
+      {
+        title: "📝 Ketentuan Umum:",
+        tasks: [
           "Upload di akun Instagram pribadi",
           "❗Akun TIDAK BOLEH di-private dan TIDAK BOLEH akun kedua",
           "Foto dan caption:",
@@ -141,7 +198,11 @@ const penugasanData = [
           "Pakaian:",
           "Kemeja putih dan celana hitam, sopan dan rapi",
           "❌ Tidak boleh: baju transparan, crop top, sleeveless (tanpa lengan atas)",
-          "📷 Ketentuan Konten Postingan:",
+        ],
+      },
+      {
+        title: "📷 Ketentuan Konten Postingan:",
+        tasks: [
           "Slide 1 – Foto Individu:",
           "Gunakan Twibbon GIF yang telah disediakan",
           "Slide 2 – Foto Kelompok (OFFLINE):",
@@ -160,9 +221,8 @@ const penugasanData = [
         ],
       },
       {
-        title: "Format Caption",
+        title: "🧾 Format Caption WAJIB:",
         tasks: [
-          "🧾 Format Caption WAJIB:",
           "Hi, I’m (Nama Lengkap) from (Asal Nama SMA). I’m joining (Jurusan' Angkatan) and I believe in igniting dreams, creating legacies.",
           "(tuliskan minimal 1 kalimat alasan positif memilih UC, 1 kalimat mengenai harapan kalian untuk berkuliah di UC)",
           "I also created a personal song using AI titled \"(Judul Lagu)\", in the (Genre Lagu) genre. (tuliskan minimal 1 kalimat alasan kenapa lagu ini cocok dengan kepribadian dan cita-cita kalian)",
@@ -179,13 +239,21 @@ const penugasanData = [
           "#Igniting DreamsCreatingLegacies",
         ],
       },
-       {
-        title: "Name Tag Trainee", 
+      {
+        title: "🪪 Tugas Pembuatan Name Tag",
+        tasks: [],
+      },
+      {
+        title: "📅 Periode Pengerjaan: 10–17 Agustus 2025",
+        tasks: [],
+      },
+      {
+        title: "⏰ Deadline: Saat Registrasi, 17 Agustus 2025 (dicek oleh AMD)",
+        tasks: [],
+      },
+      {
+        title: "📌 Instruksi Pengerjaan:",
         tasks: [
-          "🪪 Tugas Pembuatan Name Tag",
-          "📅 Periode Pengerjaan: 10–17 Agustus 2025",
-          "⏰ Deadline: Saat Registrasi, 17 Agustus 2025 (dicek oleh AMD)",
-          "📌 Instruksi Pengerjaan:",
           "Gunakan template Name Tag yang telah diberikan oleh panitia.",
           { text: "🔗 Link Template", linkId: "asetNameTag" },
           "Pasang foto diri pada template dengan ketentuan:",
@@ -211,12 +279,20 @@ const penugasanData = [
         ],
       },
       {
-        title: "Tag Tumblr Trainee",
+        title: "🏷️ Tugas Label Tumblr",
+        tasks: [],
+      },
+      {
+        title: "📅 Periode Pengerjaan: 17–25 Agustus 2025",
+        tasks: [],
+      },
+      {
+        title: "⏰ Deadline: Diperiksa saat registrasi oleh SID",
+        tasks: [],
+      },
+      {
+        title: "📌 Instruksi Pengerjaan:",
         tasks: [
-          "🏷️ Tugas Label Tumblr",
-          "📅 Periode Pengerjaan: 17–25 Agustus 2025",
-          "⏰ Deadline: Diperiksa saat registrasi oleh SID",
-          "📌 Instruksi Pengerjaan:",
           "Cetak Tag Nama Tumblr menggunakan template yang telah disediakan panitia.",
           { text: "🔗 Link Template", linkId: "tagTumblr" },
           "Ketentuan Cetak:",
@@ -234,14 +310,20 @@ const penugasanData = [
         ],
       },
       {
-        title: "MnG TRAINEE",
+        title: "🧩 Tugas MnG & BINGO Card",
+        tasks: [],
+      },
+      {
+        title: "📅 Periode Pelaksanaan: Selama masa Orientation Week berlangsung",
+        tasks: [],
+      },
+      {
+        title: "⏰ Deadline: 30 Agustus 2025, pukul 21.00 WIB",
+        tasks: [],
+      },
+      {
+        title: "📌 Instruksi Pelaksanaan MnG + Bingo:",
         tasks: [
-          "Range waktu : (Di announce 10 Agustus 2025) 25 Agustus 2025 - 30 Agustus 2025",
-          "Deadline: 30 Agustus 2025 21:00 WIB",
-          "🧩 Tugas MnG & BINGO Card",
-          "📅 Periode Pelaksanaan: Selama masa Orientation Week berlangsung",
-          "⏰ Deadline: 30 Agustus 2025, pukul 21.00 WIB",
-          "📌 Instruksi Pelaksanaan MnG + Bingo:",
           "Trainee Card WAJIB ditempel pada tempat yang telah disediakan oleh panitia.",
           "Setiap trainee WAJIB melakukan MnG dengan minimal 5 trainee.",
           "Jurusan berbeda dikenali melalui warna border Bingo Card",
@@ -255,21 +337,24 @@ const penugasanData = [
           "Dilarang mengisi kotak Bingo secara mandiri atau tanpa interaksi langsung",
           "Dilarang menggunakan video orang lain, hasil copy-paste, atau membuat dokumentasi palsu",
           "Pelanggaran akan mengakibatkan diskualifikasi aktivitas dan pengurangan poin",
-          "📲 Dokumentasi & Pengumpulan:",
+        ],
+      },
+      {
+        title: "📲 Dokumentasi & Pengumpulan:",
+        tasks: [
           "Upload video dokumentasi ke Instagram Story",
           "Tag mentor masing-masing",
           "Ambil screenshot dari video dokumentasi",
           "Masukkan ke dalam soft copy Bingo Card",
           "Upload Bingo Card (dengan bukti screenshot) ke Google Drive yang disediakan oleh panitia AMD untuk keperluan pengecekan",
-            { text: "🔗 Link GDRIVE Pengumpulan", linkId: "gdriveMng" },
-            { text: "🔗 Link Contoh personal logo", linkId: "personalLogo" },
-            { text: "🔗 Link Contoh Trainee Card", linkId: "cthTraineeCard" },
-            "Link Logo dan Aset",
-            { text: "🔗 Asset", linkId: "asetDesain" },
-            { text: "🔗 Logo", linkId: "logoDesain" },
+          { text: "🔗 Link GDRIVE Pengumpulan", linkId: "gdriveMng" },
+          { text: "🔗 Link Contoh personal logo", linkId: "personalLogo" },
+          { text: "🔗 Link Contoh Trainee Card", linkId: "cthTraineeCard" },
+          "Link Logo dan Aset",
+          { text: "🔗 Asset", linkId: "asetDesain" },
+          { text: "🔗 Logo", linkId: "logoDesain" },
         ],
       },
-      {}
     ],
   },
   {
@@ -429,7 +514,7 @@ const penugasanData = [
         tasks: [
           "Trainee WAJIB mengerjakan penugasan yang ada di buku penugasan O-week masing - masing.",
           "Penugasan ini dikumpulkan kepada AMD maksimal pada hari Kamis, 28 Agustus 2025 13.00 WIB kepada kakak mentor masing - masing.",
-          "Penugasan ini dapat dikerjakan pada saat, sesi sedang berlangsung."
+          "Penugasan ini dapat dikerjakan pada saat, sesi sedang berlangsung.",
         ],
       },
       {
@@ -446,9 +531,7 @@ const penugasanData = [
     events: [
       {
         title: "GUIDEBOOK SELLING DAY",
-        tasks: [
-          { text: "GUIDEBOOK SELLING DAY", linkId: "guidebookSellingDay" },
-        ],
+        tasks: [{ text: "GUIDEBOOK SELLING DAY", linkId: "guidebookSellingDay" }],
       },
 
       {
@@ -468,7 +551,7 @@ const penugasanData = [
           "Setiap sesi presentasi akan dibagi menjadi 17 pos dan setiap kelompok diwajibkan untuk membawa prototype serta hard copy Poster Bisnis (ukuran A3, Art Paper, laminasi glossy). Presentasi dilakukan berdasarkan urutan kelompok trainee yang datang terlebih dahulu.",
           "Dresscode untuk presentasi adalah office look (jas hitam, kemeja warna bebas, celana panjang hitam, sepatu/flat shoes/heels berwarna hitam atau putih).",
         ],
-      }
+      },
     ],
   },
   {

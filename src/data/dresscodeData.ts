@@ -24,7 +24,7 @@ export const dataDresscode = [
     ],
     images: {
       do: "/dresscodes/YES DAY 1.webp",
-      dont: "/dresscodes/NO DAY 1.webp",
+      dont: "/dresscodes/NO 17 AGUSTUS.webp",
     },
   },
   {

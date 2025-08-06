@@ -212,7 +212,7 @@ export default function PopUpPanel({
                       <ul className="list-disc list-inside ml-4">
                         {event.tasks?.map((task: string | LinkItem, taskIdx) => {
                           // Check if current task index should have no list style
-                          const shouldHideListStyle = event.liststyle?.includes(taskIdx);
+                          const shouldHideListStyle = (event as { liststyle?: number[] }).liststyle?.includes(taskIdx);
 
                           if (typeof task === "string") {
                             return (

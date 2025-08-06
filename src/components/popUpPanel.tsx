@@ -211,16 +211,31 @@ export default function PopUpPanel({
                       <h3 className="font-bold text-lg text-[#C44401]">{event.title}</h3>
                       <ul className="list-disc list-inside ml-4">
                         {event.tasks?.map((task: string | LinkItem, taskIdx) => {
+                          // Check if current task index should have no list style
+                          const shouldHideListStyle = event.liststyle?.includes(taskIdx);
+
                           if (typeof task === "string") {
                             return (
-                              <li key={taskIdx} className="content-description text-[#C44401] break-words">
+                              <li 
+                                key={taskIdx} 
+                                className={`content-description text-[#C44401] break-words ${
+                                  shouldHideListStyle ? 'list-none' : ''
+                                }`}
+                                style={shouldHideListStyle ? { listStyle: 'none' } : {}}
+                              >
                                 {task}
                               </li>
                             );
                           }
                           if (typeof task === "object" && task.linkId && linkData[task.linkId]) {
                             return (
-                              <li key={taskIdx} className="content-description text-[#C44401] break-words">
+                              <li 
+                                key={taskIdx} 
+                                className={`content-description text-[#C44401] break-words ${
+                                  shouldHideListStyle ? 'list-none' : ''
+                                }`}
+                                style={shouldHideListStyle ? { listStyle: 'none' } : {}}
+                              >
                                 <a
                                   href={linkData[task.linkId]}
                                   target="_blank"

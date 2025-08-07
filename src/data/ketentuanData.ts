@@ -110,7 +110,7 @@ const ketentuanData = [
         ],
       },
       {
-        title: "Fashion Design and Business (FDB)",
+        title: "Fashion Design Business (FDB)",
         rules: [
           "Format: Offline",
           "Lokasi, Jadwal & PIC:",
@@ -177,7 +177,7 @@ const ketentuanData = [
         ],
       },
       {
-        title: "Creative Business (CBZ)",
+        title: "Culinary Business (CBZ)",
         rules: [
           "Format: Offline",
           "Lokasi, Jadwal & PIC:",
@@ -225,7 +225,7 @@ const ketentuanData = [
         ],
       },
       {
-        title: "Hospitality and Tourism Business - Event (HTEB)",
+        title: "Hotel & Tourism Business - (HTEB)",
         rules: [
           "Format: Online",
           "Tanggal: 20 Agustus 2025",

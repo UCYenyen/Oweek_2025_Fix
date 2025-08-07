@@ -127,7 +127,7 @@ export const scheduleData = [
     title: "THE INNER VOYAGE",
     date: "28 Agustus 2025",
     day_ke: "Day 4 (Student Development)",
-    location: "UC Plaza",
+    location: "Universitas Ciputra Surabaya",
     sessions: [ "07.00-12.00 WIB" ],
     baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
     baju2: "", celana2: "", sepatu2: ""

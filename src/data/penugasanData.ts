@@ -4,7 +4,7 @@ const penugasanData = [
     events: [
       {
         title: "PRA OWEEK",
-        tasks: ["Belum ada penugasan."],
+        tasks: ["Tidak ada penugasan."],
         liststyle: [],
       },
     ],
@@ -410,8 +410,8 @@ const penugasanData = [
     dayId: 2,
     events: [
       {
-        title: "Ketentuan",
-        tasks: ["Coming Soon."],
+        title: "Penugasan",
+        tasks: ["Tidak ada penugasan."],
       },
     ],
     liststyle: [],
@@ -420,8 +420,8 @@ const penugasanData = [
     dayId: 3,
     events: [
       {
-        title: "Ketentuan",
-        tasks: ["Coming Soon."],
+        title: "Penugasan",
+        tasks: ["Sesuai prodi masing masing."],
       },
     ],
     liststyle: [],
@@ -430,8 +430,8 @@ const penugasanData = [
     dayId: 4,
     events: [
       {
-        title: "Ketentuan",
-        tasks: ["Coming Soon."],
+        title: "Penugasan",
+        tasks: ["Tidak ada penugasan."],
       },
     ],
     liststyle: [],

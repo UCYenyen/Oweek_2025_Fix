@@ -23,8 +23,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/YES DAY 1.webp",
-      dont: "/dresscodes/NO 17 AGUSTUS.webp",
+      do: "/dresscodes/YES DAY 1.jpg",
+      dont: "/dresscodes/NO 17 AGUSTUS-2.jpg",
     },
   },
   {
@@ -79,8 +79,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/YES DAY 1.webp",
-      dont: "/dresscodes/NO DAY 1.webp",
+      do: "/dresscodes/YES DAY 1.jpg",
+      dont: "/dresscodes/NO DAY 1.jpg",
     },
   },
   {
@@ -93,8 +93,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/YES DAY 1.webp",
-      dont: "/dresscodes/NO DAY 1.webp",
+      do: "/dresscodes/YES DAY 1.jpg",
+      dont: "/dresscodes/NO DAY 1.jpg",
     },
   },
   {
@@ -107,8 +107,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/yesday2.webp",
-      dont: "/dresscodes/noday2.webp",
+      do: "/dresscodes/yesday2.jpg",
+      dont: "/dresscodes/noday2.jpg",
     },
   },
   {
@@ -121,8 +121,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/yesday3.webp",
-      dont: "/dresscodes/noday3.webp",
+      do: "/dresscodes/yesday3.jpg",
+      dont: "/dresscodes/noday3.jpg",
     },
   },
   {
@@ -131,12 +131,12 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Atasan Batik (Bukan Outer/Vest)", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)"],
+        items: ["Sesuai Dresscode Day 2 & 3"],
       },
     ],
     images: {
-      do: "/dresscodes/yesday3.webp",
-      dont: "/dresscodes/noday3.webp",
+      do: "/dresscodes/yesday3.jpg",
+      dont: "/dresscodes/noday3.jpg",
     },
   },
   {
@@ -149,8 +149,8 @@ export const dataDresscode = [
       },
     ],
     images: {
-      do: "/dresscodes/yesday4.webp",
-      dont: "/dresscodes/noday4.webp",
+      do: "/dresscodes/yesday4.jpg",
+      dont: "/dresscodes/noday4.jpg",
     },
   },
   {
@@ -163,12 +163,12 @@ export const dataDresscode = [
       },
       {
         title: "Dresscode Loading In",
-        items: ["Baju Kaos bebas (tidak crop/sleeveless/tembus pandang)", "Celana Panjang Gelap (tidak robek dan tidak ketat)", " Sepatu Sneakers (warna bebas)"],
+        items: ["Pakaian Bebas, Rapi, Sopan, Bersepatu"],
       },
     ],
     images: {
-      do: "/dresscodes/yesday5.webp",
-      dont: "/dresscodes/noday5.webp",
+      do: "/dresscodes/yesday5.jpg",
+      dont: "/dresscodes/noday5.jpg",
     },
   },
   {
@@ -181,12 +181,12 @@ export const dataDresscode = [
       },
       {
         title: "Dresscode Perempuan",
-        items: ["Kemeja Putih", "Celana Panjang/Rok Hitam (Rok Dibawah Lutut dan Tidak Ketat)", "Sepatu Bebas (Menutupi Jari dan Tumit)", "Setiap trainee WAJIB membawa jas almamater"],
+        items: ["Kemeja Putih", "Celana Panjang/Rok Hitam (Rok Dibawah Lutut dan Tidak Ketat)", "Sepatu Bebas (Menutupi Jari dan Tumit, No Heels)", "Setiap trainee WAJIB membawa jas almamater"],
       },
     ],
     images: {
-      do: "/dresscodes/yesday6.webp",
-      dont: "/dresscodes/noday6.webp",
+      do: "/dresscodes/yesday6.jpg",
+      dont: "/dresscodes/noday6.jpg",
     },
   },
 ];

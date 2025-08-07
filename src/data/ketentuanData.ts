@@ -33,26 +33,17 @@ const ketentuanData = [
           "Kegiatan Upacara 17 Agustus dan Opening Ceremony hanya boleh diikuti oleh Trainee.",
           "Trainee WAJIB mengikuti keseluruhan kegiatan secara OFFLINE di Universitas Ciputra.",
           "Trainee wajib membawa dan menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
-          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu bebas.",
+          "Trainee Wajib membawa peralatan makan dan tumbler pribadi.",
         ],
       },
       {
         title: "Ketentuan Parkir",
         rules: [
-          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membawa SIM.",
-          "Trainee yang membawa mobil dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
-          "Trainee yang membawa mobil wajib membawa dan memiliki SIM.",
+          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan dihimbau untuk berboncengan.",
+          "Trainee yang membawa mobil diwajibkan menggunakan sabuk pengaman dan dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
+          "Trainee yang membawa kendaraan wajib membawa dan memiliki SIM.",
           "Trainee yang membawa motor dihimbau untuk memarkirkan kendaraan di area PARKIRAN MOTOR Universitas Ciputra.",
           "Trainee yang membawa mobil dihimbau untuk memarkirkan kendaraan di area PARKIRAN LAPANGAN Universitas Ciputra.",
-        ],
-      },
-      {
-        title: "OPENING CEREMONY",
-        rules: [
-          "Kegiatan Upacara 17 Agustus dan Opening Ceremony hanya boleh diikuti oleh Trainee.",
-          "Trainee WAJIB mengikuti keseluruhan kegiatan secara OFFLINE di Universitas Ciputra.",
-          "Trainee wajib membawa dan menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
-          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu bebas.",
         ],
       },
       {
@@ -198,7 +189,8 @@ const ketentuanData = [
         ],
       },
       {
-        title: "International Business Management - International Class (IBM-IC)",
+        title:
+          "International Business Management - International Class (IBM-IC)",
         rules: [
           "Format: Online",
           "Tanggal: 20 Agustus 2025",
@@ -282,7 +274,9 @@ const ketentuanData = [
     events: [
       {
         title: "PARENTS GATHERING",
-        rules: ["-",
+        rules: [
+          "Kloter 1 : ISB, IMT, HTEB, CBZ, FTP, COM, ARS, VCD, FDB, MED, DEM",
+          " Kloter 2 : IBM, BMI, ACC, PSY",
         ],
       },
     ],
@@ -292,7 +286,8 @@ const ketentuanData = [
     events: [
       {
         title: "NEXT GEN VISIONARIES",
-        rules: ["Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membwa SIM.",
+        rules: [
+          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membwa SIM.",
           "Trainee tidak boleh membawa kendaraan.",
           "Trainee diwajibkan untuk membawa tumblr dan peralatan makanan O-Week 2025.",
         ],
@@ -302,6 +297,12 @@ const ketentuanData = [
   {
     dayId: 6,
     events: [
+      {
+        title: "Ketentuan ",
+        rules: [
+          "Trainee Wajib membawa peralatan makan, alat tulis, buku penugasan, tumblr dan nametag.",
+        ],
+      },
       {
         title: "Ketentuan Parkir",
         rules: [
@@ -326,6 +327,12 @@ const ketentuanData = [
   {
     dayId: 8,
     events: [
+      {
+        title: "Ketentuan ",
+        rules: [
+          "Trainee Wajib membawa peralatan makan, alat tulis, buku penugasan, tumblr dan nametag.",
+        ],
+      },
       {
         title: "Ketentuan Parkir",
         rules: [
@@ -365,12 +372,18 @@ const ketentuanData = [
       {
         title: "HENOSIS FOOD FOYAGE",
         rules: [
-          "Dresscode Selling Day: Trainee diwajibkan untuk menggunakan kaos Universitas Ciputra, celana panjang gelap tidak sobek, name tag, bersepatu (warna bebas) serta membawa tumblr dan peralatan makan O-Week 2025, Atribut/Aksesoris Negara (detail ketentuan menyusul)",
           "Setiap trainee wajib mengajak minimal 5 orang untuk datang ke Selling Day.",
-          "Trainee diwajibkan untuk menggunakan kaos Universitas Ciputra, celana panjang gelap tidak sobek, name tag, bersepatu (warna bebas) serta membawa tumblr dan peralatan makan O-Week 2025.",
+          "Trainee diwajibkan untuk membawa tumblr dan peralatan makan O-Week 2025.",
           "Trainee tidak diperbolehkan untuk membawa sepeda motor.",
-          "Trainee dihimbau untuk membawa mobil dengan minimal 4 orang dalam satu mobil.",
-          "Dresscode Loading in (Kamis, 28 Agustus 2025 22.30-01.00): Baju Kaos bebas (tidak crop/sleeveless/tembus pandang), Celana Panjang Gelap (tidak robek dan tidak ketat), Sepatu Sneakers (warna bebas)",
+          "Trainee yang membawa mobil diwajibkan menggunakan sabuk pengaman dan dihimbau untuk mengisi mobil dengan minimal 4 trainee dalam satu mobil.",
+          "Trainee yang membawa kendaraan wajib membawa dan memiliki SIM.",
+          "Trainee yang membawa mobil dihimbau untuk memarkirkan kendaraan di area PARKIRAN BASEMENT Ciputra World Surabaya.",
+        ],
+      },
+      {
+        title: "Loading In",
+        rules: [
+          "Kamis 28 Agustus 2025: 22.30-01.00 WIB (29 Agustus 2025): Loading In",
         ],
       },
       {
@@ -383,19 +396,9 @@ const ketentuanData = [
     dayId: 12,
     events: [
       {
-        title: "FLAME OF TRIUMPH",
+        title: "Ketentuan",
         rules: [
-          "Trainee WAJIB mengikuti kegiatan Flame of Triumph yang diselenggarakan secara OFFLINE di Universitas Ciputra.",
-          "Trainee WAJIB membawa dan menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
-        ],
-      },
-      {
-        title: "Dresscode",
-        rules: [
-          "Laki-Laki   : Kemeja Putih, Celana Panjang Kain Hitam, Sepatu Pantofel Hitam",
-          "Perempuan : Kemeja Putih, Rok Hitam Panjang dibawah lutut, Flat Shoes Hitam",
-          "Setiap trainee WAJIB membawa jas almamater",
-          "Setiap trainee DIHIMBAU membawa Topi dan Sunblock",
+          "Setiap trainee DIHIMBAU untuk membawa Topi, Kipas, Sunblock, Lotion anti nyamuk.",
         ],
       },
       {
@@ -405,6 +408,7 @@ const ketentuanData = [
           "Trainee sangat DIHIMBAU untuk melakukan drop-off di Venue Palimanan",
         ],
       },
+      
     ],
   },
 ];

@@ -126,7 +126,10 @@ export default function PopUpPanel({
             {dataDresscode
               .filter((day) => day.dayId === currentDayIndex)
               .map((day) => (
-                <div key={day.dayId} className="flex flex-col items-center justify-center w-full">
+                <div
+                  key={day.dayId}
+                  className="flex flex-col items-center justify-center w-full"
+                >
                   <p className="content-title text-2xl text-[#C44401] font-bold font-roboto text-center">
                     {day.title}
                   </p>
@@ -144,28 +147,31 @@ export default function PopUpPanel({
                       </div>
                     ))}
                   </div>
-                  <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                    <div className="dont-wrapper flex flex-col gap-0.5 items-center justify-center">
-                      <p className="dont-text text-2xl text-[#C44401] text-center font-bold font-roboto">
-                        DON'T
-                      </p>
-                      <img
-                        src={day.images.dont}
-                        className="dont-image bg-[#75ABDC] w-[25vw] h-auto"
-                        alt="Don't"
-                      />
+                  {/* Only show DO/DON'T images if not PRA-OWEEK */}
+                  {![0, 2, 3, 4, 9].includes(currentDayIndex) && (
+                    <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                      <div className="dont-wrapper flex flex-col gap-0.5 items-center justify-center">
+                        <p className="dont-text text-2xl text-[#C44401] text-center font-bold font-roboto">
+                          DON'T
+                        </p>
+                        <img
+                          src={day.images.dont}
+                          className="dont-image bg-[#75ABDC] w-[25vw] h-auto"
+                          alt="Don't"
+                        />
+                      </div>
+                      <div className="do-wrapper flex flex-col gap-0.5 items-center justify-center">
+                        <p className="do-text text-2xl text-[#C44401] text-center font-bold font-roboto">
+                          DO
+                        </p>
+                        <img
+                          src={day.images.do}
+                          className="do-image bg-[#75ABDC] w-[25vw] h-auto"
+                          alt="Do"
+                        />
+                      </div>
                     </div>
-                    <div className="do-wrapper flex flex-col gap-0.5 items-center justify-center">
-                      <p className="do-text text-2xl text-[#C44401] text-center font-bold font-roboto">
-                        DO
-                      </p>
-                      <img
-                        src={day.images.do}
-                        className="do-image bg-[#75ABDC] w-[25vw] h-auto"
-                        alt="Do"
-                      />
-                    </div>
-                  </div>
+                  )}
                 </div>
               ))}
           </div>
@@ -208,47 +214,64 @@ export default function PopUpPanel({
                 .map((day) =>
                   day.events.map((event, eventIdx) => (
                     <div key={eventIdx}>
-                      <h3 className="font-bold text-lg text-[#C44401]">{event.title}</h3>
+                      <h3 className="font-bold text-lg text-[#C44401]">
+                        {event.title}
+                      </h3>
                       <ul className="list-disc list-inside ml-4">
-                        {event.tasks?.map((task: string | LinkItem, taskIdx) => {
-                          // Check if current task index should have no list style
-                          const shouldHideListStyle = (event as { liststyle?: number[] }).liststyle?.includes(taskIdx);
+                        {event.tasks?.map(
+                          (task: string | LinkItem, taskIdx) => {
+                            const shouldHideListStyle = (
+                              event as { liststyle?: number[] }
+                            ).liststyle?.includes(taskIdx);
 
-                          if (typeof task === "string") {
-                            return (
-                              <li 
-                                key={taskIdx} 
-                                className={`content-description text-[#C44401] break-words ${
-                                  shouldHideListStyle ? 'list-none' : ''
-                                }`}
-                                style={shouldHideListStyle ? { listStyle: 'none' } : {}}
-                              >
-                                {task}
-                              </li>
-                            );
-                          }
-                          if (typeof task === "object" && task.linkId && linkData[task.linkId]) {
-                            return (
-                              <li 
-                                key={taskIdx} 
-                                className={`content-description text-[#C44401] break-words ${
-                                  shouldHideListStyle ? 'list-none' : ''
-                                }`}
-                                style={shouldHideListStyle ? { listStyle: 'none' } : {}}
-                              >
-                                <a
-                                  href={linkData[task.linkId]}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="underline text-[#3F61AD] hover:text-[#75ABDC]"
+                            if (typeof task === "string") {
+                              return (
+                                <li
+                                  key={taskIdx}
+                                  className={`content-description text-[#C44401] break-words ${
+                                    shouldHideListStyle ? "list-none" : ""
+                                  }`}
+                                  style={
+                                    shouldHideListStyle
+                                      ? { listStyle: "none" }
+                                      : {}
+                                  }
                                 >
-                                  {task.text}
-                                </a>
-                              </li>
-                            );
+                                  {task}
+                                </li>
+                              );
+                            }
+                            if (
+                              typeof task === "object" &&
+                              task.linkId &&
+                              linkData[task.linkId]
+                            ) {
+                              return (
+                                <li
+                                  key={taskIdx}
+                                  className={`content-description text-[#C44401] break-words ${
+                                    shouldHideListStyle ? "list-none" : ""
+                                  }`}
+                                  style={
+                                    shouldHideListStyle
+                                      ? { listStyle: "none" }
+                                      : {}
+                                  }
+                                >
+                                  <a
+                                    href={linkData[task.linkId]}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline text-[#3F61AD] hover:text-[#75ABDC]"
+                                  >
+                                    {task.text}
+                                  </a>
+                                </li>
+                              );
+                            }
+                            return null;
                           }
-                          return null;
-                        })}
+                        )}
                       </ul>
                     </div>
                   ))
@@ -294,19 +317,31 @@ export default function PopUpPanel({
                 .map((day) =>
                   day.events.map((event, eventIdx) => (
                     <div key={eventIdx}>
-                      <h3 className="font-bold text-lg text-[#C44401]">{event.title}</h3>
+                      <h3 className="font-bold text-lg text-[#C44401]">
+                        {event.title}
+                      </h3>
                       <ul className="list-disc list-inside ml-4">
                         {event.rules.map((rule: string | LinkItem, ruleIdx) => {
                           if (typeof rule === "string") {
                             return (
-                              <li key={ruleIdx} className="content-description text-[#C44401] break-words">
+                              <li
+                                key={ruleIdx}
+                                className="content-description text-[#C44401] break-words"
+                              >
                                 {rule}
                               </li>
                             );
                           }
-                          if (typeof rule === "object" && rule.linkId && linkData[rule.linkId]) {
+                          if (
+                            typeof rule === "object" &&
+                            rule.linkId &&
+                            linkData[rule.linkId]
+                          ) {
                             return (
-                              <li key={ruleIdx} className="content-description text-[#C44401] break-words">
+                              <li
+                                key={ruleIdx}
+                                className="content-description text-[#C44401] break-words"
+                              >
                                 <a
                                   href={linkData[rule.linkId]}
                                   target="_blank"

@@ -136,7 +136,7 @@ const ketentuanData = [
         ],
       },
       {
-        title: "International Management and Technology (IMT)",
+        title: "Informatics (IMT)",
         rules: [
           "Format: Offline",
           "Tanggal: 19 & 20 Agustus 2025",
@@ -148,7 +148,7 @@ const ketentuanData = [
         ],
       },
       {
-        title: "International School of Business (ISB)",
+        title: "Information System for Business (ISB)",
         rules: [
           "Format: Online",
           "Tanggal: 21 Agustus 2025",

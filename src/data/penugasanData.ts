@@ -627,6 +627,7 @@ const penugasanData = [
         title: "Closing Day.",
         tasks: [
           "Terdapat penugasan refleksi diri dan refleksi O-Week yang WAJIB dikerjakan pada buku penugasan trainee. ",
+          "Penugasan refleksi individu maksimal dikumpulkan pada hari Minggu, 31 Agustus 2025, pukul 12.00 WIB kepada kakak mentor masing-masing.",
         ],
         liststyle: [],
       },

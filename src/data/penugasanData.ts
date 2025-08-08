@@ -98,7 +98,7 @@ const penugasanData = [
           "Upload video ke Google Drive yang sudah disediakan AMD!",
           "Format folder & nama file:",
         ],
-        liststyle: [1,3,4,5,6,7,10,11,12],
+        liststyle: [1,3,4,5,6,7,9,10,11,12],
       },
       {
         title: "📂 Nama_NamaKelompok / NomorKelompok_IPE",
@@ -181,7 +181,7 @@ const penugasanData = [
           "▶️ YouTube",
           "OWeek UC Official",
           "Universitas Ciputra Official",
-          "Ambil screenshot sebagai bukti bahwa semua akun telah difollow/didisubscribe. Upload seluruh screenshot ke Google Form yang telah disediakan.",
+          "Ambil screenshot sebagai bukti bahwa semua akun telah difollow / disubscribe. Upload seluruh screenshot ke Google Form yang telah disediakan.",
         ],
         liststyle: [],
       },

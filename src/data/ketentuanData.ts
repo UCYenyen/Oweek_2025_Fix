@@ -28,15 +28,6 @@ const ketentuanData = [
     dayId: 1,
     events: [
       {
-        title: "UPACARA",
-        rules: [
-          "Kegiatan Upacara 17 Agustus dan Opening Ceremony hanya boleh diikuti oleh Trainee.",
-          "Trainee WAJIB mengikuti keseluruhan kegiatan secara OFFLINE di Universitas Ciputra.",
-          "Trainee wajib membawa dan menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
-          "Trainee Wajib membawa peralatan makan dan tumbler pribadi.",
-        ],
-      },
-      {
         title: "Ketentuan Parkir",
         rules: [
           "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan dihimbau untuk berboncengan.",
@@ -44,6 +35,15 @@ const ketentuanData = [
           "Trainee yang membawa kendaraan wajib membawa dan memiliki SIM.",
           "Trainee yang membawa motor dihimbau untuk memarkirkan kendaraan di area PARKIRAN MOTOR Universitas Ciputra.",
           "Trainee yang membawa mobil dihimbau untuk memarkirkan kendaraan di area PARKIRAN LAPANGAN Universitas Ciputra.",
+        ],
+      },
+      {
+        title: "UPACARA & PEMBUKAAN",
+        rules: [
+          "Kegiatan Upacara 17 Agustus dan Opening Ceremony hanya boleh diikuti oleh Trainee.",
+          "Trainee WAJIB mengikuti keseluruhan kegiatan secara OFFLINE di Universitas Ciputra.",
+          "Trainee wajib membawa dan menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
+          "Trainee Wajib membawa peralatan makan dan tumbler pribadi.",
         ],
       },
       {
@@ -383,7 +383,7 @@ const ketentuanData = [
       {
         title: "Loading In",
         rules: [
-          "Kamis 28 Agustus 2025: 22.30-01.00 WIB (29 Agustus 2025): Loading In",
+          "Kamis 28 Agustus 2025: 22.30-01.00 WIB",
         ],
       },
       {

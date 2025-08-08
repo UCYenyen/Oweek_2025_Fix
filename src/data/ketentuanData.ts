@@ -53,7 +53,6 @@ const ketentuanData = [
           "Trainee WAJIB terbagi secara rata ke dalam 5 seminar dengan materi yang berbeda-beda.",
           "Trainee WAJIB mengikuti kegiatan seminar sesuai dengan materi yang telah didapatkan.",
           "Trainee WAJIB membawa dan menggunakan Name Tag Trainee yang telah dicetak dan dimasukkan ke dalam lanyard.",
-          "Dresscode: Kemeja putih, celana panjang hitam berbahan kain (tidak sobek & tidak ketat), sepatu bebas.",
         ],
       },
       {
@@ -65,7 +64,6 @@ const ketentuanData = [
           "Trainee WAJIB hadir tepat waktu pada zoom meeting",
           "Trainee WAJIB ON CAM saat melakukan zoom meeting ",
           "Trainee WAJIB  menggunakan Name Tag Trainee yang telah di print dan dimasukan ke lanyard.",
-          "Dresscode : Kemeja Putih, Celana Panjang Hitam Kain (tidak sobek & tidak ketat), Sepatu bebas.",
         ],
       },
     ],

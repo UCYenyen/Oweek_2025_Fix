@@ -321,26 +321,59 @@ export default function PopUpPanel({
                         {event.title}
                       </h3>
                       <ul className="list-disc list-inside ml-4">
-                        {event.rules.map((rule: string | LinkItem, ruleIdx) => {
-                          if (typeof rule === "string") {
+                        {event.rules.map((rule: string | string[] | LinkItem, ruleIdx) => {
+                          // Check if the rule is an array
+                          if (Array.isArray(rule)) {
+                            return (
+                              <div key={ruleIdx} className="ml-4">
+                                <ul className="list-disc list-inside">
+                                  {rule.map((subRule, subIdx) => {
+                                    // Check if this sub-rule should have no list style
+                                    const shouldHideListStyle = event.liststyle?.[ruleIdx]?.includes(subIdx);
+                                    
+                                    return (
+                                      <li
+                                        key={subIdx}
+                                        className={`content-description text-[#C44401] break-words ${
+                                          shouldHideListStyle ? "list-none" : ""
+                                        }${subIdx === 0 ? " mt-2" : ""}`}
+                                        style={shouldHideListStyle ? { listStyle: "none" } : {}}
+                                        dangerouslySetInnerHTML={{ __html: subRule }}
+                                      />
+                                    );
+                                  })}
+                                </ul>
+                              </div>
+                            );
+                          } else if (typeof rule === "string") {
+                            // For string rules, check if this rule index should have no list style
+                            const shouldHideListStyle = event.liststyle?.[ruleIdx]?.includes(0);
+                            
                             return (
                               <li
                                 key={ruleIdx}
-                                className="content-description text-[#C44401] break-words"
-                              >
-                                {rule}
-                              </li>
+                                className={`content-description text-[#C44401] break-words ${
+                                  shouldHideListStyle ? "list-none" : ""
+                                }`}
+                                style={shouldHideListStyle ? { listStyle: "none" } : {}}
+                                dangerouslySetInnerHTML={{ __html: rule }}
+                              />
                             );
-                          }
-                          if (
+                          } else if (
                             typeof rule === "object" &&
                             rule.linkId &&
                             linkData[rule.linkId]
                           ) {
+                            // For link rules, check if this rule index should have no list style
+                            const shouldHideListStyle = event.liststyle?.[ruleIdx]?.includes(0);
+                            
                             return (
                               <li
                                 key={ruleIdx}
-                                className="content-description text-[#C44401] break-words"
+                                className={`content-description text-[#C44401] break-words ${
+                                  shouldHideListStyle ? "list-none" : ""
+                                }`}
+                                style={shouldHideListStyle ? { listStyle: "none" } : {}}
                               >
                                 <a
                                   href={linkData[rule.linkId]}

@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="fixed top-0 z-[10000]">
+      <div className="fixed top-0 z-[1000]">
         <nav className="relative w-screen z-[10] h-[60px] sm:h-[113px] bg-[url('/elements/navbar/navbar.svg')] bg-cover bg-center flex items-center justify-between px-6 sm:px-8">
           <div className="left-logo-wrapper w-full h-full flex gap-4 items-center justify-start">
             <img

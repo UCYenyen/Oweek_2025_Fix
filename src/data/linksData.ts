@@ -13,4 +13,5 @@ export const linkData: { [key: string]: string } = {
     gdriveMng: "https://drive.google.com/drive/folders/1BGEZlvOsUbRPQITW48eiCTbmkcRY5DqU?usp=drive_link ",
     gformDay1: "https://docs.google.com/forms/d/e/1FAIpQLSfLEIUZxErWvEmsfgN6-BXqWTzkYZTSQuwYj2lmEUkqpnMtpg/viewform?usp=dialog",
     linkBingo: "https://drive.google.com/drive/folders/1O5q6mERDGxinryMq3ApKFG41q51D4Txc?usp=sharing",
+    penugasan_selling_day: "https://docs.google.com/document/d/137OmzMWhEcEwtIpfBFRbcTCEJqPlRLwUmvtyfT8URmw/edit?usp=sharing",
   };

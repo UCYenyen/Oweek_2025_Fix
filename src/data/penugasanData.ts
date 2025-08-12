@@ -649,11 +649,7 @@ const penugasanData = [
       // },
       {
         title: "Timeline Pengumpulan Penugasan",
-        tasks: ["Pengumpulan Proposal: Deadline (Kamis, 21 Agustus 2025 23:59 WIB) ",
-          "Info revisi proposal melalui AMD kemudian AMD menginfokan ke trainee: Deadline (Jumat, 22 Agustus 2025 20.00 WIB)",
-          "Deadline Revisi Proposal: Deadline (Minggu, 24 Agustus 2025 12:00 WIB)",
-
-        ],
+        tasks: [{ text: "🔗 Link Timeline Penugasan ", linkId: "penugasan_selling_day" }],
         liststyle: [],
       },
       

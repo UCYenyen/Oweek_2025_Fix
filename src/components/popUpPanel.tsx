@@ -148,7 +148,7 @@ export default function PopUpPanel({
                     ))}
                   </div>
                   {/* Only show DO/DON'T images if not PRA-OWEEK */}
-                  {![0, 2, 3, 4, 9].includes(currentDayIndex) && (
+                  {![0, 2, 3, 4, 6, 9].includes(currentDayIndex) && (
                     <div className="flex flex-col sm:flex-row gap-4 mt-4">
                       <div className="dont-wrapper flex flex-col gap-0.5 items-center justify-center">
                         <p className="dont-text text-2xl text-[#C44401] text-center font-bold font-roboto">

@@ -85,11 +85,11 @@ export const dataDresscode = [
   },
   {
     dayId: 6,
-    title: "NEXT GEN VISIONARIES",
+    title: "HENOSIS FOOD VOYAGE",
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)"],
+        items: ["Office Look", "Jas Hitam", "Kemeja Warna Bebas", "Celana Panjang Hitam", "Sepatu / flat shoes / heels berwarna hitam atau putih",],
       },
     ],
     images: {
@@ -127,7 +127,7 @@ export const dataDresscode = [
   },
   {
     dayId: 9,
-    title: "THE UNCHARTED COMPASS",
+    title: "ORMAWA-FEST",
     pakaian: [
       {
         title: "Dresscode",

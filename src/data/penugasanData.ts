@@ -251,11 +251,10 @@ const penugasanData = [
       {
         title: "🧾 Format Caption WAJIB:",
         tasks: [
-          "Hi, I’m (Nama Lengkap) from (Asal Nama SMA). I’m joining (Jurusan' Angkatan) and I believe in igniting dreams, creating legacies.",
+          "Hi, I’m (Nama Lengkap) from (Asal Nama SMA). I’m joining (Jurusan’ Angkatan) and I believe in igniting dreams, creating legacies.",
           "(tuliskan minimal 1 kalimat alasan positif memilih UC, 1 kalimat mengenai harapan kalian untuk berkuliah di UC)",
-          "I also created a personal song using AI titled \"(Judul Lagu)\", in the (Genre Lagu) genre. (tuliskan minimal 1 kalimat alasan kenapa lagu ini cocok dengan kepribadian dan cita-cita kalian)",
-          "@universitasciputra @oweekucs #LUMINATE #OweekUCS2025 #UCPeople #UniversitasCiputra",
-          "#Igniting DreamsCreatingLegacies",
+          "I also created a personal song using AI titled (Judul Lagu), in the (Genre Lagu) genre. (tuliskan minimal 1 kalimat alasan kenapa lagu ini cocok dengan kepribadian dan cita-cita kalian)",
+          "@universitasciputra @oweekucs #LUMINATE #IgnitingDreams CreatingLegacies #OweekUCS2025 #UCPeople #UniversitasCiputra #ucsurabaya",
         ],
         liststyle: [],
       },
@@ -267,8 +266,8 @@ const penugasanData = [
           "I also created a personal song using AI titled \"Canvas of Dreams\", in the rock genre.",
           "…….",
           "(tuliskan minimal 1 kalimat alasan kenapa lagu ini menggambarkan diri kalian atau cita-cita kalian)",
-          "@universitasciputra @oweekucs #LUMINATE #OweekUCS2025 #UCPeople #UniversitasCiputra",
-          "#Igniting DreamsCreatingLegacies",],
+          "@universitasciputra @oweekucs #LUMINATE #IgnitingDreams CreatingLegacies #OweekUCS2025 #UCPeople #UniversitasCiputra #ucsurabaya",
+        ],
           liststyle: [],
       },
       {
@@ -398,6 +397,7 @@ const penugasanData = [
           { text: "🔗 Link GDRIVE Pengumpulan", linkId: "gdriveMng" },
           { text: "🔗 Link Contoh personal logo", linkId: "personalLogo" },
           { text: "🔗 Link Contoh Trainee Card", linkId: "cthTraineeCard" },
+          { text: "🔗 Link Bingo MnG", linkId: "linkBingo" },
           "Link Logo dan Aset",
           { text: "🔗 Asset", linkId: "asetDesain" },
           { text: "🔗 Logo", linkId: "logoDesain" },
@@ -445,9 +445,13 @@ const penugasanData = [
           "Trainee membuat video diri mereka (Wajah terlihat jelas dengan menggunakan dresscode sesuai ketentuan UC) membaca refleksi tentang apa yang mereka pelajari setelah mengikuti sesi talkshow.",
           "Video wajib mentag akun @universitasciputra, @oweekuc, @(mentor) dan memberikan hashtag #fyp #OWEEKUC25 #luminate #NamaKelompok #Talkshow #UC #UCSurabaya #UniversitasCiputraSurabaya.",
           "Akun Tiktok trainee WAJIB di-public hingga acara O-Week 2025 berakhir.",
-          "Pengumpulan video maksimal hari Senin, 25 Agustus 2025, pukul 21.00 WIB melalui link  Google Form di bawah ini : ",
-          { text: "🔗 Link Google Form", linkId: "gformDay1" },
+          "Pengumpulan video maksimal hari Senin, 25 Agustus 2025, pukul 21.00 WIB melalui link  Google Form di bawah ini :",
+
           "Format penamaan pengumpulan sebagai berikut: Nomor Kelompok_Nama Kelompok_Nama Anggota",
+          {
+            text: "🔗 Link GForm: ",
+            linkId: "gformDay1",
+          },
           "Contoh : 001_Luminate_ Albert Putra Tanbun",
         ],
         liststyle: [],
@@ -478,14 +482,10 @@ const penugasanData = [
     dayId: 7,
     events: [
       {
+        title: "Refleksi pribadi",
         tasks: [
-          "Moodboard terdiri dari berbagai foto kolase terkait cita-cita pekerjaan di masa depan yang relevan dengan prodi pilihan trainee masing-masing.",
-          "Trainee wajib menyertakan deskripsi penjelasan yang rapi ditulis tangan, berisi tentang:",
-          "1. Cita-cita pekerjaan beserta alasannya yang dijabarkan secara spesifik. Contoh: Misalnya trainee ingin menjadi dokter spesialis jantung. Alasan mengapa ingin menjadi dokter? Dari kecil sudah bercita-cita atau keinginan untuk membantu orang lain, dst.",
-          "2. Tantangan atau masalah yang akan dihadapi dalam meraih cita-cita. Trainee dapat memberikan tantangan yang relevan sesuai dengan pekerjaan yang dipilih.",
-          "3. Cara mengatasi tantangan atau masalah tersebut. Trainee memberikan cara yang konkrit dalam menghadapi dan menyelesaikan tantangan atau masalah tersebut.",
-          "Trainee wajib mengumpulkan foto penugasan Moodboard pada elearn.",
-          "Deadline pengumpulan: Rabu, 4 September 2024, pukul 23.59 WIB.",
+          "Trainee WAJIB membuat refleksi pribadi di buku penugasan O-Week dengan minimal 100 kata.",
+          "Penugasan individu maksimal dikumpulkan pada hari Selasa, 27 Agustus 2025, pukul 21.00 WIB kepada kakak mentor masing-masing.",
         ],
         liststyle: [],
       },
@@ -495,27 +495,6 @@ const penugasanData = [
     dayId: 8,
     events: [
       {
-        title: "Refleksi Pribadi (Individu)",
-        tasks: [
-          "Trainee WAJIB membuat refleksi pribadi di buku penugasan O-Week dengan minimal 100 kata.",
-          "Penugasan individu maksimal dikumpulkan pada hari Selasa, 27 Agustus 2025, pukul 21.00 WIB kepada kakak mentor masing-masing.",
-        ],
-        liststyle: [],
-      },
-      {
-        title: "Penugasan di E-learn",
-        tasks: [
-          "Trainee WAJIB untuk membuat moodboard dengan bantuan AI",
-          "Penugasan moodboard ini maksimal dikumpulkan pada hari Selasa, 27 Agustus 2025, pukul 21.00 WIB di elearn masing - masing.",
-        ],
-        liststyle: [],
-      },
-    ],
-  },
-  {
-    dayId: 9,
-    events: [
-      {
         title: "Penugasan di buku penugasan",
         tasks: [
           "Trainee WAJIB mengerjakan penugasan setelah sesi 1 dan sesi 2 berlangsung pada buku penugasan.",
@@ -523,44 +502,66 @@ const penugasanData = [
         liststyle: [],
       },
       {
-        title: "Kartu Misi (Individu)",
+        title: "Penugasan di elearn",
+        tasks: [
+          "Setelah trainee mengerjakan penugasan sesi 2, Trainee WAJIB untuk membuat moodboard menggunakan bantuan AI.",
+          "Penugasan ini dikumpulkan pada hari 27 Agustus 2025 pukul 10.30 WIB.",
+        ],
+        liststyle: [],
+      },
+      {
+        title: "Kartu misi (Individu)",
         tasks: [
           "Trainee akan mendapatkan kartu misi yang dibagikan oleh kakak mentor masing-masing.",
-          "Kartu misi WAJIB dilengkapi dengan stiker yang didapatkan dengan menanyakan 3 pertanyaan kepada masing-masing ORMAWA (minimal 1 organisasi tingkat kampus (SC, SRB, MD), 1 SU, 2  UKM, DAN1 Club).",
+          "Kartu misi WAJIB dilengkapi dengan stiker yang didapatkan dengan menanyakan 3 pertanyaan kepada masing-masing ORMAWA (minimal 1 organisasi tingkat kampus (SC, SRB, MD), 1 SU, 2  UKM, DAN 1 Club.",
           "Berikut adalah pertanyaan untuk ORMAWA dari trainee:",
           "1. Apa tujuan dari ORMAWA ini?",
           "2. Kegiatan rutin apa yang dilakukan oleh ORMAWA ini ?",
           "3. Apa benefit yang didapatkan dari mengikuti ORMAWA ini?",
           "Trainee WAJIB mendapatkan dan menempelkan minimal 5 stiker yang telah didapatkan di kartu misi.",
           "Trainee WAJIB mengumpulkan kartu misi kepada kakak mentor masing-masing saat registrasi day ke 4.",
+
         ],
-        liststyle: [],
+        liststyle: [3,4,5],
       },
       {
         title: "Refleksi Pribadi (Individu)",
         tasks: [
           "Trainee WAJIB membuat refleksi pribadi di buku penugasan O-Week dengan minimal 100 kata.",
-          "Penugasan individu maksimal dikumpulkan pada hari Kamis, 28 Agustus 2025, pukul 07.30 WIB kepada kakak mentor masing-masing.",
-          "Penjelasan: Buatlah refleksi yang wajib ditulis tangan minimal 100 kata yang berisi tentang pengalaman dan pemahaman setelah mengikuti rangkaian kegiatan ORMAWAFEST 2025. Dengan adanya refleksi ini, diharapkan dapat membantu kalian dalam menentukan ORMAWA yang akan kalian ambil. Berikut adalah pertanyaan refleksi:",
-          "1. Pembelajaran apa saja yang trainee dapatkan setelah mengunjungi berbagai ORMAWA di ORMAWAFEST 2025?",
-          "2. Setelah mengikuti sesi ORMAWAFEST 2025, organisasi apa yang paling diminati trainee untuk bergabung? Mengapa?",
-          "3. Apa harapan trainee saat bergabung dengan salah satu ORMAWA setelah O-Week?",
-          "4. Apa informasi baru yang trainee dapatkan terkait organisasi yang ada?",
-          "5. Apa kesan dan pesan trainee setelah mengikuti ORMAWAFEST 2025?",
+          "Penugasan individu maksimal dikumpulkan pada hari Kamis, 27 Agustus 2025, pukul 22.00 WIB kepada kakak mentor masing-masing.",
+          "(pertanyaan & penjelasan)",
+          "Buatlah refleksi yang wajib ditulis tangan minimal 100 kata yang berisi tentang pengalaman dan pemahaman setelah mengikuti rangkaian kegiatan ORMAWAFEST 2025. Dengan adanya refleksi ini, diharapkan dapat membantu kalian dalam menentukan ORMAWA yang akan kalian ambil. Berikut adalah pertanyaan refleksi:",
+          "a. Pembelajaran apa saja yang trainee dapatkan setelah mengunjungi berbagai ORMAWA di ORMAWAFEST 2025?",
+          "b. Setelah mengikuti sesi ORMAWAFEST 2025, organisasi apa yang paling diminati trainee untuk bergabung? Mengapa?",
+          "c. Apa harapan trainee saat bergabung dengan salah satu ORMAWA setelah O-Week?",
+          "d. Apa informasi baru yang trainee dapatkan terkait organisasi yang ada?",
+          "e. Apa kesan dan pesan trainee setelah mengikuti ORMAWAFEST 2025?",
         ],
-        liststyle: [],
+        liststyle: [4,5,6,7,8],
       },
       {
-        title: "Penugasan Kelompok (Video Kreatif TikTok)",
+        title: "Video Kreatif TikTok (Kelompok)",
         tasks: [
           "Setiap kelompok membuat video dengan mengikuti tren TikTok sesuai dengan link di bawah ini:  <link menyusul>",
           "Setiap anggota WAJIB menyebutkan 1 ORMAWA yang diminati sebelum mengikuti ORMAWAFEST 2025 di awal video.",
           "Di akhir video, setiap anggota menyebutkan 1 ORMAWA yang paling diminati setelah mengikuti ORMAWAFEST 2025.",
           "Setiap anggota WAJIB berpartisipasi di dalam video.",
-          "Video WAJIB di-upload oleh perwakilan kelompok di TikTok dengan menggunakan hashtag #fyp #OWEEKUC25 #luminate #Nama Kelompok #OrmawaFest2025 #UC #UniversitasCiputra serta tag @kakakmentor masing-masing.",
+          "Video WAJIB di-upload oleh perwakilan kelompok di TikTok dengan menggunakan hashtag #fyp #OWEEKUC25 #luminate #Nama Kelompok #OrmawaFest2025 #UC #Universitas Ciputra #UCSurabaya #UCPeople serta tag @kakakmentor masing-masing.",
           "Akun TikTok perwakilan kelompok WAJIB di-public hingga acara O-Week 2025 berakhir.",
-          "Pengumpulan video maksimal hari Rabu, 27 Agustus 2025, pukul 23.59 WIB melalui link  Google Form di bawah ini : <link>",
-          "Format penamaan pengumpulan sebagai berikut: Nomor Kelompok_Nama Kelompok (Contoh : 001_Luminate)",
+          "Pengumpulan video maksimal hari Rabu, 27 Agustus 2025, pukul 22.00 WIB melalui link  Google Form di bawah ini : <link>",
+          "Format penamaan pengumpulan sebagai berikut: Nomor Kelompok_Nama Kelompok Contoh : 001_Luminate",          
+        ],
+        liststyle: [4,5,6,7,8],
+      },
+    ],
+  },
+  {
+    dayId: 9,
+    events: [
+      {
+        title: "ORMAWA FEST",
+        tasks: [
+          "Penugasan menyesuaikan pada hari masing masing",
         ],
         liststyle: [],
       },
@@ -578,30 +579,34 @@ const penugasanData = [
         ],
         liststyle: [],
       },
-      {
-        title: "Penugasan di elearn",
-        tasks: [
-          "Trainee WAJIB untuk membuat roadmap dengan bantuan AI yang berhubungan dengan foto yang ada di trainee card.",
-          "Tugas ini WAJIB dikumpulkan di elearn masing - masing maksimal pada hari Kamis, 28 Agustus 2025 pada pukul 21.00 WIB.",
-        ],
-        liststyle: [],
-      },
+      // {
+      //   title: "Penugasan di elearn",
+      //   tasks: [
+      //     "Trainee WAJIB untuk membuat roadmap dengan bantuan AI yang berhubungan dengan foto yang ada di trainee card.",
+      //     "Tugas ini WAJIB dikumpulkan di elearn masing - masing maksimal pada hari Kamis, 28 Agustus 2025 pada pukul 21.00 WIB.",
+      //   ],
+      //   liststyle: [],
+      // },
     ],
   },
   {
     dayId: 11,
     events: [
+      // {
+      //   title: "GUIDEBOOK SELLING DAY",
+      //   tasks: [{ text: "GUIDEBOOK SELLING DAY", linkId: "guidebookSellingDay" }],
+      //   liststyle: [],
+      // },
       {
-        title: "GUIDEBOOK SELLING DAY",
-        tasks: [{ text: "GUIDEBOOK SELLING DAY", linkId: "guidebookSellingDay" }],
-        liststyle: [],
-      },
+        title: "Timeline Pengumpulan Penugasan",
+        tasks: ["Pengumpulan Proposal: Deadline (Kamis, 21 Agustus 2025 23:59 WIB) ",
+          "Info revisi proposal melalui AMD kemudian AMD menginfokan ke trainee: Deadline (Jumat, 22 Agustus 2025 20.00 WIB)",
+          "Deadline Revisi Proposal: Deadline (Minggu, 24 Agustus 2025 12:00 WIB)",
 
-      {
-        title: "Line OA Selling Day: @891vvono",
-        tasks: [],
+        ],
         liststyle: [],
       },
+      
       {
         title: "Showcase",
         tasks: [

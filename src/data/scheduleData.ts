@@ -70,7 +70,7 @@ export const scheduleData = [
     location: "Hall Sekolah Ciputra Surabaya",
     sessions: [
       "09.30 - 12.05 WIB (Sesi 1)",
-      "13.00 - 13.35 WIB (Sesi 2)"
+      "13.00 - 15.35 WIB (Sesi 2)"
     ],
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""
@@ -78,7 +78,7 @@ export const scheduleData = [
   {
     id: 6,
     day: "Senin",
-    title: "NEXT GEN VISIONARIES",
+    title: "HENOSIS FOOD VOYAGE",
     date: "25 Agustus 2025",
     day_ke: "Day 1 (Showcase Selling Day)",
     location: "Universitas Ciputra Surabaya",
@@ -93,7 +93,7 @@ export const scheduleData = [
     day: "Selasa",
     title: "SPARK THE PATH",
     date: "26 Agustus 2025",
-    day_ke: "Day 2 (Elicit Enlightenment)",
+    day_ke: "Day 2 (Prodi Day)",
     location: "Universitas Ciputra Surabaya",
     sessions: ['07.00-16.00 WIB'],
     baju: "", celana: "", sepatu: "", extra: "",
@@ -113,11 +113,13 @@ export const scheduleData = [
   {
     id: 9,
     day: ["Selasa","Rabu"],
-    title: "THE UNCHARTED COMPASS",
+    title: "ORMAWA-FEST",
     date: ["26 Agustus 2025" ,"27 Agustus 2025"],
-    day_ke: "Day 2 & 3 (ORMAWA-FEST)",
+    day_ke: "Day 2 & 3",
     location: "Universitas Ciputra Surabaya",
-    sessions: [ "14.30-18.00 WIB" ],
+    sessions: [ "15.00-18.00 WIB (Day 2)",
+                "14.30-18.00 WIB (Day 3)",
+     ],
     baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",
     baju2: "", celana2: "", sepatu2: ""
   },
@@ -126,7 +128,7 @@ export const scheduleData = [
     day: "Kamis",
     title: "THE INNER VOYAGE",
     date: "28 Agustus 2025",
-    day_ke: "Day 4 (Student Development)",
+    day_ke: "Day 4 (Student Development Program)",
     location: "Universitas Ciputra Surabaya",
     sessions: [ "07.00-12.00 WIB" ],
     baju: "Baju: Kemeja Putih", celana: "Celana: Celana Hitam ", sepatu: "Sepatu: Sepatu Sneakers", extra: "",

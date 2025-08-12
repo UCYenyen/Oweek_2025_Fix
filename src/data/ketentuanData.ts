@@ -361,11 +361,17 @@ const ketentuanData = [
     dayId: 5,
     events: [
       {
-        title: "NEXT GEN VISIONARIES",
+        title: "Ketentuan",
         rules: [
-          "Trainee diperbolehkan untuk membawa sepeda motor dengan menggunakan helm dan membwa SIM.",
-          "Trainee tidak boleh membawa kendaraan.",
-          "Trainee diwajibkan untuk membawa tumblr dan peralatan makanan O-Week 2025.",
+          "Trainee diwajibkan untuk membawa tumblr dan peralatan makan O-Week 2025.",
+        ],
+        liststyle:[],
+      },
+      {
+        title: "Ketentuan parkir",
+        rules: [
+          "Trainee dilarang membawa kendaraan.",
+          "Hanya boleh melakukan drop off di titik yang tersedia",
         ],
         liststyle:[],
       },
@@ -427,6 +433,13 @@ const ketentuanData = [
   {
     dayId: 9,
     events: [
+      {
+        title: "ORMAWA-FEST",
+        rules: [
+          "Ormawa Fest akan dilaksanakan selama dua hari. Trainee dapat datang kapan saja dalam rentang waktu tersebut dan diperbolehkan datang pada kedua hari, namun trainee WAJIB datang pada satu hari yang telah ditentukan sesuai Jurusan masing-masing.",
+        ],
+        liststyle:[],
+      },
       {
         title: "Ketentuan Parkir",
         rules: [

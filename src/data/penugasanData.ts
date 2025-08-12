@@ -601,7 +601,7 @@ const penugasanData = [
           "Upload file jawaban berupa PDF pada bagian ini di E-Learn sebelum batas waktu yang telah ditentukan.",
           "DEADLINE: 27 Agustus 2025, Pukul 22.00 WIB",
         ],
-        liststyle: [],
+        liststyle: [3,4,5,6,7],
       },
     ],
   },

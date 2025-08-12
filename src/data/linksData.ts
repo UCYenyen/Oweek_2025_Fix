@@ -12,6 +12,6 @@ export const linkData: { [key: string]: string } = {
     buktiTwibbon: "https://forms.gle/WHhLHibrxduyUt6C7",
     templateTwibbon: "https://drive.google.com/drive/folders/1Szh7rtDYBPkeno5ccZ-wzHaMeT37y6MV?usp=drive_link",
     gdriveMng: "https://drive.google.com/drive/folders/1BGEZlvOsUbRPQITW48eiCTbmkcRY5DqU?usp=drive_link ",
-  
+    gformDay1: "https://docs.google.com/forms/d/e/1FAIpQLSfLEIUZxErWvEmsfgN6-BXqWTzkYZTSQuwYj2lmEUkqpnMtpg/viewform?usp=dialog",
   
   };

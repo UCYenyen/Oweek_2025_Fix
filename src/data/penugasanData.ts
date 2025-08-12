@@ -4,7 +4,7 @@ const penugasanData = [
     events: [
       {
         title: "PRA OWEEK",
-        tasks: ["Tidak ada penugasan."],
+        tasks: ["Membuat Linked In (Deadline 22 Agustus 18:00)."],
         liststyle: [],
       },
     ],
@@ -445,7 +445,8 @@ const penugasanData = [
           "Trainee membuat video diri mereka (Wajah terlihat jelas dengan menggunakan dresscode sesuai ketentuan UC) membaca refleksi tentang apa yang mereka pelajari setelah mengikuti sesi talkshow.",
           "Video wajib mentag akun @universitasciputra, @oweekuc, @(mentor) dan memberikan hashtag #fyp #OWEEKUC25 #luminate #NamaKelompok #Talkshow #UC #UCSurabaya #UniversitasCiputraSurabaya.",
           "Akun Tiktok trainee WAJIB di-public hingga acara O-Week 2025 berakhir.",
-          "Pengumpulan video maksimal hari Senin, 25 Agustus 2025, pukul 21.00 WIB melalui link  Google Form di bawah ini : <link>",
+          "Pengumpulan video maksimal hari Senin, 25 Agustus 2025, pukul 21.00 WIB melalui link  Google Form di bawah ini : ",
+          { text: "🔗 Link Google Form", linkId: "gformDay1" },
           "Format penamaan pengumpulan sebagai berikut: Nomor Kelompok_Nama Kelompok_Nama Anggota",
           "Contoh : 001_Luminate_ Albert Putra Tanbun",
         ],
@@ -477,9 +478,7 @@ const penugasanData = [
     dayId: 7,
     events: [
       {
-        title: "Penugasan “Moodboard”",
         tasks: [
-          "Trainee membuat refleksi di buku penugasan berupa moodboard ",
           "Moodboard terdiri dari berbagai foto kolase terkait cita-cita pekerjaan di masa depan yang relevan dengan prodi pilihan trainee masing-masing.",
           "Trainee wajib menyertakan deskripsi penjelasan yang rapi ditulis tangan, berisi tentang:",
           "1. Cita-cita pekerjaan beserta alasannya yang dijabarkan secara spesifik. Contoh: Misalnya trainee ingin menjadi dokter spesialis jantung. Alasan mengapa ingin menjadi dokter? Dari kecil sudah bercita-cita atau keinginan untuk membantu orang lain, dst.",

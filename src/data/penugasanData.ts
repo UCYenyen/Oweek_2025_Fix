@@ -408,9 +408,9 @@ const penugasanData = [
   },
   {
     dayId: 2,
-    title: "Showcase",
     events: [
       {
+        title: "Showcase",
         tasks: [
           "Pengumpulan proposal",
           "Hari, tanggal :  Kamis, 21 Agustus 2025",

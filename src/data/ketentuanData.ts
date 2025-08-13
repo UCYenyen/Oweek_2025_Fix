@@ -10,7 +10,7 @@ const ketentuanData = [
           "Kloter 2 :  IBM, BMI, ACC, PSY, Freshmen Induction",
           "Trainee WAJIB mengikuti kegiatan Pra O-Week yang diselenggarakan secara ONLINE via Zoom.",
           "Trainee WAJIB memperhatikan segala informasi dan materi yang disampaikan selama kegiatan Pra - Oweek untuk mengerjakan tes yang akan diberikan.",
-          "Trainee WAJIB mengerjakan tes Mental Health Assessment, Mental Health Course, Student Development Assessment, Career Interest Assessment, dan membuat Linkedin",
+          "Trainee WAJIB mengerjakan tes UC Wellness Assessment, Wellness Course, Student Development Assessment, Career Interest Assessment, dan membuat Linkedin",
         ],
         liststyle:[],
       },
@@ -369,7 +369,7 @@ const ketentuanData = [
       {
         title: "Ketentuan",
         rules: [
-          "Trainee diwajibkan untuk membawa tumblr dan peralatan makan O-Week 2025.",
+          "Trainee diwajibkan untuk membawa tumblr.",
         ],
         liststyle:[],
       },

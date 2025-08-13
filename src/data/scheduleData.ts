@@ -69,8 +69,8 @@ export const scheduleData = [
     day_ke: "Day 1 (Talkshow)",
     location: "Hall Sekolah Ciputra Surabaya",
     sessions: [
-      "09.30 - 12.05 WIB (Sesi 1)",
-      "13.00 - 15.35 WIB (Sesi 2)"
+      "Sesi 1 09.30 - 12.05 WIB (Kelompok 1-67)",
+      "Sesi 2 13.00 - 15.35 WIB (Kelompok 68-133)"
     ],
     baju: "", celana: "", sepatu: "", extra: "",
     baju2: "", celana2: "", sepatu2: ""

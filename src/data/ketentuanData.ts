@@ -7,7 +7,7 @@ const ketentuanData = [
         rules: [
           "Kegiatan Pra O-WEEK akan dibagi menjadi kloter 1 dan 2.",
           "Kloter 1 : ISB, IMT, HTEB, CBZ, FTP, COM, ARS, VCD, MED DEM, FDB",
-          "Kloter 2 :  IBM, BMI, ACC, PSY, Freshmen Induction",
+          "Kloter 2 :  IBM-RC, IBM-IC, ACC, PSY, Freshmen Induction",
           "Trainee WAJIB mengikuti kegiatan Pra O-Week yang diselenggarakan secara ONLINE via Zoom.",
           "Trainee WAJIB memperhatikan segala informasi dan materi yang disampaikan selama kegiatan Pra - Oweek untuk mengerjakan tes yang akan diberikan.",
           "Trainee WAJIB mengerjakan tes UC Wellness Assessment, Wellness Course, Student Development Assessment, Career Interest Assessment, dan membuat Linkedin",
@@ -371,7 +371,7 @@ const ketentuanData = [
       {
         title: "Ketentuan",
         rules: [
-          "Trainee diwajibkan untuk membawa tumblr.",
+          "Trainee diwajibkan untuk membawa tumblr O-Week 2025.",
         ],
         liststyle:[],
       },
@@ -445,8 +445,11 @@ const ketentuanData = [
         title: "ORMAWA-FEST",
         rules: [
           "Ormawa Fest akan dilaksanakan selama dua hari. Trainee dapat datang kapan saja dalam rentang waktu tersebut dan diperbolehkan datang pada kedua hari, namun trainee WAJIB datang pada satu hari yang telah ditentukan sesuai Jurusan masing-masing.",
+          "Ketentuan Prodi yang Wajib Menghadiri Ormawa Fest:",
+          "Kloter 1: IBM-RC, IBM-IC, ACCOUNTING, IMT, ISB, DEM",
+          "Kloter 2:COM, PSY, CBz, FTP, HTEB, ARS, FDB, VCD, MED"
         ],
-        liststyle:[],
+        liststyle:[[2, 3]],
       },
       {
         title: "Ketentuan Parkir",

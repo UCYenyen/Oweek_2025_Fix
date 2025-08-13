@@ -5,7 +5,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "DRESSCODE",
-        items: ["Pakaian Bebas, Rapi, Sopan, Bersepatu (No Heels)"],
+        items: ["Pakaian Bebas, Rapi, Sopan"],
       },
     ],
     images: {

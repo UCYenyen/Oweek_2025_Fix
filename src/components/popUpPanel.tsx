@@ -231,11 +231,9 @@ export default function PopUpPanel({
                                   className={`content-description text-[#C44401] break-words ${
                                     shouldHideListStyle ? "list-none" : ""
                                   }`}
-                                  style={
-                                    shouldHideListStyle
-                                      ? { listStyle: "none" }
-                                      : {}
-                                  }
+                                  style={{
+                                    ...(shouldHideListStyle ? { listStyle: "none", marginLeft: "1.25rem" } : {}),
+                                  }}
                                 >
                                   {task}
                                 </li>
@@ -355,7 +353,9 @@ export default function PopUpPanel({
                                 className={`content-description text-[#C44401] break-words ${
                                   shouldHideListStyle ? "list-none" : ""
                                 }`}
-                                style={shouldHideListStyle ? { listStyle: "none" } : {}}
+                                style={{
+                                  ...(shouldHideListStyle ? { listStyle: "none", marginLeft: "1.25rem" } : {}),
+                                }}
                                 dangerouslySetInnerHTML={{ __html: rule }}
                               />
                             );

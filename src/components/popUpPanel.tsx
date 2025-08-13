@@ -232,7 +232,7 @@ export default function PopUpPanel({
                                     shouldHideListStyle ? "list-none" : ""
                                   }`}
                                   style={{
-                                    ...(shouldHideListStyle ? { listStyle: "none", marginLeft: "2rem" } : {}),
+                                    ...(shouldHideListStyle ? { listStyle: "none", marginLeft: "1.25rem" } : {}),
                                   }}
                                 >
                                   {task}
@@ -354,7 +354,7 @@ export default function PopUpPanel({
                                   shouldHideListStyle ? "list-none" : ""
                                 }`}
                                 style={{
-                                  ...(shouldHideListStyle ? { listStyle: "none", marginLeft: "2rem" } : {}),
+                                  ...(shouldHideListStyle ? { listStyle: "none", marginLeft: "1.25rem" } : {}),
                                 }}
                                 dangerouslySetInnerHTML={{ __html: rule }}
                               />

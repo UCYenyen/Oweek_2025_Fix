@@ -5,7 +5,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "DRESSCODE",
-        items: ["Pakaian Bebas, Rapi, Sopan, Bersepatu"],
+        items: ["Pakaian Bebas, Rapi, Sopan, Bersepatu (No Heels)"],
       },
     ],
     images: {
@@ -19,7 +19,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja putih", "Celana Panjang Hitam Formal", "Sepatu Hitam"],
+        items: ["Kemeja putih", "Celana Panjang Hitam Formal", "Sepatu Hitam (No Heels)"],
       },
     ],
     images: {
@@ -75,7 +75,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)"],
+        items: ["Kemeja/Blouse putih", "Celana Panjang Hitam Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit, No Heels)"],
       },
     ],
     images: {
@@ -117,7 +117,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Atasan Batik (Bukan Outer/Vest)", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)"],
+        items: ["Atasan Batik (Bukan Outer/Vest)", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit, No Heels)"],
       },
     ],
     images: {
@@ -145,7 +145,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode",
-        items: ["Kemeja/Blouse", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)"],
+        items: ["Kemeja/Blouse", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit, No Heels)"],
       },
     ],
     images: {
@@ -159,7 +159,7 @@ export const dataDresscode = [
     pakaian: [
       {
         title: "Dresscode Selling Day",
-        items: ["Kaos Universitas Ciputra", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit)", "Menggunakan Atribut/Aksesoris Negara"],
+        items: ["Kaos Universitas Ciputra", "Celana Panjang Bebas", "Sepatu Bebas (Menutupi Jari dan Tumit, No Heels)", "Menggunakan Atribut/Aksesoris Negara"],
       },
       {
         title: "Dresscode Loading In",

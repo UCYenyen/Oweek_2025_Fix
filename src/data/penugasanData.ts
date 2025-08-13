@@ -408,13 +408,33 @@ const penugasanData = [
   },
   {
     dayId: 2,
+    title: "Showcase",
     events: [
       {
-        title: "Penugasan",
-        tasks: ["Tidak ada penugasan."],
+        tasks: [
+          "Pengumpulan proposal",
+          "Hari, tanggal :  Kamis, 21 Agustus 2025",
+          "Waktu : 23.59 WIB",
+        ],
+        liststyle: [0],
+      },
+      {
+        tasks: [
+          "Info revisi proposal melalui AMD kemudian AMD menginfokan ke trainee",
+          "Hari, tanggal :  jumat, 22 Agustus 2025",
+          "Waktu : 20.00 WIB",
+        ],
+        liststyle: [0],
+      },
+      {
+        tasks: [
+          "Deadline Revisi Proposal",
+          "Hari, tanggal :  Minggu, 24 Agustus 2025",
+          "Waktu : 12.00 WIB",
+        ],
+        liststyle: [0],
       },
     ],
-    liststyle: [],
   },
   {
     dayId: 3,
@@ -642,32 +662,32 @@ const penugasanData = [
   {
     dayId: 11,
     events: [
-      // {
-      //   title: "GUIDEBOOK SELLING DAY",
-      //   tasks: [{ text: "GUIDEBOOK SELLING DAY", linkId: "guidebookSellingDay" }],
-      //   liststyle: [],
-      // },
+      {
+        title: "GUIDEBOOK SELLING DAY",
+        tasks: [{ text: "GUIDEBOOK SELLING DAY", linkId: "guidebookSellingDay" }],
+        liststyle: [],
+      },
       {
         title: "Timeline Pengumpulan Penugasan",
         tasks: [{ text: "🔗 Link Timeline Penugasan ", linkId: "penugasan_selling_day" }],
         liststyle: [],
       },
       
-      {
-        title: "Showcase",
-        tasks: [
-          "Setiap kelompok wajib mempersiapkan 2 (dua) perwakilan dan wajib membawa prototype produk yang akan dijual untuk dipresentasikan pada: ",
-          "Hari, tanggal :  Senin, 25 Agustus 2025",
-          "Waktu : 17.00 - 18.30 WIB",
-          "Lokasi : Universitas Ciputra Surabaya",
-          "Ruang : R.934, R.935, R.936, R.937, R.938, dan R.939",
-          "Ruang Tunggu : Theater lantai 9",
-          "Registrasi showcase akan dilakukan pada pukul 17.00 - 17.30 WIB.",
-          "Setiap sesi presentasi akan dibagi menjadi 17 pos dan setiap kelompok diwajibkan untuk membawa prototype serta hard copy Poster Bisnis (ukuran A3, Art Paper, laminasi glossy). Presentasi dilakukan berdasarkan urutan kelompok trainee yang datang terlebih dahulu.",
-          "Dresscode untuk presentasi adalah office look (jas hitam, kemeja warna bebas, celana panjang hitam, sepatu/flat shoes/heels berwarna hitam atau putih).",
-        ],
-        liststyle: [],
-      },
+      // {
+      //   title: "Showcase",
+      //   tasks: [
+      //     "Setiap kelompok wajib mempersiapkan 2 (dua) perwakilan dan wajib membawa prototype produk yang akan dijual untuk dipresentasikan pada: ",
+      //     "Hari, tanggal :  Senin, 25 Agustus 2025",
+      //     "Waktu : 17.00 - 18.30 WIB",
+      //     "Lokasi : Universitas Ciputra Surabaya",
+      //     "Ruang : R.934, R.935, R.936, R.937, R.938, dan R.939",
+      //     "Ruang Tunggu : Theater lantai 9",
+      //     "Registrasi showcase akan dilakukan pada pukul 17.00 - 17.30 WIB.",
+      //     "Setiap sesi presentasi akan dibagi menjadi 17 pos dan setiap kelompok diwajibkan untuk membawa prototype serta hard copy Poster Bisnis (ukuran A3, Art Paper, laminasi glossy). Presentasi dilakukan berdasarkan urutan kelompok trainee yang datang terlebih dahulu.",
+      //     "Dresscode untuk presentasi adalah office look (jas hitam, kemeja warna bebas, celana panjang hitam, sepatu/flat shoes/heels berwarna hitam atau putih).",
+      //   ],
+      //   liststyle: [],
+      // },
     ],
   },
   {

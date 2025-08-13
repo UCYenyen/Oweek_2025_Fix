@@ -1,5 +1,5 @@
 export const linkData: { [key: string]: string } = {
-  guidebookSellingDay: "https://bit.ly/GuidebookSellingday2024",
+  guidebookSellingDay: "https://bit.ly/GuidebookSellingday2025",
     personalLogo: "https://drive.google.com/file/d/1mAH7RHcJDzCwFNoGtwGmEdPoVI6JdyDu/view?usp=sharing",
     cthTraineeCard : "https://drive.google.com/file/d/1GmD0aKTJx2yVR6Vh4k8pYy6lltEAbY0-/view?usp=drive_link",
     asetDesain: "https://drive.google.com/drive/folders/1GCHceuMewljMPXaRPkGUY7zLWJFLy_BG",

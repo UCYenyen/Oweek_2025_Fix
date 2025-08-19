@@ -18,4 +18,5 @@ export const linkData: { [key: string]: string } = {
     asetDesainTambahan: "https://drive.google.com/drive/folders/1s8zJ0cnqmag9lVL6mG11BLbjfYU0_7U7?usp=drive_link",
     logos: "https://drive.google.com/drive/folders/1kaR2cVi5fzvrUsQBfcqFHeQIiXXpcR8k?usp=drive_link",
     bingo: "https://drive.google.com/drive/folders/1O5q6mERDGxinryMq3ApKFG41q51D4Txc?usp=sharing ",
+    linkOrmawaFest: "https://docs.google.com/forms/d/e/1FAIpQLSdbphY_AyMSTNMAFBODl2ynBs24Ppj7a3hLJEQev5Nl_slYoA/viewform?usp=dialog",
   };
